@@ -1,0 +1,194 @@
+# Disposal with 把 | Subject + 把 + identifiable object + verb + result | core
+Use 把 to bring an identifiable affected object before the verb and explain what happens to it. The verb phrase normally includes a result, direction, or other elaboration. Put negation and modal verbs before 把.
+请把门关上。|Please close the door.
+我把钥匙放在桌子上了。|I put the keys on the table.
+她把作业做完了。|She finished the homework.
+请把这句话翻译成中文。|Please translate this sentence into Chinese.
+他把杯子打破了。|He broke the cup.
+我们把会议改到星期五了。|We moved the meeting to Friday.
+请把手机关掉。|Please turn off your phone.
+我把那本书还给老师了。|I returned that book to the teacher.
+她把房间收拾干净了。|She tidied the room until it was clean.
+别把护照忘在家里。|Do not leave your passport at home.
+
+# Passive with 被 | Affected subject + 被 + agent + verb + result | core
+Use 被 to make the affected person or thing the subject. The agent can sometimes be omitted. The verb phrase usually describes a result or event, and the passive often—but not always—concerns an unwelcome outcome.
+我的自行车被人偷了。|My bicycle was stolen by someone.
+窗户被风吹开了。|The window was blown open by the wind.
+蛋糕被孩子吃完了。|The cake was eaten up by the child.
+我的杯子被他打破了。|My cup was broken by him.
+她被老师表扬了。|She was praised by the teacher.
+我的名字被写错了。|My name was written incorrectly.
+门被人锁上了。|The door was locked by someone.
+这本书被翻译成了中文。|This book was translated into Chinese.
+我的计划被经理拒绝了。|My plan was rejected by the manager.
+他被选为班长了。|He was chosen as class monitor.
+
+# Highlighting past details with 是…的 | Subject + 是 + highlighted detail + verb + 的 | core
+Use 是…的 to highlight the time, place, manner, or agent of an event treated as already established. It is not a general past tense. 是 is often omitted in affirmative sentences but retained in negative 不是…的.
+我是昨天到的。|It was yesterday that I arrived.||我昨天到的。
+她是坐地铁来的。|It was by subway that she came.
+我们是在北京认识的。|It was in Beijing that we met.
+这张照片是我拍的。|It was me who took this photo.
+他是跟朋友一起去的。|It was with friends that he went.
+你是什么时候买的？|When was it that you bought it?
+我是在网上订的票。|It was online that I booked the tickets.
+我不是坐飞机来的。|It was not by plane that I came.
+我们是去年搬来的。|It was last year that we moved here.
+这道菜是妈妈做的。|It was Mom who made this dish.
+
+# Requesting or inviting with 请 | 请 + person + verb | review
+Put 请 before a verb or before a person plus verb to make a polite request or invitation. Courtesy also depends on the whole sentence and situation; 请 is not required in every polite Chinese request.
+请坐。|Please sit down.
+请稍等一下。|Please wait a moment.
+请你帮我开一下门。|Please help me open the door.
+请大家保持安静。|Everyone, please keep quiet.
+请把菜单给我。|Please give me the menu.
+请在这里签字。|Please sign here.
+请告诉我你的名字。|Please tell me your name.
+请明天再来。|Please come again tomorrow.
+请不要在这里吸烟。|Please do not smoke here.
+请给我一杯温水。|Please give me a glass of warm water.
+
+# Prohibitions with 别 | 别 + verb | review
+Use 别 before a verb to tell someone not to do something. 不要 is a common alternative. 别…了 can ask someone to stop an activity already underway.
+别担心。|Do not worry.||不要担心。
+别迟到。|Do not be late.||不要迟到。
+别忘了带护照。|Do not forget to bring your passport.||不要忘了带护照。
+别在这里停车。|Do not park here.||不要在这里停车。
+别说话了。|Stop talking.||不要说话了。
+别把门关上。|Do not close the door.||不要把门关上。
+别吃太多糖。|Do not eat too much sugar.||不要吃太多糖。
+别告诉别人。|Do not tell other people.||不要告诉别人。
+别着急，慢慢来。|Do not rush; take your time.||不要着急，慢慢来。
+别再打电话了。|Stop calling.||不要再打电话了。
+
+# Suggestions with 吧 | Proposal + 吧 | review
+Place 吧 at the end of a proposal, invitation, or softened instruction. Its force depends on context; it can also signal a tentative guess, which is a separate use.
+我们走吧。|Let us go.
+一起吃午饭吧。|Let us have lunch together.
+你先休息一下吧。|Why don't you rest a little first?
+我们坐地铁吧。|Let us take the subway.
+明天再说吧。|Let us talk about it tomorrow.
+请进来吧。|Please come on in.
+我们换个话题吧。|Let us change the subject.
+你试试吧。|Why don't you give it a try?
+我们在门口见吧。|Let us meet at the entrance.
+把窗户打开吧。|Why don't you open the window?
+
+# Brief actions with 一下 | Verb + 一下 | review
+Use 一下 after a verb to make an action brief, tentative, or softer in a request. It often means 'for a moment' or 'give it a…', not a literal count of one occurrence.
+请等一下。|Please wait briefly.
+我想看一下菜单。|I would like to take a quick look at the menu.
+你能帮我检查一下吗？|Could you help me check it briefly?
+让我想一下。|Let me think for a moment.
+请介绍一下你自己。|Please briefly introduce yourself.
+我去问一下老师。|I will go and ask the teacher quickly.
+你先休息一下。|Rest a little first.
+请试一下这双鞋。|Please try on this pair of shoes.
+我想了解一下情况。|I would like to get a brief idea of the situation.
+请记一下我的号码。|Please take a moment to note my number.
+
+# Tentative actions by reduplication | Verb-verb / verb-一-verb | core
+Repeat a suitable action verb to suggest doing it briefly or casually. Single-syllable verbs can use AA or A一A; many two-syllable verbs use ABAB. Do not automatically reduplicate result compounds.
+你看看这张照片。|Take a look at this photo.||你看一看这张照片。
+我想试试。|I would like to give it a try.||我想试一试。
+我们聊聊吧。|Let us have a little chat.||我们聊一聊吧。
+你再想想。|Think it over a bit more.||你再想一想。
+请尝尝这道菜。|Please have a taste of this dish.||请尝一尝这道菜。
+周末我们去公园走走。|Let us go for a stroll in the park this weekend.
+我想休息休息。|I would like to rest a little.
+我们需要讨论讨论。|We need to discuss it a bit.
+你问问他吧。|Why don't you ask him?||你问一问他吧。
+有空来我家坐坐。|Come spend a little time at my home when you are free.
+
+# Causing or allowing with 让 | Person + 让 + another person + verb | core
+Use 让 to introduce the person caused or allowed to act. Depending on context, it means 'let', 'have', or 'make'. The person after 让 is the subject of the following verb phrase.
+老师让我们明天交作业。|The teacher told us to hand in the homework tomorrow.
+请让我想一想。|Please let me think it over.
+这个消息让我很高兴。|This news makes me happy.
+妈妈不让我晚上出去。|Mom does not let me go out at night.
+他让我等了半个小时。|He made me wait for half an hour.
+这首歌让我想起了家乡。|This song reminds me of my hometown.
+请让孩子自己试试。|Please let the child try it independently.
+经理让我负责这个项目。|The manager put me in charge of this project.
+别让客人等太久。|Do not keep the guests waiting too long.
+这件事让我很失望。|This matter makes me disappointed.
+
+# Helping with 帮 | 帮 + person + verb | review
+Place the person being helped after 帮 and the action after that person. 帮忙 can also mean 'help out', but its object behavior differs; avoid treating 帮忙 as a freely transitive replacement for 帮.
+你能帮我搬一下箱子吗？|Can you help me move the suitcase?
+她帮妈妈洗碗。|She helps Mom wash the dishes.
+我帮你买票吧。|Let me help you buy tickets.
+请帮我看一下行李。|Please watch my luggage for a moment.
+他经常帮同学复习。|He often helps his classmates review.
+我们帮邻居找到了狗。|We helped the neighbor find the dog.
+你可以帮我翻译这句话吗？|Can you help me translate this sentence?
+姐姐帮我选了一件外套。|My older sister helped me choose a coat.
+谢谢你帮我解决这个问题。|Thank you for helping me solve this problem.
+我想帮你准备晚饭。|I want to help you prepare dinner.
+
+# Giving and recipients with 给 | 给 + recipient + verb / verb + 给 + recipient | core
+给 introduces a recipient or beneficiary. It can appear before an action, as in 给他打电话, or after suitable transfer verbs, as in 送给他. Which position works depends on the verb and intended meaning.
+我给妈妈打了电话。|I called Mom.
+她给朋友写了一封信。|She wrote a letter to a friend.
+请给我倒一杯水。|Please pour me a glass of water.
+他送给我一本书。|He gave me a book as a gift.
+我把钱还给他了。|I returned the money to him.
+你能给我解释一下吗？|Can you explain it to me?
+她给孩子买了一双鞋。|She bought a pair of shoes for the child.
+请把照片发给我。|Please send the photo to me.
+我想给你一个建议。|I would like to give you a suggestion.
+老师给我们讲了一个故事。|The teacher told us a story.
+
+# Toward and concerning with 对 | 对 + person/thing + attitude/effect | core
+Use 对 before the person or thing targeted by an attitude, interest, or effect. Common patterns include 对…感兴趣 and 对…有帮助. 对 is not a universal translation of English 'to'.
+我对中国历史感兴趣。|I am interested in Chinese history.
+运动对身体有好处。|Exercise is good for the body.
+他对孩子很有耐心。|He is very patient with children.
+这个办法对我很有帮助。|This method is very helpful to me.
+她对结果很满意。|She is satisfied with the result.
+你对这个计划有什么看法？|What is your view of this plan?
+抽烟对健康不好。|Smoking is bad for health.
+老师对我们很严格。|The teacher is strict with us.
+我对这件事不太了解。|I do not know much about this matter.
+他对自己的未来很有信心。|He is confident about his future.
+
+# Distance with 离 | Place A + 离 + place B + distance | review
+Use 离 to introduce the reference point in a distance statement. Add 远, 近, or a measured distance after that point. 离 differs from 从, which marks a starting point for movement or a range.
+我家离学校很近。|My home is close to the school.
+机场离市中心很远。|The airport is far from the city center.
+这里离车站有两公里。|It is two kilometers from here to the station.
+你住的地方离公司远吗？|Is where you live far from the company?
+超市离我们家只有五百米。|The supermarket is only five hundred meters from our home.
+这家酒店离海边很近。|This hotel is close to the seaside.
+银行离这里不远。|The bank is not far from here.
+我坐得离门很近。|I am sitting close to the door.
+新办公室离地铁站更近。|The new office is closer to the subway station.
+学校离医院大约三公里。|The school is about three kilometers from the hospital.
+
+# Ranges with 从…到… | 从 + start + 到 + endpoint | review
+Use 从…到… to mark the endpoints of a range in space or time. For a journey, the travel verb or duration can follow the range. The endpoint is explicit, unlike a simple location phrase with 在.
+从这里到机场要一个小时。|It takes an hour to get from here to the airport.
+我从星期一到星期五上班。|I work from Monday to Friday.
+这家店从早上九点开到晚上十点。|This shop is open from nine in the morning until ten at night.
+从北京到上海坐高铁很方便。|Taking the high-speed train from Beijing to Shanghai is convenient.
+我们从山脚走到了山顶。|We walked from the foot of the mountain to the top.
+请从第一页读到第五页。|Please read from page one through page five.
+他从早到晚都很忙。|He is busy from morning to night.
+从我家到学校只有两站。|It is only two stops from my home to the school.
+她从去年到现在一直在这里工作。|She has been working here continuously from last year until now.
+从六月到八月，这里很热。|It is hot here from June to August.
+
+# Direction with 往 | 往 + direction + motion verb | core
+Place 往 and a direction before the motion verb to indicate movement toward that direction. 向 can also mark direction in many contexts, but neither automatically means the destination is reached.
+请往左走。|Please go to the left.||请向左走。
+一直往前走。|Keep going straight ahead.||一直向前走。
+他往车站跑去。|He ran toward the station.
+这辆公交车往北开。|This bus travels north.
+请往里面坐一点儿。|Please sit a little farther inside.
+我们往山上走吧。|Let us walk up toward the mountain.
+她往窗外看了一眼。|She glanced out of the window.
+往右拐就是银行。|Turn right and you will be at the bank.
+别往后退。|Do not step backward.||不要往后退。
+他把椅子往前搬了一点儿。|He moved the chair a little forward.

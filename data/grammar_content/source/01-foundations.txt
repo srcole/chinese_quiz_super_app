@@ -1,0 +1,194 @@
+# Present descriptions | Subject + 很 + adjective | review
+Use 很 before a simple adjectival predicate when describing a quality without making a comparison. In this pattern 很 often links the subject and adjective rather than strongly emphasizing 'very'. Do not add 是 before an ordinary adjective.
+今天天气很好。|The weather is nice today.
+这家饭店很安静。|This restaurant is quiet.
+你的房间很干净。|Your room is clean.
+这道题很简单。|This question is easy.
+那条路很宽。|That road is wide.
+这件衬衫很舒服。|This shirt is comfortable.
+他的回答很清楚。|His answer is clear.
+这个城市很漂亮。|This city is beautiful.
+我的邻居很友好。|My neighbor is friendly.
+这份工作很重要。|This job is important.
+
+# Possession with 的 | Possessor + 的 + noun | review
+Place the possessor before 的 and the thing possessed after it. 的 may be omitted in some close relationships, but keeping it is a useful default. An English possessive pronoun becomes a Chinese pronoun plus 的.
+这是我的护照。|This is my passport.
+那是老师的电脑。|That is the teacher's computer.
+你的手机在桌子上。|Your phone is on the table.
+她的自行车很新。|Her bicycle is new.
+我朋友的公司很大。|My friend's company is large.
+这是我们学校的地图。|This is a map of our school.
+他的办公室在三楼。|His office is on the third floor.
+姐姐的生日是明天。|My older sister's birthday is tomorrow.
+这不是我的行李。|This is not my luggage.
+他们的孩子在北京工作。|Their child works in Beijing.
+
+# Describing nouns with 的 | Description + 的 + noun | review
+A phrase describing a noun normally comes before that noun and is linked with 的. This includes full clauses; Chinese does not place an equivalent of 'who' or 'that' after the noun.
+我喜欢你买的那本书。|I like the book that you bought.
+穿红衣服的人是我姐姐。|The person wearing red clothes is my older sister.
+这是我昨天拍的照片。|This is the photo that I took yesterday.
+他做的饭很好吃。|The food that he cooks is delicious.
+我要一杯不加糖的咖啡。|I want a cup of coffee without sugar.
+住在楼上的女孩是学生。|The girl who lives upstairs is a student.
+我们需要一个会说中文的导游。|We need a tour guide who can speak Chinese.
+你推荐的电影很有意思。|The movie that you recommended is interesting.
+这是开往上海的火车。|This is the train bound for Shanghai.
+我找不到昨天收到的那封信。|I cannot find the letter that I received yesterday.
+
+# Location with 在 | Subject + 在 + location | review
+Use 在 as the predicate to say where someone or something is. For actions happening at a location, place 在 plus the location before the action verb instead.
+我的钥匙在包里。|My keys are in the bag.
+老师在办公室。|The teacher is in the office.
+洗手间在二楼。|The restroom is on the second floor.
+孩子们在公园里。|The children are in the park.
+你的眼镜在床上。|Your glasses are on the bed.
+银行在超市旁边。|The bank is next to the supermarket.
+我现在在地铁站。|I am at the subway station now.
+经理今天不在公司。|The manager is not at the company today.
+那家书店在学校对面。|That bookstore is across from the school.
+车站在医院后面。|The station is behind the hospital.
+
+# Actions at a location | Subject + 在 + location + verb | review
+Place the location phrase 在… before the action verb. This tells where the action happens, not where the subject goes as a result of the action.
+我在图书馆看书。|I read books at the library.
+她在厨房做饭。|She cooks in the kitchen.
+他们在公园跑步。|They run in the park.
+我们在网上买票。|We buy tickets online.
+他在北京学习中文。|He studies Chinese in Beijing.
+孩子们在院子里玩。|The children play in the yard.
+我在办公室吃午饭。|I eat lunch in the office.
+你可以在这里等我。|You can wait for me here.
+爸爸在阳台上喝茶。|Dad drinks tea on the balcony.
+她在机场工作。|She works at the airport.
+
+# Existence with 有 | Location + 有 + noun | review
+Start with a location and use 有 to introduce something present there. Negate 有 with 没有, not 不有. This structure introduces a thing rather than locating an already identified thing.
+桌子上有一本书。|There is a book on the table.
+附近有一家药店。|There is a pharmacy nearby.
+冰箱里有三个鸡蛋。|There are three eggs in the fridge.
+楼下有一家咖啡馆。|There is a cafe downstairs.
+教室里没有人。|There is nobody in the classroom.
+公园里有一个湖。|There is a lake in the park.
+房间里有两张床。|There are two beds in the room.
+门口有一只猫。|There is a cat at the entrance.
+这条街上没有银行。|There is no bank on this street.
+我的包里有一把伞。|There is an umbrella in my bag.
+
+# Time before the verb | Subject + time + verb | review
+Put a time expression before the verb, either before or after the subject. Chinese verbs do not change form for tense; the time expression supplies the time reference.
+我明天去上海。|I am going to Shanghai tomorrow.||明天我去上海。
+她每天坐地铁上班。|She takes the subway to work every day.||每天她坐地铁上班。
+我们下周搬家。|We are moving next week.||下周我们搬家。
+他晚上八点回家。|He comes home at eight in the evening.
+我星期六有空。|I am free on Saturday.||星期六我有空。
+会议下午两点开始。|The meeting starts at two in the afternoon.
+他们今年去中国旅行。|They are traveling to China this year.
+我早上七点起床。|I get up at seven in the morning.
+商店上午九点开门。|The shop opens at nine in the morning.
+我们周末一起做饭。|We cook together on weekends.
+
+# Negation with 不 | Subject + 不 + verb/adjective | review
+Use 不 for habits, unwillingness, future refusals, and many descriptions. To deny that an event occurred, usually use 没 instead. 不 precedes the verb or adjective it negates.
+我不喝咖啡。|I do not drink coffee.
+他不喜欢下雨天。|He does not like rainy days.
+这件衣服不贵。|This piece of clothing is not expensive.
+她明天不来。|She is not coming tomorrow.
+我不认识那个人。|I do not know that person.
+这条路不安全。|This road is not safe.
+我们周末不上班。|We do not work on weekends.
+弟弟不吃鱼。|My younger brother does not eat fish.
+我不同意你的看法。|I do not agree with your view.
+今天不冷。|It is not cold today.
+
+# Negation with 没 | Subject + 没(有) + verb | review
+Use 没 or 没有 to say that an event did not happen or has not happened. Normally remove completed-action 了 when negating that event. 没有 also negates possession and existence.
+我昨天没去公司。|I did not go to the company yesterday.||我昨天没有去公司。
+她没吃早饭。|She did not eat breakfast.||她没有吃早饭。
+我们没买那辆车。|We did not buy that car.||我们没有买那辆车。
+他没告诉我地址。|He did not tell me the address.||他没有告诉我地址。
+我没收到你的邮件。|I did not receive your email.||我没有收到你的邮件。
+昨天没下雨。|It did not rain yesterday.||昨天没有下雨。
+他们没参加会议。|They did not attend the meeting.||他们没有参加会议。
+我没带现金。|I did not bring cash.||我没有带现金。
+她没听见电话响。|She did not hear the phone ring.||她没有听见电话响。
+弟弟没做作业。|My younger brother did not do his homework.||弟弟没有做作业。
+
+# Yes-no questions with 吗 | Statement + 吗？ | review
+Add 吗 to a statement to ask whether it is true. Keep ordinary statement word order. Do not combine this 吗 pattern with an A-not-A question or a question word such as 什么.
+你喜欢这本书吗？|Do you like this book?
+他是你的同事吗？|Is he your colleague?
+你明天有时间吗？|Do you have time tomorrow?
+这儿可以停车吗？|Can we park here?||这里可以停车吗？
+你吃过北京烤鸭吗？|Have you ever eaten Beijing roast duck?
+她已经到家了吗？|Has she arrived home already?
+这个座位有人吗？|Is this seat taken?
+你需要帮助吗？|Do you need help?
+外面还在下雨吗？|Is it still raining outside?
+你会用筷子吗？|Can you use chopsticks?
+
+# A-not-A questions | Verb + 不/没 + verb | review
+Ask a yes-no question by repeating a verb or adjective with 不 between the two forms. Use 有没有 for 有. This pattern normally replaces sentence-final 吗.
+你去不去？|Are you going or not?
+这件衣服贵不贵？|Is this piece of clothing expensive or not?
+你有没有护照？|Do you have a passport or not?
+他是不是医生？|Is he a doctor or not?
+你会不会游泳？|Can you swim or not?
+我们要不要打车？|Should we take a taxi or not?
+这个问题难不难？|Is this question difficult or not?
+你喜不喜欢这里？|Do you like it here or not?||你喜欢不喜欢这里？
+她能不能参加？|Can she attend or not?
+你累不累？|Are you tired or not?
+
+# Question words in place | Subject + verb + 什么/谁/哪里 | review
+Leave a question word in the position where its answer would go. Chinese generally does not move 'what', 'who', or 'where' to the beginning just to form a question.
+你想吃什么？|What would you like to eat?
+谁给你打的电话？|Who called you?
+你住在哪里？|Where do you live?||你住在哪儿？
+会议什么时候开始？|When does the meeting start?
+你为什么学中文？|Why do you study Chinese?
+这件衣服多少钱？|How much does this piece of clothing cost?
+你怎么去机场？|How are you getting to the airport?
+哪本书是你的？|Which book is yours?
+你和谁一起去？|Who are you going with?
+你每天睡几个小时？|How many hours do you sleep every day?
+
+# Choice questions with 还是 | Option A + 还是 + option B？ | review
+Use 还是 to present alternatives in a question. Use 或者 for alternatives in ordinary statements. A direct choice question normally does not end in 吗.
+你喝茶还是喝咖啡？|Would you like tea or coffee?
+我们坐公交车还是坐地铁？|Shall we take the bus or the subway?
+你今天去还是明天去？|Are you going today or tomorrow?
+你喜欢红色还是蓝色？|Do you prefer red or blue?
+他是老师还是医生？|Is he a teacher or a doctor?
+你想在家吃还是出去吃？|Do you want to eat at home or go out to eat?
+你要大的还是小的？|Do you want the big one or the small one?
+我们先吃饭还是先买票？|Shall we eat first or buy tickets first?
+你用现金还是信用卡？|Are you using cash or a credit card?
+她住在北京还是上海？|Does she live in Beijing or Shanghai?
+
+# Numbers and measure words | Number + measure word + noun | review
+Place an appropriate measure word between a number and a countable noun. Use 两 rather than 二 before most ordinary measure words when counting two objects.
+我买了三本书。|I bought three books.
+桌子上有两杯茶。|There are two cups of tea on the table.
+她有一只猫。|She has one cat.
+我们需要四把椅子。|We need four chairs.
+他写了两封信。|He wrote two letters.
+请给我一张纸。|Please give me a sheet of paper.
+我带了两件外套。|I brought two coats.
+这里有五辆自行车。|There are five bicycles here.
+我想买一双鞋。|I want to buy a pair of shoes.
+她点了三碗面条。|She ordered three bowls of noodles.
+
+# Approximate numbers | Adjacent numbers / number + 几 or 多 + measure word | review
+Put adjacent numbers before a measure word for an approximate amount, such as 两三天 ('two or three days'). 十几 means ten-odd (eleven to nineteen), and a round number plus 多 means more than that number. For ages, 三十多岁 means in one's thirties. Do not insert 或者 inside an adjacent-number expression.
+我每天喝两三杯茶。|I drink two or three cups of tea every day.
+我们需要三四把椅子。|We need three or four chairs.
+他在这里住了五六年。|He lived here for five or six years.
+请等两三分钟。|Please wait two or three minutes.
+房间里有七八个人。|There are seven or eight people in the room.
+我想休息三四天。|I want to rest for three or four days.
+她买了四五本书。|She bought four or five books.
+走到车站要十几分钟。|It takes ten-odd minutes to walk to the station.
+他已经三十多岁了。|He is already in his thirties.
+这里有二十多个学生。|There are more than twenty students here.

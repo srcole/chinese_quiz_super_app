@@ -1,0 +1,48 @@
+{
+  "name": "chinese_quiz_super_app",
+  "version": "1.0.0",
+  "description": "A super app that combines all the ways I want to study Chinese words and phrases through quizzes and reviews",
+  "scripts": {
+    "dev": "tsx scripts/prepare-content.ts && next dev",
+    "build": "tsx scripts/prepare-content.ts && next build",
+    "start": "next start",
+    "typecheck": "tsc --noEmit",
+    "test": "tsx --test tests/*.test.ts",
+    "content:prepare": "tsx scripts/prepare-content.ts",
+    "content:sync": "tsx --env-file=.env.local scripts/sync-content.ts",
+    "test:e2e": "playwright test",
+    "format": "prettier --write app lib scripts tests playwright.config.ts tsconfig.json package.json"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/srcole/chinese_quiz_super_app.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "Apache-2.0",
+  "type": "module",
+  "bugs": {
+    "url": "https://github.com/srcole/chinese_quiz_super_app/issues"
+  },
+  "homepage": "https://github.com/srcole/chinese_quiz_super_app#readme",
+  "private": true,
+  "dependencies": {
+    "@supabase/supabase-js": "^2.117.2",
+    "next": "^16.3.8",
+    "papaparse": "^5.7.0",
+    "react": "^19.3.0",
+    "react-dom": "^19.3.0"
+  },
+  "devDependencies": {
+    "@playwright/test": "^1.63.0",
+    "@types/node": "^26.6.4",
+    "@types/papaparse": "^5.5.2",
+    "@types/react": "^19.3.0",
+    "prettier": "^3.9.9",
+    "tsx": "^4.23.15",
+    "typescript": "^7.0.2"
+  },
+  "engines": {
+    "node": ">=22"
+  }
+}

@@ -1,0 +1,194 @@
+# Comparing with 比 | A + 比 + B + adjective | core
+Put 比 and the comparison standard before the adjective. Do not add 很 immediately before the adjective in a simple 比 comparison. The adjective itself does not change form.
+今天比昨天冷。|Today is colder than yesterday.
+我哥哥比我高。|My older brother is taller than me.
+坐地铁比开车快。|Taking the subway is faster than driving.
+这本书比那本书有意思。|This book is more interesting than that one.
+这家店比那家店便宜。|This shop is cheaper than that one.
+我的房间比你的房间大。|My room is bigger than your room.
+早上的空气比晚上的空气好。|The air is better in the morning than in the evening.
+这次考试比上次难。|This exam is harder than the last one.
+她比我了解这个城市。|She knows this city better than I do.
+走这条路比走那条路方便。|Taking this road is more convenient than taking that one.
+
+# Specifying a difference | A + 比 + B + adjective + amount | core
+Put a measured difference or a degree phrase after the adjective in a 比 comparison. 一点儿 means a little, while 得多 and 多了 indicate a large difference.
+他比我大三岁。|He is three years older than me.
+这张桌子比那张长十厘米。|This table is ten centimeters longer than that one.
+今天比昨天暖和一点儿。|Today is a little warmer than yesterday.||今天比昨天暖和一点。
+这本书比那本贵二十块钱。|This book costs twenty yuan more than that one.
+我的行李比你的重两公斤。|My luggage is two kilograms heavier than yours.
+坐飞机比坐火车快得多。|Flying is much faster than taking the train.
+这里比我想的安静多了。|It is much quieter here than I expected.
+她比我早到五分钟。|She arrived five minutes earlier than me.
+这间房比那间大一点儿。|This room is a little bigger than that one.
+今年的雨水比去年多得多。|There is much more rain this year than last year.
+
+# Not as…as with 没有 | A + 没有 + B + adjective | core
+Use 没有 before a comparison standard to say A does not reach B's degree of a quality. Do not append 比 to this structure; 不比 has a different scope and does not necessarily mean 'less than'.
+我没有他高。|I am not as tall as him.
+今天没有昨天热。|Today is not as hot as yesterday.
+这部电影没有那部好看。|This movie is not as good as that one.
+我家没有你家大。|My home is not as big as yours.
+坐公交车没有坐地铁快。|Taking the bus is not as fast as taking the subway.
+这家饭店没有那家贵。|This restaurant is not as expensive as that one.
+我的中文没有她的流利。|My Chinese is not as fluent as hers.
+这里没有市中心热闹。|It is not as lively here as in the city center.
+这道题没有我想的难。|This question is not as difficult as I thought.
+今年没有去年忙。|This year is not as busy as last year.
+
+# Equal degree with 一样 | A + 跟/和 + B + 一样 + adjective | core
+Use 跟 or 和 to introduce the comparison standard, then 一样 and the shared quality. Omit the adjective when you simply mean 'the same'. Negate equality with 不一样.
+我跟他一样高。|I am as tall as him.||我和他一样高。
+这两个房间一样大。|These two rooms are the same size.
+今天跟昨天一样冷。|Today is as cold as yesterday.||今天和昨天一样冷。
+我的手机跟你的一样。|My phone is the same as yours.||我的手机和你的一样。
+她跟姐姐一样喜欢音乐。|She likes music as much as her older sister does.
+这家店跟那家店一样便宜。|This shop is as cheap as that one.
+我们的想法不一样。|Our ideas are different.
+这道菜跟妈妈做的一样好吃。|This dish is as delicious as the one Mom makes.
+他跑得跟我一样快。|He runs as fast as I do.
+这里的生活跟以前一样方便。|Life here is as convenient as before.
+
+# Superlatives with 最 | Scope + 最 + adjective | review
+Place 最 before an adjective or suitable mental-state verb to mark the highest degree within a context. A phrase such as 在我们班 establishes the comparison group.
+这是我最喜欢的电影。|This is my favorite movie.
+他是我们班最高的学生。|He is the tallest student in our class.
+这家店的面条最好吃。|This shop has the tastiest noodles.
+星期一是我最忙的一天。|Monday is my busiest day.
+坐地铁最方便。|Taking the subway is the most convenient option.
+这道题最难。|This question is the hardest.
+她是我最好的朋友。|She is my best friend.
+这条路最近。|This route is the shortest.
+我最想去云南。|Yunnan is the place I most want to visit.
+安全最重要。|Safety is the most important thing.
+
+# Increasing degree with 越来越 | 越来越 + adjective/mental verb | core
+Use 越来越 before a quality or certain mental-state verbs to express change over time: 'more and more'. Do not add 更 or 很 between 越来越 and the adjective.
+天气越来越冷了。|The weather is getting colder and colder.
+我的中文越来越好了。|My Chinese is getting better and better.
+这个城市越来越漂亮了。|This city is becoming more and more beautiful.
+他越来越忙了。|He is getting busier and busier.
+我越来越喜欢这份工作了。|I like this job more and more.
+坐地铁的人越来越多了。|More and more people are taking the subway.
+这个问题越来越严重了。|This problem is becoming more and more serious.
+她越来越有信心了。|She is becoming more and more confident.
+房租越来越贵了。|Rent is getting more and more expensive.
+我们的关系越来越好了。|Our relationship is getting better and better.
+
+# Linked changes with 越…越… | 越 + condition/action，越 + result | core
+Use paired 越 phrases for 'the more…, the more…'. The second change varies with the first; unlike 越来越, this structure links two conditions rather than simply describing change over time.
+你越练习，说得越流利。|The more you practice, the more fluently you speak.
+这本书越看越有意思。|The more I read this book, the more interesting it gets.
+他越忙越开心。|The busier he is, the happier he is.
+天气越冷，我越不想出门。|The colder the weather is, the less I want to go out.
+你越着急，越容易出错。|The more anxious you are, the more easily you make mistakes.
+这件事越早解决越好。|The sooner this matter is resolved, the better.
+我们越聊越觉得投机。|The more we chat, the more we feel we get along.
+路越走越窄。|The farther we walk, the narrower the road gets.
+你了解得越多，就越有信心。|The more you know, the more confident you are.
+这首歌越听越好听。|The more I listen to this song, the better it sounds.
+
+# Two qualities with 又…又… | 又 + quality/action + 又 + quality/action | core
+Use 又…又… to combine two parallel qualities or actions of the same subject. The two parts usually fit the same context or evaluation; do not treat it as a general replacement for every English 'and'.
+这个苹果又大又甜。|This apple is both big and sweet.
+这家饭店又便宜又好吃。|This restaurant is both cheap and good.
+他又聪明又努力。|He is both smart and hardworking.
+今天又冷又下雨。|Today it is both cold and rainy.
+这个房间又干净又安静。|This room is both clean and quiet.
+她又会唱歌又会跳舞。|She can both sing and dance.
+孩子又哭又闹。|The child is crying and making a fuss.
+这双鞋又轻又舒服。|These shoes are both light and comfortable.
+这条路又窄又长。|This road is both narrow and long.
+我现在又饿又累。|I am both hungry and tired now.
+
+# Somewhat negative degree with 有点儿 | 有点儿 + adjective | core
+Place 有点儿 before an adjective to express 'a little', often with an undesirable or unexpected quality. Contrast 一点儿 after an adjective in a request or comparison.
+我有点儿累。|I am a little tired.||我有点累。
+这道菜有点儿咸。|This dish is a little salty.||这道菜有点咸。
+今天有点儿冷。|It is a little cold today.
+这件衣服有点儿贵。|This piece of clothing is a little expensive.
+我有点儿担心。|I am a little worried.
+这个房间有点儿小。|This room is a little small.
+他说得有点儿快。|He speaks a little fast.
+这个问题有点儿复杂。|This issue is a little complicated.
+她今天有点儿不舒服。|She is feeling a little unwell today.
+这杯咖啡有点儿苦。|This cup of coffee is a little bitter.
+
+# Adjusting degree with 一点儿 | Adjective + 一点儿 | core
+Place 一点儿 after an adjective to ask for a small adjustment or specify a small difference. In requests, the understood comparison is with the current degree: slower, louder, or cheaper.
+请说慢一点儿。|Please speak a little more slowly.||请说慢一点。
+能便宜一点儿吗？|Could it be a little cheaper?||能便宜一点吗？
+请写清楚一点儿。|Please write a little more clearly.
+我想住近一点儿。|I want to live a little closer.
+请声音小一点儿。|Please keep your voice a little lower.
+这次我们早一点儿出发吧。|Let us set off a little earlier this time.
+请坐远一点儿。|Please sit a little farther away.
+你应该认真一点儿。|You should be a little more careful.
+我想买大一点儿的。|I want to buy a slightly bigger one.
+把房间收拾干净一点儿。|Tidy the room up a little more thoroughly.
+
+# Excessive or emphatic degree with 太…了 | 太 + adjective + 了 | review
+Use 太…了 for a strong degree, which can be excessive ('too') or enthusiastic ('so') depending on context. The final 了 belongs to the exclamatory pattern and is not a past-tense marker.
+这件衣服太贵了。|This piece of clothing is too expensive.
+今天太热了。|It is too hot today.
+你太客气了。|You are so kind.
+这个消息太好了。|This news is wonderful.
+这道题太难了。|This question is too difficult.
+这里太吵了。|It is too noisy here.
+这部电影太有意思了。|This movie is so interesting.
+时间太短了。|There is too little time.
+这个箱子太重了。|This suitcase is too heavy.
+你回得太晚了。|You came back too late.
+
+# Extreme degree with 极了 | Adjective + 极了 | core
+Put 极了 after an adjective to express an extreme degree, similar to 'extremely'. It follows the description rather than preceding it like 非常.
+我今天累极了。|I am extremely tired today.
+这里的风景美极了。|The scenery here is extremely beautiful.
+孩子们高兴极了。|The children are extremely happy.
+这道菜好吃极了。|This dish is extremely delicious.
+房间里安静极了。|It is extremely quiet in the room.
+她听到消息后伤心极了。|She was extremely sad after hearing the news.
+山上的空气好极了。|The air on the mountain is excellent.
+这双鞋舒服极了。|These shoes are extremely comfortable.
+这个故事有趣极了。|This story is extremely interesting.
+他着急极了。|He is extremely anxious.
+
+# Further degree with 更 | 更 + adjective | core
+Place 更 before an adjective to mean 'even more' or 'more' relative to an understood or stated comparison. It can occur inside a 比 sentence as an added emphasis.
+我想找一份更好的工作。|I want to find a better job.
+今天比昨天更冷。|Today is even colder than yesterday.
+这个办法更简单。|This method is simpler.
+坐地铁会更快。|Taking the subway would be faster.
+我更喜欢蓝色的。|I prefer the blue one.
+她希望有更多时间陪家人。|She hopes to have more time with her family.
+换个房间会更安静。|Changing rooms would be quieter.
+练习以后，你会更有信心。|After practicing, you will be more confident.
+我们需要更清楚的解释。|We need a clearer explanation.
+这条路虽然远一点，但是更安全。|Although this route is a little longer, it is safer.
+
+# Not at all with 一点儿也不 | 一点儿 + 也/都 + 不/没 + predicate | core
+Use 一点儿也不 or 一点儿都不 for emphatic 'not at all'. With events or possession, use 没 or 没有 as appropriate. The tiny amount expression must be interpreted with the following negation.
+我一点儿也不累。|I am not tired at all.||我一点儿都不累。
+这道题一点儿也不难。|This question is not difficult at all.
+她一点儿也不生气。|She is not angry at all.
+这里一点儿也不冷。|It is not cold here at all.
+我一点儿也不喜欢这部电影。|I do not like this movie at all.
+他一点儿也不担心。|He is not worried at all.
+这件事一点儿也不奇怪。|This matter is not strange at all.
+我一点儿也没听懂。|I did not understand any of what I heard.
+杯子里一点儿水也没有。|There is not any water at all in the cup.
+她一点儿也不想去。|She does not want to go at all.
+
+# Both and all with 都 | Plural subject + 都 + predicate | review
+Put 都 before the predicate to distribute it across a previously identified group: 'all' or 'both'. 都不 negates the predicate for everyone; 不都 means 'not all' and has a different scope.
+我们都喜欢中国菜。|We all like Chinese food.
+这两本书我都看过。|I have read both of these books.
+学生们都到了。|All the students have arrived.
+他们都不会开车。|None of them can drive.
+这些衣服都很贵。|All these clothes are expensive.
+我爸爸妈妈都是老师。|My mom and dad are both teachers.
+这三个问题都很重要。|All three of these questions are important.
+我们不都住在北京。|Not all of us live in Beijing.
+大家都准备好了。|Everyone is ready.
+这两条路都可以走。|Both of these routes can be taken.

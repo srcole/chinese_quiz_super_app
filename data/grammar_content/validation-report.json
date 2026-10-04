@@ -1,0 +1,14 @@
+{
+  "rules": 155,
+  "exercises": 1550,
+  "unique_chinese_sentences": 1550,
+  "accepted_answers": 1658,
+  "feedback_references": 4650,
+  "difficulty_counts": {
+    "review": 51,
+    "core": 73,
+    "stretch": 31
+  },
+  "checks": "Passed IDs, minimum counts, required content, pinyin coverage, within-rule uniqueness, canonical answer inclusion, and feedback integrity",
+  "limitation": "Structural validation does not establish linguistic correctness or exhaustive accepted translations."
+}

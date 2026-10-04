@@ -1,0 +1,194 @@
+# Reasons with 因为…所以… | 因为 + cause，所以 + result | core
+Use 因为 to introduce a cause and 所以 to introduce its result. Chinese can use both in one sentence. Either can sometimes be omitted when the relationship is already clear.
+因为下雨，所以我们没去公园。|Because it was raining, we did not go to the park.
+因为我生病了，所以今天请假。|Because I am sick, I am taking leave today.
+因为路上堵车，所以他迟到了。|Because there was a traffic jam, he was late.
+因为这家店便宜，所以人很多。|Because this shop is cheap, there are many people here.
+因为明天考试，所以我要复习。|Because there is an exam tomorrow, I need to review.
+因为她住得远，所以每天很早出门。|Because she lives far away, she leaves home early every day.
+因为没带伞，所以我淋湿了。|Because I did not bring an umbrella, I got wet in the rain.
+因为房间太小，所以我们想搬家。|Because the room is too small, we want to move.
+因为他不吃肉，所以我做了蔬菜。|Because he does not eat meat, I cooked vegetables.
+因为时间不够，所以我们坐了出租车。|Because there was not enough time, we took a taxi.
+
+# Concession with 虽然…但是… | 虽然 + fact，但是 + contrasting fact | core
+Use 虽然 for an acknowledged fact and 但是 for an unexpected or contrasting fact. Both connectors can appear together in Chinese. 可是 and 不过 are possible contrast connectors in suitable contexts.
+虽然下雨，但是我们还是出门了。|Although it was raining, we still went out.
+虽然这件衣服贵，但是质量很好。|Although this piece of clothing is expensive, its quality is very good.
+虽然他很忙，但是每天都运动。|Although he is busy, he exercises every day.
+虽然我学过，但是已经忘了。|Although I studied it before, I have already forgotten it.
+虽然路很远，但是风景很美。|Although the journey is long, the scenery is beautiful.
+虽然她年轻，但是经验很多。|Although she is young, she has a lot of experience.
+虽然今天冷，但是没有风。|Although it is cold today, there is no wind.
+虽然这道题难，但是我想试试。|Although this question is difficult, I want to try it.
+虽然房间小，但是很舒服。|Although the room is small, it is comfortable.
+虽然我不同意，但是我理解你的想法。|Although I disagree, I understand your thinking.
+
+# Conditions with 如果…就… | 如果 + condition，就 + consequence | core
+Use 如果 to introduce a hypothetical condition. 就 usually appears before the main-clause verb, after its subject. An English conditional does not require a special verb tense in Chinese.
+如果明天下雨，我们就不去了。|If it rains tomorrow, we will not go.
+如果你有时间，就给我打电话。|If you have time, call me.
+如果太贵，我就不买。|If it is too expensive, I will not buy it.
+如果你不懂，就问老师。|If you do not understand, ask the teacher.
+如果今天做不完，我们就明天继续。|If we cannot finish today, we will continue tomorrow.
+如果坐地铁，就不会堵车。|If we take the subway, we will not get stuck in traffic.
+如果你喜欢，就拿走吧。|If you like it, take it.
+如果他来，我就告诉你。|If he comes, I will tell you.
+如果身体不舒服，就休息一下。|If you feel unwell, rest for a little while.
+如果找不到地址，就给前台打电话。|If you cannot find the address, call the front desk.
+
+# Sufficient conditions with 只要…就… | 只要 + sufficient condition，就 + result | core
+只要 states a condition sufficient for the result: 'as long as'. It does not mean that this is the only possible route to the result; that necessary-condition meaning belongs to 只有…才….
+只要你努力，就会进步。|As long as you work hard, you will improve.
+只要不下雨，我们就去爬山。|As long as it does not rain, we will go hiking.
+只要有时间，我就会来看你。|As long as I have time, I will come to see you.
+只要带护照，就能办理入住。|As long as you bring your passport, you can check in.
+只要你愿意，我们就一起学。|As long as you are willing, we will study together.
+只要提前订票，就能买到座位。|As long as you book in advance, you can get a seat.
+只要每天练习，就不会忘。|As long as you practice every day, you will not forget.
+只要价格合适，我就买。|As long as the price is right, I will buy it.
+只要你告诉我地址，我就能找到。|As long as you tell me the address, I can find it.
+只要大家同意，我们就开始。|As long as everyone agrees, we will start.
+
+# Necessary conditions with 只有…才… | 只有 + necessary condition，才 + result | core
+只有 introduces a necessary condition: 'only if' or 'only by'. 才 links that requirement to the result. It does not claim the condition by itself guarantees success.
+只有多练习，才能说得流利。|Only by practicing more can you speak fluently.
+只有买票，才能进去。|You can enter only if you buy a ticket.
+只有输入正确的密码，才能打开文件。|Only by entering the correct password can you open the file.
+只有周末，我才有时间做饭。|Only on weekends do I have time to cook.
+只有坐飞机，才能准时到。|Only by flying can we arrive on time.
+只有得到允许，才能拍照。|You can take photos only if you get permission.
+只有亲自去看，才会明白。|Only by going to see it yourself will you understand.
+只有把窗户关上，房间才会暖和。|Only if we close the window will the room get warm.
+只有先完成作业，才能玩游戏。|You can play games only if you finish your homework first.
+只有认真检查，才能发现这些错误。|Only by checking carefully can you find these mistakes.
+
+# Even if with 即使…也… | 即使 + hypothetical concession，也 + result | stretch
+即使 introduces a hypothetical or conceded condition that does not change the result. Pair it with 也. Unlike ordinary 虽然, 即使 does not require the condition to be an established fact.
+即使下雨，我也会去。|Even if it rains, I will go.
+即使很忙，他也会给家里打电话。|Even if he is busy, he will call home.
+即使失败了，我也不放弃。|Even if I fail, I will not give up.
+即使你不说，我也知道。|Even if you do not say it, I know.
+即使便宜，我也不想买。|Even if it is cheap, I do not want to buy it.
+即使只有十分钟，也要练习。|Even if you have only ten minutes, you should practice.
+即使没有人帮忙，她也能完成。|Even if nobody helps, she can finish it.
+即使坐出租车，也来不及了。|Even if we take a taxi, we will not make it in time.
+即使住得远，我们也能常见面。|Even if we live far apart, we can meet often.
+即使你不同意，也请听我说完。|Even if you disagree, please hear me out.
+
+# Regardless with 不管…都… | 不管 + alternatives/question phrase，都 + result | core
+Use 不管 with a question-word expression or alternatives, followed by 都 or 也, to mean 'no matter'. The question word has an unrestricted meaning here rather than asking a direct question.
+不管多忙，我都每天看书。|No matter how busy I am, I read every day.
+不管你去哪儿，我都支持你。|No matter where you go, I support you.
+不管天气怎么样，我们都要出发。|No matter what the weather is like, we must set off.
+不管谁来，都要登记。|No matter who comes, they must register.
+不管贵不贵，我都要买。|Whether it is expensive or not, I will buy it.
+不管你选哪个，我都同意。|No matter which one you choose, I agree.
+不管什么时候，你都可以联系我。|You can contact me at any time.
+不管遇到什么问题，都别放弃。|No matter what problems you encounter, do not give up.
+不管下不下雨，他都去跑步。|Whether it rains or not, he goes running.
+不管结果如何，我们都感谢你。|Regardless of the result, we thank you.
+
+# Addition with 不但…而且… | 不但 + first point，而且 + additional point | core
+Use 不但…而且… for 'not only…but also'. With a shared subject, that subject can precede 不但. When the subjects differ, 不但 commonly comes before the first subject.
+她不但会说中文，而且会说日语。|She can speak not only Chinese but also Japanese.
+这家店不但便宜，而且服务很好。|This shop is not only cheap but also has very good service.
+他不但完成了工作，而且帮助了别人。|He not only finished his work but also helped others.
+运动不但对身体好，而且能让人放松。|Exercise is not only good for the body but also helps people relax.
+这个房间不但大，而且很亮。|This room is not only big but also bright.
+不但我喜欢这本书，而且我妹妹也喜欢。|Not only do I like this book, but my younger sister likes it too.
+她不但聪明，而且很有耐心。|She is not only smart but also very patient.
+这部电影不但有趣，而且让人思考。|This movie is not only interesting but also makes people think.
+坐地铁不但快，而且方便。|Taking the subway is not only fast but also convenient.
+他不但记住了名字，而且记住了地址。|He remembered not only the name but also the address.
+
+# Besides with 除了…以外，还… | 除了 + included item + 以外，还/也 + addition | core
+Use 除了…以外 with 还 or 也 to add something besides the named item. This inclusive use differs from the exception structure 除了…以外，都….
+除了中文以外，她还会说法语。|Besides Chinese, she can also speak French.
+除了咖啡以外，我还买了茶。|Besides coffee, I also bought tea.
+除了看书以外，他还喜欢游泳。|Besides reading, he also likes swimming.
+除了北京以外，我们还去了西安。|Besides Beijing, we also went to Xi'an.
+除了星期一以外，星期三我也有空。|Besides Monday, I am also free on Wednesday.
+除了护照以外，你还要带照片。|Besides your passport, you also need to bring photos.
+除了价格以外，我们还要考虑质量。|Besides the price, we also need to consider the quality.
+除了老师以外，学生也参加了活动。|Besides the teachers, the students also took part in the activity.
+除了做饭以外，他还负责洗碗。|Besides cooking, he is also responsible for washing the dishes.
+除了这本书以外，我还推荐那本。|Besides this book, I also recommend that one.
+
+# Exceptions with 除了…以外，都… | 除了 + exception + 以外，group + 都 + predicate | core
+Use 除了 to set aside an exception, then 都 to make a statement about the rest of a group. The predicate determines what the exception is; 还 would instead signal addition.
+除了他以外，大家都到了。|Everyone has arrived except him.
+除了星期天以外，我每天都上班。|I work every day except Sunday.
+除了这道题以外，其他题我都会做。|I can do all the other questions except this one.
+除了鱼以外，这些菜我都喜欢。|I like all these dishes except the fish.
+除了小王以外，我们都去过上海。|All of us have been to Shanghai except Xiao Wang.
+除了厨房以外，其他房间都打扫了。|All the other rooms have been cleaned except the kitchen.
+除了红色以外，其他颜色都有。|All the other colors are available except red.
+除了最后一页以外，我都看完了。|I have read everything except the last page.
+除了这家店以外，附近的商店都关门了。|All the nearby shops have closed except this one.
+除了周末以外，他每天都六点起床。|He gets up at six every day except on weekends.
+
+# Simultaneous actions with 一边…一边… | 一边 + action A，一边 + action B | core
+Use 一边…一边… for two activities performed at the same time, typically by the same person. It suits ongoing actions more naturally than brief one-time results.
+我一边做饭，一边听音乐。|I listen to music while cooking.
+她一边走路，一边打电话。|She talks on the phone while walking.
+我们一边吃饭，一边聊天。|We chat while eating.
+他一边看电视，一边吃水果。|He eats fruit while watching television.
+老师一边解释，一边画图。|The teacher draws diagrams while explaining.
+孩子一边唱歌，一边跳舞。|The child sings and dances at the same time.
+我一边听课，一边记笔记。|I take notes while listening in class.
+她一边收拾房间，一边跟我说话。|She talks to me while tidying the room.
+他一边跑步，一边听新闻。|He listens to the news while running.
+我们一边喝茶，一边讨论计划。|We discuss the plan while drinking tea.
+
+# Immediate sequence with 一…就… | 一 + trigger，就 + consequence | core
+Use 一…就… for 'as soon as' or an immediate, regular response to a trigger. It can describe one occasion or a recurring pattern, depending on the time context.
+我一到家就给你打电话。|I will call you as soon as I get home.
+他一喝咖啡就睡不着。|As soon as he drinks coffee, he cannot get to sleep.
+她一听到消息就哭了。|She cried as soon as she heard the news.
+我们一下课就去食堂。|We go to the cafeteria as soon as class ends.
+门一开，孩子就跑进来了。|As soon as the door opened, the child ran in.
+我一看就明白了。|I understood as soon as I looked at it.
+他一有空就去游泳。|He goes swimming as soon as he has free time.
+雨一停，我们就出发。|We will set off as soon as the rain stops.
+她一上车就睡着了。|She fell asleep as soon as she got in the car.
+你一收到邮件就告诉我。|Tell me as soon as you receive the email.
+
+# Ordered steps with 先…再…然后… | 先 + first action，再 + second，然后 + next | review
+Use 先, 再, and 然后 to order steps. 再 introduces the next intended action, while 然后 is a general sequence connector. Include only as many stages as the situation needs.
+先洗手，再吃饭。|Wash your hands first, then eat.
+我们先买票，再进去。|We will buy tickets first, then go in.
+你先休息一下，然后再工作。|Rest a little first, then get back to work.
+我先查地图，再决定怎么走。|I will check the map first, then decide which way to go.
+先填表，然后交给前台。|Fill out the form first, then give it to the front desk.
+她先做作业，再看电视。|She does her homework first, then watches television.
+我们先吃饭，再去看电影。|We will eat first, then go to see a movie.
+先把水烧开，然后放面条。|Boil the water first, then add the noodles.
+你先听一遍，再跟着读。|Listen once first, then read along.
+我先打电话预约，再去医院。|I will call to make an appointment first, then go to the hospital.
+
+# Before with 以前 | Event/time + 以前 | review
+Place 以前 after a time or event to mean 'before'. Without a preceding event, 以前 can mean 'formerly'. For a not-yet-completed event, Chinese commonly uses the event phrase without future tense marking.
+睡觉以前，我会看一会儿书。|Before going to sleep, I read for a little while.
+出门以前，请关灯。|Please turn off the lights before going out.
+吃饭以前要洗手。|You should wash your hands before eating.
+来中国以前，我不会用筷子。|Before coming to China, I could not use chopsticks.
+考试以前，她很紧张。|Before the exam, she was nervous.
+签字以前，请仔细看合同。|Please read the contract carefully before signing.
+九点以前，我一定到。|I will definitely arrive before nine.
+上大学以前，他住在家里。|Before starting university, he lived at home.
+买票以前，先看看天气。|Check the weather before buying tickets.
+搬家以前，我们卖了旧家具。|Before moving, we sold the old furniture.
+
+# After with 以后 | Event/time + 以后 | review
+Place 以后 after a time or event to mean 'after'. Used alone, it can mean 'in the future' or 'later'. The main clause may use 就 or 再 to make the sequence explicit.
+下班以后，我去超市。|After work, I go to the supermarket.
+吃完饭以后，我们散步吧。|Let us take a walk after finishing the meal.
+毕业以后，她想当老师。|After graduating, she wants to become a teacher.
+到家以后，给我发个消息。|Send me a message after you get home.
+看完电影以后，我们聊了很久。|After watching the movie, we chatted for a long time.
+十点以后，请保持安静。|Please keep quiet after ten.
+搬家以后，我离公司更近了。|After moving, I live closer to the company.
+学会开车以后，他很少坐公交车。|After learning to drive, he rarely takes the bus.
+收到钱以后，我会寄出包裹。|After receiving the money, I will send the parcel.
+洗完手以后，再来帮忙。|Come and help after washing your hands.

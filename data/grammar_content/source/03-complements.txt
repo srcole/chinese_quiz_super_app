@@ -1,0 +1,194 @@
+# Completion with 完 | Verb + 完 | core
+Put 完 directly after an action verb to show that the action reaches completion. Negate completion with 没…完; inability to finish is expressed with …不完 instead.
+我做完作业了。|I have finished my homework.
+她看完那本小说了。|She has finished reading that novel.
+我们吃完午饭了。|We have finished lunch.
+你写完报告了吗？|Have you finished writing the report?
+他还没洗完衣服。|He has not finished washing the clothes yet.
+请听完再说。|Please finish listening before you speak.
+我用完了所有的纸。|I used up all the paper.
+他们已经搬完东西了。|They have already finished moving the things.
+电影还没放完。|The movie has not finished playing yet.
+我想先读完这一页。|I want to finish reading this page first.
+
+# Readiness with 好 | Verb + 好 | core
+Use 好 after a verb to express that something has been properly done and is ready. This is a result complement, distinct from placing 好 before a verb to describe something as pleasant.
+我准备好行李了。|I have got the luggage ready.
+饭做好了。|The meal is ready.
+你想好了吗？|Have you made up your mind?
+请坐好。|Please sit properly.
+我已经订好房间了。|I have already booked the room.
+她把名字写好了。|She has written the name down properly.
+我们还没安排好时间。|We have not arranged the time yet.
+车修好了。|The car has been repaired and is ready.
+请把东西放好。|Please put the things in their proper places.
+你收拾好了吗？|Have you finished getting everything packed up?
+
+# Successful attainment with 到 | Verb + 到 | core
+Attach 到 to an action verb to indicate that it successfully reaches its target, as in finding, buying successfully, or receiving. It is different from 到 used independently to mean 'arrive'.
+我找到钥匙了。|I found my keys.
+她买到票了。|She managed to buy a ticket.
+你收到我的邮件了吗？|Did you receive my email?
+我听到一个奇怪的声音。|I heard a strange sound.
+他终于见到那位作家了。|He finally got to meet that writer.
+我们没等到他。|We waited but he did not turn up.
+我没买到新鲜的鱼。|I did not manage to buy fresh fish.
+她借到了那本书。|She managed to borrow that book.
+你猜到答案了吗？|Did you guess the answer?
+我闻到了面包的香味。|I caught the smell of bread.
+
+# Understanding with 懂 | Verb + 懂 | core
+Put 懂 after a perception or learning verb to show that understanding results. 听懂 concerns understanding what is heard; 看懂 concerns understanding what is read or seen.
+我听懂你的意思了。|I understood what you meant when you spoke.
+她看懂了这篇文章。|She understood this article when she read it.
+你听懂老师的话了吗？|Did you understand what the teacher said?
+我没看懂这张地图。|I did not understand this map.
+他终于听懂了这个笑话。|He finally understood this joke when he heard it.
+我们没听懂最后一句话。|We did not understand the last sentence we heard.
+孩子看懂了游戏规则。|The child understood the game rules after reading them.
+我看了两遍才看懂。|I understood it only after reading it twice.
+她没听懂我的问题。|She did not understand my spoken question.
+你看懂这份说明书了吗？|Did you understand this instruction manual?
+
+# Incorrect results with 错 | Verb + 错 | core
+Use 错 after a verb to indicate that the action produced an incorrect result. Place any object after the complement, as in 写错名字.
+我写错了你的名字。|I wrote your name incorrectly.
+她买错票了。|She bought the wrong ticket.
+我们走错路了。|We took the wrong road.
+你打错电话了。|You dialed the wrong number.
+我听错了时间。|I misheard the time.
+他记错地址了。|He remembered the address incorrectly.
+服务员找错钱了。|The server gave the wrong change.
+我拿错包了。|I took the wrong bag.
+你算错了总价。|You calculated the total price incorrectly.
+她认错人了。|She mistook someone for somebody else.
+
+# Potential complements with 得/不 | Verb + 得/不 + result | core
+Insert 得 or 不 between a verb and its result complement to express whether achieving the result is possible. This differs from 没 plus a result compound, which says the result did not occur.
+我听得懂这段录音。|I can understand this recording.
+我看不懂这份合同。|I cannot understand this contract.
+今天做得完这些工作吗？|Can this work be finished today?
+我一个人吃不完这么多菜。|I cannot finish this much food by myself.
+你买得到这种茶吗？|Can you manage to buy this kind of tea?
+我找不到我的眼镜。|I cannot find my glasses.
+这里太吵，我听不清楚。|It is too noisy here; I cannot hear clearly.
+这张照片看得清楚。|This photo can be seen clearly.
+箱子太重，我拿不动。|The suitcase is too heavy; I cannot lift it.
+门太小，沙发搬不进去。|The door is too small; the sofa cannot be moved inside.
+
+# Degree and manner with 得 | Verb + 得 + description | core
+Use 得 after the verb to describe how an action is performed. If the verb has an object, move that object into the topic or repeat the verb before 得.
+她说得很清楚。|She speaks very clearly.
+他跑得很快。|He runs very fast.
+你唱得很好。|You sing very well.
+我昨晚睡得不好。|I did not sleep well last night.
+孩子们玩得很开心。|The children had a lot of fun playing.
+她中文说得很流利。|She speaks Chinese fluently.||她说中文说得很流利。
+他字写得很漂亮。|He writes beautifully.||他写字写得很漂亮。
+你来得太晚了。|You came too late.
+我们聊得很愉快。|We had a pleasant chat.
+妈妈菜做得很好吃。|Mom cooks delicious food.||妈妈做菜做得很好吃。
+
+# Adverbial manner with 地 | Description + 地 + verb | core
+Place 地 between a manner description and the verb it modifies. Compare 得 after a verb and 的 before a noun. Some short adverbs do not need 地, so this is not a rule to attach it to every modifier.
+她认真地检查了报告。|She carefully checked the report.
+孩子高兴地笑了。|The child laughed happily.
+他慢慢地走进房间。|He slowly walked into the room.||他慢慢走进房间。
+请大声地读。|Please read aloud.||请大声读。
+我们安静地等着。|We are waiting quietly.
+她耐心地回答了我的问题。|She patiently answered my question.
+他生气地关上了门。|He angrily closed the door.
+老师清楚地解释了原因。|The teacher clearly explained the reason.
+他们努力地工作。|They work hard.||他们努力工作。
+我仔细地看了说明书。|I carefully read the instruction manual.
+
+# Simple direction with 来/去 | Motion verb + 来/去 | core
+Use 来 for movement toward the speaker or a chosen reference point and 去 for movement away. With a place object, that place often goes between the motion verb and 来 or 去.
+请进来。|Please come in.
+他出去了。|He went out.
+快回来！|Come back quickly!
+我们走过去吧。|Let us walk over there.
+她跑过来了。|She ran over here.
+请上来。|Please come up.
+你先下去。|You go down first.
+他回家去了。|He went back home.
+孩子走进教室来了。|The child walked into the classroom toward us.
+老师走出去了。|The teacher walked out away from us.
+
+# Compound directional complements | Verb + direction + 来/去 | core
+Combine a direction such as 进, 出, 上, 下, or 回 with 来 or 去 after an action verb. The first element describes the path; 来 or 去 describes movement relative to the reference point.
+请把椅子搬进来。|Please move the chair in here.
+他把垃圾拿出去了。|He took the rubbish out of here.
+把书送上来吧。|Please bring the books up here.
+她把箱子搬下去了。|She moved the suitcase down there.
+请把伞带回来。|Please bring the umbrella back here.
+我把文件送过去了。|I delivered the documents over there.
+孩子从楼上跑下来了。|The child ran down here from upstairs.
+小猫从窗户跳进来了。|The kitten jumped in here through the window.
+他从包里拿出一本书来。|He took a book out of his bag.
+请把这些东西带回去。|Please take these things back there.
+
+# Starting an action with 起来 | Verb + 起来 | core
+After some verbs, 起来 marks the start of an action or a transition into activity. It can also literally mean upward movement; use context to distinguish the senses.
+孩子突然哭起来了。|The child suddenly started crying.
+大家都笑起来了。|Everyone started laughing.
+他们聊起来了。|They started chatting.
+外面下起雨来了。|It started raining outside.
+音乐响起来了。|The music started playing.
+她唱起歌来了。|She started singing.
+他站起来了。|He stood up.
+风大起来了。|The wind started getting stronger.
+天气热起来了。|The weather started getting hot.
+学生们讨论起来了。|The students started discussing.
+
+# Impressions with 起来 | 看/听/吃/闻 + 起来 + adjective | core
+Use a perception verb plus 起来 to give an impression: how something looks, sounds, tastes, or smells. This is an evaluative use, not literal upward movement.
+你看起来很累。|You look tired.
+这个办法听起来不错。|This approach sounds good.
+这道菜吃起来有点甜。|This dish tastes a little sweet.
+这朵花闻起来很香。|This flower smells fragrant.
+这件事看起来很简单。|This matter seems simple.
+他的解释听起来很奇怪。|His explanation sounds strange.
+这种水果吃起来很酸。|This kind of fruit tastes sour.
+这间房子看起来很舒服。|This house looks comfortable.
+你的计划听起来很有意思。|Your plan sounds interesting.
+这块面包闻起来很新鲜。|This piece of bread smells fresh.
+
+# Continuing onward with 下去 | Verb + 下去 | core
+Use 下去 after a verb to mean continuing an activity from the present point onward. This is an extended meaning of the directional complement, rather than literal downward motion.
+请说下去。|Please go on speaking.
+我想继续学下去。|I want to keep studying.
+我们不能这样等下去。|We cannot keep waiting like this.
+这个故事很有意思，我想看下去。|This story is interesting; I want to keep reading.
+只要有时间，我就会练下去。|As long as I have time, I will keep practicing.
+你打算一直住下去吗？|Do you plan to keep living here indefinitely?
+别吵了，让他讲下去。|Stop making noise and let him continue talking.
+再走下去就到河边了。|If we keep walking, we will reach the riverbank.
+钱不够了，这个项目做不下去了。|There is not enough money; this project cannot continue.
+他决定坚持下去。|He decided to keep persevering.
+
+# Keeping a result with 下来 | Verb + 下来 | core
+After verbs such as 写, 记, 停, and 安静, 下来 can signal recording, retention, or settling into a stable state. Its exact meaning depends on the verb; it is not interchangeable with onward-continuing 下去.
+请把地址写下来。|Please write down the address.
+我把电话号码记下来了。|I noted down the phone number.
+他停下来了。|He came to a stop.
+大家都安静下来了。|Everyone quieted down.
+请把这张照片留下来。|Please keep this photo.
+她把老师的话录下来了。|She recorded what the teacher said.
+我们终于坐下来休息了。|We finally sat down to rest.
+你先冷静下来。|Calm down first.
+我想把这段话抄下来。|I want to copy down this passage.
+雨慢慢小下来了。|The rain gradually eased off.
+
+# Affordability with 得起/不起 | Verb + 得起/不起 | core
+Use 买得起 and 买不起 to express whether someone can afford to buy something. Similar forms with other verbs concern bearing the cost, and should not be generalized to every action verb.
+我买不起这辆车。|I cannot afford this car.
+我们住得起这家酒店。|We can afford to stay at this hotel.
+他付不起房租。|He cannot afford the rent.
+你买得起这台电脑吗？|Can you afford this computer?
+我吃不起这么贵的饭。|I cannot afford such an expensive meal.
+她现在买得起房子了。|She can afford a home now.
+我们住不起市中心的公寓。|We cannot afford to live in an apartment in the city center.
+这双鞋我买得起。|I can afford this pair of shoes.
+他连公交车票都买不起。|He cannot even afford a bus ticket.
+这家餐厅不贵，我们吃得起。|This restaurant is not expensive; we can afford to eat here.

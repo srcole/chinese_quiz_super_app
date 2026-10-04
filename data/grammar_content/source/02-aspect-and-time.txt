@@ -1,0 +1,194 @@
+# Completed actions with 了 | Verb + 了 + object | core
+Put 了 after a verb to present an action as completed or bounded. It does not simply mean past tense. Time words establish when the event happened; negating the event normally uses 没 without this 了.
+我昨天买了一台电脑。|I bought a computer yesterday.
+她喝了一杯水。|She drank a glass of water.
+我们看了一场电影。|We watched a movie.
+他写了一封邮件。|He wrote an email.
+我洗了三件衣服。|I washed three pieces of clothing.
+妈妈做了一碗面条。|Mom made a bowl of noodles.
+他们参观了那个博物馆。|They visited that museum.
+我给老师打了一个电话。|I made a phone call to the teacher.
+她回答了两个问题。|She answered two questions.
+我们订了一个房间。|We booked a room.
+
+# Changed situations with 了 | New situation + 了 | core
+Sentence-final 了 can mark a new or changed situation, including a current state. With 不…了 it often means 'no longer' or a change of intention, not a completed past action.
+天气暖和了。|The weather has become warm.
+我不喝酒了。|I no longer drink alcohol.
+他现在是经理了。|He is a manager now.
+孩子会走路了。|The child can walk now.
+我们有自己的房子了。|We have our own home now.
+商店关门了。|The shop is now closed.
+雨停了。|The rain has stopped.
+我懂你的意思了。|I understand what you mean now.
+她不生气了。|She is no longer angry.
+这条路比以前宽了。|This road has become wider than before.
+
+# Experience with 过 | Verb + 过 + object | core
+Use 过 after a verb to report a past experience without focusing on a particular occurrence. Negate it with 没有…过. Do not use it merely as a substitute for completed-action 了.
+我去过杭州。|I have been to Hangzhou.
+她吃过这种水果。|She has eaten this kind of fruit.
+我们看过这部电影。|We have seen this movie.
+他坐过飞机。|He has traveled by plane.
+我没骑过马。|I have never ridden a horse.||我没有骑过马。
+你见过我的哥哥吗？|Have you met my older brother?
+她在医院工作过。|She has worked in a hospital.
+我用过这个软件。|I have used this software.
+他们参加过比赛。|They have taken part in a competition.
+我没听过这个故事。|I have never heard this story.||我没有听过这个故事。
+
+# Actions in progress with 正在 | Subject + 正在 + verb | core
+Place 正在 before the verb to emphasize that an action is happening at the reference time. 在 and 正 also have progressive uses. A sentence can optionally end with 呢.
+我正在做作业。|I am doing my homework right now.||我正在做作业呢。
+她正在开会。|She is in a meeting right now.||她正在开会呢。
+他们正在修路。|They are repairing the road right now.
+爸爸正在洗车。|Dad is washing the car right now.
+我们正在讨论这个问题。|We are discussing this issue right now.
+医生正在检查病人。|The doctor is examining the patient right now.
+孩子正在睡觉。|The child is sleeping right now.
+我正在找钥匙。|I am looking for my keys right now.
+服务员正在收拾桌子。|The server is clearing the table right now.
+她正在准备明天的考试。|She is preparing for tomorrow's exam right now.
+
+# Continuing states with 着 | Verb + 着 | core
+Attach 着 to a verb to describe a continuing state, such as an open door or something being worn. It focuses on the maintained state rather than the change that created it.
+门开着。|The door is open.
+窗户关着。|The window is closed.
+他穿着一件蓝衬衫。|He is wearing a blue shirt.
+墙上挂着一张地图。|A map is hanging on the wall.
+桌子上放着一本杂志。|A magazine is lying on the table.
+她戴着一副眼镜。|She is wearing a pair of glasses.
+灯亮着。|The light is on.
+门口站着一个男人。|A man is standing at the entrance.
+孩子手里拿着一个苹果。|The child is holding an apple in their hand.
+沙发上坐着两位客人。|Two guests are sitting on the sofa.
+
+# Already with 已经 | 已经 + verb/state + 了 | core
+Use 已经 to say that something has already happened or a state already holds. Sentence-final 了 is common when the state is now relevant, but is not required in every 已经 sentence.
+我已经吃过饭了。|I have already eaten.
+她已经到机场了。|She has already arrived at the airport.
+我们已经买好票了。|We have already bought the tickets.
+他已经知道这件事了。|He already knows about this matter.
+电影已经开始了。|The movie has already started.
+我已经做完作业了。|I have already finished my homework.
+商店已经关门了。|The shop has already closed.
+她已经等了一个小时了。|She has already been waiting for an hour.
+我们已经决定了。|We have already decided.
+水已经凉了。|The water has already cooled down.
+
+# Not yet with 还没 | 还没(有) + verb | core
+Use 还没 or 还没有 to say that an expected event has not happened yet. Unlike 不, this does not normally state a general habit or refusal.
+我还没吃午饭。|I have not eaten lunch yet.||我还没有吃午饭。
+他还没回来。|He has not come back yet.||他还没有回来。
+我们还没决定。|We have not decided yet.||我们还没有决定。
+她还没看那封邮件。|She has not read that email yet.
+火车还没到。|The train has not arrived yet.
+我还没找到工作。|I have not found a job yet.
+孩子还没起床。|The child has not got up yet.
+他们还没结婚。|They have not got married yet.
+我还没想好。|I have not made up my mind yet.
+饭还没做好。|The meal is not ready yet.
+
+# Imminent events with 快要…了 | 快要 + verb + 了 | core
+Use 快要…了 for an event that is about to happen. 要…了 and 就要…了 are related forms; 快要 is generally unsuitable directly with a precise future time phrase.
+快要下雨了。|It is about to rain.
+电影快要开始了。|The movie is about to start.
+我们快要放假了。|We are about to start our vacation.
+火车快要进站了。|The train is about to pull into the station.
+商店快要关门了。|The shop is about to close.
+我快要毕业了。|I am about to graduate.
+她快要生孩子了。|She is about to have a baby.
+比赛快要结束了。|The competition is about to end.
+天快要黑了。|It is about to get dark.
+我们快要到家了。|We are about to get home.
+
+# Duration after the verb | Verb + 了 + duration | core
+A duration normally follows the verb. With an object, one common option is verb + 了 + duration + object. A final 了 can additionally show that the activity has continued up to now.
+我昨天睡了八个小时。|I slept for eight hours yesterday.
+她在北京住了三年。|She lived in Beijing for three years.
+我们等了二十分钟。|We waited for twenty minutes.
+他昨天工作了十个小时。|He worked for ten hours yesterday.
+我学了两年中文。|I studied Chinese for two years.
+孩子们玩了一个下午。|The children played for an entire afternoon.
+我们聊了半个小时。|We chatted for half an hour.
+她休息了两天。|She rested for two days.
+我跑了四十分钟。|I ran for forty minutes.
+他们讨论了一个小时。|They discussed it for an hour.
+
+# Counting occurrences with 次 | Verb + number + 次 | core
+Use 次 to count how often an action happens. 次 counts occasions, whereas 遍 emphasizes complete passes through an activity such as reading a text.
+我去过上海三次。|I have been to Shanghai three times.
+请再说一次。|Please say it one more time.
+她每天吃三次药。|She takes medicine three times a day.
+我们每周开一次会。|We have a meeting once a week.
+他给我打了两次电话。|He called me twice.
+我试了五次。|I tried five times.
+这台电脑今天死机了两次。|This computer crashed twice today.
+我每年体检一次。|I have a medical checkup once a year.
+她问了我三次。|She asked me three times.
+我们见过几次面。|We have met a few times.
+
+# Complete repetitions with 遍 | Verb + number + 遍 | core
+Use 遍 to count complete runs through an action from beginning to end. It is especially useful for reading, listening, writing, and checking an entire piece of content.
+请把课文读一遍。|Please read the text all the way through once.
+我看了两遍这部电影。|I watched this movie all the way through twice.
+她把地址写了三遍。|She wrote the address out three times.
+请再检查一遍。|Please check everything through once more.
+我听了五遍这段录音。|I listened to this recording all the way through five times.
+老师把问题解释了一遍。|The teacher explained the whole question once.
+他把名单看了一遍。|He read through the list once.
+我们把房间打扫了一遍。|We cleaned the whole room once.
+请把这个句子抄两遍。|Please copy this sentence twice in full.
+我把报告从头到尾读了三遍。|I read the report from beginning to end three times.
+
+# Again in the future with 再 | 再 + verb | core
+Use 再 for a further occurrence that is requested, planned, or otherwise not yet realized. It can mean 'again' or 'then', depending on context. Contrast 又 for an occurrence presented as happening again.
+请再说一遍。|Please say it all the way through again.
+我明天再来。|I will come again tomorrow.
+我们下次再讨论。|We will discuss it again next time.
+请再给我一次机会。|Please give me another chance.
+这件事你再想想。|Think about this matter some more.
+我想再买一本书。|I want to buy one more book.
+休息一下再走吧。|Rest a little, then leave.
+请再等五分钟。|Please wait another five minutes.
+我们吃完饭再出发。|We will set off after we finish eating.
+我不想再犯同样的错误。|I do not want to make the same mistake again.
+
+# Recurrence with 又 | 又 + verb/adjective | core
+Use 又 when an action or situation occurs again, often for something already realized. 又 is also possible for predictable recurring events, so the distinction from 再 is not simply past versus future tense.
+他又迟到了。|He is late again.
+今天又下雨了。|It is raining again today.
+我又忘了带钥匙。|I forgot to bring my keys again.
+她又换工作了。|She has changed jobs again.
+电脑又坏了。|The computer has broken down again.
+我们又见面了。|We have met again.
+他又问了同一个问题。|He asked the same question again.
+这家店又涨价了。|This shop has raised its prices again.
+弟弟又感冒了。|My younger brother has caught a cold again.
+我昨天又看了一遍那部电影。|I watched that movie all the way through again yesterday.
+
+# Earlier than expected with 就 | Time/amount + 就 + verb | core
+Use 就 before a verb to present an event as early, quick, or requiring little effort. The time or small amount usually comes before 就. The judgment depends on the speaker's expectations.
+他早上六点就起床了。|He got up as early as six in the morning.
+我十分钟就做完了。|I finished it in just ten minutes.
+她十八岁就开始工作了。|She started working as early as eighteen.
+我们走五分钟就到了。|We arrived after walking for just five minutes.
+电影七点就开始了。|The movie started as early as seven.
+他看一遍就懂了。|He understood after reading it just once.
+我昨天就告诉你了。|I told you as early as yesterday.
+她一岁就会走路了。|She could walk as early as one year old.
+这家店下午五点就关门了。|This shop closed as early as five in the afternoon.
+我们花了二十块钱就吃饱了。|We ate our fill for just twenty yuan.
+
+# Later than expected with 才 | Time/condition + 才 + verb | core
+Use 才 before a verb to say an event occurs only at a late time or only after a requirement is met. It emphasizes delay or a necessary threshold, in contrast with the early or easy sense of 就.
+他晚上十一点才回家。|He did not get home until eleven at night.
+我今天才知道这件事。|I only learned about this matter today.
+她三十岁才开始学开车。|She did not start learning to drive until she was thirty.
+我们等了一个小时，车才来。|We waited an hour before the bus finally came.
+这家店十点才开门。|This shop does not open until ten.
+我看了三遍才看懂。|I only understood it after reading it three times.
+他下周才有空。|He will not be free until next week.
+她吃完药才感觉好一点。|She felt a little better only after taking the medicine.
+我月底才能拿到工资。|I will not be able to get my pay until the end of the month.
+我们走了两个小时才到山顶。|We reached the mountaintop only after walking for two hours.
