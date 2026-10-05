@@ -55,6 +55,13 @@ The bundled learning content is publicly downloadable. Answer histories are prot
 
 ## Study behavior
 
+- New sessions default to 3 questions, English → Chinese. The question count can be cleared while editing; an empty count uses 3 when starting.
+- Blank answers submit as incorrect and reveal feedback. Enter advances from feedback; Chinese IME composition does not trigger navigation.
+- Tone quizzes default to at most 2 Chinese characters, with prompt audio enabled. Both settings can be changed in quiz setup.
+- Traditional-character quizzes support minimum and maximum priority filters.
+- Progress defaults to Vocabulary, English → Chinese, maximum priority 6. Practiced and correct-streak counts use eligible items in the current collection as the denominator. The target streak defaults to 2. Detailed statistics show every quiz/direction and exact priority, including unseen items; grammar has no priority.
+- Correct/incorrect progress filters apply to individual recorded attempts. Playback reads each matching Chinese item once. An item can have both correct and incorrect historical attempts.
+
 - Vocabulary and idiom answers accept the full English definition or a semicolon/slash-separated definition. Chinese answers match the stored simplified form. Matching normalizes Unicode width, case, punctuation, and whitespace. It does not guess semantic equivalence.
 - “Accept my answer” changes the recorded result to correct and updates streaks. Grammar mismatches are described as unlisted answers, not definite grammatical errors.
 - Exclusion uses consecutive correct answers for the same item, quiz mode, and prompt direction. Default: 2. Set 0 to disable. Unattempted items remain eligible. Streak exclusion applies to vocabulary, idiom, tone, and sentence quizzes.
@@ -67,6 +74,10 @@ The bundled learning content is publicly downloadable. Answer histories are prot
 - Grammar data is an authored draft with structural validation, not an independently reviewed linguistic reference.
 
 ## Audio
+
+Audio defaults to 1.2× speed with no added pause. Existing installations receive these defaults once; further changes persist. Tone and traditional-character feedback and character exploration use no added pause. Browser voices can still insert natural pauses.
+
+Review reads Chinese words only by default; “Also read Chinese example sentences” includes sentences. Grammar review always reads its example sentences. Each expanded character panel in quiz feedback can read all matching words, including those beyond the displayed first 30.
 
 The app uses the device's Web Speech API and available Chinese voices, with no paid speech service. Install/enable a Mandarin voice in device speech settings if none is available. Use Settings to test the voice. Pronunciation, background playback, and pause/resume behavior depend on Chrome and the operating system; keep the study page active for continuous review. Audio errors are displayed with a retry instruction.
 

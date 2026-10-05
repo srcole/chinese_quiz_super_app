@@ -85,7 +85,8 @@ test("all six quiz modes submit, override, and preserve history", async ({
   }
   await page.reload();
   await page.getByRole("button", { name: /Progress/ }).click();
-  await expect(page.locator(".stat-grid strong").first()).toHaveText("6");
+  await page.getByLabel("Progress maximum priority").fill("");
+  await expect(page.locator(".stat-grid strong").first()).toHaveText("1");
   await expect(page.locator(".stat-grid strong").nth(1)).toHaveText("100%");
 });
 test("dictionary tones grade correctly and feedback audio starts with word", async ({
@@ -186,6 +187,7 @@ test("review audio reads word then sentence, advances, and cancels on navigation
   page,
 }) => {
   await page.getByRole("button", { name: /Review/ }).click();
+  await page.getByLabel("Also read Chinese example sentences").check();
   await page.getByRole("button", { name: "Open review" }).click();
   await page.getByRole("button", { name: "Listen to all" }).click();
   expect(
@@ -254,4 +256,147 @@ test("two correct answers exclude a word only in the practiced direction", async
     .getByRole("combobox", { name: "Prompt direction", exact: true })
     .selectOption("zh-en");
   await expect(page.locator(".tag")).toHaveText("1 eligible");
+});
+
+test("question count clears, blank answers are wrong, and Enter advances feedback", async ({
+  page,
+}) => {
+  await expect(page.getByLabel("Questions", { exact: true })).toHaveValue("3");
+  await page.getByLabel("Questions", { exact: true }).fill("");
+  await expect(page.getByLabel("Questions", { exact: true })).toHaveValue("");
+  await page.getByLabel("Questions", { exact: true }).fill("5");
+  await page.getByRole("button", { name: "Start practicing" }).click();
+  await page.getByRole("button", { name: "Check answer" }).click();
+  await expect(page.locator(".feedback")).toBeVisible();
+  await page.locator(".question input").focus();
+  await page.keyboard.press("Enter");
+  await expect(
+    page.getByText("Vocabulary · 2 / 5", { exact: true }),
+  ).toBeVisible();
+  await expect(page.locator(".feedback")).toHaveCount(0);
+});
+test("tone limits and prompt audio can be configured, character priority bounds apply", async ({
+  page,
+}) => {
+  await page
+    .locator(".mode-card")
+    .filter({ has: page.getByRole("heading", { name: "Tones", exact: true }) })
+    .click();
+  await expect(page.getByLabel("Maximum characters in word")).toHaveValue("2");
+  const expected = content.words.filter(
+    (w: Record<string, string>) =>
+      /^[1-5](?:-[1-5])*$/.test(w.tone_pattern) &&
+      (w.chinese.match(/\p{Script=Han}/gu) || []).length <= 2,
+  ).length;
+  await expect(page.locator(".tag")).toHaveText(
+    `${expected.toLocaleString()} eligible`,
+  );
+  await page.getByLabel("Play Chinese audio with tone prompt").uncheck();
+  await page.getByRole("button", { name: "Start practicing" }).click();
+  expect(
+    await page.evaluate(
+      () => (window as unknown as { spoken: string[] }).spoken,
+    ),
+  ).toEqual([]);
+  await page.getByRole("button", { name: "End session" }).click();
+  await page
+    .locator(".mode-card")
+    .filter({
+      has: page.getByRole("heading", {
+        name: "Traditional characters",
+        exact: true,
+      }),
+    })
+    .click();
+  await page.getByLabel("Minimum character priority").fill("2");
+  await page.getByLabel("Maximum character priority").fill("3");
+  await expect(page.locator(".tag")).toHaveText(
+    `${content.characters.filter((c: Record<string, string>) => Number(c.priority) >= 2 && Number(c.priority) <= 3).length} eligible`,
+  );
+});
+test("character review permits pinyin composition and multi-character searches", async ({
+  page,
+}) => {
+  await page.getByRole("button", { name: /Review/ }).click();
+  await page
+    .getByRole("button", { name: "By Chinese character", exact: true })
+    .click();
+  const input = page.getByLabel("Chinese character", { exact: true });
+  await input.fill("xue");
+  await expect(input).toHaveValue("xue");
+  await input.fill("学习");
+  await expect(input).toHaveValue("学习");
+});
+test("progress defaults, denominators, incorrect audio and detailed statistics", async ({
+  page,
+}) => {
+  await page.getByRole("button", { name: /Progress/ }).click();
+  await expect(page.getByLabel("Progress quiz type")).toHaveValue("vocabulary");
+  await expect(page.getByLabel("Progress direction")).toHaveValue("en-zh");
+  await expect(page.getByLabel("Progress maximum priority")).toHaveValue("6");
+  const total = content.words.filter(
+    (w: Record<string, string>) => Number(w.priority) <= 6,
+  ).length;
+  await expect(page.locator(".stat-grid strong").nth(2)).toHaveText(
+    `0 / ${total}`,
+  );
+  await page.getByRole("button", { name: "All quiz statistics" }).click();
+  await expect(page.locator(".stats-table")).toContainText("Grammar");
+  expect(await page.locator(".stats-table tbody tr").count()).toBeGreaterThan(
+    50,
+  );
+});
+
+test("incorrect progress filtering and playback read Chinese words", async ({
+  page,
+}) => {
+  await page.route("**/content.json", (route) =>
+    route.fulfill({
+      json: { ...content, words: [content.words[0], content.words[1]] },
+    }),
+  );
+  await page.reload();
+  await page.getByLabel("Questions", { exact: true }).fill("1");
+  await page.getByRole("button", { name: "Start practicing" }).click();
+  await page.getByRole("button", { name: "Check answer" }).click();
+  const chinese = await page
+    .locator(".feedback .word-title span")
+    .first()
+    .innerText();
+  await page.getByRole("button", { name: /Progress/ }).click();
+  await page.getByLabel("Answer result").selectOption("incorrect");
+  await expect(page.locator(".history-list>div")).toHaveCount(1);
+  await page.getByRole("button", { name: "Listen to filtered items" }).click();
+  expect(
+    await page.evaluate(() =>
+      (window as unknown as { spoken: string[] }).spoken.at(-1),
+    ),
+  ).toBe(chinese);
+  await page.getByLabel("Answer result").selectOption("correct");
+  await expect(page.locator(".history-list>div")).toHaveCount(0);
+});
+test("review defaults to words only and speech defaults are faster without a pause", async ({
+  page,
+}) => {
+  await page.getByRole("button", { name: /Settings/ }).click();
+  await expect(page.getByLabel("Speaking speed", { exact: false })).toHaveValue(
+    "1.2",
+  );
+  await expect(
+    page.getByLabel("Pause between clips", { exact: false }),
+  ).toHaveValue("0");
+  await page.getByRole("button", { name: /Review/ }).click();
+  await expect(
+    page.getByLabel("Also read Chinese example sentences"),
+  ).not.toBeChecked();
+  await page.getByRole("button", { name: "Open review" }).click();
+  await page.getByRole("button", { name: "Listen to all" }).click();
+  await page.evaluate(() =>
+    (window as unknown as { finishSpeech: () => void }).finishSpeech(),
+  );
+  await expect
+    .poll(() =>
+      page.evaluate(() => (window as unknown as { spoken: string[] }).spoken),
+    )
+    .toEqual([content.words[0].chinese, content.words[1].chinese]);
 });

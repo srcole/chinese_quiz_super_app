@@ -36,7 +36,7 @@ export type Attempt = {
   updated_at: string;
 };
 export type Filters = {
-  count: number;
+  count: number | "";
   priority: string;
   movie_words_rank: string;
   hsk_level: string;
@@ -52,7 +52,7 @@ export type Filters = {
   streak: number;
 };
 export const defaultFilters: Filters = {
-  count: 20,
+  count: 3,
   priority: "",
   movie_words_rank: "",
   hsk_level: "",

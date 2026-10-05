@@ -22,6 +22,7 @@ import {
 } from "@/lib/study";
 import { usePreference } from "@/lib/use-preference";
 import { useAudio } from "@/lib/use-audio";
+import ProgressPanel from "./progress-panel";
 import { useProgress } from "@/lib/use-progress";
 import { supabase } from "@/lib/supabase";
 const descriptions: Record<Mode, string> = {
@@ -148,6 +149,11 @@ export default function Home() {
     [presets, setPresets] = useState<Preset[]>([]),
     [presetName, setPresetName] = useState(""),
     [notice, setNotice] = useState("");
+  const [toneMax, setToneMax] = useState("2"),
+    [tonePrompt, setTonePrompt] = useState(true),
+    [charMin, setCharMin] = useState(""),
+    [charMax, setCharMax] = useState("");
+  const [reviewSentences, setReviewSentences] = useState(false);
   const audio = useAudio(),
     progress = useProgress(),
     input = useRef<HTMLInputElement>(null),
@@ -251,11 +257,17 @@ export default function Home() {
   const eligible = useMemo(() => {
     if (!content) return [];
     if (mode === "characters")
-      return content.characters.map((character) => ({
-        id: `char:${character.idx}`,
-        mode,
-        character,
-      }));
+      return content.characters
+        .filter(
+          (c) =>
+            (!charMin || Number(c.priority) >= Number(charMin)) &&
+            (!charMax || Number(c.priority) <= Number(charMax)),
+        )
+        .map((character) => ({
+          id: `char:${character.idx}`,
+          mode,
+          character,
+        }));
     if (mode === "grammar")
       return content.rules
         .filter(
@@ -278,7 +290,11 @@ export default function Home() {
           matches(w, filters) &&
           (mode !== "idioms" || w.part_of_speech === "idiom") &&
           (mode !== "sentences" || !!w.sentence) &&
-          (mode !== "tones" || /^[1-5](?:-[1-5])*$/.test(w.tone_pattern)) &&
+          (mode !== "tones" ||
+            (/^[1-5](?:-[1-5])*$/.test(w.tone_pattern) &&
+              (!toneMax ||
+                (w.chinese.match(/\p{Script=Han}/gu) || []).length <=
+                  Number(toneMax)))) &&
           (!filters.streak ||
             (streaks.get(
               historyKey(`word:${w.id}`, mode, quizDirection(mode, direction)),
@@ -294,6 +310,9 @@ export default function Home() {
     ruleId,
     grammarCategory,
     difficulty,
+    toneMax,
+    charMin,
+    charMax,
   ]);
   const reviewWords = useMemo(
     () =>
@@ -343,13 +362,6 @@ export default function Home() {
   const sessionResults = progress.attempts.filter((a) =>
     sessionIds.includes(a.id),
   );
-  const accuracy = progress.attempts.length
-    ? Math.round(
-        (progress.attempts.filter((a) => a.correct).length /
-          progress.attempts.length) *
-          100,
-      )
-    : 0;
   useEffect(() => {
     activeRow.current?.scrollIntoView({ behavior: "smooth", block: "nearest" });
   }, [audio.row]);
@@ -376,7 +388,7 @@ export default function Home() {
     setNotice("");
   }
   function promptSpeech(question: Question) {
-    if (!autoAudio) return;
+    if (!autoAudio || (question.mode === "tones" && !tonePrompt)) return;
     const w = question.word;
     if (w && (question.mode === "tones" || direction === "zh-en"))
       audio.play([{ text: w.chinese, row: 0 }]);
@@ -384,7 +396,7 @@ export default function Home() {
   function start() {
     const list = shuffled<Question>(
       eligible,
-      Math.max(1, Math.min(500, filters.count)),
+      Math.max(1, Math.min(500, Number(filters.count) || 3)),
     );
     setQuestions(list);
     setIndex(0);
@@ -415,7 +427,11 @@ export default function Home() {
   }
   function submit(e: React.FormEvent) {
     e.preventDefault();
-    if (!q || submitted || !answer.trim()) return;
+    if (!q) return;
+    if (submitted) {
+      next();
+      return;
+    }
     const now = new Date().toISOString();
     const a: Attempt = {
       id: crypto.randomUUID(),
@@ -432,7 +448,10 @@ export default function Home() {
     setSubmitted(a);
     setSessionIds((ids) => [...ids, a.id]);
     if (autoAudio)
-      audio.play(feedbackSpeech(q).map((text) => ({ text, row: 0 })));
+      audio.play(
+        feedbackSpeech(q).map((text) => ({ text, row: 0 })),
+        { gap: q.mode === "tones" || q.mode === "characters" ? 0 : audio.gap },
+      );
   }
   function next() {
     audio.stop();
@@ -446,6 +465,23 @@ export default function Home() {
     promptSpeech(questions[index + 1]);
     setTimeout(() => input.current?.focus(), 50);
   }
+  useEffect(() => {
+    if (!submitted || finished || tab !== "quiz") return;
+    const advance = (e: KeyboardEvent) => {
+      if (e.key !== "Enter" || e.isComposing || e.keyCode === 229 || e.repeat)
+        return;
+      const target = e.target as HTMLElement;
+      if (
+        target.closest("button,select,textarea,summary,a") ||
+        target.isContentEditable
+      )
+        return;
+      e.preventDefault();
+      next();
+    };
+    window.addEventListener("keydown", advance);
+    return () => window.removeEventListener("keydown", advance);
+  });
   function savePreset() {
     if (!presetName.trim()) return;
     const next = [
@@ -720,13 +756,14 @@ export default function Home() {
                   <Field label="Questions">
                     <input
                       type="number"
-                      min="1"
                       max="500"
                       value={filters.count}
                       onChange={(e) =>
                         updateFilter(
                           "count",
-                          Math.max(1, Math.floor(Number(e.target.value))),
+                          e.target.value === ""
+                            ? ""
+                            : Math.floor(Number(e.target.value)),
                         )
                       }
                     />
@@ -778,13 +815,48 @@ export default function Home() {
                     </Field>
                   )}
                 </div>
+                {mode === "tones" && (
+                  <div className="field-grid">
+                    <Field label="Maximum characters in word">
+                      <input
+                        type="number"
+                        min="1"
+                        value={toneMax}
+                        placeholder="Any"
+                        onChange={(e) => setToneMax(e.target.value)}
+                      />
+                    </Field>
+                    <label className="check-field">
+                      <input
+                        type="checkbox"
+                        checked={tonePrompt}
+                        onChange={(e) => setTonePrompt(e.target.checked)}
+                      />
+                      Play Chinese audio with tone prompt
+                    </label>
+                  </div>
+                )}
                 {mode === "grammar" ? (
                   grammarFields()
                 ) : mode === "characters" ? (
-                  <p className="helper">
-                    Practice the {content.characters.length} traditional
-                    characters in your character collection.
-                  </p>
+                  <div className="field-grid">
+                    <Field label="Minimum character priority">
+                      <input
+                        type="number"
+                        value={charMin}
+                        placeholder="Any"
+                        onChange={(e) => setCharMin(e.target.value)}
+                      />
+                    </Field>
+                    <Field label="Maximum character priority">
+                      <input
+                        type="number"
+                        value={charMax}
+                        placeholder="Any"
+                        onChange={(e) => setCharMax(e.target.value)}
+                      />
+                    </Field>
+                  </div>
                 ) : (
                   <details className="filter-details" open>
                     <summary>
@@ -930,7 +1002,7 @@ export default function Home() {
                 <div className="start-bar">
                   <span>
                     {eligible.length
-                      ? `${Math.min(filters.count, eligible.length)} questions · one step closer`
+                      ? `${Math.min(Math.max(1, Number(filters.count) || 3), 500, eligible.length)} questions · one step closer`
                       : "No matching items. Adjust your filters or streak exclusion."}
                   </span>
                   <button
@@ -1100,11 +1172,7 @@ export default function Home() {
                       />
                     </Field>
                     {!submitted && (
-                      <button
-                        className="primary"
-                        type="submit"
-                        disabled={!answer.trim()}
-                      >
+                      <button className="primary" type="submit">
                         Check answer →
                       </button>
                     )}
@@ -1127,6 +1195,12 @@ export default function Home() {
                         onClick={() =>
                           audio.play(
                             feedbackSpeech(q).map((text) => ({ text, row: 0 })),
+                            {
+                              gap:
+                                q.mode === "tones" || q.mode === "characters"
+                                  ? 0
+                                  : audio.gap,
+                            },
                           )
                         }
                       >
@@ -1188,6 +1262,20 @@ export default function Home() {
                                   <span lang="zh">{c}</span> Words containing
                                   this character <small>{related.length}</small>
                                 </summary>
+                                <button
+                                  disabled={!related.length}
+                                  onClick={() =>
+                                    audio.play(
+                                      related.map((w, row) => ({
+                                        text: w.chinese,
+                                        row,
+                                      })),
+                                      { gap: 0 },
+                                    )
+                                  }
+                                >
+                                  ◖)) Listen to all words containing {c}
+                                </button>
                                 {related.slice(0, 30).map((w) => (
                                   <div className="related-word" key={w.id}>
                                     <span lang="zh">{w.chinese}</span>
@@ -1343,7 +1431,7 @@ export default function Home() {
                       placeholder="e.g. 学 or 學"
                       onChange={(e) => {
                         audio.stop();
-                        setCharacter([...e.target.value].slice(0, 1).join(""));
+                        setCharacter(e.target.value);
                         setReviewStarted(false);
                         setReviewLimit(50);
                       }}
@@ -1439,6 +1527,19 @@ export default function Home() {
                   </button>
                 </div>
               </section>
+              {reviewMode !== "grammar" && reviewMode !== "character" && (
+                <label className="check-field">
+                  <input
+                    type="checkbox"
+                    checked={reviewSentences}
+                    onChange={(e) => {
+                      audio.stop();
+                      setReviewSentences(e.target.checked);
+                    }}
+                  />
+                  Also read Chinese example sentences
+                </label>
+              )}
               {reviewStarted && (
                 <>
                   <div className="review-toolbar">
@@ -1458,7 +1559,9 @@ export default function Home() {
                               }))
                             : reviewWords.flatMap((w, row) => [
                                 { text: w.chinese, row },
-                                ...(reviewMode !== "character" && w.sentence
+                                ...(reviewSentences &&
+                                reviewMode !== "character" &&
+                                w.sentence
                                   ? [{ text: w.sentence, row }]
                                   : []),
                               ]),
@@ -1528,7 +1631,9 @@ export default function Home() {
                               onClick={() =>
                                 audio.play([
                                   { text: w.chinese, row: i },
-                                  ...(reviewMode !== "character" && w.sentence
+                                  ...(reviewSentences &&
+                                  reviewMode !== "character" &&
+                                  w.sentence
                                     ? [{ text: w.sentence, row: i }]
                                     : []),
                                 ])
@@ -1557,82 +1662,13 @@ export default function Home() {
             </>
           )}
           {tab === "progress" && (
-            <>
-              <div className="page-heading">
-                <div>
-                  <div className="eyebrow">YOUR LEARNING, OVER TIME</div>
-                  <h1>
-                    Every answer <em>adds up.</em>
-                  </h1>
-                  <p>
-                    Your history is kept separately for each quiz and direction.
-                  </p>
-                </div>
-              </div>
-              <div className="stat-grid">
-                <div className="panel">
-                  <span>Answers submitted</span>
-                  <strong>{progress.attempts.length}</strong>
-                </div>
-                <div className="panel">
-                  <span>Correct answers</span>
-                  <strong>{accuracy}%</strong>
-                </div>
-                <div className="panel">
-                  <span>Items practiced</span>
-                  <strong>
-                    {new Set(progress.attempts.map((a) => a.item_id)).size}
-                  </strong>
-                </div>
-              </div>
-              <section className="panel">
-                <div className="section-line">
-                  <h2>Recent practice</h2>
-                  <button onClick={exportProgress}>Export history</button>
-                </div>
-                {!progress.attempts.length ? (
-                  <p className="empty">
-                    Your first session starts your story. Choose a practice to
-                    begin.
-                  </p>
-                ) : (
-                  <div className="history-list">
-                    {[...progress.attempts]
-                      .reverse()
-                      .slice(0, 50)
-                      .map((a) => (
-                        <div key={a.id}>
-                          <span className={a.correct ? "correct" : "unmatched"}>
-                            {a.correct ? "✓" : "○"}
-                          </span>
-                          <div>
-                            <strong>
-                              {words.find((w) => `word:${w.id}` === a.item_id)
-                                ?.chinese ||
-                                content.characters.find(
-                                  (c) => `char:${c.idx}` === a.item_id,
-                                )?.trad ||
-                                rules
-                                  .flatMap((r) => r.exercises)
-                                  .find((e) => e.id === a.item_id)?.expected
-                                  .chinese ||
-                                "Archived item"}
-                            </strong>
-                            <small>
-                              {modeNames[a.mode]} ·{" "}
-                              {a.direction === "fixed" ? "" : a.direction}{" "}
-                              {a.overridden ? "· accepted by you" : ""}
-                            </small>
-                          </div>
-                          <time>
-                            {new Date(a.created_at).toLocaleDateString()}
-                          </time>
-                        </div>
-                      ))}
-                  </div>
-                )}
-              </section>
-            </>
+            <ProgressPanel
+              content={content}
+              attempts={progress.attempts}
+              play={audio.play}
+              stop={audio.stop}
+              exportHistory={exportProgress}
+            />
           )}
           {tab === "settings" && (
             <>

@@ -6,8 +6,8 @@ export function useAudio() {
   const [supported, setSupported] = useState(false),
     [voices, setVoices] = useState<SpeechSynthesisVoice[]>([]),
     [voice, setVoice] = usePreference("zili-voice", ""),
-    [rate, setRate] = usePreference("zili-rate", 0.85),
-    [gap, setGap] = usePreference("zili-gap", 0.6),
+    [rate, setRate] = usePreference("zili-rate-v2", 1.2),
+    [gap, setGap] = usePreference("zili-gap-v2", 0),
     [playing, setPlaying] = useState(false),
     [paused, setPaused] = useState(false),
     [row, setRow] = useState(-1),
@@ -48,7 +48,7 @@ export function useAudio() {
       window.speechSynthesis.removeEventListener("voiceschanged", update);
     };
   }, []);
-  function play(items: AudioItem[]) {
+  function play(items: AudioItem[], options: { gap?: number } = {}) {
     stop();
     setError("");
     if (!supported) {
@@ -92,7 +92,10 @@ export function useAudio() {
       u.rate = rate;
       u.onend = () => {
         if (generation.current === token)
-          timer.current = setTimeout(() => next(index + 1), gap * 1000);
+          timer.current = setTimeout(
+            () => next(index + 1),
+            (options.gap ?? gap) * 1000,
+          );
       };
       u.onerror = (e) => {
         if (generation.current !== token) return;
