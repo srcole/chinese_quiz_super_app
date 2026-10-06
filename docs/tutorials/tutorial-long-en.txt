@@ -1,0 +1,112 @@
+ZILI (字里): BUILD YOUR OWN CHINESE STUDY ROUTINE
+Detailed tutorial — English
+Target duration: approximately 10–12 minutes, including demonstrations and listening pauses.
+App: https://chinese-quiz-super-app.vercel.app/
+Script reference: app behavior as of 5 October 2026.
+
+PRODUCTION NOTES — NOT SPOKEN
+Audience: a learner using the app for the first time, on desktop or a phone.
+Format: screen recording with voice-over. Use desktop for detailed controls and a short Pixel/Chrome shot for mobile use.
+Only text marked NARRATION is spoken. ACTION, OVERLAY, and AUDIO are production instructions. Scene IDs match the simplified Chinese translation. Timings are approximate; adjust to the actual narration and recordings.
+Use the real app interface. Its controls are currently in English; translated subtitles must not imply that a Chinese-language interface exists. Locate controls by their visible labels, not fixed screen coordinates.
+Record with a demo account or isolated guest browser. Submitted answers and “Accept my answer” change progress. Prepare enough real demo attempts to show correct, incorrect, and consecutive-correct results. Never fabricate statistics or alter the owner's history. Hide email addresses and authentication links.
+Questions are randomized. Record the actual prompt and response together. The narration below intentionally avoids promising a particular question. For the tone-number overlay, use 13 only as an illustrative example, not as the answer to a randomly selected word.
+Keep spoken Chinese from the app audible during designated listening pauses. Do not overlap it with narration; disable automatic playback for other takes, or mute the app track in the edit. Browser voice timing can vary. Capture the correct UI state before continuing.
+Allow 2–4 seconds to read important settings. Split long filter demonstrations across several shots rather than scrolling while reading every label aloud. Recheck labels and defaults if producing this video after the script date.
+
+SCENE L01 — A QUICK LOOK AROUND [about 35 seconds]
+ACTION: Open Practice. Show the mascot page icon, the six quiz cards, and navigation: Practice, Review, Progress, Settings. Cut briefly to the same site in Chrome on a Pixel.
+OVERLAY: “Practice • Review • Progress • Settings”
+NARRATION:
+Welcome to Zili, a Chinese study app built around a collection of words, phrases, characters, and grammar examples. You can test yourself, listen through a review list, and use your results to choose what to study next. The same website works on your laptop and your phone. In this walkthrough, we'll build a short quiz, explore the different exercises, and customize a routine around the things you want to learn.
+
+SCENE L02 — START SMALL [about 35 seconds]
+ACTION: Select Vocabulary. Show Questions = 3 and Prompt direction = English → Chinese. Clear the question count and enter 5, then restore 3. Briefly switch the direction, then return to English → Chinese.
+OVERLAY: “Default: 3 questions • English → Chinese”
+NARRATION:
+Let's start with Vocabulary. A new session defaults to three questions, with an English prompt and a Chinese answer. Change the number whenever you like—you can clear the field before entering a new value. You can also reverse the direction to read Chinese and recall its English meaning. These are different skills, and the app tracks their progress separately.
+
+SCENE L03 — CHOOSE YOUR WORDS [about 65 seconds]
+ACTION: Keep Vocabulary selected. Show maximum priority, movie rank, HSK, and commonness. Set maximum priority to 6. Show date bounds, Slang, category/subcategory/topic, and the part-of-speech checkboxes. Briefly select a category and noun, noting the eligible count. Choose a movie-rank threshold, toggle Include unknown filter values, and show its effect. Clear restrictive demonstration filters before continuing.
+OVERLAY: “Watch the eligible count as you filter”
+NARRATION:
+The filters decide which words can appear. Set maximum priority, movie-word rank, HSK level, or commonness. A maximum includes values up to that number. You can narrow the collection by date, include or exclude slang, choose a category and topic, or select several parts of speech. Leave the parts of speech unselected to allow them all.
+Some entries have no HSK level, movie rank, or date. When you use one of those filters, unknown values are excluded unless you turn on this option. The eligible count shows what remains. HSK levels seven through nine form one advanced band; when an entry lists several levels, the app uses the lowest. If your list gets too small, loosen a filter.
+
+SCENE L04 — AVOID OVERPRACTICING AND SAVE A SETUP [about 45 seconds]
+ACTION: Highlight Exclude after correct streak = 2. Show 0 briefly, then restore 2. Open Saved study setups, enter “Everyday vocabulary,” and save. Demonstrate loading the saved setup.
+OVERLAY: “2 consecutive correct answers • same quiz and direction”
+NARRATION:
+This setting helps you move beyond words you've already been getting right. At two, an item stops appearing in this quiz direction once its latest two answers are both correct. A wrong answer resets that streak. Set zero if you want to turn exclusion off. This applies to vocabulary, idioms, tones, and sentence application.
+You can also save a named study setup on this device, so you don't have to rebuild your vocabulary filters next time.
+
+SCENE L05 — ANSWER, LEARN, AND MOVE ON [about 60 seconds]
+ACTION: Start a three-question vocabulary session. Enter a correct answer to the actual prompt. On another question, submit an empty field to reveal feedback. Show an unlisted but genuinely valid answer in a separately prepared take, then select Accept my answer. Press Enter from the answer field or page body after feedback to advance.
+OVERLAY: “Blank answer = incorrect + reveal feedback”
+NARRATION:
+Type an answer and choose Check answer. Matching ignores differences such as punctuation and spacing, but it isn't an AI judge of every possible translation. If you're stuck, submit a blank answer. It counts as incorrect and reveals the answer so you can learn from it.
+Sometimes your answer is valid but isn't in the accepted list. Compare it carefully with the feedback, then use Accept my answer when appropriate. That changes the recorded result to correct. To keep moving, press Enter from the answer field after feedback, or click Next question. The final question takes you to your session results.
+
+SCENE L06 — GET MORE FROM FEEDBACK [about 55 seconds]
+ACTION: Use a vocabulary entry with rich source data. Show simplified and traditional forms, pinyin, English, example sentence, components, synonyms, collocations, and measure word where present. Expand one Explore the characters panel and click its Listen to all words containing… button.
+AUDIO: Pause narration for 5–8 seconds while several Chinese words play. Stop playback afterward.
+NARRATION:
+Feedback is a study page in its own right. Depending on the entry, you'll see simplified and traditional Chinese, pinyin, English, an example sentence, and an explanation of the word's components. There may also be synonyms, common collocations, and a measure word.
+Under Explore the characters, open a character to find other words containing it. You can play one word, or listen through all the matching words in Chinese. This is a useful way to connect a new word with a family of words you already know.
+
+SCENE L07 — IDIOMS AND SENTENCE APPLICATION [about 45 seconds]
+ACTION: End the current session or finish it. Select Idioms; show both prompt directions and feedback for an entry with a literal translation. Then select Sentence application and start a question, highlighting the vocabulary prompt and English sentence.
+NARRATION:
+Idioms lets you practice from Chinese to English or the other way around. Its feedback also shows a literal translation when the source entry provides one. If that information is missing, the app says so.
+Sentence application takes the next step: using vocabulary in context. Choose whether the vocabulary prompt appears in English or Chinese. You'll also see the English example sentence, and your task is to write that sentence in simplified Chinese. Valid alternatives can be accepted manually after checking the feedback.
+
+SCENE L08 — TRAIN YOUR TONES [about 50 seconds]
+ACTION: Select Tones. Show Maximum characters in word = 2 and the enabled prompt-audio checkbox. Demonstrate changing the maximum, then restore 2. Start a question, replay its audio, enter tone digits, and submit. Show dictionary tones and a tone-change explanation when available.
+OVERLAY: “Example: first tone + third tone → 13 • neutral tone → 5”
+AUDIO: Let the word play once without narration.
+NARRATION:
+The tone quiz shows a Chinese word and, by default, speaks it. Enter one number per syllable: for example, one followed by three for a first-tone syllable and a third-tone syllable. Use five for neutral tone.
+The default limit is two Chinese characters, but you can change it. You can also turn off automatic prompt audio if you'd rather try recalling the tones before listening. Answers are checked against dictionary tones. Natural speech may use tone changes, which the feedback explains when that information is available. Feedback playback has no added pause between clips.
+
+SCENE L09 — TRADITIONAL CHARACTERS AND GRAMMAR [about 60 seconds]
+ACTION: Select Traditional characters. Set a minimum and maximum priority, then start a question. Submit the simplified form, or submit blank. Show the traditional/simplified example pairs and English meanings. Then select Grammar; show rule, category, and difficulty selectors. Start a question and show the target pattern, followed by feedback and related examples.
+AUDIO: Briefly play a character and its example words without narration.
+NARRATION:
+Traditional characters uses a separate collection. Set a minimum and maximum priority, then identify the simplified form of the traditional character. Feedback includes example words, with traditional and simplified forms alongside their English meanings. Playback reads the character and the Chinese example words.
+Grammar focuses on sentence patterns. Choose a rule, category, or difficulty, or mix several rules. Read the English prompt and target pattern, then write the sentence in simplified Chinese. Feedback provides the expected answer, pinyin, an explanation, and related examples. An answer missing from the list isn't automatically proof that your grammar was wrong.
+
+SCENE L10 — REVIEW WITHOUT A QUIZ [about 65 seconds]
+ACTION: Open Review. Demonstrate By category, then Open review and Listen to all. Show the unchecked Also read Chinese example sentences option; enable it briefly. Show Focus on tricky words and its priority, quiz, direction, and streak controls. Open By Chinese character; use a Chinese IME to enter 学, showing the pinyin composition before committing. Finally open Grammar listening and select a rule.
+AUDIO: Leave a short listening pause in one review list. Stop playback before changing modes.
+NARRATION:
+Review is for studying and listening without submitting answers. Browse a category, then listen through the list. By default, it reads Chinese words only. Turn on the example-sentence option when you want more context.
+Focus on tricky words combines an exact priority level, parts of speech, a quiz type, and a correct-streak threshold. It includes unattempted words and words that haven't reached that target.
+By Chinese character finds matching words, and you can type with your normal Chinese input method. It also accepts longer Chinese text. This view keeps things compact by leaving out example sentences and component explanations.
+For grammar listening, choose a rule and listen through its Chinese example sentences while following the text.
+
+SCENE L11 — SEE WHAT YOUR PROGRESS MEANS [about 60 seconds]
+ACTION: Open Progress with prepared demo history. Show Vocabulary, English → Chinese, maximum priority 6, and X = 2. Highlight Answers submitted, Correct answers, Items practiced / total, and Reached 2-correct streak / total. Change the quiz and priority, then restore defaults. Change X briefly.
+OVERLAY: “Practiced: unique items • Reached target: current correct streak”
+NARRATION:
+Progress starts with Vocabulary, English to Chinese, and a maximum priority of six. Change those filters to see another part of your learning.
+Answers submitted counts attempts. Items practiced counts distinct items you've tried, compared with the total in the selected collection. The streak card shows how many items have reached your chosen number of consecutive correct answers, also out of the eligible total. The default target is two, and you can change it here. That progress target is separate from the exclusion setting in quiz setup.
+These totals use the current collection. Grammar has no priority levels, and tone statistics include all valid word lengths, rather than only the two-character quiz default.
+
+SCENE L12 — TURN RESULTS INTO A LISTENING SESSION [about 45 seconds]
+ACTION: In Progress, set Answer result to Incorrect. Show the filtered attempts, then click Listen to filtered items. Stop playback. Open All quiz statistics and pan across the table, showing several quiz types, directions, priority rows, and totals.
+NARRATION:
+Filter your history to correct or incorrect answers, then listen to the matching Chinese items. Playback reads each matching item once, starting with the most recently practiced. This filter looks at recorded attempts, so a word you later answered correctly may still appear among earlier incorrect answers.
+For a broader picture, open All quiz statistics. This view calculates every quiz and direction, broken down by exact priority, with totals, unseen items, attempts, accuracy, and streak targets. You can compare different areas without repeatedly changing the main filters.
+
+SCENE L13 — MAKE LISTENING COMFORTABLE [about 35 seconds]
+ACTION: Open Settings → Mandarin audio. Show the voice selector, speed 1.2×, pause 0 seconds, automatic audio checkbox, and Test Mandarin voice. Demonstrate the controls, then restore defaults.
+AUDIO: Play the test sentence without narration.
+NARRATION:
+In Settings, choose an available Mandarin voice and adjust the speaking speed and pause between clips. The defaults are one point two times speed and no added pause. You can also switch automatic prompt and feedback audio on or off. Available voices depend on your device, so test the voice on both your laptop and phone. Keep the study page open while listening; the voice itself may still add natural pauses.
+
+SCENE L14 — TAKE YOUR ROUTINE BETWEEN DEVICES [about 45 seconds]
+ACTION: Show account settings without revealing email details. Highlight Synced across devices, Sync now, and Import this device’s guest progress. Cut to the same deployed site on a Pixel with the same demo account. Return to Practice for the closing shot.
+OVERLAY: “Choose a focus → Practice → Review → Check progress”
+NARRATION:
+You can begin without signing in, and your answers stay in that browser. To carry progress between devices, sign in with the same email on the deployed website. Open each sign-in link in Chrome on the device where you requested it. If you practiced as a guest first, import that device's guest progress after signing in.
+A simple routine is to start with three questions, explore the feedback, and finish with a short listening review. Then check your progress and choose the next focus. Keep the sessions small, and adjust the app as your Chinese grows.

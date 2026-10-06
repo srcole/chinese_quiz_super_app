@@ -1,0 +1,45 @@
+ZILI (字里): YOUR CHINESE STUDY ROOM IN TWO MINUTES
+Short overview — English
+Target duration: approximately 2–2½ minutes, including screen transitions and a short audio sample.
+App: https://chinese-quiz-super-app.vercel.app/
+Script reference: app behavior as of 5 October 2026.
+
+PRODUCTION NOTES — NOT SPOKEN
+Use actual screen recordings, with large cursor highlights and restrained zooms. Only NARRATION is spoken. Scene IDs match the simplified Chinese version; match scenes, not exact speaking durations.
+The current interface is English. Keep its actual labels visible in both language versions. Record with an isolated guest browser or demo account; don't alter the owner's progress. Mask account information. Quiz questions are randomized: use the actual recorded answers and never substitute unrelated question or result footage.
+Prepare a little genuine demo history for the Progress shots. Do not invent account statistics. Stop or mute app audio under narration except for the designated sample. Check the current interface before future production.
+
+SCENE S01 — THE BIG IDEA [about 15 seconds]
+ACTION: Show Practice on desktop, then briefly on a Pixel. Highlight the four navigation areas.
+OVERLAY: “Practice • Review • Progress • Settings”
+NARRATION:
+Meet Zili: a customizable Chinese study app for your laptop and phone. Practice your recall, listen through your collection, and see where your learning is progressing—all in one study room.
+
+SCENE S02 — SIX WAYS TO PRACTICE [about 25 seconds]
+ACTION: Move across all six quiz cards. Cut to one tone question and one grammar question.
+OVERLAY: “Vocabulary • Idioms • Tones • Sentences • Traditional characters • Grammar”
+NARRATION:
+Choose from six quizzes: vocabulary, idioms, tones, sentence application, traditional characters, and grammar. Vocabulary and idioms work in either translation direction. Tone practice asks for dictionary-tone numbers, while sentence and grammar exercises help you build Chinese sentences. Start with the default three questions, or change the session length.
+
+SCENE S03 — MAKE THE SESSION YOURS [about 25 seconds]
+ACTION: Show vocabulary filters, the eligible count, and Saved study setups. Briefly show tone length and prompt-audio controls, then traditional-character priority bounds.
+OVERLAY: “Choose your focus. Control your challenge.”
+NARRATION:
+Customize your vocabulary sessions by priority, HSK level, movie rank, commonness, dates, slang, categories, and parts of speech. You can exclude words after a chosen correct streak and save a vocabulary setup for later. Other quizzes have their own controls, including tone-word length, prompt audio, and traditional-character priority ranges.
+
+SCENE S04 — LEARN FROM EVERY ANSWER [about 25 seconds]
+ACTION: Submit a blank answer, show feedback, and expand Explore the characters. Show a prepared valid-alternative example with Accept my answer. Advance with Enter.
+NARRATION:
+Stuck? Submit a blank answer to reveal the feedback and record a miss. Explore pinyin, translations, example sentences, and related words where available. Listen to Chinese audio, or read through a character's word family. If a valid answer isn't in the accepted list, you can accept it yourself. Press Enter from the answer field after feedback to move on.
+
+SCENE S05 — LISTEN AND TRACK [about 30 seconds]
+ACTION: Show the four Review choices and a word list. Play a brief Chinese sample, then cut to Progress, its filters and totals, the Incorrect option, and All quiz statistics.
+AUDIO: Leave 3–4 seconds without narration for the sample.
+NARRATION:
+Review by category, learning history, Chinese character, or grammar rule. Listen to words alone, or add Chinese example sentences in the category and history reviews. Progress shows practiced items and correct-streak targets out of their totals. Filter by quiz, direction, and priority, listen to items from incorrect attempts, or open the detailed statistics to compare all your quiz types.
+
+SCENE S06 — YOUR PACE, YOUR DEVICES [about 20 seconds]
+ACTION: Show Settings audio controls and sync status, with private information hidden. Finish on the three-question Practice setup.
+OVERLAY: “Start with three questions.”
+NARRATION:
+Audio defaults to one point two times speed with no added pause, and you can adjust it in Settings. Sign in with the same account to sync your study history between devices. Choose a focus, try three questions, and build a routine that fits you.
