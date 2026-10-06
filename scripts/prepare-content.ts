@@ -1,5 +1,6 @@
 import fs from "node:fs";
 import Papa from "papaparse";
+import { cleanWord } from "../lib/study";
 import type { Content, Rule, Word } from "../lib/study";
 export function loadContent(): Content {
   function csv(path: string, id: string): Word[] {
@@ -37,7 +38,9 @@ export function loadContent(): Content {
     }
   }
   return {
-    words: csv(process.env.VOCAB_CSV || "data/mmd_20260909.csv", "id"),
+    words: csv(process.env.VOCAB_CSV || "data/mmd_20260909.csv", "id").map(
+      cleanWord,
+    ),
     characters: csv("data/trad_to_simp_char.csv", "idx"),
     rules,
     generatedAt: new Date().toISOString(),

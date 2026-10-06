@@ -172,3 +172,58 @@ test("sync compares instants even when Supabase timestamps use UTC offsets", () 
   };
   assert.equal(mergeAttempts([local], [remote])[0].correct, false);
 });
+
+test("vocabulary excludes idioms, defaults to no phrases, and supports character limits", async () => {
+  const { vocabularyEligible } = await import("../lib/study");
+  assert.equal(
+    vocabularyEligible({ ...word, part_of_speech: "idiom" }, true),
+    false,
+  );
+  assert.equal(
+    vocabularyEligible({ ...word, part_of_speech: "phrase" }),
+    false,
+  );
+  assert.equal(
+    vocabularyEligible({ ...word, part_of_speech: "phrase" }, true),
+    true,
+  );
+  assert.equal(
+    vocabularyEligible({ ...word, part_of_speech: "noun" }, false, "1"),
+    false,
+  );
+});
+test("dash sentences are cleared and traditional answers accept contained simplified characters", async () => {
+  const { cleanWord, gradeQuestion } = await import("../lib/study");
+  const cleaned = cleanWord({
+    ...word,
+    sentence: " - ",
+    sentence_pinyin: "-",
+    sentence_english: "-",
+  });
+  assert.equal(cleaned.sentence, "");
+  assert.equal(cleaned.sentence_english, "");
+  assert.equal(
+    gradeQuestion(
+      "这个",
+      { id: "char:1", mode: "characters", character: { simp: "这" } },
+      "en-zh",
+    ),
+    true,
+  );
+  assert.equal(
+    gradeQuestion(
+      "這個",
+      { id: "char:1", mode: "characters", character: { simp: "这" } },
+      "en-zh",
+    ),
+    false,
+  );
+  assert.equal(
+    gradeQuestion(
+      "",
+      { id: "char:1", mode: "characters", character: { simp: "这" } },
+      "en-zh",
+    ),
+    false,
+  );
+});

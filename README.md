@@ -55,6 +55,12 @@ The bundled learning content is publicly downloadable. Answer histories are prot
 
 ## Study behavior
 
+- Vocabulary excludes idioms. Phrases are excluded by default; enable “Include phrases” or explicitly select the phrase part of speech to include them. An optional Chinese-character limit narrows vocabulary questions.
+- Audio-only vocabulary switches to Chinese → English and hides the written prompt until feedback. It plays the prompt even if general automatic audio is off. Listening shares history with the Chinese → English vocabulary direction.
+- Traditional-character answers are correct when the expected simplified character appears anywhere in the response. Examples use larger Chinese text.
+- Session summaries list incorrect answers and can read them all in Chinese. Sentence and grammar quizzes read the expected Chinese sentences; other quizzes read words or characters.
+- A Chinese example sentence consisting only of a hyphen (with optional surrounding whitespace) is treated as missing, including its pinyin and translation. This applies to imports and existing cloud content.
+
 - New sessions default to 3 questions, English → Chinese. The question count can be cleared while editing; an empty count uses 3 when starting.
 - Blank answers submit as incorrect and reveal feedback. Enter advances from feedback; Chinese IME composition does not trigger navigation.
 - Tone quizzes default to at most 2 Chinese characters, with prompt audio enabled. Both settings can be changed in quiz setup.

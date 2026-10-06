@@ -1,4 +1,11 @@
-import { Attempt, Content, Mode, historyKey, streakMap } from "./study";
+import {
+  Attempt,
+  Content,
+  Mode,
+  cleanWord,
+  historyKey,
+  streakMap,
+} from "./study";
 export type StudyItem = {
   id: string;
   chinese: string;
@@ -23,14 +30,17 @@ export function itemsForMode(content: Content, mode: Mode): StudyItem[] {
       priority: Number(c.priority) || null,
     }));
   return content.words
+    .map(cleanWord)
     .filter((w) =>
-      mode === "idioms"
-        ? w.part_of_speech === "idiom"
-        : mode === "sentences"
-          ? !!w.sentence
-          : mode === "tones"
-            ? /^[1-5](?:-[1-5])*$/.test(w.tone_pattern)
-            : true,
+      mode === "vocabulary"
+        ? w.part_of_speech !== "idiom"
+        : mode === "idioms"
+          ? w.part_of_speech === "idiom"
+          : mode === "sentences"
+            ? !!w.sentence
+            : mode === "tones"
+              ? /^[1-5](?:-[1-5])*$/.test(w.tone_pattern)
+              : true,
     )
     .map((w) => ({
       id: `word:${w.id}`,

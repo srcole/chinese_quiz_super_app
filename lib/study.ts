@@ -201,3 +201,48 @@ export function mergeAttempts(local: Attempt[], remote: Attempt[]) {
     (a, b) => Date.parse(a.created_at) - Date.parse(b.created_at),
   );
 }
+
+export function cleanWord(w: Word): Word {
+  if (w.sentence?.trim() !== "-") return w;
+  return { ...w, sentence: "", sentence_pinyin: "", sentence_english: "" };
+}
+export function vocabularyEligible(
+  w: Word,
+  includePhrases = false,
+  maxCharacters = "",
+) {
+  return (
+    w.part_of_speech !== "idiom" &&
+    (includePhrases || w.part_of_speech !== "phrase") &&
+    (!maxCharacters ||
+      (w.chinese.match(/\p{Script=Han}/gu) || []).length <=
+        Number(maxCharacters))
+  );
+}
+export function gradeQuestion(
+  answer: string,
+  q: Question,
+  direction: Direction,
+) {
+  if (q.character) {
+    const expected = normalize(q.character.simp);
+    return !!expected && normalize(answer).includes(expected);
+  }
+  return grade(answer, acceptedAnswers(q, direction));
+}
+export function questionChinese(q: Question) {
+  return (
+    q.exercise?.expected.chinese ||
+    q.character?.simp ||
+    (q.mode === "sentences" ? q.word?.sentence : q.word?.chinese) ||
+    ""
+  );
+}
+export function questionEnglish(q: Question) {
+  return (
+    q.exercise?.expected.english ||
+    q.character?.English ||
+    (q.mode === "sentences" ? q.word?.sentence_english : q.word?.english) ||
+    ""
+  );
+}

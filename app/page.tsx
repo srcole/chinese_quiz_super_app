@@ -1,14 +1,17 @@
 "use client";
 import { useEffect, useMemo, useRef, useState } from "react";
 import {
-  acceptedAnswers,
+  cleanWord,
+  vocabularyEligible,
+  gradeQuestion,
+  questionChinese,
+  questionEnglish,
   Attempt,
   characterExamples,
   Content,
   defaultFilters,
   Direction,
   Filters,
-  grade,
   historyKey,
   matches,
   Mode,
@@ -153,6 +156,9 @@ export default function Home() {
     [tonePrompt, setTonePrompt] = useState(true),
     [charMin, setCharMin] = useState(""),
     [charMax, setCharMax] = useState("");
+  const [includePhrases, setIncludePhrases] = useState(false),
+    [vocabMax, setVocabMax] = useState(""),
+    [audioOnly, setAudioOnly] = useState(false);
   const [reviewSentences, setReviewSentences] = useState(false);
   const audio = useAudio(),
     progress = useProgress(),
@@ -166,7 +172,7 @@ export default function Home() {
         return r.json();
       })
       .then((data) => {
-        if (alive) setContent(data);
+        if (alive) setContent({ ...data, words: data.words.map(cleanWord) });
       })
       .catch((e) => {
         if (alive) setLoadError(e.message);
@@ -205,7 +211,7 @@ export default function Home() {
         setContent({
           words: records
             .filter((x) => x.kind === "word")
-            .map((x) => x.payload as Word),
+            .map((x) => cleanWord(x.payload as Word)),
           characters: records
             .filter((x) => x.kind === "character")
             .map((x) => x.payload as Word),
@@ -288,6 +294,12 @@ export default function Home() {
       .filter(
         (w) =>
           matches(w, filters) &&
+          (mode !== "vocabulary" ||
+            vocabularyEligible(
+              w,
+              includePhrases || filters.pos.includes("phrase"),
+              vocabMax,
+            )) &&
           (mode !== "idioms" || w.part_of_speech === "idiom") &&
           (mode !== "sentences" || !!w.sentence) &&
           (mode !== "tones" ||
@@ -310,6 +322,8 @@ export default function Home() {
     ruleId,
     grammarCategory,
     difficulty,
+    includePhrases,
+    vocabMax,
     toneMax,
     charMin,
     charMax,
@@ -328,6 +342,7 @@ export default function Home() {
         if (reviewMode === "history")
           return (
             (!reviewPriority || w.priority === reviewPriority) &&
+            (reviewQuiz !== "vocabulary" || w.part_of_speech !== "idiom") &&
             (reviewQuiz !== "idioms" || w.part_of_speech === "idiom") &&
             (reviewQuiz !== "sentences" || !!w.sentence) &&
             (reviewQuiz !== "tones" ||
@@ -388,7 +403,16 @@ export default function Home() {
     setNotice("");
   }
   function promptSpeech(question: Question) {
-    if (!autoAudio || (question.mode === "tones" && !tonePrompt)) return;
+    if (
+      (!autoAudio &&
+        !(
+          question.mode === "vocabulary" &&
+          direction === "zh-en" &&
+          audioOnly
+        )) ||
+      (question.mode === "tones" && !tonePrompt)
+    )
+      return;
     const w = question.word;
     if (w && (question.mode === "tones" || direction === "zh-en"))
       audio.play([{ text: w.chinese, row: 0 }]);
@@ -439,7 +463,7 @@ export default function Home() {
       mode: q.mode,
       direction: quizDirection(q.mode, direction),
       answer,
-      correct: grade(answer, acceptedAnswers(q, direction)),
+      correct: gradeQuestion(answer, q, direction),
       overridden: false,
       created_at: now,
       updated_at: now,
@@ -778,9 +802,10 @@ export default function Home() {
                     >
                       <select
                         value={direction}
-                        onChange={(e) =>
-                          setDirection(e.target.value as Direction)
-                        }
+                        onChange={(e) => {
+                          setDirection(e.target.value as Direction);
+                          if (e.target.value === "en-zh") setAudioOnly(false);
+                        }}
                       >
                         <option value="en-zh">
                           {mode === "sentences"
@@ -815,6 +840,43 @@ export default function Home() {
                     </Field>
                   )}
                 </div>
+                {mode === "vocabulary" && (
+                  <div className="field-grid">
+                    <Field label="Maximum Chinese characters">
+                      <input
+                        type="number"
+                        min="1"
+                        placeholder="Any"
+                        value={vocabMax}
+                        onChange={(e) => setVocabMax(e.target.value)}
+                      />
+                    </Field>
+                    <label className="check-field">
+                      <input
+                        type="checkbox"
+                        checked={includePhrases}
+                        onChange={(e) => setIncludePhrases(e.target.checked)}
+                      />
+                      Include phrases (excluded by default)
+                    </label>
+                    <label className="check-field">
+                      <input
+                        type="checkbox"
+                        checked={audioOnly}
+                        onChange={(e) => {
+                          setAudioOnly(e.target.checked);
+                          if (e.target.checked) setDirection("zh-en");
+                        }}
+                      />
+                      Audio-only Chinese prompt
+                    </label>
+                    <p className="helper">
+                      Audio-only uses Chinese → English; characters appear in
+                      feedback. Explicitly selecting the phrase part of speech
+                      also includes phrases. Idioms have their own quiz.
+                    </p>
+                  </div>
+                )}
                 {mode === "tones" && (
                   <div className="field-grid">
                     <Field label="Maximum characters in word">
@@ -1032,10 +1094,58 @@ export default function Home() {
                   <span> / {questions.length}</span>
                 </div>
                 <p>Answers correct, including your accepted alternatives.</p>
+                <div className="session-misses">
+                  <h2>Incorrect answers</h2>
+                  {sessionResults.some((a) => !a.correct) ? (
+                    <>
+                      <button
+                        onClick={() =>
+                          audio.play(
+                            questions
+                              .filter((q) =>
+                                sessionResults.some(
+                                  (a) => a.item_id === q.id && !a.correct,
+                                ),
+                              )
+                              .map((q, row) => ({
+                                text: questionChinese(q),
+                                row,
+                              })),
+                          )
+                        }
+                      >
+                        ◖)) Read all incorrect answers in Chinese
+                      </button>
+                      {questions
+                        .filter((q) =>
+                          sessionResults.some(
+                            (a) => a.item_id === q.id && !a.correct,
+                          ),
+                        )
+                        .map((q) => (
+                          <div className="example" key={q.id}>
+                            <p lang="zh">{questionChinese(q)}</p>
+                            <p>{questionEnglish(q)}</p>
+                            <p className="helper">
+                              Your answer:{" "}
+                              {sessionResults.find((a) => a.item_id === q.id)
+                                ?.answer || "(blank)"}
+                            </p>
+                            {q.mode === "tones" && (
+                              <p>Dictionary tones: {q.word?.tone_pattern}</p>
+                            )}
+                          </div>
+                        ))}
+                    </>
+                  ) : (
+                    <p>No incorrect answers this session.</p>
+                  )}
+                </div>
                 <div className="inline centered">
                   <button
                     className="primary"
                     onClick={() => {
+                      audio.stop();
                       setQuestions([]);
                       setFinished(false);
                     }}
@@ -1044,6 +1154,7 @@ export default function Home() {
                   </button>
                   <button
                     onClick={() => {
+                      audio.stop();
                       const missed = sessionResults
                         .filter((a) => !a.correct)
                         .map((a) => a.item_id);
@@ -1101,17 +1212,23 @@ export default function Home() {
                   </div>
                   {q.word && (
                     <>
-                      <h1
-                        lang={
-                          q.mode === "tones" || direction === "zh-en"
-                            ? "zh-Hans"
-                            : "en"
-                        }
-                      >
-                        {q.mode === "tones" || direction === "zh-en"
-                          ? q.word.chinese
-                          : q.word.english}
-                      </h1>
+                      {q.mode === "vocabulary" &&
+                      direction === "zh-en" &&
+                      audioOnly ? (
+                        <h1>Listen and give the English meaning</h1>
+                      ) : (
+                        <h1
+                          lang={
+                            q.mode === "tones" || direction === "zh-en"
+                              ? "zh-Hans"
+                              : "en"
+                          }
+                        >
+                          {q.mode === "tones" || direction === "zh-en"
+                            ? q.word.chinese
+                            : q.word.english}
+                        </h1>
+                      )}
                       {q.mode === "sentences" && (
                         <p className="sentence-prompt">
                           {q.word.sentence_english}
@@ -1319,7 +1436,7 @@ export default function Home() {
                         </div>
                         <p className="pinyin">{q.character.pinyin}</p>
                         <p>{q.character.English}</p>
-                        <div className="example">
+                        <div className="example character-examples">
                           {characterExamples(q.character).map((e, i) => (
                             <p key={i}>
                               <span lang="zh">

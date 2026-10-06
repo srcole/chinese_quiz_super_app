@@ -170,7 +170,9 @@ test("filters treat unknown movie ranks explicitly and presets restore configura
   await page.getByLabel("Maximum movie rank", { exact: true }).fill("1");
   await expect(page.locator(".tag")).toHaveText("0 eligible");
   await page.getByLabel("Include unknown filter values").check();
-  await expect(page.locator(".tag")).toHaveText("8,190 eligible");
+  await expect(page.locator(".tag")).toHaveText(
+    `${content.words.filter((w: Record<string, string>) => w.part_of_speech !== "idiom" && w.part_of_speech !== "phrase" && (!w.movie_words_rank || Number(w.movie_words_rank) <= 1)).length.toLocaleString()} eligible`,
+  );
   await page.getByText("Saved study setups", { exact: true }).click();
   await page.getByLabel("Setup name").fill("Movie collection");
   await page.getByRole("button", { name: "Save setup", exact: true }).click();
@@ -335,7 +337,8 @@ test("progress defaults, denominators, incorrect audio and detailed statistics",
   await expect(page.getByLabel("Progress direction")).toHaveValue("en-zh");
   await expect(page.getByLabel("Progress maximum priority")).toHaveValue("6");
   const total = content.words.filter(
-    (w: Record<string, string>) => Number(w.priority) <= 6,
+    (w: Record<string, string>) =>
+      Number(w.priority) <= 6 && w.part_of_speech !== "idiom",
   ).length;
   await expect(page.locator(".stat-grid strong").nth(2)).toHaveText(
     `0 / ${total}`,
@@ -399,4 +402,75 @@ test("review defaults to words only and speech defaults are faster without a pau
       page.evaluate(() => (window as unknown as { spoken: string[] }).spoken),
     )
     .toEqual([content.words[0].chinese, content.words[1].chinese]);
+});
+
+test("vocabulary audio-only hides characters and missed answers can be replayed", async ({
+  page,
+}) => {
+  await page.route("**/content.json", (route) =>
+    route.fulfill({
+      json: {
+        ...content,
+        words: [{ ...content.words[0], part_of_speech: "noun", sentence: "-" }],
+      },
+    }),
+  );
+  await page.reload();
+  await page.getByLabel("Audio-only Chinese prompt").check();
+  await expect(
+    page.getByRole("combobox", { name: "Prompt direction", exact: true }),
+  ).toHaveValue("zh-en");
+  await page.getByRole("button", { name: "Start practicing" }).click();
+  await expect(page.locator(".question")).not.toContainText(
+    content.words[0].chinese,
+  );
+  expect(
+    await page.evaluate(() =>
+      (window as unknown as { spoken: string[] }).spoken.at(-1),
+    ),
+  ).toBe(content.words[0].chinese);
+  await page.getByRole("button", { name: "Check answer" }).click();
+  await expect(page.locator(".feedback .example")).toHaveCount(0);
+  await page.getByRole("button", { name: "Finish session" }).click();
+  await expect(page.locator(".session-misses")).toContainText(
+    content.words[0].chinese,
+  );
+  await page
+    .getByRole("button", { name: "Read all incorrect answers in Chinese" })
+    .click();
+  expect(
+    await page.evaluate(() =>
+      (window as unknown as { spoken: string[] }).spoken.at(-1),
+    ),
+  ).toBe(content.words[0].chinese);
+});
+test("vocabulary eligibility excludes idioms and makes phrases optional", async ({
+  page,
+}) => {
+  const noun = {
+    ...content.words[0],
+    id: "a",
+    part_of_speech: "noun",
+    chinese: "房贷",
+  };
+  await page.route("**/content.json", (route) =>
+    route.fulfill({
+      json: {
+        ...content,
+        words: [
+          noun,
+          { ...noun, id: "b", part_of_speech: "phrase" },
+          { ...noun, id: "c", part_of_speech: "idiom" },
+        ],
+      },
+    }),
+  );
+  await page.reload();
+  await expect(page.locator(".tag")).toHaveText("1 eligible");
+  await page.getByLabel("Include phrases (excluded by default)").check();
+  await expect(page.locator(".tag")).toHaveText("2 eligible");
+  await page
+    .getByLabel("Maximum Chinese characters", { exact: true })
+    .fill("1");
+  await expect(page.locator(".tag")).toHaveText("0 eligible");
 });
