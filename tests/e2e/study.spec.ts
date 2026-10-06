@@ -239,6 +239,7 @@ test("two correct answers exclude a word only in the practiced direction", async
   );
   await page.reload();
   await expect(page.locator(".tag")).toHaveText("1 eligible");
+  await page.getByLabel("Questions", { exact: true }).fill("1");
   for (let i = 0; i < 2; i++) {
     await page.getByRole("button", { name: "Start practicing" }).click();
     await page
@@ -416,6 +417,7 @@ test("vocabulary audio-only hides characters and missed answers can be replayed"
     }),
   );
   await page.reload();
+  await page.getByLabel("Questions", { exact: true }).fill("1");
   await page.getByLabel("Audio-only Chinese prompt").check();
   await expect(
     page.getByRole("combobox", { name: "Prompt direction", exact: true }),
@@ -473,4 +475,55 @@ test("vocabulary eligibility excludes idioms and makes phrases optional", async 
     .getByLabel("Maximum Chinese characters", { exact: true })
     .fill("1");
   await expect(page.locator(".tag")).toHaveText("0 eligible");
+});
+
+test("oversized quizzes require acknowledging the autofilled available count", async ({
+  page,
+}) => {
+  await page
+    .locator(".mode-card")
+    .filter({
+      has: page.getByRole("heading", {
+        name: "Traditional characters",
+        exact: true,
+      }),
+    })
+    .click();
+  await page.getByLabel("Questions", { exact: true }).fill("500");
+  await page.getByRole("button", { name: "Start practicing" }).click();
+  await expect(page.getByRole("status")).toContainText(
+    "Reduce the question count",
+  );
+  await expect(page.getByLabel("Questions", { exact: true })).toHaveValue(
+    String(content.characters.length),
+  );
+  await expect(page.locator(".question")).toHaveCount(0);
+  await page.getByRole("button", { name: "Start practicing" }).click();
+  await expect(
+    page.locator(".question .traditional-different"),
+  ).not.toHaveCount(0);
+});
+
+test("progress exposes recent accuracy, missed streaks, and chart controls", async ({
+  page,
+}) => {
+  await page.getByLabel("Questions", { exact: true }).fill("1");
+  await page.getByRole("button", { name: "Start practicing" }).click();
+  await page.getByRole("button", { name: "Check answer" }).click();
+  await page.getByRole("button", { name: /Progress/ }).click();
+  await page.getByLabel("Progress maximum priority").fill("");
+  await expect(
+    page.getByText("Accuracy · last 100 attempts", { exact: true }),
+  ).toBeVisible();
+  await expect(
+    page.getByLabel("Incorrect streak target", { exact: true }),
+  ).toHaveValue("1");
+  await expect(page.getByLabel("Attempts per bucket")).toHaveValue("50");
+  await expect(
+    page.getByRole("img", { name: /Accuracy by bucket/ }),
+  ).toBeVisible();
+  await page.getByLabel("Group accuracy by").selectOption("week");
+  await expect(
+    page.getByRole("img", { name: /Accuracy by bucket/ }),
+  ).toBeVisible();
 });

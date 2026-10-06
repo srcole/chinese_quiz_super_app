@@ -1,7 +1,8 @@
 "use client";
 import { useMemo, useState } from "react";
 import { Attempt, Content, Mode, modeNames } from "@/lib/study";
-import { itemsForMode, summarize } from "@/lib/statistics";
+import { accuracyBuckets, itemsForMode, summarize } from "@/lib/statistics";
+import TraditionalText from "./traditional-text";
 import type { AudioItem } from "@/lib/use-audio";
 export default function ProgressPanel({
   content,
@@ -20,6 +21,11 @@ export default function ProgressPanel({
     [direction, setDirection] = useState("en-zh"),
     [priority, setPriority] = useState("6"),
     [x, setX] = useState(2),
+    [incorrectX, setIncorrectX] = useState(1),
+    [bucketMode, setBucketMode] = useState<
+      "attempts" | "day" | "week" | "month"
+    >("attempts"),
+    [bucketSize, setBucketSize] = useState(50),
     [result, setResult] = useState("all"),
     [details, setDetails] = useState(false),
     [limit, setLimit] = useState(50);
@@ -36,8 +42,12 @@ export default function ProgressPanel({
     [content, mode, priority],
   );
   const stats = useMemo(
-    () => summarize(items, attempts, mode, dir, x),
-    [items, attempts, mode, dir, x],
+    () => summarize(items, attempts, mode, dir, x, incorrectX),
+    [items, attempts, mode, dir, x, incorrectX],
+  );
+  const buckets = useMemo(
+    () => accuracyBuckets(stats.rows, bucketMode, bucketSize),
+    [stats.rows, bucketMode, bucketSize],
   );
   const lookup = new Map(items.map((i) => [i.id, i]));
   const rows = [...stats.rows]
@@ -77,11 +87,12 @@ export default function ProgressPanel({
               m,
               d,
               x,
+              incorrectX,
             ),
           })),
         );
       }),
-    [content, attempts, x],
+    [content, attempts, x, incorrectX],
   );
   function changed() {
     stop();
@@ -179,11 +190,26 @@ export default function ProgressPanel({
               }}
             />
           </label>
+          <label className="field">
+            <span>Incorrect streak target (X)</span>
+            <input
+              aria-label="Incorrect streak target"
+              type="number"
+              min="1"
+              value={incorrectX}
+              onChange={(e) =>
+                setIncorrectX(
+                  Math.max(1, Math.floor(Number(e.target.value)) || 1),
+                )
+              }
+            />
+          </label>
         </div>
         <p className="helper">
           Reached target = the latest {x} answers were all correct in the same
-          quiz and direction. A miss resets the streak. Tone totals include all
-          valid word lengths.
+          quiz and direction. A miss resets the streak. Incorrect streaks count
+          items whose latest X answers were all incorrect, out of distinct items
+          attempted. Tone totals include all valid word lengths.
         </p>
       </section>
       {details ? (
@@ -207,6 +233,8 @@ export default function ProgressPanel({
                     "Correct",
                     "Incorrect",
                     "Accuracy",
+                    "Last 100 accuracy",
+                    "Incorrect streak / practiced",
                   ].map((h) => (
                     <th key={h}>{h}</th>
                   ))}
@@ -229,6 +257,14 @@ export default function ProgressPanel({
                     <td>{s.correct}</td>
                     <td>{s.incorrect}</td>
                     <td>{s.rows.length ? `${s.accuracy}%` : "—"}</td>
+                    <td>
+                      {s.recentAccuracy === null
+                        ? "—"
+                        : `${s.recentAccuracy}% (${s.recentCount} attempts)`}
+                    </td>
+                    <td>
+                      {s.missedTarget} / {s.practiced}
+                    </td>
                   </tr>
                 ))}
               </tbody>
@@ -258,7 +294,144 @@ export default function ProgressPanel({
                 {stats.mastered} <small>/ {stats.total}</small>
               </strong>
             </div>
+            <div className="panel">
+              <span>Accuracy · last 100 attempts</span>
+              <strong>
+                {stats.recentAccuracy === null
+                  ? "—"
+                  : `${stats.recentAccuracy}%`}
+              </strong>
+              <small>Based on {stats.recentCount} attempts</small>
+            </div>
+            <div className="panel">
+              <span>Latest {incorrectX} answers incorrect</span>
+              <strong>
+                {stats.missedTarget} <small>/ {stats.practiced}</small>
+              </strong>
+              <small>Distinct items attempted</small>
+            </div>
           </div>
+          <section className="panel">
+            <h2>Accuracy over time</h2>
+            <div className="field-grid">
+              <label className="field">
+                <span>Group accuracy by</span>
+                <select
+                  value={bucketMode}
+                  onChange={(e) =>
+                    setBucketMode(e.target.value as typeof bucketMode)
+                  }
+                >
+                  <option value="attempts">Chunks of attempts</option>
+                  <option value="day">Day</option>
+                  <option value="week">Week</option>
+                  <option value="month">Month</option>
+                </select>
+              </label>
+              {bucketMode === "attempts" && (
+                <label className="field">
+                  <span>Attempts per bucket</span>
+                  <input
+                    type="number"
+                    min="1"
+                    value={bucketSize}
+                    onChange={(e) =>
+                      setBucketSize(
+                        Math.max(1, Math.floor(Number(e.target.value)) || 1),
+                      )
+                    }
+                  />
+                </label>
+              )}
+            </div>
+            <p className="helper">
+              Uses the quiz, direction, and priority filters above. Chunks start
+              with your oldest matching attempt; the final chunk may be partial.
+              Dates use UTC; weeks start Monday. Empty periods are omitted.
+            </p>
+            {!buckets.length ? (
+              <p>No attempts yet.</p>
+            ) : (
+              <>
+                <div className="accuracy-chart">
+                  <svg
+                    viewBox={`0 0 ${Math.max(600, buckets.length * 28 + 60)} 230`}
+                    role="img"
+                    aria-label="Accuracy by bucket, from zero to one hundred percent"
+                    style={{
+                      minWidth: Math.max(600, buckets.length * 28 + 60),
+                    }}
+                  >
+                    {[0, 50, 100].map((n) => (
+                      <g key={n}>
+                        <text x="0" y={205 - n * 1.8}>
+                          {n}%
+                        </text>
+                        <line
+                          x1="40"
+                          x2={Math.max(600, buckets.length * 28 + 60)}
+                          y1={200 - n * 1.8}
+                          y2={200 - n * 1.8}
+                          stroke="currentColor"
+                          opacity="0.15"
+                        />
+                      </g>
+                    ))}
+                    {buckets.map((b, i) => (
+                      <rect
+                        key={b.label}
+                        x={
+                          45 +
+                          i *
+                            ((Math.max(600, buckets.length * 28 + 60) - 55) /
+                              buckets.length)
+                        }
+                        y={200 - b.accuracy * 1.8}
+                        width={Math.max(
+                          2,
+                          (Math.max(600, buckets.length * 28 + 60) - 55) /
+                            buckets.length -
+                            5,
+                        )}
+                        height={Math.max(1, b.accuracy * 1.8)}
+                        fill="var(--accent, #26765c)"
+                      >
+                        <title>
+                          {b.label}: {b.accuracy}% · {b.count} attempts
+                        </title>
+                      </rect>
+                    ))}
+                  </svg>
+                </div>
+                <p className="helper">
+                  {buckets[0].label} → {buckets.at(-1)!.label} · left to right
+                </p>
+                <details>
+                  <summary>View accuracy data</summary>
+                  <div className="stats-table">
+                    <table>
+                      <thead>
+                        <tr>
+                          <th>Bucket</th>
+                          <th>Attempts</th>
+                          <th>Accuracy</th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        {buckets.map((b) => (
+                          <tr key={b.label}>
+                            <td>{b.label}</td>
+                            <td>{b.count}</td>
+                            <td>{b.accuracy}%</td>
+                          </tr>
+                        ))}
+                      </tbody>
+                    </table>
+                  </div>
+                </details>
+              </>
+            )}
+          </section>
           <section className="panel">
             <div className="section-line">
               <h2>Practice history</h2>
@@ -312,7 +485,19 @@ export default function ProgressPanel({
                     {a.correct ? "✓" : "○"}
                   </span>
                   <div>
-                    <strong lang="zh">{lookup.get(a.item_id)?.chinese}</strong>
+                    <strong lang="zh">
+                      {mode === "characters" &&
+                        lookup.get(a.item_id)?.traditional && (
+                          <>
+                            <TraditionalText
+                              traditional={lookup.get(a.item_id)!.traditional!}
+                              simplified={lookup.get(a.item_id)!.chinese}
+                            />{" "}
+                            →{" "}
+                          </>
+                        )}
+                      {lookup.get(a.item_id)?.chinese}
+                    </strong>
                     <small>
                       {lookup.get(a.item_id)?.english} · Priority{" "}
                       {lookup.get(a.item_id)?.priority ?? "—"}

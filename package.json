@@ -9,7 +9,7 @@
     "typecheck": "tsc --noEmit",
     "test": "tsx --test tests/*.test.ts",
     "content:prepare": "tsx scripts/prepare-content.ts",
-    "content:sync": "tsx --env-file=.env.local scripts/sync-content.ts",
+    "content:sync": "node --tls-max-v1.2 --env-file=.env.local --import tsx scripts/sync-content.ts",
     "test:e2e": "playwright test",
     "format": "prettier --write app lib scripts tests playwright.config.ts tsconfig.json package.json"
   },

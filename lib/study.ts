@@ -176,7 +176,10 @@ export function acceptedAnswers(q: Question, d: Direction) {
       .filter(Boolean),
   ];
 }
-export function characterExamples(c: Word) {
+export function characterWordEligible(w: Word) {
+  return !["sentence", "phrase"].includes(w.part_of_speech);
+}
+export function characterExamples(c: Word, words: Word[] = []) {
   const meanings = c.exampleEnglish.split(";");
   return c.examples
     .split(";")
@@ -188,7 +191,15 @@ export function characterExamples(c: Word) {
         simp: m?.[2] || s,
         english: meanings[i] || "",
       };
-    });
+    })
+    .filter(
+      (e) =>
+        !words.some(
+          (w) =>
+            (w.chinese === e.simp || w.trad_char === e.trad) &&
+            !characterWordEligible(w),
+        ),
+    );
 }
 export function mergeAttempts(local: Attempt[], remote: Attempt[]) {
   const map = new Map<string, Attempt>();

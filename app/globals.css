@@ -1247,3 +1247,19 @@ summary::marker {
   margin: 25px auto;
   max-width: 650px;
 }
+
+.traditional-different {
+  color: #c12626;
+}
+.accuracy-chart {
+  overflow-x: auto;
+  margin-top: 1rem;
+}
+.accuracy-chart svg {
+  width: 100%;
+  height: 230px;
+}
+.accuracy-chart text {
+  font-size: 12px;
+  fill: currentColor;
+}

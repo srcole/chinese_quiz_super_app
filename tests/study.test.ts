@@ -227,3 +227,20 @@ test("dash sentences are cleared and traditional answers accept contained simpli
     false,
   );
 });
+
+test("character examples exclude known sentences and phrases", async () => {
+  const { characterWordEligible, characterExamples } =
+    await import("../lib/study");
+  assert.equal(characterWordEligible({ part_of_speech: "sentence" }), false);
+  assert.equal(characterWordEligible({ part_of_speech: "phrase" }), false);
+  assert.equal(characterWordEligible({ part_of_speech: "noun" }), true);
+  const examples = characterExamples(
+    {
+      examples: "學校(学校);我學中文(我学中文)",
+      exampleEnglish: "school;I study Chinese",
+    },
+    [{ chinese: "我学中文", part_of_speech: "sentence" }],
+  );
+  assert.equal(examples.length, 1);
+  assert.equal(examples[0].english, "school");
+});

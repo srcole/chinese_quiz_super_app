@@ -84,3 +84,57 @@ test("mode denominators exclude unavailable sentences and include unattempted it
   assert.equal(stats.unseen, 2);
   assert.equal(stats.mastered, 0);
 });
+
+test("recent accuracy and incorrect streaks use chronological filtered attempts", () => {
+  const rows = Array.from({ length: 105 }, (_, i) =>
+    attempt(i + 1, "word:1", i < 5),
+  );
+  const stats = summarize(
+    itemsForMode(content, "vocabulary"),
+    rows.reverse(),
+    "vocabulary",
+    "en-zh",
+    2,
+    100,
+  );
+  assert.equal(stats.recentAccuracy, 0);
+  assert.equal(stats.recentCount, 100);
+  assert.equal(stats.missedTarget, 1);
+  assert.equal(stats.practiced, 1);
+  assert.equal(
+    summarize(
+      itemsForMode(content, "vocabulary"),
+      [...rows, attempt(106, "word:1", true)],
+      "vocabulary",
+      "en-zh",
+      2,
+    ).missedTarget,
+    0,
+  );
+});
+
+import { accuracyBuckets } from "../lib/statistics";
+test("accuracy buckets include partial chunks and group UTC weeks", () => {
+  const rows = Array.from({ length: 105 }, (_, i) =>
+    attempt(i + 1, "word:1", i < 50),
+  );
+  assert.deepEqual(
+    accuracyBuckets(rows.reverse(), "attempts").map((b) => [
+      b.count,
+      b.accuracy,
+    ]),
+    [
+      [50, 100],
+      [50, 0],
+      [5, 0],
+    ],
+  );
+  assert.equal(accuracyBuckets([], "day").length, 0);
+  const dated = ["2026-10-04T23:59:59Z", "2026-10-05T00:00:00Z"].map(
+    (d, i) => ({ ...attempt(i, "word:1", true), created_at: d }),
+  );
+  assert.deepEqual(
+    accuracyBuckets(dated, "week").map((b) => b.label),
+    ["2026-09-28", "2026-10-05"],
+  );
+});

@@ -2,6 +2,7 @@
 import { useEffect, useMemo, useRef, useState } from "react";
 import {
   cleanWord,
+  characterWordEligible,
   vocabularyEligible,
   gradeQuestion,
   questionChinese,
@@ -25,6 +26,7 @@ import {
 } from "@/lib/study";
 import { usePreference } from "@/lib/use-preference";
 import { useAudio } from "@/lib/use-audio";
+import TraditionalText from "./traditional-text";
 import ProgressPanel from "./progress-panel";
 import { useProgress } from "@/lib/use-progress";
 import { supabase } from "@/lib/supabase";
@@ -99,7 +101,7 @@ function WordDetails({ w, compact = false }: { w: Word; compact?: boolean }) {
       <div className="word-title">
         <span lang="zh-Hans">{w.chinese}</span>
         <span className="traditional" lang="zh-Hant">
-          {w.trad_char}
+          <TraditionalText traditional={w.trad_char} simplified={w.chinese} />
         </span>
       </div>
       <p className="pinyin">{w.pinyin}</p>
@@ -336,6 +338,7 @@ export default function Home() {
         if (reviewMode === "character")
           return (
             !!character.trim() &&
+            characterWordEligible(w) &&
             (w.chinese.includes(character.trim()) ||
               w.trad_char.includes(character.trim()))
           );
@@ -418,6 +421,15 @@ export default function Home() {
       audio.play([{ text: w.chinese, row: 0 }]);
   }
   function start() {
+    const requested = Math.max(1, Math.floor(Number(filters.count) || 3));
+    if (requested > eligible.length) {
+      setFilters({ ...filters, count: eligible.length });
+      setNotice(
+        `Only ${eligible.length} questions are eligible. Reduce the question count to ${eligible.length} or fewer. I've filled in the maximum; press Start when ready.`,
+      );
+      return;
+    }
+    setNotice("");
     const list = shuffled<Question>(
       eligible,
       Math.max(1, Math.min(500, Number(filters.count) || 3)),
@@ -436,7 +448,7 @@ export default function Home() {
     if (question.character)
       return [
         question.character.simp,
-        ...characterExamples(question.character).map((e) => e.simp),
+        ...characterExamples(question.character, words).map((e) => e.simp),
       ];
     if (question.exercise)
       return [
@@ -1248,7 +1260,10 @@ export default function Home() {
                   )}
                   {q.character && (
                     <h1 className="character-prompt" lang="zh-Hant">
-                      {q.character.trad}
+                      <TraditionalText
+                        traditional={q.character.trad}
+                        simplified={q.character.simp}
+                      />
                     </h1>
                   )}
                   {q.exercise && (
@@ -1371,7 +1386,9 @@ export default function Home() {
                           ].map((c) => {
                             const related = words.filter(
                               (w) =>
-                                w.id !== q.word!.id && w.chinese.includes(c),
+                                characterWordEligible(w) &&
+                                w.id !== q.word!.id &&
+                                w.chinese.includes(c),
                             );
                             return (
                               <details key={c}>
@@ -1431,16 +1448,24 @@ export default function Home() {
                       <>
                         <div className="word-title" lang="zh">
                           <span>
-                            {q.character.trad} → {q.character.simp}
+                            <TraditionalText
+                              traditional={q.character.trad}
+                              simplified={q.character.simp}
+                            />{" "}
+                            → {q.character.simp}
                           </span>
                         </div>
                         <p className="pinyin">{q.character.pinyin}</p>
                         <p>{q.character.English}</p>
                         <div className="example character-examples">
-                          {characterExamples(q.character).map((e, i) => (
+                          {characterExamples(q.character, words).map((e, i) => (
                             <p key={i}>
                               <span lang="zh">
-                                {e.trad} ({e.simp})
+                                <TraditionalText
+                                  traditional={e.trad}
+                                  simplified={e.simp}
+                                />{" "}
+                                ({e.simp})
                               </span>
                               : {e.english}
                             </p>
