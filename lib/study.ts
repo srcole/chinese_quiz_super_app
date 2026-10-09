@@ -221,10 +221,12 @@ export function vocabularyEligible(
   w: Word,
   includePhrases = false,
   maxCharacters = "",
+  includeSentences = false,
 ) {
   return (
     w.part_of_speech !== "idiom" &&
     (includePhrases || w.part_of_speech !== "phrase") &&
+    (includeSentences || w.part_of_speech !== "sentence") &&
     (!maxCharacters ||
       (w.chinese.match(/\p{Script=Han}/gu) || []).length <=
         Number(maxCharacters))

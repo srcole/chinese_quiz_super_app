@@ -57,7 +57,7 @@ The bundled learning content is publicly downloadable. Answer histories are prot
 
 ## Study behavior
 
-- Vocabulary excludes idioms. Phrases are excluded by default; enable “Include phrases” or explicitly select the phrase part of speech to include them. An optional Chinese-character limit narrows vocabulary questions.
+- Vocabulary excludes idioms. Phrases and sentences are excluded by default; enable “Include phrases” / “Include sentences” or explicitly select the corresponding part of speech to include them. An optional Chinese-character limit narrows vocabulary questions.
 - Audio-only vocabulary switches to Chinese → English and hides the written prompt until feedback. It plays the prompt even if general automatic audio is off. Listening shares history with the Chinese → English vocabulary direction.
 - Traditional-character answers are correct when the expected simplified character appears anywhere in the response. Examples use larger Chinese text.
 - Session summaries list incorrect answers and can read them all in Chinese. Sentence and grammar quizzes read the expected Chinese sentences; other quizzes read words or characters.

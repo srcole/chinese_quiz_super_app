@@ -176,6 +176,23 @@ test("sync compares instants even when Supabase timestamps use UTC offsets", () 
 test("vocabulary excludes idioms, defaults to no phrases, and supports character limits", async () => {
   const { vocabularyEligible } = await import("../lib/study");
   assert.equal(
+    vocabularyEligible({ ...word, part_of_speech: "sentence" }),
+    false,
+  );
+  assert.equal(
+    vocabularyEligible({ ...word, part_of_speech: "sentence" }, true),
+    false,
+  );
+  assert.equal(
+    vocabularyEligible(
+      { ...word, part_of_speech: "sentence" },
+      false,
+      "",
+      true,
+    ),
+    true,
+  );
+  assert.equal(
     vocabularyEligible({ ...word, part_of_speech: "idiom" }, true),
     false,
   );

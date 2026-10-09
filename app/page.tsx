@@ -95,7 +95,17 @@ function Select({
     </select>
   );
 }
-function WordDetails({ w, compact = false }: { w: Word; compact?: boolean }) {
+function WordDetails({
+  w,
+  compact = false,
+  feedback = false,
+  idiom = false,
+}: {
+  w: Word;
+  compact?: boolean;
+  feedback?: boolean;
+  idiom?: boolean;
+}) {
   return (
     <>
       <div className="word-title">
@@ -106,6 +116,15 @@ function WordDetails({ w, compact = false }: { w: Word; compact?: boolean }) {
       </div>
       <p className="pinyin">{w.pinyin}</p>
       <p className="meaning">{w.english}</p>
+      {feedback && w.component_explanation && (
+        <p className="components">{w.component_explanation}</p>
+      )}
+      {feedback && (w.literal_translation || idiom) && (
+        <div className="literal-breakdown">
+          <span>Literal translation</span>
+          <p>{w.literal_translation || "Not provided in the source data."}</p>
+        </div>
+      )}
       {!compact && (
         <>
           {w.sentence && (
@@ -115,7 +134,7 @@ function WordDetails({ w, compact = false }: { w: Word; compact?: boolean }) {
               <p>{w.sentence_english}</p>
             </div>
           )}
-          {w.component_explanation && (
+          {!feedback && w.component_explanation && (
             <p className="components">{w.component_explanation}</p>
           )}
         </>
@@ -159,6 +178,7 @@ export default function Home() {
     [charMin, setCharMin] = useState(""),
     [charMax, setCharMax] = useState("");
   const [includePhrases, setIncludePhrases] = useState(false),
+    [includeSentences, setIncludeSentences] = useState(false),
     [vocabMax, setVocabMax] = useState(""),
     [audioOnly, setAudioOnly] = useState(false);
   const [reviewSentences, setReviewSentences] = useState(false);
@@ -301,6 +321,7 @@ export default function Home() {
               w,
               includePhrases || filters.pos.includes("phrase"),
               vocabMax,
+              includeSentences || filters.pos.includes("sentence"),
             )) &&
           (mode !== "idioms" || w.part_of_speech === "idiom") &&
           (mode !== "sentences" || !!w.sentence) &&
@@ -325,6 +346,7 @@ export default function Home() {
     grammarCategory,
     difficulty,
     includePhrases,
+    includeSentences,
     vocabMax,
     toneMax,
     charMin,
@@ -874,6 +896,14 @@ export default function Home() {
                     <label className="check-field">
                       <input
                         type="checkbox"
+                        checked={includeSentences}
+                        onChange={(e) => setIncludeSentences(e.target.checked)}
+                      />
+                      Include sentences (excluded by default)
+                    </label>
+                    <label className="check-field">
+                      <input
+                        type="checkbox"
                         checked={audioOnly}
                         onChange={(e) => {
                           setAudioOnly(e.target.checked);
@@ -884,8 +914,9 @@ export default function Home() {
                     </label>
                     <p className="helper">
                       Audio-only uses Chinese → English; characters appear in
-                      feedback. Explicitly selecting the phrase part of speech
-                      also includes phrases. Idioms have their own quiz.
+                      feedback. Explicitly selecting phrase or sentence in the
+                      part-of-speech filter also includes that category. Idioms
+                      have their own quiz.
                     </p>
                   </div>
                 )}
@@ -1348,7 +1379,11 @@ export default function Home() {
                     )}
                     {q.word && (
                       <>
-                        <WordDetails w={q.word} />
+                        <WordDetails
+                          w={q.word}
+                          feedback
+                          idiom={q.mode === "idioms"}
+                        />
                         {q.mode === "tones" && (
                           <div className="pattern">
                             Dictionary tones:{" "}
@@ -1358,13 +1393,6 @@ export default function Home() {
                         )}
                         <div className="extra-fields">
                           {[
-                            [
-                              "Literal translation",
-                              q.mode === "idioms"
-                                ? q.word.literal_translation ||
-                                  "Not provided in the source data."
-                                : "",
-                            ],
                             ["Synonyms", q.word["synonym(s)"]],
                             ["Common collocations", q.word.common_collocations],
                             ["Measure word", q.word.measure_word],

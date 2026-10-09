@@ -463,6 +463,7 @@ test("vocabulary eligibility excludes idioms and makes phrases optional", async 
           noun,
           { ...noun, id: "b", part_of_speech: "phrase" },
           { ...noun, id: "c", part_of_speech: "idiom" },
+          { ...noun, id: "d", part_of_speech: "sentence" },
         ],
       },
     }),
@@ -471,6 +472,8 @@ test("vocabulary eligibility excludes idioms and makes phrases optional", async 
   await expect(page.locator(".tag")).toHaveText("1 eligible");
   await page.getByLabel("Include phrases (excluded by default)").check();
   await expect(page.locator(".tag")).toHaveText("2 eligible");
+  await page.getByLabel("Include sentences (excluded by default)").check();
+  await expect(page.locator(".tag")).toHaveText("3 eligible");
   await page
     .getByLabel("Maximum Chinese characters", { exact: true })
     .fill("1");
@@ -526,4 +529,34 @@ test("progress exposes recent accuracy, missed streaks, and chart controls", asy
   await expect(
     page.getByRole("img", { name: /Accuracy by bucket/ }),
   ).toBeVisible();
+});
+
+test("feedback places a larger breakdown immediately after the meaning", async ({
+  page,
+}) => {
+  await page.route("**/content.json", (route) =>
+    route.fulfill({
+      json: {
+        ...content,
+        words: [
+          {
+            ...content.words[0],
+            part_of_speech: "noun",
+            component_explanation: "房 (house) + 贷 (loan)",
+            literal_translation: "house loan",
+          },
+        ],
+      },
+    }),
+  );
+  await page.reload();
+  await page.getByLabel("Questions", { exact: true }).fill("1");
+  await page.getByRole("button", { name: "Start practicing" }).click();
+  await page.getByRole("button", { name: "Check answer" }).click();
+  const breakdown = page.locator(".feedback .meaning + .components");
+  await expect(breakdown).toHaveText("房 (house) + 贷 (loan)");
+  await expect(breakdown).toHaveCSS("font-size", "17px");
+  await expect(page.locator(".feedback .literal-breakdown")).toContainText(
+    "house loan",
+  );
 });
