@@ -6,6 +6,7 @@ import {
   characterExamples,
   defaultFilters,
   grade,
+  gradeQuestion,
   hsk,
   matches,
   mergeAttempts,
@@ -50,6 +51,42 @@ test("normalization tolerates punctuation and whitespace, not different words", 
   assert.equal(grade("ＨＥＬＬＯ", ["hello"]), true);
   assert.equal(grade("您好", ["你好"]), false);
   assert.equal(grade("", [""]), false);
+});
+test("English definitions accept an optional leading infinitive to", () => {
+  for (const mode of ["vocabulary", "idioms"] as const) {
+    for (const [answer, english, correct] of [
+      ["retire", "to retire", true],
+      ["to retire", "retire", true],
+      ["  ＴＯ  RETIRE! ", "retire", true],
+      ["withdraw", "to retire; to withdraw / to step down", true],
+      ["step down", "to retire; to withdraw / to step down", true],
+      ["retire", "to retire", true],
+      ["retire", "to retire early", false],
+      ["gether", "together", false],
+      ["retire", "not to retire", false],
+      ["", "to retire", false],
+      ["to", "to retire", false],
+    ] as const) {
+      assert.equal(
+        gradeQuestion(
+          answer,
+          { id: "1", mode, word: { ...word, english } },
+          "zh-en",
+        ),
+        correct,
+        `${answer} / ${english}`,
+      );
+    }
+  }
+});
+test("optional infinitives only apply to English definition questions", () => {
+  for (const mode of ["vocabulary", "sentences", "tones"] as const) {
+    assert.equal(
+      gradeQuestion("to 你好", { id: "1", mode, word }, "en-zh"),
+      false,
+    );
+  }
+  assert.equal(grade("retire", ["to retire"]), false);
 });
 test("HSK uses lowest level and an advanced band", () => {
   assert.equal(hsk("2;4"), 2);

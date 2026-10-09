@@ -241,7 +241,24 @@ export function gradeQuestion(
     const expected = normalize(q.character.simp);
     return !!expected && normalize(answer).includes(expected);
   }
-  return grade(answer, acceptedAnswers(q, direction));
+  const accepted = acceptedAnswers(q, direction);
+  if (
+    direction === "zh-en" &&
+    !q.exercise &&
+    (q.mode === "vocabulary" || q.mode === "idioms")
+  ) {
+    // Strip before normalization so words such as "together" stay intact.
+    const withoutTo = (value: string) =>
+      value
+        .normalize("NFKC")
+        .trim()
+        .replace(/^to\s+/i, "");
+    return (
+      grade(answer, accepted) ||
+      grade(withoutTo(answer), accepted.map(withoutTo))
+    );
+  }
+  return grade(answer, accepted);
 }
 export function questionChinese(q: Question) {
   return (

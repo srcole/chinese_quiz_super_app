@@ -1,0 +1,10 @@
+{
+  "rows": 9006,
+  "original_columns": 42,
+  "new_columns": 43,
+  "filled_missing": 5770,
+  "refined_existing": 31,
+  "retained_existing": 3205,
+  "original_sha256": "cbff249f311eb956fe608f547871602768db712e34f75584e721e742359accb7",
+  "completed_sha256": "775dc8cd0d7a0a10905c1312702cf75a2c7ee111e6d4d35c7e34fb591637601a"
+}
