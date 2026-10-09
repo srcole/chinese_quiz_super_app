@@ -1241,106 +1241,108 @@ export default function Home() {
                     style={{ width: `${(index / questions.length) * 100}%` }}
                   />
                 </div>
-                <section className="panel question">
-                  <div className="eyebrow">
-                    {q.mode === "tones"
-                      ? "LISTEN FOR THE DICTIONARY TONES"
-                      : q.mode === "characters"
-                        ? "WRITE THE SIMPLIFIED CHARACTER"
-                        : q.mode === "grammar" || q.mode === "sentences"
-                          ? "WRITE THE SENTENCE IN CHINESE"
-                          : direction === "en-zh"
-                            ? "WRITE THE CHINESE"
-                            : "WHAT DOES THIS MEAN?"}
-                  </div>
-                  {q.word && (
-                    <>
-                      {q.mode === "vocabulary" &&
-                      direction === "zh-en" &&
-                      audioOnly ? (
-                        <h1>Listen and give the English meaning</h1>
-                      ) : (
-                        <h1
-                          lang={
-                            q.mode === "tones" || direction === "zh-en"
-                              ? "zh-Hans"
-                              : "en"
-                          }
-                        >
-                          {q.mode === "tones" || direction === "zh-en"
-                            ? q.word.chinese
-                            : q.word.english}
+                {!submitted && (
+                  <section className="panel question">
+                    <div className="eyebrow">
+                      {q.mode === "tones"
+                        ? "LISTEN FOR THE DICTIONARY TONES"
+                        : q.mode === "characters"
+                          ? "WRITE THE SIMPLIFIED CHARACTER"
+                          : q.mode === "grammar" || q.mode === "sentences"
+                            ? "WRITE THE SENTENCE IN CHINESE"
+                            : direction === "en-zh"
+                              ? "WRITE THE CHINESE"
+                              : "WHAT DOES THIS MEAN?"}
+                    </div>
+                    {q.word && (
+                      <>
+                        {q.mode === "vocabulary" &&
+                        direction === "zh-en" &&
+                        audioOnly ? (
+                          <h1>Listen and give the English meaning</h1>
+                        ) : (
+                          <h1
+                            lang={
+                              q.mode === "tones" || direction === "zh-en"
+                                ? "zh-Hans"
+                                : "en"
+                            }
+                          >
+                            {q.mode === "tones" || direction === "zh-en"
+                              ? q.word.chinese
+                              : q.word.english}
+                          </h1>
+                        )}
+                        {q.mode === "sentences" && (
+                          <p className="sentence-prompt">
+                            {q.word.sentence_english}
+                          </p>
+                        )}
+                        {(q.mode === "tones" || direction === "zh-en") && (
+                          <button
+                            className="audio-button"
+                            onClick={() =>
+                              audio.play([{ text: q.word!.chinese, row: 0 }])
+                            }
+                          >
+                            ◖)) Listen again
+                          </button>
+                        )}
+                      </>
+                    )}
+                    {q.character && (
+                      <h1 className="character-prompt" lang="zh-Hant">
+                        <TraditionalText
+                          traditional={q.character.trad}
+                          simplified={q.character.simp}
+                        />
+                      </h1>
+                    )}
+                    {q.exercise && (
+                      <>
+                        <div className="pattern">
+                          {q.rule!.title} <span>{q.rule!.pattern}</span>
+                        </div>
+                        <h1 className="sentence-prompt">
+                          {q.exercise.prompt_english}
                         </h1>
-                      )}
-                      {q.mode === "sentences" && (
-                        <p className="sentence-prompt">
-                          {q.word.sentence_english}
-                        </p>
-                      )}
-                      {(q.mode === "tones" || direction === "zh-en") && (
-                        <button
-                          className="audio-button"
-                          onClick={() =>
-                            audio.play([{ text: q.word!.chinese, row: 0 }])
+                      </>
+                    )}
+                    <form onSubmit={submit}>
+                      <Field
+                        label={
+                          q.mode === "tones"
+                            ? "Tone numbers (neutral tone = 5)"
+                            : "Your answer"
+                        }
+                      >
+                        <input
+                          autoFocus
+                          ref={input}
+                          autoComplete="off"
+                          autoCapitalize="off"
+                          spellCheck={false}
+                          inputMode={q.mode === "tones" ? "numeric" : "text"}
+                          value={answer}
+                          onChange={(e) => setAnswer(e.target.value)}
+                          onKeyDown={(e) => {
+                            if (e.nativeEvent.isComposing && e.key === "Enter")
+                              e.preventDefault();
+                          }}
+                          placeholder={
+                            q.mode === "tones" ? "e.g. 13" : "Type your answer…"
                           }
-                        >
-                          ◖)) Listen again
+                          readOnly={!!submitted}
+                        />
+                      </Field>
+                      {!submitted && (
+                        <button className="primary" type="submit">
+                          Check answer →
                         </button>
                       )}
-                    </>
-                  )}
-                  {q.character && (
-                    <h1 className="character-prompt" lang="zh-Hant">
-                      <TraditionalText
-                        traditional={q.character.trad}
-                        simplified={q.character.simp}
-                      />
-                    </h1>
-                  )}
-                  {q.exercise && (
-                    <>
-                      <div className="pattern">
-                        {q.rule!.title} <span>{q.rule!.pattern}</span>
-                      </div>
-                      <h1 className="sentence-prompt">
-                        {q.exercise.prompt_english}
-                      </h1>
-                    </>
-                  )}
-                  <form onSubmit={submit}>
-                    <Field
-                      label={
-                        q.mode === "tones"
-                          ? "Tone numbers (neutral tone = 5)"
-                          : "Your answer"
-                      }
-                    >
-                      <input
-                        autoFocus
-                        ref={input}
-                        autoComplete="off"
-                        autoCapitalize="off"
-                        spellCheck={false}
-                        inputMode={q.mode === "tones" ? "numeric" : "text"}
-                        value={answer}
-                        onChange={(e) => setAnswer(e.target.value)}
-                        onKeyDown={(e) => {
-                          if (e.nativeEvent.isComposing && e.key === "Enter")
-                            e.preventDefault();
-                        }}
-                        placeholder={
-                          q.mode === "tones" ? "e.g. 13" : "Type your answer…"
-                        }
-                        readOnly={!!submitted}
-                      />
-                    </Field>
-                    {!submitted && (
-                      <button className="primary" type="submit">
-                        Check answer →
-                      </button>
-                    )}
-                  </form>
-                </section>
+                    </form>
+                  </section>
+                )}
                 {submitted && (
                   <section className="panel feedback" aria-live="polite">
                     <div className="section-line">
