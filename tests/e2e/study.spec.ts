@@ -557,7 +557,5 @@ test("feedback places a larger breakdown immediately after the meaning", async (
   const breakdown = page.locator(".feedback .meaning + .components");
   await expect(breakdown).toHaveText("房 (house) + 贷 (loan)");
   await expect(breakdown).toHaveCSS("font-size", "17px");
-  await expect(page.locator(".feedback .literal-breakdown")).toContainText(
-    "house loan",
-  );
+  await expect(page.locator(".feedback .literal-breakdown")).toHaveCount(0);
 });

@@ -33,4 +33,4 @@ Verified:
 - All 5,801 review records have unique IDs and match the completed CSV.
 - `node --import tsx scripts/prepare-content.ts` succeeds, producing 9,006 vocabulary rows, 179 characters, and 155 grammar rules; all generated vocabulary records include the completed column.
 
-The feedback UI now displays `literal_translation_complete`. Local app content has been regenerated; these changes do not publish a deployment or synchronize hosted content.
+Only idiom quiz feedback displays `literal_translation_complete`. Local app content has been regenerated; these changes do not publish a deployment or synchronize hosted content.

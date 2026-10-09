@@ -119,7 +119,7 @@ function WordDetails({
       {feedback && w.component_explanation && (
         <p className="components">{w.component_explanation}</p>
       )}
-      {feedback && (w.literal_translation_complete || idiom) && (
+      {feedback && idiom && (
         <div className="literal-breakdown">
           <span>Literal translation</span>
           <p>
