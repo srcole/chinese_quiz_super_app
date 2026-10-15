@@ -52,8 +52,8 @@ export type Filters = {
   streak: number;
 };
 export const defaultFilters: Filters = {
-  count: 3,
-  priority: "",
+  count: 30,
+  priority: "5",
   movie_words_rank: "",
   hsk_level: "",
   commonness: "",

@@ -179,7 +179,7 @@ export default function Home() {
   const [toneMax, setToneMax] = useState("2"),
     [tonePrompt, setTonePrompt] = useState(true),
     [charMin, setCharMin] = useState(""),
-    [charMax, setCharMax] = useState("");
+    [charMax, setCharMax] = useState("5");
   const [includePhrases, setIncludePhrases] = useState(false),
     [includeSentences, setIncludeSentences] = useState(false),
     [vocabMax, setVocabMax] = useState(""),
@@ -463,7 +463,7 @@ export default function Home() {
       audio.play([{ text: w.chinese, row: 0 }]);
   }
   function start() {
-    const requested = Math.max(1, Math.floor(Number(filters.count) || 3));
+    const requested = Math.max(1, Math.floor(Number(filters.count) || 30));
     if (requested > eligible.length) {
       setFilters({ ...filters, count: eligible.length });
       setNotice(
@@ -474,7 +474,7 @@ export default function Home() {
     setNotice("");
     const list = shuffled<Question>(
       eligible,
-      Math.max(1, Math.min(500, Number(filters.count) || 3)),
+      Math.max(1, Math.min(500, Number(filters.count) || 30)),
     );
     setQuestions(list);
     setIndex(0);
@@ -874,212 +874,231 @@ export default function Home() {
                       </select>
                     </Field>
                   )}
-                  {!["grammar", "characters"].includes(mode) && (
-                    <Field label="Exclude after correct streak">
+                  {mode !== "grammar" && (
+                    <Field label="Maximum priority">
                       <input
                         type="number"
-                        min="0"
-                        max="100"
-                        value={filters.streak}
+                        min="1"
+                        placeholder="Any"
+                        value={
+                          mode === "characters" ? charMax : filters.priority
+                        }
                         onChange={(e) =>
-                          updateFilter(
-                            "streak",
-                            Math.max(0, Number(e.target.value)),
-                          )
+                          mode === "characters"
+                            ? setCharMax(e.target.value)
+                            : updateFilter("priority", e.target.value)
                         }
                       />
-                      <small>
-                        Last X correct in this mode and direction. 0 = off.
-                      </small>
                     </Field>
                   )}
                 </div>
-                {mode === "vocabulary" && (
+                <details className="filter-details">
+                  <summary>
+                    Fine-tune your word selection <span>Filters</span>
+                  </summary>
                   <div className="field-grid">
-                    <Field label="Maximum Chinese characters">
-                      <input
-                        type="number"
-                        min="1"
-                        placeholder="Any"
-                        value={vocabMax}
-                        onChange={(e) => setVocabMax(e.target.value)}
-                      />
-                    </Field>
-                    <label className="check-field">
-                      <input
-                        type="checkbox"
-                        checked={includePhrases}
-                        onChange={(e) => setIncludePhrases(e.target.checked)}
-                      />
-                      Include phrases (excluded by default)
-                    </label>
-                    <label className="check-field">
-                      <input
-                        type="checkbox"
-                        checked={includeSentences}
-                        onChange={(e) => setIncludeSentences(e.target.checked)}
-                      />
-                      Include sentences (excluded by default)
-                    </label>
-                    <label className="check-field">
-                      <input
-                        type="checkbox"
-                        checked={audioOnly}
-                        onChange={(e) => {
-                          setAudioOnly(e.target.checked);
-                          if (e.target.checked) setDirection("zh-en");
-                        }}
-                      />
-                      Audio-only Chinese prompt
-                    </label>
-                    <p className="helper">
-                      Audio-only uses Chinese → English; characters appear in
-                      feedback. Explicitly selecting phrase or sentence in the
-                      part-of-speech filter also includes that category. Idioms
-                      have their own quiz.
-                    </p>
-                  </div>
-                )}
-                {mode === "tones" && (
-                  <div className="field-grid">
-                    <Field label="Maximum characters in word">
-                      <input
-                        type="number"
-                        min="1"
-                        value={toneMax}
-                        placeholder="Any"
-                        onChange={(e) => setToneMax(e.target.value)}
-                      />
-                    </Field>
-                    <label className="check-field">
-                      <input
-                        type="checkbox"
-                        checked={tonePrompt}
-                        onChange={(e) => setTonePrompt(e.target.checked)}
-                      />
-                      Play Chinese audio with tone prompt
-                    </label>
-                  </div>
-                )}
-                {mode === "grammar" ? (
-                  grammarFields()
-                ) : mode === "characters" ? (
-                  <div className="field-grid">
-                    <Field label="Minimum character priority">
-                      <input
-                        type="number"
-                        value={charMin}
-                        placeholder="Any"
-                        onChange={(e) => setCharMin(e.target.value)}
-                      />
-                    </Field>
-                    <Field label="Maximum character priority">
-                      <input
-                        type="number"
-                        value={charMax}
-                        placeholder="Any"
-                        onChange={(e) => setCharMax(e.target.value)}
-                      />
-                    </Field>
-                  </div>
-                ) : (
-                  <details className="filter-details" open>
-                    <summary>
-                      Fine-tune your word collection <span>Filters</span>
-                    </summary>
-                    <div className="field-grid four">
-                      {(
-                        [
-                          "priority",
-                          "movie_words_rank",
-                          "hsk_level",
-                          "commonness",
-                        ] as const
-                      ).map((k, i) => (
-                        <Field
-                          label={
-                            [
-                              "Maximum priority",
-                              "Maximum movie rank",
-                              "Maximum HSK level",
-                              "Maximum commonness",
-                            ][i]
-                          }
-                          key={k}
-                        >
-                          {k === "hsk_level" ? (
-                            <select
-                              value={filters[k]}
-                              onChange={(e) => updateFilter(k, e.target.value)}
-                            >
-                              <option value="">Any</option>
-                              {["1", "2", "3", "4", "5", "6", "7"].map((n) => (
-                                <option value={n} key={n}>
-                                  {n === "7" ? "7–9" : n}
-                                </option>
-                              ))}
-                            </select>
-                          ) : (
-                            <input
-                              type="number"
-                              min="1"
-                              placeholder="Any"
-                              value={filters[k]}
-                              onChange={(e) => updateFilter(k, e.target.value)}
-                            />
-                          )}
-                        </Field>
-                      ))}
-                      <Field label="Added from">
+                    {!["grammar", "characters"].includes(mode) && (
+                      <Field label="Exclude after correct streak">
                         <input
-                          type="date"
-                          value={filters.dateMin}
+                          type="number"
+                          min="0"
+                          max="100"
+                          value={filters.streak}
                           onChange={(e) =>
-                            updateFilter("dateMin", e.target.value)
+                            updateFilter(
+                              "streak",
+                              Math.max(0, Number(e.target.value)),
+                            )
                           }
                         />
+                        <small>
+                          Last X correct in this mode and direction. 0 = off.
+                        </small>
                       </Field>
-                      <Field label="Added through">
+                    )}
+                  </div>
+                  {mode === "vocabulary" && (
+                    <div className="field-grid">
+                      <Field label="Maximum Chinese characters">
                         <input
-                          type="date"
-                          value={filters.dateMax}
-                          onChange={(e) =>
-                            updateFilter("dateMax", e.target.value)
-                          }
+                          type="number"
+                          min="1"
+                          placeholder="Any"
+                          value={vocabMax}
+                          onChange={(e) => setVocabMax(e.target.value)}
                         />
-                      </Field>
-                      <Field label="Slang">
-                        <select
-                          value={filters.slang}
-                          onChange={(e) =>
-                            updateFilter("slang", e.target.value)
-                          }
-                        >
-                          <option value="">All words</option>
-                          <option value="0">Non-slang</option>
-                          <option value="1">Slang only</option>
-                        </select>
                       </Field>
                       <label className="check-field">
                         <input
                           type="checkbox"
-                          checked={filters.unknown}
+                          checked={includePhrases}
+                          onChange={(e) => setIncludePhrases(e.target.checked)}
+                        />
+                        Include phrases (excluded by default)
+                      </label>
+                      <label className="check-field">
+                        <input
+                          type="checkbox"
+                          checked={includeSentences}
                           onChange={(e) =>
-                            updateFilter("unknown", e.target.checked)
+                            setIncludeSentences(e.target.checked)
                           }
                         />
-                        Include unknown filter values
+                        Include sentences (excluded by default)
+                      </label>
+                      <label className="check-field">
+                        <input
+                          type="checkbox"
+                          checked={audioOnly}
+                          onChange={(e) => {
+                            setAudioOnly(e.target.checked);
+                            if (e.target.checked) setDirection("zh-en");
+                          }}
+                        />
+                        Audio-only Chinese prompt
+                      </label>
+                      <p className="helper">
+                        Audio-only uses Chinese → English; characters appear in
+                        feedback. Explicitly selecting phrase or sentence in the
+                        part-of-speech filter also includes that category.
+                        Idioms have their own quiz.
+                      </p>
+                    </div>
+                  )}
+                  {mode === "tones" && (
+                    <div className="field-grid">
+                      <Field label="Maximum characters in word">
+                        <input
+                          type="number"
+                          min="1"
+                          value={toneMax}
+                          placeholder="Any"
+                          onChange={(e) => setToneMax(e.target.value)}
+                        />
+                      </Field>
+                      <label className="check-field">
+                        <input
+                          type="checkbox"
+                          checked={tonePrompt}
+                          onChange={(e) => setTonePrompt(e.target.checked)}
+                        />
+                        Play Chinese audio with tone prompt
                       </label>
                     </div>
-                    {categoryFields()}
-                    {posFields()}
-                    <p className="helper">
-                      Lower numbers pass maximum filters. HSK uses the lowest
-                      listed level; 7–9 is one band. Slang 0.5 is treated as
-                      non-slang.
-                    </p>
-                  </details>
-                )}
+                  )}
+                  {mode === "grammar" ? (
+                    grammarFields()
+                  ) : mode === "characters" ? (
+                    <div className="field-grid">
+                      <Field label="Minimum character priority">
+                        <input
+                          type="number"
+                          value={charMin}
+                          placeholder="Any"
+                          onChange={(e) => setCharMin(e.target.value)}
+                        />
+                      </Field>
+                    </div>
+                  ) : (
+                    <>
+                      <div className="field-grid four">
+                        {(
+                          [
+                            "movie_words_rank",
+                            "hsk_level",
+                            "commonness",
+                          ] as const
+                        ).map((k, i) => (
+                          <Field
+                            label={
+                              [
+                                "Maximum movie rank",
+                                "Maximum HSK level",
+                                "Maximum commonness",
+                              ][i]
+                            }
+                            key={k}
+                          >
+                            {k === "hsk_level" ? (
+                              <select
+                                value={filters[k]}
+                                onChange={(e) =>
+                                  updateFilter(k, e.target.value)
+                                }
+                              >
+                                <option value="">Any</option>
+                                {["1", "2", "3", "4", "5", "6", "7"].map(
+                                  (n) => (
+                                    <option value={n} key={n}>
+                                      {n === "7" ? "7–9" : n}
+                                    </option>
+                                  ),
+                                )}
+                              </select>
+                            ) : (
+                              <input
+                                type="number"
+                                min="1"
+                                placeholder="Any"
+                                value={filters[k]}
+                                onChange={(e) =>
+                                  updateFilter(k, e.target.value)
+                                }
+                              />
+                            )}
+                          </Field>
+                        ))}
+                        <Field label="Added from">
+                          <input
+                            type="date"
+                            value={filters.dateMin}
+                            onChange={(e) =>
+                              updateFilter("dateMin", e.target.value)
+                            }
+                          />
+                        </Field>
+                        <Field label="Added through">
+                          <input
+                            type="date"
+                            value={filters.dateMax}
+                            onChange={(e) =>
+                              updateFilter("dateMax", e.target.value)
+                            }
+                          />
+                        </Field>
+                        <Field label="Slang">
+                          <select
+                            value={filters.slang}
+                            onChange={(e) =>
+                              updateFilter("slang", e.target.value)
+                            }
+                          >
+                            <option value="">All words</option>
+                            <option value="0">Non-slang</option>
+                            <option value="1">Slang only</option>
+                          </select>
+                        </Field>
+                        <label className="check-field">
+                          <input
+                            type="checkbox"
+                            checked={filters.unknown}
+                            onChange={(e) =>
+                              updateFilter("unknown", e.target.checked)
+                            }
+                          />
+                          Include unknown filter values
+                        </label>
+                      </div>
+                      {categoryFields()}
+                      {posFields()}
+                      <p className="helper">
+                        Lower numbers pass maximum filters. HSK uses the lowest
+                        listed level; 7–9 is one band. Slang 0.5 is treated as
+                        non-slang.
+                      </p>
+                    </>
+                  )}
+                </details>
                 <details className="preset-details">
                   <summary>Saved study setups</summary>
                   <div className="inline">
@@ -1127,7 +1146,7 @@ export default function Home() {
                 <div className="start-bar">
                   <span>
                     {eligible.length
-                      ? `${Math.min(Math.max(1, Number(filters.count) || 3), 500, eligible.length)} questions · one step closer`
+                      ? `${Math.min(Math.max(1, Number(filters.count) || 30), 500, eligible.length)} questions · one step closer`
                       : "No matching items. Adjust your filters or streak exclusion."}
                   </span>
                   <button

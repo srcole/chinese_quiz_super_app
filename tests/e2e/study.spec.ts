@@ -167,11 +167,15 @@ test("review modes show appropriate content and mobile layout stays in viewport"
 test("filters treat unknown movie ranks explicitly and presets restore configuration", async ({
   page,
 }) => {
+  await page
+    .getByText("Fine-tune your word selection", { exact: false })
+    .click();
+  await page.getByLabel("Maximum priority", { exact: true }).fill("");
   await page.getByLabel("Maximum movie rank", { exact: true }).fill("1");
   await expect(page.locator(".tag")).toHaveText("0 eligible");
   await page.getByLabel("Include unknown filter values").check();
   await expect(page.locator(".tag")).toHaveText(
-    `${content.words.filter((w: Record<string, string>) => w.part_of_speech !== "idiom" && w.part_of_speech !== "phrase" && (!w.movie_words_rank || Number(w.movie_words_rank) <= 1)).length.toLocaleString()} eligible`,
+    `${content.words.filter((w: Record<string, string>) => w.part_of_speech !== "idiom" && w.part_of_speech !== "phrase" && w.part_of_speech !== "sentence" && (!w.movie_words_rank || Number(w.movie_words_rank) <= 1)).length.toLocaleString()} eligible`,
   );
   await page.getByText("Saved study setups", { exact: true }).click();
   await page.getByLabel("Setup name").fill("Movie collection");
@@ -264,14 +268,13 @@ test("two correct answers exclude a word only in the practiced direction", async
 test("question count clears, blank answers are wrong, and Enter advances feedback", async ({
   page,
 }) => {
-  await expect(page.getByLabel("Questions", { exact: true })).toHaveValue("3");
+  await expect(page.getByLabel("Questions", { exact: true })).toHaveValue("30");
   await page.getByLabel("Questions", { exact: true }).fill("");
   await expect(page.getByLabel("Questions", { exact: true })).toHaveValue("");
   await page.getByLabel("Questions", { exact: true }).fill("5");
   await page.getByRole("button", { name: "Start practicing" }).click();
   await page.getByRole("button", { name: "Check answer" }).click();
   await expect(page.locator(".feedback")).toBeVisible();
-  await page.locator(".question input").focus();
   await page.keyboard.press("Enter");
   await expect(
     page.getByText("Vocabulary · 2 / 5", { exact: true }),
@@ -284,6 +287,10 @@ test("tone limits and prompt audio can be configured, character priority bounds 
   await page
     .locator(".mode-card")
     .filter({ has: page.getByRole("heading", { name: "Tones", exact: true }) })
+    .click();
+  await page.getByLabel("Maximum priority", { exact: true }).fill("");
+  await page
+    .getByText("Fine-tune your word selection", { exact: false })
     .click();
   await expect(page.getByLabel("Maximum characters in word")).toHaveValue("2");
   const expected = content.words.filter(
@@ -311,8 +318,11 @@ test("tone limits and prompt audio can be configured, character priority bounds 
       }),
     })
     .click();
+  await page
+    .getByText("Fine-tune your word selection", { exact: false })
+    .click();
   await page.getByLabel("Minimum character priority").fill("2");
-  await page.getByLabel("Maximum character priority").fill("3");
+  await page.getByLabel("Maximum priority", { exact: true }).fill("3");
   await expect(page.locator(".tag")).toHaveText(
     `${content.characters.filter((c: Record<string, string>) => Number(c.priority) >= 2 && Number(c.priority) <= 3).length} eligible`,
   );
@@ -418,6 +428,9 @@ test("vocabulary audio-only hides characters and missed answers can be replayed"
   );
   await page.reload();
   await page.getByLabel("Questions", { exact: true }).fill("1");
+  await page
+    .getByText("Fine-tune your word selection", { exact: false })
+    .click();
   await page.getByLabel("Audio-only Chinese prompt").check();
   await expect(
     page.getByRole("combobox", { name: "Prompt direction", exact: true }),
@@ -470,6 +483,9 @@ test("vocabulary eligibility excludes idioms and makes phrases optional", async 
   );
   await page.reload();
   await expect(page.locator(".tag")).toHaveText("1 eligible");
+  await page
+    .getByText("Fine-tune your word selection", { exact: false })
+    .click();
   await page.getByLabel("Include phrases (excluded by default)").check();
   await expect(page.locator(".tag")).toHaveText("2 eligible");
   await page.getByLabel("Include sentences (excluded by default)").check();
@@ -492,6 +508,7 @@ test("oversized quizzes require acknowledging the autofilled available count", a
       }),
     })
     .click();
+  await page.getByLabel("Maximum priority", { exact: true }).fill("");
   await page.getByLabel("Questions", { exact: true }).fill("500");
   await page.getByRole("button", { name: "Start practicing" }).click();
   await expect(page.getByRole("status")).toContainText(
@@ -653,4 +670,36 @@ test("character review can read words followed by Chinese examples", async ({
       page.evaluate(() => (window as unknown as { spoken: string[] }).spoken),
     )
     .toEqual(["学习", "我喜欢学习中文。"]);
+});
+
+test("practice keeps three main filters visible and advanced filters collapsed", async ({
+  page,
+}) => {
+  const setup = page.locator(".panel.setup");
+  await expect(page.getByLabel("Questions", { exact: true })).toHaveValue("30");
+  await expect(
+    page.getByLabel("Maximum priority", { exact: true }),
+  ).toHaveValue("5");
+  await expect(
+    setup.locator(":scope > .field-grid input, :scope > .field-grid select"),
+  ).toHaveCount(3);
+  await expect(page.locator(".filter-details")).not.toHaveAttribute("open", "");
+  await expect(
+    page.getByLabel("Exclude after correct streak", { exact: false }),
+  ).not.toBeVisible();
+  await expect(
+    page.getByLabel("Maximum Chinese characters", { exact: true }),
+  ).not.toBeVisible();
+  await page
+    .getByText("Fine-tune your word selection", { exact: false })
+    .click();
+  await expect(
+    page.getByLabel("Exclude after correct streak", { exact: false }),
+  ).toBeVisible();
+  await expect(
+    page.getByLabel("Maximum Chinese characters", { exact: true }),
+  ).toBeVisible();
+  await expect(
+    page.getByLabel("Maximum movie rank", { exact: true }),
+  ).toBeVisible();
 });
