@@ -157,6 +157,20 @@ test("streaks reset after a miss and are separate by direction and mode", () => 
   assert.equal(map.get("word:1:tones:fixed"), undefined);
   assert.equal(quizDirection("tones", "en-zh"), "fixed");
 });
+test("incorrect streaks reset on a correct answer and stay separate by direction", () => {
+  const rows = [
+    attempt("1", false),
+    attempt("2", false),
+    attempt("3", true),
+    attempt("4", false),
+    attempt("5", false),
+    attempt("6", false, "zh-en"),
+  ];
+  const map = streakMap(rows.reverse(), false);
+  assert.equal(map.get("word:1:vocabulary:en-zh"), 2);
+  assert.equal(map.get("word:1:vocabulary:zh-en"), 1);
+  assert.equal(map.get("word:1:tones:fixed"), undefined);
+});
 test("tone answers use dictionary tones, sentences use the sentence", () => {
   assert.deepEqual(acceptedAnswers({ id: "1", mode: "tones", word }, "en-zh"), [
     "33",

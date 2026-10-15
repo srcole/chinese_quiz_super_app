@@ -123,7 +123,8 @@ function WordDetails({
         <div className="literal-breakdown">
           <span>Literal translation</span>
           <p>
-            {w.literal_translation_complete || "Not provided in the source data."}
+            {w.literal_translation_complete ||
+              "Not provided in the source data."}
           </p>
         </div>
       )}
@@ -184,6 +185,8 @@ export default function Home() {
     [vocabMax, setVocabMax] = useState(""),
     [audioOnly, setAudioOnly] = useState(false);
   const [reviewSentences, setReviewSentences] = useState(false);
+  const [reviewStreakType, setReviewStreakType] = useState("correct"),
+    [reviewIncorrectStreak, setReviewIncorrectStreak] = useState(1);
   const audio = useAudio(),
     progress = useProgress(),
     input = useRef<HTMLInputElement>(null),
@@ -259,6 +262,10 @@ export default function Home() {
   }, [progress.user]);
   const streaks = useMemo(
     () => streakMap(progress.attempts),
+    [progress.attempts],
+  );
+  const incorrectStreaks = useMemo(
+    () => streakMap(progress.attempts, false),
     [progress.attempts],
   );
   const words = content?.words || [],
@@ -374,13 +381,21 @@ export default function Home() {
             (reviewQuiz !== "sentences" || !!w.sentence) &&
             (reviewQuiz !== "tones" ||
               /^[1-5](?:-[1-5])*$/.test(w.tone_pattern)) &&
-            (streaks.get(
-              historyKey(
-                `word:${w.id}`,
-                reviewQuiz,
-                quizDirection(reviewQuiz, direction),
-              ),
-            ) || 0) < Math.max(1, filters.streak)
+            (reviewStreakType === "incorrect"
+              ? (incorrectStreaks.get(
+                  historyKey(
+                    `word:${w.id}`,
+                    reviewQuiz,
+                    quizDirection(reviewQuiz, direction),
+                  ),
+                ) || 0) > reviewIncorrectStreak
+              : (streaks.get(
+                  historyKey(
+                    `word:${w.id}`,
+                    reviewQuiz,
+                    quizDirection(reviewQuiz, direction),
+                  ),
+                ) || 0) < Math.max(1, filters.streak))
           );
         return (
           (!filters.category_l1 || w.category_l1 === filters.category_l1) &&
@@ -395,6 +410,9 @@ export default function Home() {
       character,
       reviewPriority,
       reviewQuiz,
+      reviewStreakType,
+      reviewIncorrectStreak,
+      incorrectStreaks,
       streaks,
       direction,
     ],
@@ -1648,19 +1666,54 @@ export default function Home() {
                         ))}
                       </select>
                     </Field>
-                    <Field label="Correct streak below">
-                      <input
-                        type="number"
-                        min="1"
-                        value={Math.max(1, filters.streak)}
-                        onChange={(e) =>
-                          updateFilter(
-                            "streak",
-                            Math.max(1, Math.floor(Number(e.target.value))),
-                          )
-                        }
-                      />
+                    <Field label="Streak filter">
+                      <select
+                        value={reviewStreakType}
+                        onChange={(e) => {
+                          audio.stop();
+                          setReviewStreakType(e.target.value);
+                          setReviewStarted(false);
+                          setReviewLimit(50);
+                        }}
+                      >
+                        <option value="correct">Correct streak below</option>
+                        <option value="incorrect">
+                          Incorrect streak longer than
+                        </option>
+                      </select>
                     </Field>
+                    {reviewStreakType === "incorrect" ? (
+                      <Field label="Incorrect streak longer than">
+                        <input
+                          type="number"
+                          min="0"
+                          step="1"
+                          value={reviewIncorrectStreak}
+                          onChange={(e) => {
+                            audio.stop();
+                            setReviewIncorrectStreak(
+                              Math.max(0, Math.floor(Number(e.target.value))),
+                            );
+                            setReviewStarted(false);
+                            setReviewLimit(50);
+                          }}
+                        />
+                      </Field>
+                    ) : (
+                      <Field label="Correct streak below">
+                        <input
+                          type="number"
+                          min="1"
+                          value={Math.max(1, filters.streak)}
+                          onChange={(e) =>
+                            updateFilter(
+                              "streak",
+                              Math.max(1, Math.floor(Number(e.target.value))),
+                            )
+                          }
+                        />
+                      </Field>
+                    )}
                     {reviewQuiz !== "tones" && (
                       <Field label="Prompt direction">
                         <select
@@ -1701,7 +1754,7 @@ export default function Home() {
                   </button>
                 </div>
               </section>
-              {reviewMode !== "grammar" && reviewMode !== "character" && (
+              {reviewMode !== "grammar" && (
                 <label className="check-field">
                   <input
                     type="checkbox"
@@ -1733,16 +1786,19 @@ export default function Home() {
                               }))
                             : reviewWords.flatMap((w, row) => [
                                 { text: w.chinese, row },
-                                ...(reviewSentences &&
-                                reviewMode !== "character" &&
-                                w.sentence
+                                ...(reviewSentences && w.sentence
                                   ? [{ text: w.sentence, row }]
                                   : []),
                               ]),
                         )
                       }
                     >
-                      ◖)) Listen to all
+                      ◖)) Listen to all{" "}
+                      {reviewMode === "grammar"
+                        ? "examples"
+                        : reviewSentences
+                          ? "words + sentences"
+                          : "words"}
                     </button>
                   </div>
                   {reviewMode === "grammar" && reviewRule ? (
@@ -1805,9 +1861,7 @@ export default function Home() {
                               onClick={() =>
                                 audio.play([
                                   { text: w.chinese, row: i },
-                                  ...(reviewSentences &&
-                                  reviewMode !== "character" &&
-                                  w.sentence
+                                  ...(reviewSentences && w.sentence
                                     ? [{ text: w.sentence, row: i }]
                                     : []),
                                 ])

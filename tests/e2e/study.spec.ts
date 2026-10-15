@@ -559,3 +559,98 @@ test("feedback places a larger breakdown immediately after the meaning", async (
   await expect(breakdown).toHaveCSS("font-size", "17px");
   await expect(page.locator(".feedback .literal-breakdown")).toHaveCount(0);
 });
+
+test("tricky review filters consecutive misses by threshold and direction", async ({
+  page,
+}) => {
+  const words = content.words
+    .slice(0, 3)
+    .map((w: Record<string, string>) => ({ ...w, part_of_speech: "noun" }));
+  await page.route("**/content.json", (route) =>
+    route.fulfill({ json: { words, characters: [], rules: [] } }),
+  );
+  await page.evaluate((words) => {
+    const attempts = [
+      [0, false, "en-zh"],
+      [0, false, "en-zh"],
+      [1, false, "en-zh"],
+      [2, false, "en-zh"],
+      [2, false, "en-zh"],
+      [2, true, "en-zh"],
+      [1, false, "zh-en"],
+      [1, false, "zh-en"],
+    ].map(([word, correct, direction], i) => ({
+      id: String(i),
+      item_id: `word:${words[Number(word)].id}`,
+      mode: "vocabulary",
+      direction,
+      correct,
+      answer: "test",
+      overridden: false,
+      created_at: new Date(2026, 0, 1, 0, 0, i).toISOString(),
+      updated_at: new Date(2026, 0, 1, 0, 0, i).toISOString(),
+    }));
+    localStorage.setItem("zili-attempts-v1:guest", JSON.stringify(attempts));
+  }, words);
+  await page.reload();
+  await page.getByRole("button", { name: /Review/ }).click();
+  await page.getByRole("button", { name: "Focus on tricky words" }).click();
+  await page
+    .getByRole("combobox", { name: "Streak filter", exact: true })
+    .selectOption("incorrect");
+  await expect(
+    page.getByLabel("Incorrect streak longer than", { exact: true }),
+  ).toHaveValue("1");
+  await page.getByRole("button", { name: "Open review" }).click();
+  await expect(page.locator(".review-row")).toHaveCount(1);
+  await expect(page.locator(".review-row")).toContainText(words[0].chinese);
+  await page
+    .getByLabel("Incorrect streak longer than", { exact: true })
+    .fill("2");
+  await expect(
+    page.getByRole("button", { name: "Open review" }),
+  ).toBeDisabled();
+  await page
+    .getByLabel("Incorrect streak longer than", { exact: true })
+    .fill("1");
+  await page.getByLabel("Prompt direction").selectOption("zh-en");
+  await page.getByRole("button", { name: "Open review" }).click();
+  await expect(page.locator(".review-row")).toHaveCount(1);
+  await expect(page.locator(".review-row")).toContainText(words[1].chinese);
+});
+
+test("character review can read words followed by Chinese examples", async ({
+  page,
+}) => {
+  await page.route("**/content.json", (route) =>
+    route.fulfill({
+      json: {
+        words: [
+          {
+            ...content.words[0],
+            chinese: "学习",
+            part_of_speech: "verb",
+            sentence: "我喜欢学习中文。",
+          },
+        ],
+        characters: [],
+        rules: [],
+      },
+    }),
+  );
+  await page.reload();
+  await page.getByRole("button", { name: /Review/ }).click();
+  await page.getByRole("button", { name: "By Chinese character" }).click();
+  await page.getByLabel("Chinese character", { exact: true }).fill("学");
+  await page.getByLabel("Also read Chinese example sentences").check();
+  await page.getByRole("button", { name: "Open review" }).click();
+  await page.getByRole("button", { name: "Listen to all" }).click();
+  await page.evaluate(() =>
+    (window as unknown as { finishSpeech: () => void }).finishSpeech(),
+  );
+  await expect
+    .poll(() =>
+      page.evaluate(() => (window as unknown as { spoken: string[] }).spoken),
+    )
+    .toEqual(["学习", "我喜欢学习中文。"]);
+});

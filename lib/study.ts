@@ -128,7 +128,7 @@ export function matches(w: Word, f: Filters) {
 export function historyKey(item: string, mode: Mode, direction: string) {
   return `${item}:${mode}:${direction}`;
 }
-export function streakMap(attempts: Attempt[]) {
+export function streakMap(attempts: Attempt[], correct = true) {
   const result = new Map<string, number>();
   for (const a of [...attempts].sort(
     (a, b) =>
@@ -136,7 +136,7 @@ export function streakMap(attempts: Attempt[]) {
       a.id.localeCompare(b.id),
   )) {
     const key = historyKey(a.item_id, a.mode, a.direction);
-    result.set(key, a.correct ? (result.get(key) || 0) + 1 : 0);
+    result.set(key, a.correct === correct ? (result.get(key) || 0) + 1 : 0);
   }
   return result;
 }
