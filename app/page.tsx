@@ -24,6 +24,7 @@ import {
   streakMap,
   Word,
 } from "@/lib/study";
+import { choiceLabel, multipleChoices } from "@/lib/multiple-choice";
 import { usePreference } from "@/lib/use-preference";
 import { useAudio } from "@/lib/use-audio";
 import TraditionalText from "./traditional-text";
@@ -187,6 +188,11 @@ export default function Home() {
   const [reviewSentences, setReviewSentences] = useState(false);
   const [reviewStreakType, setReviewStreakType] = useState("correct"),
     [reviewIncorrectStreak, setReviewIncorrectStreak] = useState(1);
+  const [multipleChoice, setMultipleChoice] = useState(false);
+  const [choiceCount, setChoiceCount] = useState(5);
+  const [sessionChoices, setSessionChoices] = useState<Record<string, Word[]>>(
+    {},
+  );
   const audio = useAudio(),
     progress = useProgress(),
     input = useRef<HTMLInputElement>(null),
@@ -419,6 +425,7 @@ export default function Home() {
   );
   const reviewRule = rules.find((r) => r.id === ruleId);
   const q = questions[index];
+  const choices = q ? sessionChoices[q.id] || [] : [];
   const sessionResults = progress.attempts.filter((a) =>
     sessionIds.includes(a.id),
   );
@@ -476,6 +483,16 @@ export default function Home() {
       eligible,
       Math.max(1, Math.min(500, Number(filters.count) || 30)),
     );
+    setSessionChoices(
+      multipleChoice
+        ? Object.fromEntries(
+            list.map((question) => [
+              question.id,
+              multipleChoices(question, words, direction, choiceCount),
+            ]),
+          )
+        : {},
+    );
     setQuestions(list);
     setIndex(0);
     setAnswer("");
@@ -510,14 +527,22 @@ export default function Home() {
       next();
       return;
     }
+    if (choices.length && !choices.some((word) => word.id === answer)) return;
     const now = new Date().toISOString();
     const a: Attempt = {
       id: crypto.randomUUID(),
       item_id: q.id,
       mode: q.mode,
       direction: quizDirection(q.mode, direction),
-      answer,
-      correct: gradeQuestion(answer, q, direction),
+      answer: choices.length
+        ? choiceLabel(
+            choices.find((word) => word.id === answer)!,
+            direction,
+          )
+        : answer,
+      correct: choices.length
+        ? answer === q.word?.id
+        : gradeQuestion(answer, q, direction),
       overridden: false,
       created_at: now,
       updated_at: now,
@@ -896,6 +921,43 @@ export default function Home() {
                   <summary>
                     Fine-tune your word selection <span>Filters</span>
                   </summary>
+                  {["vocabulary", "idioms"].includes(mode) && (
+                    <div className="field-grid">
+                      <label className="check-field">
+                        <input
+                          type="checkbox"
+                          checked={multipleChoice}
+                          onChange={(e) => setMultipleChoice(e.target.checked)}
+                        />
+                        Multiple-choice answers
+                      </label>
+                      {multipleChoice && (
+                        <Field label="Number of choices">
+                          <input
+                            type="number"
+                            min="2"
+                            max="10"
+                            value={choiceCount}
+                            onChange={(e) =>
+                              setChoiceCount(
+                                Math.max(
+                                  2,
+                                  Math.min(
+                                    10,
+                                    Math.floor(Number(e.target.value) || 5),
+                                  ),
+                                ),
+                              )
+                            }
+                          />
+                          <small>
+                            Uses fewer choices when there are not enough
+                            distinct answers.
+                          </small>
+                        </Field>
+                      )}
+                    </div>
+                  )}
                   <div className="field-grid">
                     {!["grammar", "characters"].includes(mode) && (
                       <Field label="Exclude after correct streak">
@@ -1290,7 +1352,9 @@ export default function Home() {
                           : q.mode === "grammar" || q.mode === "sentences"
                             ? "WRITE THE SENTENCE IN CHINESE"
                             : direction === "en-zh"
-                              ? "WRITE THE CHINESE"
+                              ? choices.length
+                                ? "CHOOSE THE CHINESE"
+                                : "WRITE THE CHINESE"
                               : "WHAT DOES THIS MEAN?"}
                     </div>
                     {q.word && (
@@ -1348,32 +1412,60 @@ export default function Home() {
                       </>
                     )}
                     <form onSubmit={submit}>
-                      <Field
-                        label={
-                          q.mode === "tones"
-                            ? "Tone numbers (neutral tone = 5)"
-                            : "Your answer"
-                        }
-                      >
-                        <input
-                          autoFocus
-                          ref={input}
-                          autoComplete="off"
-                          autoCapitalize="off"
-                          spellCheck={false}
-                          inputMode={q.mode === "tones" ? "numeric" : "text"}
-                          value={answer}
-                          onChange={(e) => setAnswer(e.target.value)}
-                          onKeyDown={(e) => {
-                            if (e.nativeEvent.isComposing && e.key === "Enter")
-                              e.preventDefault();
-                          }}
-                          placeholder={
-                            q.mode === "tones" ? "e.g. 13" : "Type your answer…"
+                      {choices.length ? (
+                        <fieldset className="multiple-choice">
+                          <legend>Choose your answer</legend>
+                          {choices.map((word) => (
+                            <label className="choice-option" key={word.id}>
+                              <input
+                                type="radio"
+                                name="quiz-choice"
+                                value={word.id}
+                                checked={answer === word.id}
+                                onChange={() => setAnswer(word.id)}
+                                required
+                              />
+                              <span
+                                lang={direction === "en-zh" ? "zh-Hans" : "en"}
+                              >
+                                {choiceLabel(word, direction)}
+                              </span>
+                            </label>
+                          ))}
+                        </fieldset>
+                      ) : (
+                        <Field
+                          label={
+                            q.mode === "tones"
+                              ? "Tone numbers (neutral tone = 5)"
+                              : "Your answer"
                           }
-                          readOnly={!!submitted}
-                        />
-                      </Field>
+                        >
+                          <input
+                            autoFocus
+                            ref={input}
+                            autoComplete="off"
+                            autoCapitalize="off"
+                            spellCheck={false}
+                            inputMode={q.mode === "tones" ? "numeric" : "text"}
+                            value={answer}
+                            onChange={(e) => setAnswer(e.target.value)}
+                            onKeyDown={(e) => {
+                              if (
+                                e.nativeEvent.isComposing &&
+                                e.key === "Enter"
+                              )
+                                e.preventDefault();
+                            }}
+                            placeholder={
+                              q.mode === "tones"
+                                ? "e.g. 13"
+                                : "Type your answer…"
+                            }
+                            readOnly={!!submitted}
+                          />
+                        </Field>
+                      )}
                       {!submitted && (
                         <button className="primary" type="submit">
                           Check answer →
@@ -1425,6 +1517,20 @@ export default function Home() {
                           feedback
                           idiom={q.mode === "idioms"}
                         />
+                        {choices.length > 0 && (
+                          <details key={q.id} className="choice-feedback">
+                            <summary>Other multiple-choice options</summary>
+                            {choices
+                              .filter((word) => word.id !== q.word!.id)
+                              .map((word) => (
+                                <div key={word.id}>
+                                  <p lang="zh-Hans">{word.chinese}</p>
+                                  <p className="pinyin">{word.pinyin}</p>
+                                  <p>{word.english}</p>
+                                </div>
+                              ))}
+                          </details>
+                        )}
                         {q.mode === "tones" && (
                           <div className="pattern">
                             Dictionary tones:{" "}

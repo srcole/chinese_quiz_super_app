@@ -703,3 +703,83 @@ test("practice keeps three main filters visible and advanced filters collapsed",
     page.getByLabel("Maximum movie rank", { exact: true }),
   ).toBeVisible();
 });
+
+test("multiple choice supports vocabulary and idioms with collapsed distractor feedback", async ({
+  page,
+}) => {
+  const words = ["noun", "idiom"].flatMap((part_of_speech, group) =>
+    Array.from({ length: 6 }, (_, i) => ({
+      ...content.words[0],
+      id: `${group}-${i}`,
+      chinese: `选项${group}${i}`,
+      english: `meaning ${group} ${i}`,
+      pinyin: `xuan ${group} ${i}`,
+      part_of_speech,
+      priority: "1",
+    })),
+  );
+  await page.route("**/content.json", (route) =>
+    route.fulfill({ json: { words, characters: [], rules: [] } }),
+  );
+  await page.reload();
+  for (const [mode, direction] of [
+    ["Vocabulary", "en-zh"],
+    ["Idioms", "zh-en"],
+  ]) {
+    await page
+      .locator(".mode-card")
+      .filter({ has: page.getByRole("heading", { name: mode, exact: true }) })
+      .click();
+    await page.getByLabel("Questions", { exact: true }).fill("2");
+    await page
+      .getByRole("combobox", { name: "Prompt direction", exact: true })
+      .selectOption(direction);
+    await page.locator(".filter-details summary").click();
+    await page.getByLabel("Multiple-choice answers", { exact: true }).check();
+    await expect(
+      page.getByLabel("Number of choices", { exact: false }),
+    ).toHaveValue("5");
+    await page.getByRole("button", { name: "Start practicing" }).click();
+    await expect(page.getByRole("radio")).toHaveCount(5);
+    const prompt = await page.locator(".question h1").innerText();
+    const correct = words.find(
+      (w) => (direction === "en-zh" ? w.english : w.chinese) === prompt,
+    )!;
+    await page
+      .getByRole("radio", {
+        name: direction === "en-zh" ? correct.chinese : correct.english,
+        exact: true,
+      })
+      .check();
+    await page.getByRole("button", { name: "Check answer" }).click();
+    await expect(
+      page.getByRole("heading", { name: "✓ You got it" }),
+    ).toBeVisible();
+    const details = page.locator(".choice-feedback");
+    await expect(details).not.toHaveAttribute("open", "");
+    await details.locator("summary").click();
+    await expect(details.locator(":scope > div")).toHaveCount(4);
+    for (const row of await details.locator(":scope > div").all()) {
+      await expect(row.locator('[lang="zh-Hans"]')).toBeVisible();
+      await expect(row.locator(".pinyin")).toBeVisible();
+      expect(await row.innerText()).not.toContain(correct.chinese);
+    }
+    await page.getByRole("button", { name: "Next question" }).click();
+    const secondPrompt = await page.locator(".question h1").innerText();
+    const secondCorrect = words.find(
+      (w) => (direction === "en-zh" ? w.english : w.chinese) === secondPrompt,
+    )!;
+    for (const option of await page.getByRole("radio").all()) {
+      if ((await option.getAttribute("value")) !== secondCorrect.id) {
+        await option.check();
+        break;
+      }
+    }
+    await page.getByRole("button", { name: "Check answer" }).click();
+    await expect(
+      page.getByRole("heading", { name: "○ Not in the accepted answer list" }),
+    ).toBeVisible();
+    await expect(details).not.toHaveAttribute("open", "");
+    await page.getByRole("button", { name: "End session" }).click();
+  }
+});
