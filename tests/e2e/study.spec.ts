@@ -880,10 +880,11 @@ test("sentence writing saves, survives reload, searches, and exports matching AI
   await expect(
     page.getByRole("button", { name: "Save sentence", exact: true }),
   ).toBeDisabled();
-  await page.getByRole("button", { name: "Next word" }).click();
-  await expect(
-    page.locator(".sentence-writing h2 [lang=zh-Hans]"),
-  ).toBeVisible();
+  await expect(page.locator(".sentence-writing h2 [lang=zh-Hans]")).toHaveText(
+    "学校",
+  );
+  await expect(page.getByLabel("Your example sentence")).toHaveValue("");
+  await expect(page.getByLabel("Your example sentence")).toBeFocused();
   await page.getByLabel("Your example sentence").fill("我走路去学校。");
   await page
     .getByRole("button", { name: "Save sentence", exact: true })

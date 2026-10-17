@@ -1,5 +1,5 @@
 "use client";
-import { useMemo, useState } from "react";
+import { useMemo, useRef, useState } from "react";
 import { vocabularyEligible, Word } from "@/lib/study";
 import { sentenceRecord, WrittenSentence } from "@/lib/sentences";
 
@@ -18,6 +18,7 @@ export default function SentenceWriting({
   const [selected, setSelected] = useState<Word | null>(null);
   const [sentence, setSentence] = useState("");
   const [saved, setSaved] = useState(false);
+  const sentenceInput = useRef<HTMLTextAreaElement>(null);
   const [showHints, setShowHints] = useState(false);
   const pool = useMemo(
     () =>
@@ -40,6 +41,7 @@ export default function SentenceWriting({
     );
     setSentence("");
     setSaved(false);
+    sentenceInput.current?.focus();
   }
   return (
     <>
@@ -95,12 +97,10 @@ export default function SentenceWriting({
           <form
             onSubmit={(e) => {
               e.preventDefault();
-              if (
-                sentence.trim() &&
-                !saved &&
-                save(sentenceRecord(word, sentence))
-              )
+              if (sentence.trim() && save(sentenceRecord(word, sentence))) {
+                next();
                 setSaved(true);
+              }
             }}
           >
             <label className="field">
@@ -110,8 +110,11 @@ export default function SentenceWriting({
                 rows={4}
                 value={sentence}
                 required
-                readOnly={saved}
-                onChange={(e) => setSentence(e.target.value)}
+                ref={sentenceInput}
+                onChange={(e) => {
+                  setSentence(e.target.value);
+                  setSaved(false);
+                }}
                 placeholder={`Write a Chinese sentence using ${word.chinese}…`}
               />
             </label>
@@ -119,12 +122,12 @@ export default function SentenceWriting({
               <button
                 type="submit"
                 className="primary"
-                disabled={!ready || !sentence.trim() || saved}
+                disabled={!ready || !sentence.trim()}
               >
                 Save sentence
               </button>
               <button type="button" onClick={next}>
-                {saved ? "Next word →" : "Skip word →"}
+                Skip word →
               </button>
             </div>
           </form>
