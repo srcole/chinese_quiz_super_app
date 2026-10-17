@@ -782,4 +782,37 @@ test("multiple choice supports vocabulary and idioms with collapsed distractor f
     await expect(details).not.toHaveAttribute("open", "");
     await page.getByRole("button", { name: "End session" }).click();
   }
+  const saved = await page.evaluate(() =>
+    JSON.parse(localStorage.getItem("zili-attempts-v1:guest") || "[]"),
+  );
+  expect(saved).toHaveLength(4);
+  expect(
+    saved.every((a: { multiple_choice?: boolean }) => a.multiple_choice),
+  ).toBe(true);
+  await page.getByRole("button", { name: /Progress/ }).click();
+  const submitted = page
+    .locator(".stat-grid .panel")
+    .filter({ has: page.getByText("Answers submitted", { exact: true }) });
+  await expect(
+    page.getByLabel("Include multiple-choice quizzes"),
+  ).not.toBeChecked();
+  await expect(submitted.locator("strong")).toHaveText("0");
+  await expect(page.locator(".history-list > div")).toHaveCount(0);
+  await page.getByLabel("Include multiple-choice quizzes").check();
+  await expect(submitted.locator("strong")).toHaveText("2");
+  await expect(page.locator(".history-list > div")).toHaveCount(2);
+  await page.getByRole("button", { name: "All quiz statistics" }).click();
+  await expect(
+    page
+      .locator(".stats-table tbody tr")
+      .filter({ hasText: "Vocabulary" })
+      .first(),
+  ).toContainText("2");
+  await page.getByLabel("Include multiple-choice quizzes").uncheck();
+  await expect(
+    page
+      .locator(".stats-table tbody tr")
+      .filter({ hasText: "Vocabulary" })
+      .first(),
+  ).toContainText("0");
 });

@@ -32,6 +32,7 @@ export type Attempt = {
   answer: string;
   correct: boolean;
   overridden: boolean;
+  multiple_choice?: boolean;
   created_at: string;
   updated_at: string;
 };

@@ -28,6 +28,7 @@ export default function ProgressPanel({
     [bucketSize, setBucketSize] = useState(50),
     [result, setResult] = useState("all"),
     [details, setDetails] = useState(false),
+    [includeMultipleChoice, setIncludeMultipleChoice] = useState(false),
     [limit, setLimit] = useState(50);
   const fixed = ["tones", "characters", "grammar"].includes(mode);
   const dir = fixed ? "fixed" : direction;
@@ -42,8 +43,17 @@ export default function ProgressPanel({
     [content, mode, priority],
   );
   const stats = useMemo(
-    () => summarize(items, attempts, mode, dir, x, incorrectX),
-    [items, attempts, mode, dir, x, incorrectX],
+    () =>
+      summarize(
+        items,
+        attempts,
+        mode,
+        dir,
+        x,
+        incorrectX,
+        includeMultipleChoice,
+      ),
+    [items, attempts, mode, dir, x, incorrectX, includeMultipleChoice],
   );
   const buckets = useMemo(
     () => accuracyBuckets(stats.rows, bucketMode, bucketSize),
@@ -88,11 +98,12 @@ export default function ProgressPanel({
               d,
               x,
               incorrectX,
+              includeMultipleChoice,
             ),
           })),
         );
       }),
-    [content, attempts, x, incorrectX],
+    [content, attempts, x, incorrectX, includeMultipleChoice],
   );
   function changed() {
     stop();
@@ -124,6 +135,17 @@ export default function ProgressPanel({
             {details ? "← Filtered progress" : "All quiz statistics →"}
           </button>
         </div>
+        <label className="check-field">
+          <input
+            type="checkbox"
+            checked={includeMultipleChoice}
+            onChange={(e) => {
+              changed();
+              setIncludeMultipleChoice(e.target.checked);
+            }}
+          />
+          Include multiple-choice quizzes
+        </label>
         <div className="field-grid">
           {!details && (
             <>
@@ -505,6 +527,7 @@ export default function ProgressPanel({
                     <small>
                       Your answer: {a.answer || "(blank)"}
                       {a.overridden ? " · accepted by you" : ""}
+                      {a.multiple_choice ? " · multiple choice" : ""}
                     </small>
                   </div>
                   <button

@@ -18,9 +18,11 @@ create table if not exists public.attempts (
   answer text not null,
   correct boolean not null,
   overridden boolean not null default false,
+  multiple_choice boolean not null default false,
   created_at timestamptz not null,
   updated_at timestamptz not null
 );
+alter table public.attempts add column if not exists multiple_choice boolean not null default false;
 create index if not exists attempts_user_history on public.attempts(user_id, item_id, mode, direction, created_at);
 alter table public.attempts enable row level security;
 drop policy if exists "Read own attempts" on public.attempts;

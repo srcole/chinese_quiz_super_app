@@ -59,11 +59,16 @@ export function summarize(
   direction: string,
   x: number,
   incorrectX = 1,
+  includeMultipleChoice = false,
 ) {
   const ids = new Set(items.map((i) => i.id));
   const rows = attempts
     .filter(
-      (a) => a.mode === mode && a.direction === direction && ids.has(a.item_id),
+      (a) =>
+        (!a.multiple_choice || includeMultipleChoice) &&
+        a.mode === mode &&
+        a.direction === direction &&
+        ids.has(a.item_id),
     )
     .sort(
       (a, b) =>

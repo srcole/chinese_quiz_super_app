@@ -138,3 +138,25 @@ test("accuracy buckets include partial chunks and group UTC weeks", () => {
     ["2026-09-28", "2026-10-05"],
   );
 });
+
+test("statistics exclude multiple choice by default and include it on request", () => {
+  const items = itemsForMode(content, "vocabulary");
+  const rows = [
+    attempt(1, "word:1", true),
+    { ...attempt(2, "word:1", true), multiple_choice: true },
+    { ...attempt(3, "word:2", false), multiple_choice: true },
+  ];
+  const stats = summarize(items, rows, "vocabulary", "en-zh", 2);
+  assert.equal(stats.rows.length, 1);
+  assert.equal(stats.practiced, 1);
+  assert.equal(stats.mastered, 0);
+  assert.equal(stats.accuracy, 100);
+  assert.equal(stats.missedTarget, 0);
+  assert.equal(stats.recentCount, 1);
+  const included = summarize(items, rows, "vocabulary", "en-zh", 2, 1, true);
+  assert.equal(included.rows.length, 3);
+  assert.equal(included.practiced, 2);
+  assert.equal(included.mastered, 1);
+  assert.equal(included.accuracy, 67);
+  assert.equal(included.missedTarget, 1);
+});

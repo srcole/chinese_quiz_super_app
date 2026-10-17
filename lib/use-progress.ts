@@ -53,7 +53,13 @@ export function useProgress() {
       );
       for (let i = 0; i < pending.length; i += 200) {
         const { error } = await supabase.from("attempts").upsert(
-          pending.slice(i, i + 200).map((a) => ({ ...a, user_id: uid })),
+          pending
+            .slice(i, i + 200)
+            .map((a) => ({
+              ...a,
+              multiple_choice: a.multiple_choice ?? false,
+              user_id: uid,
+            })),
           { onConflict: "id" },
         );
         if (error) throw error;

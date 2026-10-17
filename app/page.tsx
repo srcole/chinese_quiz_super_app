@@ -543,6 +543,7 @@ export default function Home() {
       correct: choices.length
         ? answer === q.word?.id
         : gradeQuestion(answer, q, direction),
+      multiple_choice: choices.length > 0,
       overridden: false,
       created_at: now,
       updated_at: now,

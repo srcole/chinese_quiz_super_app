@@ -94,3 +94,5 @@ Review playback reads every matching row, including rows initially hidden behind
 ## Progress backups
 
 Export all attempts as JSON from Progress or Settings. Supabase provides cross-device history; local-only history can be lost if browser storage is cleared. Keep exports if studying without sync.
+
+Existing Supabase installations: run `supabase/migrations/20261016_multiple_choice_attempts.sql` before using multiple-choice tracking. Statistics exclude marked multiple-choice attempts by default; enable “Include multiple-choice quizzes” to include them. Older attempts without this marker remain included because their answer format was not recorded.
