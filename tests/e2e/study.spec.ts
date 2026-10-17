@@ -828,6 +828,7 @@ test("sentence writing saves, survives reload, searches, and exports matching AI
             ...content.words[0],
             id: "writing-a",
             chinese: "学习",
+            trad_char: "學習",
             pinyin: "xué xí",
             english: "study",
             priority: "1",
@@ -837,6 +838,7 @@ test("sentence writing saves, survives reload, searches, and exports matching AI
             ...content.words[0],
             id: "writing-b",
             chinese: "学校",
+            trad_char: "學校",
             pinyin: "xué xiào",
             english: "school",
             priority: "2",
@@ -851,11 +853,23 @@ test("sentence writing saves, survives reload, searches, and exports matching AI
   await page.reload();
   await page.getByRole("button", { name: "Write sentences" }).click();
   await expect(
-    page.getByRole("heading", { name: "学习", exact: true }),
+    page.locator(".sentence-writing h2 [lang=zh-Hans]"),
   ).toBeVisible();
   await expect(
     page.getByRole("button", { name: "Save sentence", exact: true }),
   ).toBeDisabled();
+  await expect(page.locator(".sentence-writing h2")).toHaveText("学习 (學習)");
+  await expect(page.getByLabel("Show pinyin and English")).not.toBeChecked();
+  await expect(page.locator(".sentence-writing .pinyin")).toHaveCount(0);
+  await expect(
+    page.locator(".sentence-writing").getByText("study", { exact: true }),
+  ).toHaveCount(0);
+  await page.getByLabel("Show pinyin and English").check();
+  await expect(page.locator(".sentence-writing .pinyin")).toHaveText("xué xí");
+  await expect(
+    page.locator(".sentence-writing").getByText("study", { exact: true }),
+  ).toBeVisible();
+  await page.getByLabel("Show pinyin and English").uncheck();
   await page.getByLabel("Your example sentence").fill("我每天学习中文。");
   await page
     .getByRole("button", { name: "Save sentence", exact: true })
@@ -868,7 +882,7 @@ test("sentence writing saves, survives reload, searches, and exports matching AI
   ).toBeDisabled();
   await page.getByRole("button", { name: "Next word" }).click();
   await expect(
-    page.getByRole("heading", { name: "学校", exact: true }),
+    page.locator(".sentence-writing h2 [lang=zh-Hans]"),
   ).toBeVisible();
   await page.getByLabel("Your example sentence").fill("我走路去学校。");
   await page

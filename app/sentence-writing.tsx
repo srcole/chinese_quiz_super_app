@@ -18,6 +18,7 @@ export default function SentenceWriting({
   const [selected, setSelected] = useState<Word | null>(null);
   const [sentence, setSentence] = useState("");
   const [saved, setSaved] = useState(false);
+  const [showHints, setShowHints] = useState(false);
   const pool = useMemo(
     () =>
       words.filter(
@@ -67,15 +68,30 @@ export default function SentenceWriting({
             }}
           />
         </label>
+        <label className="check-field">
+          <input
+            type="checkbox"
+            checked={showHints}
+            onChange={(e) => setShowHints(e.target.checked)}
+          />
+          Show pinyin and English
+        </label>
         <p className="helper">
           {pool.length.toLocaleString()} vocabulary words available
         </p>
       </section>
       {word ? (
         <section className="panel sentence-writing">
-          <h2 lang="zh-Hans">{word.chinese}</h2>
-          <p className="pinyin">{word.pinyin}</p>
-          <p>{word.english}</p>
+          <h2>
+            <span lang="zh-Hans">{word.chinese}</span>{" "}
+            <span lang="zh-Hant">({word.trad_char || word.chinese})</span>
+          </h2>
+          {showHints && (
+            <>
+              <p className="pinyin">{word.pinyin}</p>
+              <p>{word.english}</p>
+            </>
+          )}
           <form
             onSubmit={(e) => {
               e.preventDefault();
