@@ -2041,7 +2041,11 @@ export default function Home() {
                 stop={audio.stop}
                 exportHistory={exportProgress}
               />
-              <SentenceLibrary rows={written.rows} status={written.status} />
+              <SentenceLibrary
+                rows={written.rows}
+                status={written.status}
+                markCopied={written.markCopied}
+              />
             </>
           )}
           {tab === "settings" && (

@@ -9,16 +9,22 @@ import {
 export default function SentenceLibrary({
   rows,
   status,
+  markCopied,
 }: {
   rows: WrittenSentence[];
   status: string;
+  markCopied: (ids: string[], copied?: boolean) => boolean;
 }) {
+  const [hideCopied, setHideCopied] = useState(true);
+  const [copying, setCopying] = useState(false);
   const [query, setQuery] = useState("");
   const [from, setFrom] = useState("");
   const [through, setThrough] = useState("");
   const [limit, setLimit] = useState(50);
   const [message, setMessage] = useState("");
-  const filtered = findSentences(rows, query, from, through);
+  const filtered = findSentences(rows, query, from, through).filter(
+    (row) => !hideCopied || !row.feedback_copied_at,
+  );
   function download() {
     const url = URL.createObjectURL(
       new Blob([sentenceFeedbackPrompt(filtered)], {
@@ -38,8 +44,8 @@ export default function SentenceLibrary({
     >
       <h2 id="written-sentences-heading">Your written sentences</h2>
       <p>
-        Search your writing, then copy or download the matching entries with a
-        prompt asking an AI model for feedback on each sentence.
+        Search your writing, then copy or download the matching target words and
+        learner sentences for AI feedback.
       </p>
       <div className="field-grid">
         <label className="field">
@@ -80,22 +86,40 @@ export default function SentenceLibrary({
           />
         </label>
       </div>
+      <label className="check-field">
+        <input
+          type="checkbox"
+          checked={hideCopied}
+          onChange={(e) => {
+            setHideCopied(e.target.checked);
+            setLimit(50);
+            setMessage("");
+          }}
+        />
+        Hide sentences already copied for feedback
+      </label>
       <p>
         {filtered.length} matching sentences · {rows.length} saved
       </p>
       <div className="inline">
         <button
-          disabled={!filtered.length}
+          disabled={!filtered.length || copying}
           onClick={async () => {
+            const batch = filtered;
+            setCopying(true);
             try {
               await navigator.clipboard.writeText(
-                sentenceFeedbackPrompt(filtered),
+                sentenceFeedbackPrompt(batch),
               );
-              setMessage("Copied matching sentences and feedback prompt.");
-            } catch {
               setMessage(
-                "Copy unavailable. Download the feedback prompt instead.",
+                markCopied(batch.map((row) => row.id))
+                  ? `Copied ${batch.length} sentences and marked them as copied for feedback.`
+                  : "Sentences copied, but their copied status could not be saved. Please retry.",
               );
+            } catch {
+              setMessage("Copy unavailable. Download the sentences instead.");
+            } finally {
+              setCopying(false);
             }
           }}
         >
@@ -117,6 +141,24 @@ export default function SentenceLibrary({
             <p lang="zh-Hans" className="learner-sentence">
               {row.sentence}
             </p>
+            <p className="helper">
+              {row.feedback_copied_at
+                ? `Copied for feedback · ${new Date(row.feedback_copied_at).toLocaleString()}`
+                : "Not yet copied for feedback"}
+            </p>
+            {row.feedback_copied_at && (
+              <button
+                onClick={() => {
+                  setMessage(
+                    markCopied([row.id], false)
+                      ? "Marked as not copied."
+                      : "Could not save copied status. Please retry.",
+                  );
+                }}
+              >
+                Mark as not copied
+              </button>
+            )}
             <time dateTime={row.created_at}>
               {new Date(row.created_at).toLocaleString()}
             </time>

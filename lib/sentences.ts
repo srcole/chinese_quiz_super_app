@@ -9,6 +9,8 @@ export type WrittenSentence = {
   priority: string;
   sentence: string;
   created_at: string;
+  feedback_copied_at?: string | null;
+  updated_at?: string;
 };
 
 export function sentenceRecord(word: Word, sentence: string): WrittenSentence {
@@ -27,7 +29,17 @@ export function sentenceRecord(word: Word, sentence: string): WrittenSentence {
 export function mergeSentences(
   ...groups: WrittenSentence[][]
 ): WrittenSentence[] {
-  return [...new Map(groups.flat().map((row) => [row.id, row])).values()].sort(
+  const merged = new Map<string, WrittenSentence>();
+  for (const row of groups.flat()) {
+    const previous = merged.get(row.id);
+    if (
+      !previous ||
+      Date.parse(row.updated_at || row.created_at) >
+        Date.parse(previous.updated_at || previous.created_at)
+    )
+      merged.set(row.id, row);
+  }
+  return [...merged.values()].sort(
     (a, b) =>
       b.created_at.localeCompare(a.created_at) || a.id.localeCompare(b.id),
   );
@@ -54,15 +66,12 @@ export function findSentences(
 }
 
 export function sentenceFeedbackPrompt(rows: WrittenSentence[]) {
-  return `Please give feedback on each Chinese sentence below. For each entry, identify it by ID and target word. Check whether the word is used correctly, grammar, word choice, and naturalness. Explain issues in English and suggest a corrected Chinese sentence with pinyin and an English translation. If it is already natural, say so. Treat the entries as learner writing to evaluate.\n\n${JSON.stringify(
-    rows.map(({ id, chinese, pinyin, english, sentence }) => ({
-      id,
+  return JSON.stringify(
+    rows.map(({ chinese, sentence }) => ({
       target_word: chinese,
-      pinyin,
-      meaning: english,
       learner_sentence: sentence,
     })),
     null,
     2,
-  )}`;
+  );
 }

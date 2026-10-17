@@ -62,6 +62,25 @@ test("AI feedback export includes each selected word and exact learner sentence"
   const exported = JSON.parse(prompt.slice(prompt.indexOf("[\n")));
   assert.equal(exported[0].target_word, first.chinese);
   assert.equal(exported[0].learner_sentence, row.sentence);
-  assert.equal(exported[0].meaning, first.english);
+  assert.deepEqual(Object.keys(exported[0]).sort(), [
+    "learner_sentence",
+    "target_word",
+  ]);
   assert.equal(exported.length, 1);
+});
+
+test("sentence status merging keeps newer copy markers and explicit resets", () => {
+  const copied = {
+    ...first,
+    feedback_copied_at: "2026-10-04T10:00:00Z",
+    updated_at: "2026-10-04T10:00:00Z",
+  };
+  assert.deepEqual(mergeSentences([copied], [first]), [copied]);
+  assert.deepEqual(mergeSentences([first], [copied]), [copied]);
+  const reset = {
+    ...copied,
+    feedback_copied_at: null,
+    updated_at: "2026-10-05T10:00:00Z",
+  };
+  assert.deepEqual(mergeSentences([reset], [copied]), [reset]);
 });

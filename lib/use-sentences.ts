@@ -43,7 +43,7 @@ export function useSentences(userId?: string) {
         const { data, error } = await supabase
           .from("written_sentences")
           .select(
-            "id,word_id,chinese,pinyin,english,priority,sentence,created_at",
+            "id,word_id,chinese,pinyin,english,priority,sentence,created_at,feedback_copied_at,updated_at",
           )
           .eq("user_id", uid)
           .order("id")
@@ -53,23 +53,39 @@ export function useSentences(userId?: string) {
         remote.push(...data);
         if (data.length < 1000) break;
       }
-      const known = new Set(remote.map((row) => row.id));
-      const pending = current.current.filter((row) => !known.has(row.id));
+      const known = new Map(remote.map((row) => [row.id, row]));
+      const merged = mergeSentences(remote, current.current);
+      const pending = merged.filter(
+        (row) =>
+          !known.has(row.id) ||
+          Date.parse(row.updated_at || row.created_at) >
+            Date.parse(
+              known.get(row.id)!.updated_at || known.get(row.id)!.created_at,
+            ),
+      );
       for (let offset = 0; offset < pending.length; offset += 200) {
         if (generation.current !== token) return;
         const { error } = await supabase.from("written_sentences").upsert(
           pending
             .slice(offset, offset + 200)
-            .map((row) => ({ ...row, user_id: uid })),
-          { onConflict: "id", ignoreDuplicates: true },
+            .map((row) => ({
+              ...row,
+              user_id: uid,
+              feedback_copied_at: row.feedback_copied_at ?? null,
+              updated_at: row.updated_at || row.created_at,
+            })),
+          { onConflict: "id" },
         );
         if (error) throw error;
       }
       if (
         generation.current === token &&
-        persist(mergeSentences(remote, current.current))
+        persist(mergeSentences(merged, current.current))
       ) {
-        const uploaded = new Set([...known, ...pending.map((row) => row.id)]);
+        const uploaded = new Set([
+          ...known.keys(),
+          ...pending.map((row) => row.id),
+        ]);
         setStatus(
           current.current.every((row) => uploaded.has(row.id))
             ? "Sentences synced across devices"
@@ -127,5 +143,27 @@ export function useSentences(userId?: string) {
     void sync();
     return true;
   }
-  return { rows, ready, status, save };
+  function markCopied(ids: string[], copied = true) {
+    if (!ready || identity.current !== userId) return false;
+    const selected = new Set(ids);
+    const now = new Date().toISOString();
+    const updated = current.current.map((row) =>
+      selected.has(row.id)
+        ? {
+            ...row,
+            feedback_copied_at: copied ? now : null,
+            updated_at: new Date(
+              Math.max(
+                Date.now(),
+                Date.parse(row.updated_at || row.created_at) + 1,
+              ),
+            ).toISOString(),
+          }
+        : row,
+    );
+    if (!persist(updated)) return false;
+    void sync();
+    return true;
+  }
+  return { rows, ready, status, save, markCopied };
 }

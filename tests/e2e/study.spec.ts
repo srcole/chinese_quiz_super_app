@@ -941,3 +941,95 @@ test("sentence writing keeps the draft when device storage rejects saving", asyn
     page.getByRole("button", { name: "Save sentence", exact: true }),
   ).toBeEnabled();
 });
+
+test("copied sentence indicators persist, filter, reset, and copy only word and sentence", async ({
+  page,
+}) => {
+  const rows = [
+    {
+      id: "feedback-a",
+      word_id: "a",
+      chinese: "学习",
+      pinyin: "xué xí",
+      english: "study",
+      priority: "1",
+      sentence: "我学习中文。",
+      created_at: "2026-10-01T12:00:00Z",
+    },
+    {
+      id: "feedback-b",
+      word_id: "b",
+      chinese: "学校",
+      pinyin: "xué xiào",
+      english: "school",
+      priority: "1",
+      sentence: "我去学校。",
+      created_at: "2026-10-02T12:00:00Z",
+    },
+  ];
+  await page.evaluate(
+    (rows) =>
+      localStorage.setItem(
+        "zili-written-sentences-v1:guest",
+        JSON.stringify(rows),
+      ),
+    rows,
+  );
+  await page.reload();
+  await page.evaluate(() =>
+    Object.defineProperty(navigator, "clipboard", {
+      configurable: true,
+      value: {
+        writeText: async (text: string) => {
+          (window as unknown as { copiedSentences: string }).copiedSentences =
+            text;
+        },
+      },
+    }),
+  );
+  await page.getByRole("button", { name: /Progress/ }).click();
+  const library = page.locator(".sentence-library");
+  await expect(
+    page.getByLabel("Hide sentences already copied for feedback"),
+  ).toBeChecked();
+  await expect(library.locator("article")).toHaveCount(2);
+  await page.getByLabel("Search written sentences").fill("学习");
+  await page.getByRole("button", { name: "Copy for AI feedback" }).click();
+  await expect(library.getByRole("status")).toContainText("Copied 1 sentences");
+  const copied = await page.evaluate(
+    () => (window as unknown as { copiedSentences: string }).copiedSentences,
+  );
+  expect(JSON.parse(copied)).toEqual([
+    { target_word: "学习", learner_sentence: "我学习中文。" },
+  ]);
+  await expect(library.locator("article")).toHaveCount(0);
+  await page.getByLabel("Search written sentences").fill("");
+  await expect(library.locator("article")).toHaveCount(1);
+  await expect(library.locator("article")).toContainText("学校");
+  await page.reload();
+  await page.getByRole("button", { name: /Progress/ }).click();
+  await expect(library.locator("article")).toHaveCount(1);
+  await page.getByLabel("Hide sentences already copied for feedback").uncheck();
+  await expect(library.locator("article")).toHaveCount(2);
+  const copiedRow = library
+    .locator("article")
+    .filter({ hasText: "我学习中文。" });
+  await expect(copiedRow).toContainText("Copied for feedback");
+  await copiedRow.getByRole("button", { name: "Mark as not copied" }).click();
+  await expect(copiedRow).toContainText("Not yet copied for feedback");
+  await page.getByLabel("Hide sentences already copied for feedback").check();
+  await expect(library.locator("article")).toHaveCount(2);
+  await page.evaluate(() =>
+    Object.defineProperty(navigator, "clipboard", {
+      configurable: true,
+      value: {
+        writeText: async () => {
+          throw new Error("Clipboard denied");
+        },
+      },
+    }),
+  );
+  await page.getByRole("button", { name: "Copy for AI feedback" }).click();
+  await expect(library.getByRole("status")).toContainText("Copy unavailable");
+  await expect(library.locator("article")).toHaveCount(2);
+});
