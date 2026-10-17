@@ -816,3 +816,113 @@ test("multiple choice supports vocabulary and idioms with collapsed distractor f
       .first(),
   ).toContainText("0");
 });
+
+test("sentence writing saves, survives reload, searches, and exports matching AI feedback", async ({
+  page,
+}) => {
+  await page.route("**/content.json", (route) =>
+    route.fulfill({
+      json: {
+        words: [
+          {
+            ...content.words[0],
+            id: "writing-a",
+            chinese: "学习",
+            pinyin: "xué xí",
+            english: "study",
+            priority: "1",
+            part_of_speech: "verb",
+          },
+          {
+            ...content.words[0],
+            id: "writing-b",
+            chinese: "学校",
+            pinyin: "xué xiào",
+            english: "school",
+            priority: "2",
+            part_of_speech: "noun",
+          },
+        ],
+        characters: [],
+        rules: [],
+      },
+    }),
+  );
+  await page.reload();
+  await page.getByRole("button", { name: "Write sentences" }).click();
+  await expect(
+    page.getByRole("heading", { name: "学习", exact: true }),
+  ).toBeVisible();
+  await expect(
+    page.getByRole("button", { name: "Save sentence", exact: true }),
+  ).toBeDisabled();
+  await page.getByLabel("Your example sentence").fill("我每天学习中文。");
+  await page
+    .getByRole("button", { name: "Save sentence", exact: true })
+    .click();
+  await expect(
+    page.getByText("Saved. Find this sentence", { exact: false }),
+  ).toBeVisible();
+  await expect(
+    page.getByRole("button", { name: "Save sentence", exact: true }),
+  ).toBeDisabled();
+  await page.getByRole("button", { name: "Next word" }).click();
+  await expect(
+    page.getByRole("heading", { name: "学校", exact: true }),
+  ).toBeVisible();
+  await page.getByLabel("Your example sentence").fill("我走路去学校。");
+  await page
+    .getByRole("button", { name: "Save sentence", exact: true })
+    .click();
+  await page.reload();
+  await page.getByRole("button", { name: /Progress/ }).click();
+  const library = page.locator(".sentence-library");
+  await expect(library.locator("article")).toHaveCount(2);
+  await page.getByLabel("Search written sentences").fill("study");
+  await expect(library.locator("article")).toHaveCount(1);
+  await expect(library.locator("article")).toContainText("我每天学习中文。");
+  const downloadPromise = page.waitForEvent("download");
+  await page.getByRole("button", { name: "Download for AI feedback" }).click();
+  const download = await downloadPromise;
+  const exported = fs.readFileSync((await download.path())!, "utf8");
+  expect(exported).toContain("我每天学习中文。");
+  expect(exported).not.toContain("我走路去学校。");
+  expect(exported).toContain('"target_word": "学习"');
+  await page.getByLabel("Search written sentences").fill("not found");
+  await expect(library.locator("article")).toHaveCount(0);
+  await expect(
+    page.getByRole("button", { name: "Download for AI feedback" }),
+  ).toBeDisabled();
+  expect(
+    await page.evaluate(
+      () => document.documentElement.scrollWidth <= window.innerWidth,
+    ),
+  ).toBe(true);
+});
+
+test("sentence writing keeps the draft when device storage rejects saving", async ({
+  page,
+}) => {
+  await page.getByRole("button", { name: "Write sentences" }).click();
+  await page.getByLabel("Your example sentence").fill("这是我的例句。");
+  await page.evaluate(() => {
+    const original = Storage.prototype.setItem;
+    Storage.prototype.setItem = function (key, value) {
+      if (key.startsWith("zili-written-sentences"))
+        throw new Error("Storage full");
+      original.call(this, key, value);
+    };
+  });
+  await page
+    .getByRole("button", { name: "Save sentence", exact: true })
+    .click();
+  await expect(
+    page.getByText("Could not save to device storage", { exact: false }),
+  ).toBeVisible();
+  await expect(page.getByLabel("Your example sentence")).toHaveValue(
+    "这是我的例句。",
+  );
+  await expect(
+    page.getByRole("button", { name: "Save sentence", exact: true }),
+  ).toBeEnabled();
+});

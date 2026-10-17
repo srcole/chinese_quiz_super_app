@@ -29,6 +29,9 @@ import { usePreference } from "@/lib/use-preference";
 import { useAudio } from "@/lib/use-audio";
 import TraditionalText from "./traditional-text";
 import ProgressPanel from "./progress-panel";
+import SentenceWriting from "./sentence-writing";
+import SentenceLibrary from "./sentence-library";
+import { useSentences } from "@/lib/use-sentences";
 import { useProgress } from "@/lib/use-progress";
 import { supabase } from "@/lib/supabase";
 const descriptions: Record<Mode, string> = {
@@ -150,9 +153,9 @@ export default function Home() {
   const [content, setContent] = useState<Content | null>(null),
     [loadError, setLoadError] = useState(""),
     [contentNote, setContentNote] = useState("");
-  const [tab, setTab] = useState<"quiz" | "review" | "progress" | "settings">(
-      "quiz",
-    ),
+  const [tab, setTab] = useState<
+      "quiz" | "writing" | "review" | "progress" | "settings"
+    >("quiz"),
     [mode, setMode] = useState<Mode>("vocabulary"),
     [direction, setDirection] = useState<Direction>("en-zh"),
     [filters, setFilters] = useState<Filters>(defaultFilters);
@@ -197,6 +200,7 @@ export default function Home() {
     progress = useProgress(),
     input = useRef<HTMLInputElement>(null),
     activeRow = useRef<HTMLDivElement>(null);
+  const written = useSentences(progress.user?.id);
   useEffect(() => {
     let alive = true;
     fetch("/content.json")
@@ -758,19 +762,23 @@ export default function Home() {
         </a>
         <div className="sidebar-label">YOUR PRACTICE</div>
         <nav>
-          {(["quiz", "review", "progress", "settings"] as const).map((t, i) => (
-            <button
-              className={tab === t ? "nav-item active" : "nav-item"}
-              key={t}
-              onClick={() => changeTab(t)}
-            >
-              <span>{["◈", "▤", "◴", "⚙"][i]}</span>
-              {t === "quiz"
-                ? "Practice"
-                : t.charAt(0).toUpperCase() + t.slice(1)}
-              {tab === t && <b>•</b>}
-            </button>
-          ))}
+          {(["quiz", "writing", "review", "progress", "settings"] as const).map(
+            (t, i) => (
+              <button
+                className={tab === t ? "nav-item active" : "nav-item"}
+                key={t}
+                onClick={() => changeTab(t)}
+              >
+                <span>{["◈", "句", "▤", "◴", "⚙"][i]}</span>
+                {t === "quiz"
+                  ? "Practice"
+                  : t === "writing"
+                    ? "Write sentences"
+                    : t.charAt(0).toUpperCase() + t.slice(1)}
+                {tab === t && <b>•</b>}
+              </button>
+            ),
+          )}
         </nav>
         <div className="sidebar-bottom">
           <div className="daily-note">
@@ -2015,14 +2023,26 @@ export default function Home() {
               )}
             </>
           )}
-          {tab === "progress" && (
-            <ProgressPanel
-              content={content}
-              attempts={progress.attempts}
-              play={audio.play}
-              stop={audio.stop}
-              exportHistory={exportProgress}
+          {tab === "writing" && (
+            <SentenceWriting
+              key={progress.user?.id || "guest"}
+              words={words}
+              ready={written.ready}
+              save={written.save}
+              status={written.status}
             />
+          )}
+          {tab === "progress" && (
+            <>
+              <ProgressPanel
+                content={content}
+                attempts={progress.attempts}
+                play={audio.play}
+                stop={audio.stop}
+                exportHistory={exportProgress}
+              />
+              <SentenceLibrary rows={written.rows} status={written.status} />
+            </>
           )}
           {tab === "settings" && (
             <>

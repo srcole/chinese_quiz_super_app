@@ -96,3 +96,9 @@ Review playback reads every matching row, including rows initially hidden behind
 Export all attempts as JSON from Progress or Settings. Supabase provides cross-device history; local-only history can be lost if browser storage is cleared. Keep exports if studying without sync.
 
 Existing Supabase installations: run `supabase/migrations/20261016_multiple_choice_attempts.sql` before using multiple-choice tracking. Statistics exclude marked multiple-choice attempts by default; enable “Include multiple-choice quizzes” to include them. Older attempts without this marker remain included because their answer format was not recorded.
+
+### Writing your own sentences
+
+Use **Write sentences** to receive a vocabulary prompt (maximum priority 5 by default) and save your own Chinese example. In **Progress → Your written sentences**, search by word, pinyin, English meaning, or your sentence, and filter by UTC dates. Copy or download all matching entries with an AI feedback prompt; exports include the target words and your writing. Writing is kept separate from graded quiz statistics.
+
+Sentences save on the current device first, separately for guests and each account. Signed-in users also sync their writing across devices. Existing Supabase installations must run `supabase/migrations/20261017_written_sentences.sql` to create the protected writing table. If sync is unavailable, writing remains saved locally. Guest sentences stay in the guest library when signing in; return to guest mode to export them.

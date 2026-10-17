@@ -1344,3 +1344,47 @@ summary::marker {
   padding: 0.75rem 0;
   border-bottom: 1px solid var(--line);
 }
+
+.sentence-writing textarea {
+  width: 100%;
+  min-width: 0;
+  resize: vertical;
+  padding: 14px;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  font: inherit;
+  font-size: 20px;
+  color: var(--ink);
+  background: white;
+}
+.sentence-writing h2 {
+  font-size: 36px;
+}
+.sentence-library {
+  margin-top: 24px;
+}
+.written-sentences article {
+  padding: 18px 0;
+  border-bottom: 1px solid var(--line);
+  overflow-wrap: anywhere;
+}
+.learner-sentence {
+  white-space: pre-wrap;
+  font-size: 20px;
+}
+.written-sentences time {
+  color: var(--muted);
+  font-size: 12px;
+}
+
+@media (max-width: 600px) {
+  .sidebar .nav-item {
+    flex: 1;
+    min-width: 0;
+    font-size: 10px;
+    gap: 0;
+  }
+  .sidebar .nav-item > span {
+    display: none;
+  }
+}
