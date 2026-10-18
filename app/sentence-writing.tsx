@@ -97,7 +97,11 @@ export default function SentenceWriting({
           <form
             onSubmit={(e) => {
               e.preventDefault();
-              if (sentence.trim() && save(sentenceRecord(word, sentence))) {
+              if (
+                ready &&
+                sentence.trim() &&
+                save(sentenceRecord(word, sentence))
+              ) {
                 next();
                 setSaved(true);
               }
@@ -111,6 +115,18 @@ export default function SentenceWriting({
                 value={sentence}
                 required
                 ref={sentenceInput}
+                onKeyDown={(e) => {
+                  if (
+                    e.key !== "Enter" ||
+                    e.shiftKey ||
+                    e.nativeEvent.isComposing ||
+                    e.keyCode === 229
+                  )
+                    return;
+                  e.preventDefault();
+                  if (!e.repeat && ready && sentence.trim())
+                    e.currentTarget.form?.requestSubmit();
+                }}
                 onChange={(e) => {
                   setSentence(e.target.value);
                   setSaved(false);
@@ -118,6 +134,9 @@ export default function SentenceWriting({
                 placeholder={`Write a Chinese sentence using ${word.chinese}…`}
               />
             </label>
+            <p className="helper">
+              Enter to save · Shift+Enter for a new line.
+            </p>
             <div className="inline">
               <button
                 type="submit"

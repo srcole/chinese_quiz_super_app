@@ -1033,3 +1033,55 @@ test("copied sentence indicators persist, filter, reset, and copy only word and 
   await expect(library.getByRole("status")).toContainText("Copy unavailable");
   await expect(library.locator("article")).toHaveCount(2);
 });
+
+test("sentence writing submits with Enter, supports newlines, and respects Chinese composition", async ({
+  page,
+}) => {
+  await page.getByRole("button", { name: "Write sentences" }).click();
+  const input = page.getByLabel("Your example sentence");
+  await input.fill("我学习中文。");
+  await input.press("Shift+Enter");
+  await expect(input).toHaveValue("我学习中文。\n");
+  await input.fill("我学习中文。");
+  await input.dispatchEvent("keydown", {
+    key: "Enter",
+    code: "Enter",
+    isComposing: true,
+  });
+  await expect(input).toHaveValue("我学习中文。");
+  await input.dispatchEvent("keydown", {
+    key: "Enter",
+    code: "Enter",
+    keyCode: 229,
+  });
+  await expect(input).toHaveValue("我学习中文。");
+  await input.dispatchEvent("keydown", {
+    key: "Enter",
+    code: "Enter",
+    repeat: true,
+  });
+  await expect(input).toHaveValue("我学习中文。");
+  expect(
+    await page.evaluate(() =>
+      JSON.parse(
+        localStorage.getItem("zili-written-sentences-v1:guest") || "[]",
+      ),
+    ),
+  ).toHaveLength(0);
+  const word = await page
+    .locator(".sentence-writing h2 [lang=zh-Hans]")
+    .innerText();
+  await input.press("Enter");
+  await expect(input).toHaveValue("");
+  await expect(input).toBeFocused();
+  await expect(
+    page.locator(".sentence-writing h2 [lang=zh-Hans]"),
+  ).not.toHaveText(word);
+  await input.press("Enter");
+  const saved = await page.evaluate(() =>
+    JSON.parse(localStorage.getItem("zili-written-sentences-v1:guest") || "[]"),
+  );
+  expect(saved).toHaveLength(1);
+  expect(saved[0].chinese).toBe(word);
+  expect(saved[0].sentence).toBe("我学习中文。");
+});
