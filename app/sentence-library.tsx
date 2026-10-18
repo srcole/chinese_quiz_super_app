@@ -8,11 +8,9 @@ import {
 
 export default function SentenceLibrary({
   rows,
-  status,
   markCopied,
 }: {
   rows: WrittenSentence[];
-  status: string;
   markCopied: (ids: string[], copied?: boolean) => boolean;
 }) {
   const [hideCopied, setHideCopied] = useState(true);
@@ -177,7 +175,6 @@ export default function SentenceLibrary({
           Show next 50 sentences
         </button>
       )}
-      <p className="helper">{status}</p>
     </section>
   );
 }

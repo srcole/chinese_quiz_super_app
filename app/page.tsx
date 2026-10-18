@@ -2024,29 +2024,29 @@ export default function Home() {
             </>
           )}
           {tab === "writing" && (
-            <SentenceWriting
-              key={progress.user?.id || "guest"}
-              words={words}
-              ready={written.ready}
-              save={written.save}
-              status={written.status}
-            />
-          )}
-          {tab === "progress" && (
             <>
-              <ProgressPanel
-                content={content}
-                attempts={progress.attempts}
-                play={audio.play}
-                stop={audio.stop}
-                exportHistory={exportProgress}
+              <SentenceWriting
+                key={progress.user?.id || "guest"}
+                words={words}
+                writtenSentences={written.rows}
+                ready={written.ready}
+                save={written.save}
+                status={written.status}
               />
               <SentenceLibrary
                 rows={written.rows}
-                status={written.status}
                 markCopied={written.markCopied}
               />
             </>
+          )}
+          {tab === "progress" && (
+            <ProgressPanel
+              content={content}
+              attempts={progress.attempts}
+              play={audio.play}
+              stop={audio.stop}
+              exportHistory={exportProgress}
+            />
           )}
           {tab === "settings" && (
             <>

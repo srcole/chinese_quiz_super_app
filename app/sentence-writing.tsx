@@ -1,37 +1,49 @@
 "use client";
 import { useMemo, useRef, useState } from "react";
-import { vocabularyEligible, Word } from "@/lib/study";
+import { normalize, vocabularyEligible, Word } from "@/lib/study";
 import { sentenceRecord, WrittenSentence } from "@/lib/sentences";
 
 export default function SentenceWriting({
   words,
+  writtenSentences,
   ready,
   save,
   status,
 }: {
   words: Word[];
+  writtenSentences: WrittenSentence[];
   ready: boolean;
   save: (row: WrittenSentence) => boolean;
   status: string;
 }) {
+  const [randomPosition] = useState(() => Math.random());
+  const [hideWritten, setHideWritten] = useState(true);
   const [priority, setPriority] = useState("5");
   const [selected, setSelected] = useState<Word | null>(null);
   const [sentence, setSentence] = useState("");
   const [saved, setSaved] = useState(false);
   const sentenceInput = useRef<HTMLTextAreaElement>(null);
   const [showHints, setShowHints] = useState(false);
-  const pool = useMemo(
-    () =>
-      words.filter(
-        (word) =>
-          vocabularyEligible(word) &&
-          (!priority ||
-            (!!word.priority && Number(word.priority) <= Number(priority))),
-      ),
-    [words, priority],
-  );
-  const word =
-    selected && pool.some((w) => w.id === selected.id) ? selected : pool[0];
+  const pool = useMemo(() => {
+    const writtenIds = new Set(writtenSentences.map((row) => row.word_id));
+    const writtenWords = new Set(
+      writtenSentences.map((row) => normalize(row.chinese)),
+    );
+    return words.filter(
+      (word) =>
+        vocabularyEligible(word) &&
+        (!priority ||
+          (!!word.priority && Number(word.priority) <= Number(priority))) &&
+        (!hideWritten ||
+          (!writtenIds.has(word.id) &&
+            !writtenWords.has(normalize(word.chinese)))),
+    );
+  }, [words, priority, hideWritten, writtenSentences]);
+  const word = ready
+    ? selected && pool.some((w) => w.id === selected.id)
+      ? selected
+      : pool[Math.floor(randomPosition * pool.length)]
+    : undefined;
   function next() {
     const alternatives = pool.filter((w) => w.id !== word?.id);
     setSelected(
@@ -69,6 +81,19 @@ export default function SentenceWriting({
               setSaved(false);
             }}
           />
+        </label>
+        <label className="check-field">
+          <input
+            type="checkbox"
+            checked={hideWritten}
+            onChange={(e) => {
+              setHideWritten(e.target.checked);
+              setSelected(null);
+              setSentence("");
+              setSaved(false);
+            }}
+          />
+          Hide words I've already written a sentence for
         </label>
         <label className="check-field">
           <input
@@ -152,7 +177,7 @@ export default function SentenceWriting({
           </form>
           {saved && (
             <p role="status">
-              Saved. Find this sentence in Progress → Your written sentences.
+              Saved. Find this sentence below in Your written sentences.
             </p>
           )}
           <p className="helper">
@@ -162,8 +187,11 @@ export default function SentenceWriting({
         </section>
       ) : (
         <p className="panel empty">
-          No vocabulary words match this priority. Try a higher maximum or clear
-          it.
+          {!ready
+            ? "Loading saved sentences…"
+            : hideWritten
+              ? "No unwritten vocabulary words match this priority. Try a higher maximum, clear it, or uncheck the option to hide previously written words."
+              : "No vocabulary words match this priority. Try a higher maximum or clear it."}
         </p>
       )}
       <p role="status" className="helper">

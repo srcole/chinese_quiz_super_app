@@ -851,6 +851,9 @@ test("sentence writing saves, survives reload, searches, and exports matching AI
     }),
   );
   await page.reload();
+  await page.evaluate(() => {
+    Math.random = () => 0;
+  });
   await page.getByRole("button", { name: "Write sentences" }).click();
   await expect(
     page.locator(".sentence-writing h2 [lang=zh-Hans]"),
@@ -890,7 +893,7 @@ test("sentence writing saves, survives reload, searches, and exports matching AI
     .getByRole("button", { name: "Save sentence", exact: true })
     .click();
   await page.reload();
-  await page.getByRole("button", { name: /Progress/ }).click();
+  await page.getByRole("button", { name: "Write sentences" }).click();
   const library = page.locator(".sentence-library");
   await expect(library.locator("article")).toHaveCount(2);
   await page.getByLabel("Search written sentences").fill("study");
@@ -987,7 +990,7 @@ test("copied sentence indicators persist, filter, reset, and copy only word and 
       },
     }),
   );
-  await page.getByRole("button", { name: /Progress/ }).click();
+  await page.getByRole("button", { name: "Write sentences" }).click();
   const library = page.locator(".sentence-library");
   await expect(
     page.getByLabel("Hide sentences already copied for feedback"),
@@ -1007,7 +1010,7 @@ test("copied sentence indicators persist, filter, reset, and copy only word and 
   await expect(library.locator("article")).toHaveCount(1);
   await expect(library.locator("article")).toContainText("学校");
   await page.reload();
-  await page.getByRole("button", { name: /Progress/ }).click();
+  await page.getByRole("button", { name: "Write sentences" }).click();
   await expect(library.locator("article")).toHaveCount(1);
   await page.getByLabel("Hide sentences already copied for feedback").uncheck();
   await expect(library.locator("article")).toHaveCount(2);
@@ -1084,4 +1087,70 @@ test("sentence writing submits with Enter, supports newlines, and respects Chine
   expect(saved).toHaveLength(1);
   expect(saved[0].chinese).toBe(word);
   expect(saved[0].sentence).toBe("我学习中文。");
+});
+
+test("writing randomizes the first prompt and hides previously written words by default", async ({
+  page,
+}) => {
+  await page.route("**/content.json", (route) =>
+    route.fulfill({
+      json: {
+        words: [
+          {
+            ...content.words[0],
+            id: "random-a",
+            chinese: "房贷",
+            trad_char: "房貸",
+            priority: "1",
+            part_of_speech: "noun",
+          },
+          {
+            ...content.words[0],
+            id: "random-b",
+            chinese: "学校",
+            trad_char: "學校",
+            priority: "1",
+            part_of_speech: "noun",
+          },
+        ],
+        characters: [],
+        rules: [],
+      },
+    }),
+  );
+  await page.reload();
+  await page.evaluate(() => {
+    Math.random = () => 0.99;
+  });
+  await page.getByRole("button", { name: "Write sentences" }).click();
+  const prompt = page.locator(".sentence-writing h2 [lang=zh-Hans]");
+  const hide = page.getByLabel(
+    "Hide words I've already written a sentence for",
+  );
+  await expect(hide).toBeChecked();
+  await expect(prompt).toHaveText("学校");
+  await page.getByLabel("Your example sentence").fill("我去学校。");
+  await page.getByLabel("Your example sentence").press("Enter");
+  await expect(prompt).toHaveText("房贷");
+  await page.getByRole("button", { name: "Skip word" }).click();
+  await expect(prompt).toHaveText("房贷");
+  await page.reload();
+  await page.evaluate(() => {
+    Math.random = () => 0.99;
+  });
+  await page.getByRole("button", { name: "Write sentences" }).click();
+  await expect(hide).toBeChecked();
+  await expect(prompt).toHaveText("房贷");
+  await hide.uncheck();
+  await expect(prompt).toHaveText("学校");
+  await hide.check();
+  await expect(prompt).toHaveText("房贷");
+  await page.getByLabel("Your example sentence").fill("我需要还房贷。");
+  await page.getByLabel("Your example sentence").press("Enter");
+  await expect(
+    page.getByText("No unwritten vocabulary words match", { exact: false }),
+  ).toBeVisible();
+  await expect(page.getByLabel("Your example sentence")).toHaveCount(0);
+  await hide.uncheck();
+  await expect(prompt).toHaveText("学校");
 });
