@@ -522,6 +522,8 @@ export default function Home() {
               .chinese || "",
         ),
       ];
+    if (question.mode === "sentences")
+      return [question.word!.sentence].filter(Boolean);
     return [question.word!.chinese, question.word!.sentence].filter(Boolean);
   }
   function submit(e: React.FormEvent) {
