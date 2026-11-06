@@ -1,0 +1,457 @@
+id,chinese,english,previous_label,reviewed_label,decision,reason
+333,名言,saying,idiom,noun,change,Names a famous saying; the category name is not itself an idiom.
+334,名句,quote;famous saying,idiom,noun,change,"Names a famous line or quotation, rather than expressing an idiomatic meaning."
+410,花言巧语,flowery speech;insincere words,idiom,idiom,retain,Retained as an established fixed expression under the broad idiom/colloquial-expression/proverb convention; not a claim of strict chengyu status.
+463,缘木求鱼,pursue something in the wrong way,idiom,idiom,retain,Retained as an established fixed expression under the broad idiom/colloquial-expression/proverb convention; not a claim of strict chengyu status.
+464,露马脚,let the truth slip out,idiom,idiom,retain,Retained as an established fixed expression under the broad idiom/colloquial-expression/proverb convention; not a claim of strict chengyu status.
+465,拍马屁,flatter or brown-nose,idiom,idiom,retain,Retained as an established fixed expression under the broad idiom/colloquial-expression/proverb convention; not a claim of strict chengyu status.
+466,沉鱼落雁,extremely beautiful,idiom,idiom,retain,Retained as an established fixed expression under the broad idiom/colloquial-expression/proverb convention; not a claim of strict chengyu status.
+467,三脚猫,amateur or unskilled person,idiom,idiom,retain,Retained as an established fixed expression under the broad idiom/colloquial-expression/proverb convention; not a claim of strict chengyu status.
+469,风声鹤唳,overly nervous or paranoid,idiom,idiom,retain,Retained as an established fixed expression under the broad idiom/colloquial-expression/proverb convention; not a claim of strict chengyu status.
+470,独一无二,unique;one-of-a-kind,idiom,idiom,retain,Retained as an established fixed expression under the broad idiom/colloquial-expression/proverb convention; not a claim of strict chengyu status.
+471,画蛇添足,ruin something by overdoing it,idiom,idiom,retain,Retained as an established fixed expression under the broad idiom/colloquial-expression/proverb convention; not a claim of strict chengyu status.
+472,天花乱坠,exaggerated or flowery speech,idiom,idiom,retain,Retained as an established fixed expression under the broad idiom/colloquial-expression/proverb convention; not a claim of strict chengyu status.
+473,落汤鸡,completely drenched person,idiom,idiom,retain,Retained as an established fixed expression under the broad idiom/colloquial-expression/proverb convention; not a claim of strict chengyu status.
+474,杀鸡吓猴,make an example out of someone;punish one to scare the rest,idiom,idiom,retain,Retained as an established fixed expression under the broad idiom/colloquial-expression/proverb convention; not a claim of strict chengyu status.
+533,不可思议,inconceivable;unimaginable,idiom,idiom,retain,Retained as an established fixed expression under the broad idiom/colloquial-expression/proverb convention; not a claim of strict chengyu status.
+567,自作自受,own fault;done to self,idiom,idiom,retain,Retained as an established fixed expression under the broad idiom/colloquial-expression/proverb convention; not a claim of strict chengyu status.
+593,鸡毛蒜皮,trivial matters,idiom,idiom,retain,Retained as an established fixed expression under the broad idiom/colloquial-expression/proverb convention; not a claim of strict chengyu status.
+604,习语,common saying;idiom,idiom,noun,change,Linguistic category name meaning idiom or conventional expression.
+823,举一反三,learn by analogy,idiom,idiom,retain,Retained as an established fixed expression under the broad idiom/colloquial-expression/proverb convention; not a claim of strict chengyu status.
+824,根深蒂固,deep-rooted;ingrained,idiom,idiom,retain,Retained as an established fixed expression under the broad idiom/colloquial-expression/proverb convention; not a claim of strict chengyu status.
+898,成语,idiom,idiom,noun,change,Linguistic category name meaning chengyu; not itself a chengyu.
+1032,听天由命,to leave things to fate; to resign oneself to fate,idiom,idiom,retain,Retained as an established fixed expression under the broad idiom/colloquial-expression/proverb convention; not a claim of strict chengyu status.
+1148,理所当然,natural and right; only to be expected; as a matter of course,idiom,idiom,retain,Retained as an established fixed expression under the broad idiom/colloquial-expression/proverb convention; not a claim of strict chengyu status.
+1226,说法,saying;statement;wording,idiom,noun,change,"Ordinary noun meaning wording, statement, or account in the supplied sense."
+1240,自给自足,self-sufficient,idiom,idiom,retain,Retained as an established fixed expression under the broad idiom/colloquial-expression/proverb convention; not a claim of strict chengyu status.
+1304,传宗接代,Continuing the family line,idiom,idiom,retain,Retained as an established fixed expression under the broad idiom/colloquial-expression/proverb convention; not a claim of strict chengyu status.
+1362,甜言蜜语,sweet words;sweet talk;sweet nothings,idiom,idiom,retain,Retained as an established fixed expression under the broad idiom/colloquial-expression/proverb convention; not a claim of strict chengyu status.
+1424,没事找事,looking for trouble,idiom,idiom,retain,Retained as an established fixed expression under the broad idiom/colloquial-expression/proverb convention; not a claim of strict chengyu status.
+1500,半斤八两,about the same,idiom,idiom,retain,Retained as an established fixed expression under the broad idiom/colloquial-expression/proverb convention; not a claim of strict chengyu status.
+1530,心有灵犀,to understand each other intuitively; to be on the same wavelength,idiom,idiom,retain,Retained as an established fixed expression under the broad idiom/colloquial-expression/proverb convention; not a claim of strict chengyu status.
+1622,自相矛盾,self-contradicting,idiom,idiom,retain,Retained as an established fixed expression under the broad idiom/colloquial-expression/proverb convention; not a claim of strict chengyu status.
+1734,重男轻女,Preference for sons over daughters,idiom,idiom,retain,Retained as an established fixed expression under the broad idiom/colloquial-expression/proverb convention; not a claim of strict chengyu status.
+1738,棍棒之下出孝子,"if you spare the rod, you spoil the child",idiom,idiom,retain,Retained as an established fixed expression under the broad idiom/colloquial-expression/proverb convention; not a claim of strict chengyu status.
+1749,睁一只眼闭一只眼,turn a blind eye,idiom,idiom,retain,Retained as an established fixed expression under the broad idiom/colloquial-expression/proverb convention; not a claim of strict chengyu status.
+1751,饭来张口衣来伸手,To have everything done for you; to be waited on hand and foot.,idiom,idiom,retain,Retained as an established fixed expression under the broad idiom/colloquial-expression/proverb convention; not a claim of strict chengyu status.
+1792,小菜一碟,piece of cake,idiom,idiom,retain,Retained as an established fixed expression under the broad idiom/colloquial-expression/proverb convention; not a claim of strict chengyu status.
+2080,守株待兔,to wait idly for opportunities,idiom,idiom,retain,Retained as an established fixed expression under the broad idiom/colloquial-expression/proverb convention; not a claim of strict chengyu status.
+2283,骄傲自满,Pride and complacency,idiom,idiom,retain,Retained as an established fixed expression under the broad idiom/colloquial-expression/proverb convention; not a claim of strict chengyu status.
+2306,人尽皆知,Everyone knows,idiom,idiom,retain,Retained as an established fixed expression under the broad idiom/colloquial-expression/proverb convention; not a claim of strict chengyu status.
+2418,相貌堂堂,handsome and dignified; distinguished-looking,idiom,idiom,retain,Retained as an established fixed expression under the broad idiom/colloquial-expression/proverb convention; not a claim of strict chengyu status.
+2466,通情达理,reasonable,idiom,idiom,retain,Retained as an established fixed expression under the broad idiom/colloquial-expression/proverb convention; not a claim of strict chengyu status.
+2562,善解人意,good at understanding others;considerate,idiom,idiom,retain,Retained as an established fixed expression under the broad idiom/colloquial-expression/proverb convention; not a claim of strict chengyu status.
+2567,才貌双全,Talented and pretty,idiom,idiom,retain,Retained as an established fixed expression under the broad idiom/colloquial-expression/proverb convention; not a claim of strict chengyu status.
+2621,先来后到,"First come, first served",idiom,idiom,retain,Retained as an established fixed expression under the broad idiom/colloquial-expression/proverb convention; not a claim of strict chengyu status.
+2665,相夫教子,Supporting husband and raising children,idiom,idiom,retain,Retained as an established fixed expression under the broad idiom/colloquial-expression/proverb convention; not a claim of strict chengyu status.
+2714,无理取闹,Making trouble without reason,idiom,idiom,retain,Retained as an established fixed expression under the broad idiom/colloquial-expression/proverb convention; not a claim of strict chengyu status.
+2733,因人而异,It depends on the person,idiom,idiom,retain,Retained as an established fixed expression under the broad idiom/colloquial-expression/proverb convention; not a claim of strict chengyu status.
+2877,废寝忘食,work extremely hard,idiom,idiom,retain,Retained as an established fixed expression under the broad idiom/colloquial-expression/proverb convention; not a claim of strict chengyu status.
+3382,俗话,common saying,idiom,noun,change,Names a common saying; not itself a particular saying.
+3448,井底之蛙,Frog in the Well;person with limited outlook,idiom,idiom,retain,Retained as an established fixed expression under the broad idiom/colloquial-expression/proverb convention; not a claim of strict chengyu status.
+3468,惊为天人,Stunning,idiom,idiom,retain,Retained as an established fixed expression under the broad idiom/colloquial-expression/proverb convention; not a claim of strict chengyu status.
+3484,衣食住行,"Food, clothing, housing and transportation",idiom,idiom,retain,Retained as an established fixed expression under the broad idiom/colloquial-expression/proverb convention; not a claim of strict chengyu status.
+3497,大手大脚,spend extravagantly,idiom,idiom,retain,Retained as an established fixed expression under the broad idiom/colloquial-expression/proverb convention; not a claim of strict chengyu status.
+3515,照葫芦画瓢,copy mechanically,idiom,idiom,retain,Retained as an established fixed expression under the broad idiom/colloquial-expression/proverb convention; not a claim of strict chengyu status.
+3593,命中注定,Destined,idiom,idiom,retain,Retained as an established fixed expression under the broad idiom/colloquial-expression/proverb convention; not a claim of strict chengyu status.
+3738,对牛弹琴,waste effort on the wrong audience,idiom,idiom,retain,Retained as an established fixed expression under the broad idiom/colloquial-expression/proverb convention; not a claim of strict chengyu status.
+3856,取长补短,complementing each other's strengths and weaknesses,idiom,idiom,retain,Retained as an established fixed expression under the broad idiom/colloquial-expression/proverb convention; not a claim of strict chengyu status.
+3857,天经地义,it is only natural;natural and proper,idiom,idiom,retain,Retained as an established fixed expression under the broad idiom/colloquial-expression/proverb convention; not a claim of strict chengyu status.
+3878,将信将疑,skeptical;doubtful,idiom,idiom,retain,Retained as an established fixed expression under the broad idiom/colloquial-expression/proverb convention; not a claim of strict chengyu status.
+3879,恼羞成怒,get angry (out of shame),idiom,idiom,retain,Retained as an established fixed expression under the broad idiom/colloquial-expression/proverb convention; not a claim of strict chengyu status.
+3888,总而言之,all in all;to sum it up,idiom,idiom,retain,Retained as an established fixed expression under the broad idiom/colloquial-expression/proverb convention; not a claim of strict chengyu status.
+3904,七年之痒,The Seven-Year Itch,idiom,idiom,retain,Retained as an established fixed expression under the broad idiom/colloquial-expression/proverb convention; not a claim of strict chengyu status.
+3913,颜面扫地,lose face,idiom,idiom,retain,Retained as an established fixed expression under the broad idiom/colloquial-expression/proverb convention; not a claim of strict chengyu status.
+3936,迫不及待,cannot wait;impatient;in a hurry,idiom,idiom,retain,Retained as an established fixed expression under the broad idiom/colloquial-expression/proverb convention; not a claim of strict chengyu status.
+3957,偏听偏信,listen to and believe only in one side,idiom,idiom,retain,Retained as an established fixed expression under the broad idiom/colloquial-expression/proverb convention; not a claim of strict chengyu status.
+4013,一无所知,to know nothing,idiom,idiom,retain,Retained as an established fixed expression under the broad idiom/colloquial-expression/proverb convention; not a claim of strict chengyu status.
+4093,回心转意,change of heart;change their mind,idiom,idiom,retain,Retained as an established fixed expression under the broad idiom/colloquial-expression/proverb convention; not a claim of strict chengyu status.
+4095,好吃懒做,lazy,idiom,idiom,retain,Retained as an established fixed expression under the broad idiom/colloquial-expression/proverb convention; not a claim of strict chengyu status.
+4106,好高骛远,to aim unrealistically high; to reach beyond one's abilities,idiom,idiom,retain,Retained as an established fixed expression under the broad idiom/colloquial-expression/proverb convention; not a claim of strict chengyu status.
+4108,一塌糊涂,a complete mess,idiom,idiom,retain,Retained as an established fixed expression under the broad idiom/colloquial-expression/proverb convention; not a claim of strict chengyu status.
+4109,养儿防老,raise children to provide for old age,idiom,idiom,retain,Retained as an established fixed expression under the broad idiom/colloquial-expression/proverb convention; not a claim of strict chengyu status.
+4145,毫无疑问,no doubt,idiom,idiom,retain,Retained as an established fixed expression under the broad idiom/colloquial-expression/proverb convention; not a claim of strict chengyu status.
+4146,习以为常,get used to it,idiom,idiom,retain,Retained as an established fixed expression under the broad idiom/colloquial-expression/proverb convention; not a claim of strict chengyu status.
+4171,小心翼翼,be careful;walk on eggshells,idiom,idiom,retain,Retained as an established fixed expression under the broad idiom/colloquial-expression/proverb convention; not a claim of strict chengyu status.
+4172,哭笑不得,don't know whether to laugh or cry,idiom,idiom,retain,Retained as an established fixed expression under the broad idiom/colloquial-expression/proverb convention; not a claim of strict chengyu status.
+4173,离经叛道,unconventional;heretical (e.g. person);rebel against authority,idiom,idiom,retain,Retained as an established fixed expression under the broad idiom/colloquial-expression/proverb convention; not a claim of strict chengyu status.
+4185,一板一眼,very orderly;precise;by the book;one beat one note,idiom,idiom,retain,Retained as an established fixed expression under the broad idiom/colloquial-expression/proverb convention; not a claim of strict chengyu status.
+4187,明目张胆,brazen,idiom,idiom,retain,Retained as an established fixed expression under the broad idiom/colloquial-expression/proverb convention; not a claim of strict chengyu status.
+4191,和蔼可亲,friendly;affable,idiom,idiom,retain,Retained as an established fixed expression under the broad idiom/colloquial-expression/proverb convention; not a claim of strict chengyu status.
+4192,五十步笑百步,criticizing others for same fault,idiom,idiom,retain,Retained as an established fixed expression under the broad idiom/colloquial-expression/proverb convention; not a claim of strict chengyu status.
+4193,风土人情,local customs and practices,idiom,idiom,retain,Retained as an established fixed expression under the broad idiom/colloquial-expression/proverb convention; not a claim of strict chengyu status.
+4205,男的跟男的才叫真爱女的跟男的在一起那才叫繁衍后代,Love between men is true love; a woman and a man being together is just reproduction (a provocative saying).,idiom,sentence,change,"Full provocative assertion about relationships, not a fixed idiomatic expression."
+4208,添油加醋,embellish a story,idiom,idiom,retain,Retained as an established fixed expression under the broad idiom/colloquial-expression/proverb convention; not a claim of strict chengyu status.
+4209,闭口不言,keep silent;keep secrets,idiom,idiom,retain,Retained as an established fixed expression under the broad idiom/colloquial-expression/proverb convention; not a claim of strict chengyu status.
+4220,口是心非,say one thing think another,idiom,idiom,retain,Retained as an established fixed expression under the broad idiom/colloquial-expression/proverb convention; not a claim of strict chengyu status.
+4273,一白遮三丑,A fair complexion hides many flaws (traditional beauty saying).,idiom,idiom,retain,Retained as an established fixed expression under the broad idiom/colloquial-expression/proverb convention; not a claim of strict chengyu status.
+4300,无拘无束,unfettered,idiom,idiom,retain,Retained as an established fixed expression under the broad idiom/colloquial-expression/proverb convention; not a claim of strict chengyu status.
+4304,梦幻泡影,a dream bubble;pipe dream,idiom,idiom,retain,Retained as an established fixed expression under the broad idiom/colloquial-expression/proverb convention; not a claim of strict chengyu status.
+4322,乐极生悲,Too much joy leads to sorrow,idiom,idiom,retain,Retained as an established fixed expression under the broad idiom/colloquial-expression/proverb convention; not a claim of strict chengyu status.
+4338,一见钟情,love at first sight,idiom,idiom,retain,Retained as an established fixed expression under the broad idiom/colloquial-expression/proverb convention; not a claim of strict chengyu status.
+4373,吃什么补什么,Eating a body part is believed to nourish the corresponding part of your own body (traditional saying).,idiom,idiom,retain,Retained as an established fixed expression under the broad idiom/colloquial-expression/proverb convention; not a claim of strict chengyu status.
+4682,一言为定,It's a deal;promise,idiom,idiom,retain,Retained as an established fixed expression under the broad idiom/colloquial-expression/proverb convention; not a claim of strict chengyu status.
+4845,临时抱佛脚,cram at the last moment,idiom,idiom,retain,Retained as an established fixed expression under the broad idiom/colloquial-expression/proverb convention; not a claim of strict chengyu status.
+4847,海枯石烂,eternal,idiom,idiom,retain,Retained as an established fixed expression under the broad idiom/colloquial-expression/proverb convention; not a claim of strict chengyu status.
+4848,民不聊生,people suffering greatly,idiom,idiom,retain,Retained as an established fixed expression under the broad idiom/colloquial-expression/proverb convention; not a claim of strict chengyu status.
+4849,气喘吁吁,out of breath,idiom,idiom,retain,Retained as an established fixed expression under the broad idiom/colloquial-expression/proverb convention; not a claim of strict chengyu status.
+4852,墨守成规,rigidly conservative,idiom,idiom,retain,Retained as an established fixed expression under the broad idiom/colloquial-expression/proverb convention; not a claim of strict chengyu status.
+4853,蜻蜓点水,superficial,idiom,idiom,retain,Retained as an established fixed expression under the broad idiom/colloquial-expression/proverb convention; not a claim of strict chengyu status.
+4854,斤斤计较,petty,idiom,idiom,retain,Retained as an established fixed expression under the broad idiom/colloquial-expression/proverb convention; not a claim of strict chengyu status.
+4862,高人一等,superior,idiom,idiom,retain,Retained as an established fixed expression under the broad idiom/colloquial-expression/proverb convention; not a claim of strict chengyu status.
+4875,顺水推舟,go with the flow;take advantage of an easy situation,idiom,idiom,retain,Retained as an established fixed expression under the broad idiom/colloquial-expression/proverb convention; not a claim of strict chengyu status.
+4881,光明正大,fair and aboveboard,idiom,idiom,retain,Retained as an established fixed expression under the broad idiom/colloquial-expression/proverb convention; not a claim of strict chengyu status.
+4883,掩人耳目,deceive others,idiom,idiom,retain,Retained as an established fixed expression under the broad idiom/colloquial-expression/proverb convention; not a claim of strict chengyu status.
+4884,草草了事,rush through work;get done hastily,idiom,idiom,retain,Retained as an established fixed expression under the broad idiom/colloquial-expression/proverb convention; not a claim of strict chengyu status.
+4918,默不作声,remain silent,idiom,idiom,retain,Retained as an established fixed expression under the broad idiom/colloquial-expression/proverb convention; not a claim of strict chengyu status.
+4919,蹬鼻子上脸,take advantage and push limits,idiom,idiom,retain,Retained as an established fixed expression under the broad idiom/colloquial-expression/proverb convention; not a claim of strict chengyu status.
+4929,脚踏实地,down-to-earth,idiom,idiom,retain,Retained as an established fixed expression under the broad idiom/colloquial-expression/proverb convention; not a claim of strict chengyu status.
+4941,无缘无故,no cause no reason,idiom,idiom,retain,Retained as an established fixed expression under the broad idiom/colloquial-expression/proverb convention; not a claim of strict chengyu status.
+4947,赏心悦目,delightful,idiom,idiom,retain,Retained as an established fixed expression under the broad idiom/colloquial-expression/proverb convention; not a claim of strict chengyu status.
+5210,与众不同,unique,idiom,idiom,retain,Retained as an established fixed expression under the broad idiom/colloquial-expression/proverb convention; not a claim of strict chengyu status.
+5211,胡思乱想,daydream or overthink,idiom,idiom,retain,Retained as an established fixed expression under the broad idiom/colloquial-expression/proverb convention; not a claim of strict chengyu status.
+5215,力所能及,do what one can,idiom,idiom,retain,Retained as an established fixed expression under the broad idiom/colloquial-expression/proverb convention; not a claim of strict chengyu status.
+5223,皆大欢喜,everyone is happy,idiom,idiom,retain,Retained as an established fixed expression under the broad idiom/colloquial-expression/proverb convention; not a claim of strict chengyu status.
+5225,家丑不外扬,keep scandals private,idiom,idiom,retain,Retained as an established fixed expression under the broad idiom/colloquial-expression/proverb convention; not a claim of strict chengyu status.
+5274,长生不老,live forever and never get old,idiom,idiom,retain,Retained as an established fixed expression under the broad idiom/colloquial-expression/proverb convention; not a claim of strict chengyu status.
+5313,三分钟热度,lose interest quickly,idiom,idiom,retain,Retained as an established fixed expression under the broad idiom/colloquial-expression/proverb convention; not a claim of strict chengyu status.
+5395,"告诉你的伴侣你喜欢他或她的哪些方面；这次请非常真诚, 说出平时不会对刚认识的人说的话。","Tell your partner what you like about them; be very honest this time, saying things that you might not say to someone you’ve just met.",idiom,sentence,change,Multi-clause instruction asking the learner to describe a partner; ordinary compositional text.
+5404,脚趾抠地,dig your toes into the ground;very cringe,idiom,idiom,retain,Retained as an established fixed expression under the broad idiom/colloquial-expression/proverb convention; not a claim of strict chengyu status.
+5434,一夜情,one-night stand,idiom,noun,change,Lexical noun naming a one-night sexual encounter.
+5442,不欢而散,end on bad terms,idiom,idiom,retain,Retained as an established fixed expression under the broad idiom/colloquial-expression/proverb convention; not a claim of strict chengyu status.
+5443,避而不谈,Avoid talking about it,idiom,idiom,retain,Retained as an established fixed expression under the broad idiom/colloquial-expression/proverb convention; not a claim of strict chengyu status.
+5563,一事无成,accomplish nothing,idiom,idiom,retain,Retained as an established fixed expression under the broad idiom/colloquial-expression/proverb convention; not a claim of strict chengyu status.
+5658,分道扬镳,go separate ways,idiom,idiom,retain,Retained as an established fixed expression under the broad idiom/colloquial-expression/proverb convention; not a claim of strict chengyu status.
+5659,各奔东西,go separate ways,idiom,idiom,retain,Retained as an established fixed expression under the broad idiom/colloquial-expression/proverb convention; not a claim of strict chengyu status.
+5667,一望无际,as far as the eye can see;endless,idiom,idiom,retain,Retained as an established fixed expression under the broad idiom/colloquial-expression/proverb convention; not a claim of strict chengyu status.
+5693,成家立业,start a family and build a career,idiom,idiom,retain,Retained as an established fixed expression under the broad idiom/colloquial-expression/proverb convention; not a claim of strict chengyu status.
+5702,人生百态,various aspects of life,idiom,idiom,retain,Retained as an established fixed expression under the broad idiom/colloquial-expression/proverb convention; not a claim of strict chengyu status.
+5705,光耀门楣,to bring honor to one's family,idiom,idiom,retain,Retained as an established fixed expression under the broad idiom/colloquial-expression/proverb convention; not a claim of strict chengyu status.
+5707,心甘情愿,wholeheartedly willing,idiom,idiom,retain,Retained as an established fixed expression under the broad idiom/colloquial-expression/proverb convention; not a claim of strict chengyu status.
+5712,门当户对,well-matched in social status,idiom,idiom,retain,Retained as an established fixed expression under the broad idiom/colloquial-expression/proverb convention; not a claim of strict chengyu status.
+5715,酸甜苦辣,ups and downs of life,idiom,idiom,retain,Retained as an established fixed expression under the broad idiom/colloquial-expression/proverb convention; not a claim of strict chengyu status.
+5716,冷暖自知,only you know your situation,idiom,idiom,retain,Retained as an established fixed expression under the broad idiom/colloquial-expression/proverb convention; not a claim of strict chengyu status.
+5717,相辅相成,complement each other,idiom,idiom,retain,Retained as an established fixed expression under the broad idiom/colloquial-expression/proverb convention; not a claim of strict chengyu status.
+5734,欲擒故纵,to let someone go in order to catch them later; to play hard to get,idiom,idiom,retain,Retained as an established fixed expression under the broad idiom/colloquial-expression/proverb convention; not a claim of strict chengyu status.
+5965,歌舞升平,peace and prosperity,idiom,idiom,retain,Retained as an established fixed expression under the broad idiom/colloquial-expression/proverb convention; not a claim of strict chengyu status.
+5975,层出不穷,emerging endlessly,idiom,idiom,retain,Retained as an established fixed expression under the broad idiom/colloquial-expression/proverb convention; not a claim of strict chengyu status.
+5981,乱七八糟,messy,idiom,idiom,retain,Retained as an established fixed expression under the broad idiom/colloquial-expression/proverb convention; not a claim of strict chengyu status.
+5984,说白了,to put it bluntly,idiom,idiom,retain,Retained as an established fixed expression under the broad idiom/colloquial-expression/proverb convention; not a claim of strict chengyu status.
+5985,入乡随俗,when in Rome do as Romans do,idiom,idiom,retain,Retained as an established fixed expression under the broad idiom/colloquial-expression/proverb convention; not a claim of strict chengyu status.
+5991,一蹴而就,one-shot success,idiom,idiom,retain,Retained as an established fixed expression under the broad idiom/colloquial-expression/proverb convention; not a claim of strict chengyu status.
+5992,洗耳恭听,listen attentively,idiom,idiom,retain,Retained as an established fixed expression under the broad idiom/colloquial-expression/proverb convention; not a claim of strict chengyu status.
+5994,五花八门,varied and diverse,idiom,idiom,retain,Retained as an established fixed expression under the broad idiom/colloquial-expression/proverb convention; not a claim of strict chengyu status.
+5996,出其不意,unexpected;take by surprise,idiom,idiom,retain,Retained as an established fixed expression under the broad idiom/colloquial-expression/proverb convention; not a claim of strict chengyu status.
+6016,知人知面不知心,You can know a person's face but not their heart.,idiom,idiom,retain,Retained as an established fixed expression under the broad idiom/colloquial-expression/proverb convention; not a claim of strict chengyu status.
+6017,打成一片,to mingle closely with; to become part of a group,idiom,idiom,retain,Retained as an established fixed expression under the broad idiom/colloquial-expression/proverb convention; not a claim of strict chengyu status.
+6024,自以为是,opinionated;to believe oneself infallible,idiom,idiom,retain,Retained as an established fixed expression under the broad idiom/colloquial-expression/proverb convention; not a claim of strict chengyu status.
+6030,乌烟瘴气,smoky and chaotic,idiom,idiom,retain,Retained as an established fixed expression under the broad idiom/colloquial-expression/proverb convention; not a claim of strict chengyu status.
+6033,不可抗力,force majeure; an uncontrollable event,idiom,noun,change,"Technical term naming force majeure, not an idiom merely because it has four characters."
+6037,我行我素,do things one’s own way,idiom,idiom,retain,Retained as an established fixed expression under the broad idiom/colloquial-expression/proverb convention; not a claim of strict chengyu status.
+6038,五大三粗,big and burly,idiom,idiom,retain,Retained as an established fixed expression under the broad idiom/colloquial-expression/proverb convention; not a claim of strict chengyu status.
+6040,多管闲事,to meddle; to poke one's nose into other people's business,idiom,idiom,retain,Retained as an established fixed expression under the broad idiom/colloquial-expression/proverb convention; not a claim of strict chengyu status.
+6041,大吵大闹,making a scene;loud,idiom,idiom,retain,Retained as an established fixed expression under the broad idiom/colloquial-expression/proverb convention; not a claim of strict chengyu status.
+6042,脑洞大开,full of imaginative ideas,idiom,idiom,retain,Retained as an established fixed expression under the broad idiom/colloquial-expression/proverb convention; not a claim of strict chengyu status.
+6044,未雨绸缪,prepare in advance,idiom,idiom,retain,Retained as an established fixed expression under the broad idiom/colloquial-expression/proverb convention; not a claim of strict chengyu status.
+6045,钻牛角尖,get stuck on trivial detail,idiom,idiom,retain,Retained as an established fixed expression under the broad idiom/colloquial-expression/proverb convention; not a claim of strict chengyu status.
+6046,慢条斯理,slow and leisurely,idiom,idiom,retain,Retained as an established fixed expression under the broad idiom/colloquial-expression/proverb convention; not a claim of strict chengyu status.
+6047,蠢蠢欲动,restless and eager to act,idiom,idiom,retain,Retained as an established fixed expression under the broad idiom/colloquial-expression/proverb convention; not a claim of strict chengyu status.
+6054,一掷千金,spend lavishly,idiom,idiom,retain,Retained as an established fixed expression under the broad idiom/colloquial-expression/proverb convention; not a claim of strict chengyu status.
+6056,伸出橄榄枝,to extend an olive branch,idiom,idiom,retain,Retained as an established fixed expression under the broad idiom/colloquial-expression/proverb convention; not a claim of strict chengyu status.
+6061,郎才女貌,a talented man and beautiful woman,idiom,idiom,retain,Retained as an established fixed expression under the broad idiom/colloquial-expression/proverb convention; not a claim of strict chengyu status.
+6195,每况愈下,to get worse each day,idiom,idiom,retain,Retained as an established fixed expression under the broad idiom/colloquial-expression/proverb convention; not a claim of strict chengyu status.
+6201,约法三章,make a few basic rules;settle on fundamental terms,idiom,idiom,retain,Retained as an established fixed expression under the broad idiom/colloquial-expression/proverb convention; not a claim of strict chengyu status.
+6203,口口声声,keep saying,idiom,idiom,retain,Retained as an established fixed expression under the broad idiom/colloquial-expression/proverb convention; not a claim of strict chengyu status.
+6208,鲜花插在牛粪上,good person with bad partner,idiom,idiom,retain,Retained as an established fixed expression under the broad idiom/colloquial-expression/proverb convention; not a claim of strict chengyu status.
+6216,破镜难圆,relationships hard to repair,idiom,idiom,retain,Retained as an established fixed expression under the broad idiom/colloquial-expression/proverb convention; not a claim of strict chengyu status.
+6231,袖手旁观,stand by and do nothing,idiom,idiom,retain,Retained as an established fixed expression under the broad idiom/colloquial-expression/proverb convention; not a claim of strict chengyu status.
+6232,多一事不如少一事,"Better to avoid unnecessary trouble; the fewer complications, the better.",idiom,idiom,retain,Retained as an established fixed expression under the broad idiom/colloquial-expression/proverb convention; not a claim of strict chengyu status.
+6233,惊世骇俗,shocking,idiom,idiom,retain,Retained as an established fixed expression under the broad idiom/colloquial-expression/proverb convention; not a claim of strict chengyu status.
+6234,至理名言,wise saying,idiom,idiom,retain,Retained as an established fixed expression under the broad idiom/colloquial-expression/proverb convention; not a claim of strict chengyu status.
+6235,杀敌一千自毁八百,pyrrhic victory,idiom,idiom,retain,Retained as an established fixed expression under the broad idiom/colloquial-expression/proverb convention; not a claim of strict chengyu status.
+6257,不务正业,neglect main job,idiom,idiom,retain,Retained as an established fixed expression under the broad idiom/colloquial-expression/proverb convention; not a claim of strict chengyu status.
+6258,死心塌地,utterly devoted,idiom,idiom,retain,Retained as an established fixed expression under the broad idiom/colloquial-expression/proverb convention; not a claim of strict chengyu status.
+6259,巧舌如簧,glib speaker,idiom,idiom,retain,Retained as an established fixed expression under the broad idiom/colloquial-expression/proverb convention; not a claim of strict chengyu status.
+6261,见钱眼开,greedy,idiom,idiom,retain,Retained as an established fixed expression under the broad idiom/colloquial-expression/proverb convention; not a claim of strict chengyu status.
+6264,僧多粥少,scarce resources,idiom,idiom,retain,Retained as an established fixed expression under the broad idiom/colloquial-expression/proverb convention; not a claim of strict chengyu status.
+6266,亦步亦趋,blindly imitate,idiom,idiom,retain,Retained as an established fixed expression under the broad idiom/colloquial-expression/proverb convention; not a claim of strict chengyu status.
+6269,血本无归,total loss,idiom,idiom,retain,Retained as an established fixed expression under the broad idiom/colloquial-expression/proverb convention; not a claim of strict chengyu status.
+6274,死记硬背,rote learning,idiom,idiom,retain,Retained as an established fixed expression under the broad idiom/colloquial-expression/proverb convention; not a claim of strict chengyu status.
+6278,将错就错,make the best of a mistake,idiom,idiom,retain,Retained as an established fixed expression under the broad idiom/colloquial-expression/proverb convention; not a claim of strict chengyu status.
+6279,将计就计,turn tables,idiom,idiom,retain,Retained as an established fixed expression under the broad idiom/colloquial-expression/proverb convention; not a claim of strict chengyu status.
+6294,天长地久,everlasting,idiom,idiom,retain,Retained as an established fixed expression under the broad idiom/colloquial-expression/proverb convention; not a claim of strict chengyu status.
+6297,酒肉朋友,fair-weather friends,idiom,idiom,retain,Retained as an established fixed expression under the broad idiom/colloquial-expression/proverb convention; not a claim of strict chengyu status.
+6298,鼻青脸肿,beaten badly,idiom,idiom,retain,Retained as an established fixed expression under the broad idiom/colloquial-expression/proverb convention; not a claim of strict chengyu status.
+6301,高高在上,aloof or arrogant,idiom,idiom,retain,Retained as an established fixed expression under the broad idiom/colloquial-expression/proverb convention; not a claim of strict chengyu status.
+6307,硬着头皮,force oneself,idiom,idiom,retain,Retained as an established fixed expression under the broad idiom/colloquial-expression/proverb convention; not a claim of strict chengyu status.
+6308,江河日下,deteriorating,idiom,idiom,retain,Retained as an established fixed expression under the broad idiom/colloquial-expression/proverb convention; not a claim of strict chengyu status.
+6316,出人头地,succeed,idiom,idiom,retain,Retained as an established fixed expression under the broad idiom/colloquial-expression/proverb convention; not a claim of strict chengyu status.
+6318,潜移默化,influence imperceptibly,idiom,idiom,retain,Retained as an established fixed expression under the broad idiom/colloquial-expression/proverb convention; not a claim of strict chengyu status.
+6319,哭哭啼啼,crying nonstop;crying and sobbing,idiom,idiom,retain,Retained as an established fixed expression under the broad idiom/colloquial-expression/proverb convention; not a claim of strict chengyu status.
+6430,战战兢兢,very cautious,idiom,idiom,retain,Retained as an established fixed expression under the broad idiom/colloquial-expression/proverb convention; not a claim of strict chengyu status.
+6431,水到渠成,success comes naturally,idiom,idiom,retain,Retained as an established fixed expression under the broad idiom/colloquial-expression/proverb convention; not a claim of strict chengyu status.
+6432,风风雨雨,hardships,idiom,idiom,retain,Retained as an established fixed expression under the broad idiom/colloquial-expression/proverb convention; not a claim of strict chengyu status.
+6436,伤风败俗,immoral,idiom,idiom,retain,Retained as an established fixed expression under the broad idiom/colloquial-expression/proverb convention; not a claim of strict chengyu status.
+6445,两面三刀,duplicitous,idiom,idiom,retain,Retained as an established fixed expression under the broad idiom/colloquial-expression/proverb convention; not a claim of strict chengyu status.
+6447,抛诸脑后,forget completely,idiom,idiom,retain,Retained as an established fixed expression under the broad idiom/colloquial-expression/proverb convention; not a claim of strict chengyu status.
+6451,与世无争,detached,idiom,idiom,retain,Retained as an established fixed expression under the broad idiom/colloquial-expression/proverb convention; not a claim of strict chengyu status.
+6453,倚老卖老,to pull rank based on age; to take advantage of one's seniority,idiom,idiom,retain,Retained as an established fixed expression under the broad idiom/colloquial-expression/proverb convention; not a claim of strict chengyu status.
+6462,欲速则不达,haste makes waste,idiom,idiom,retain,Retained as an established fixed expression under the broad idiom/colloquial-expression/proverb convention; not a claim of strict chengyu status.
+6504,蹑手蹑脚,sneak around,idiom,idiom,retain,Retained as an established fixed expression under the broad idiom/colloquial-expression/proverb convention; not a claim of strict chengyu status.
+6506,鬼鬼祟祟,shady,idiom,idiom,retain,Retained as an established fixed expression under the broad idiom/colloquial-expression/proverb convention; not a claim of strict chengyu status.
+6508,支支吾吾,hesitant speech,idiom,idiom,retain,Retained as an established fixed expression under the broad idiom/colloquial-expression/proverb convention; not a claim of strict chengyu status.
+6513,百口莫辩,unable to defend oneself,idiom,idiom,retain,Retained as an established fixed expression under the broad idiom/colloquial-expression/proverb convention; not a claim of strict chengyu status.
+6515,不知所措,at a loss,idiom,idiom,retain,Retained as an established fixed expression under the broad idiom/colloquial-expression/proverb convention; not a claim of strict chengyu status.
+6669,白眼狼,ungrateful person,idiom,idiom,retain,Retained as an established fixed expression under the broad idiom/colloquial-expression/proverb convention; not a claim of strict chengyu status.
+6692,下雨天打孩子,Beat the kids on a rainy day—just to have something to do (a sardonic saying about idle troublemaking).,idiom,idiom,retain,Retained as an established fixed expression under the broad idiom/colloquial-expression/proverb convention; not a claim of strict chengyu status.
+6693,各有千秋,each has merits,idiom,idiom,retain,Retained as an established fixed expression under the broad idiom/colloquial-expression/proverb convention; not a claim of strict chengyu status.
+6694,信马由缰,act freely,idiom,idiom,retain,Retained as an established fixed expression under the broad idiom/colloquial-expression/proverb convention; not a claim of strict chengyu status.
+6696,数不胜数,numerous,idiom,idiom,retain,Retained as an established fixed expression under the broad idiom/colloquial-expression/proverb convention; not a claim of strict chengyu status.
+6704,无伤大雅,no big deal,idiom,idiom,retain,Retained as an established fixed expression under the broad idiom/colloquial-expression/proverb convention; not a claim of strict chengyu status.
+6706,适得其反,backfire,idiom,idiom,retain,Retained as an established fixed expression under the broad idiom/colloquial-expression/proverb convention; not a claim of strict chengyu status.
+6712,莫名其妙,strange,idiom,idiom,retain,Retained as an established fixed expression under the broad idiom/colloquial-expression/proverb convention; not a claim of strict chengyu status.
+6725,字正腔圆,clear and proper speech,idiom,idiom,retain,Retained as an established fixed expression under the broad idiom/colloquial-expression/proverb convention; not a claim of strict chengyu status.
+6733,拐弯抹角,beat around the bush,idiom,idiom,retain,Retained as an established fixed expression under the broad idiom/colloquial-expression/proverb convention; not a claim of strict chengyu status.
+6737,早睡早起对身体好,Going to bed early and waking up early is good for your health.,idiom,sentence,change,Compositional health statement about going to bed and rising early; not the fixed expression 早睡早起 itself.
+6837,欣欣向荣,prosperous and growing well,idiom,idiom,retain,Retained as an established fixed expression under the broad idiom/colloquial-expression/proverb convention; not a claim of strict chengyu status.
+6848,蒸蒸日上,steadily improving,idiom,idiom,retain,Retained as an established fixed expression under the broad idiom/colloquial-expression/proverb convention; not a claim of strict chengyu status.
+6851,马不停蹄,keep going without rest,idiom,idiom,retain,Retained as an established fixed expression under the broad idiom/colloquial-expression/proverb convention; not a claim of strict chengyu status.
+6853,大摇大摆,swagger openly,idiom,idiom,retain,Retained as an established fixed expression under the broad idiom/colloquial-expression/proverb convention; not a claim of strict chengyu status.
+6884,一概而论,overgeneralize,idiom,idiom,retain,Retained as an established fixed expression under the broad idiom/colloquial-expression/proverb convention; not a claim of strict chengyu status.
+6885,一举一动,every move,idiom,idiom,retain,Retained as an established fixed expression under the broad idiom/colloquial-expression/proverb convention; not a claim of strict chengyu status.
+6886,无可厚非,understandable/not to criticize harshly,idiom,idiom,retain,Retained as an established fixed expression under the broad idiom/colloquial-expression/proverb convention; not a claim of strict chengyu status.
+6890,绳之以法,punish according to law,idiom,idiom,retain,Retained as an established fixed expression under the broad idiom/colloquial-expression/proverb convention; not a claim of strict chengyu status.
+6893,后会有期,see you again sometime,idiom,idiom,retain,Retained as an established fixed expression under the broad idiom/colloquial-expression/proverb convention; not a claim of strict chengyu status.
+6900,精神恍惚,dazed or absent-minded,idiom,idiom,retain,Retained as an established fixed expression under the broad idiom/colloquial-expression/proverb convention; not a claim of strict chengyu status.
+6901,千言万语,so much to say,idiom,idiom,retain,Retained as an established fixed expression under the broad idiom/colloquial-expression/proverb convention; not a claim of strict chengyu status.
+6903,哭天抹泪,weep bitterly,idiom,idiom,retain,Retained as an established fixed expression under the broad idiom/colloquial-expression/proverb convention; not a claim of strict chengyu status.
+6912,平易近人,down-to-earth and approachable,idiom,idiom,retain,Retained as an established fixed expression under the broad idiom/colloquial-expression/proverb convention; not a claim of strict chengyu status.
+6913,家喻户晓,well-known to all,idiom,idiom,retain,Retained as an established fixed expression under the broad idiom/colloquial-expression/proverb convention; not a claim of strict chengyu status.
+6917,隔三差五,every now and then,idiom,idiom,retain,Retained as an established fixed expression under the broad idiom/colloquial-expression/proverb convention; not a claim of strict chengyu status.
+6922,脱口秀,stand up comedy;talk show,idiom,noun,change,Borrowed name of an entertainment format: talk show or stand-up comedy.
+6934,顺其自然,let things take their course,idiom,idiom,retain,Retained as an established fixed expression under the broad idiom/colloquial-expression/proverb convention; not a claim of strict chengyu status.
+6942,格格不入,not fitting in,idiom,idiom,retain,Retained as an established fixed expression under the broad idiom/colloquial-expression/proverb convention; not a claim of strict chengyu status.
+7117,一箭双雕,kill two birds with one stone,idiom,idiom,retain,Retained as an established fixed expression under the broad idiom/colloquial-expression/proverb convention; not a claim of strict chengyu status.
+7118,破釜沉舟,burn one’s bridges,idiom,idiom,retain,Retained as an established fixed expression under the broad idiom/colloquial-expression/proverb convention; not a claim of strict chengyu status.
+7346,恭喜发财,wishing you prosperity,idiom,idiom,retain,Retained as an established fixed expression under the broad idiom/colloquial-expression/proverb convention; not a claim of strict chengyu status.
+7347,万事如意,may everything go as you wish,idiom,idiom,retain,Retained as an established fixed expression under the broad idiom/colloquial-expression/proverb convention; not a claim of strict chengyu status.
+7349,心想事成,may all your wishes come true,idiom,idiom,retain,Retained as an established fixed expression under the broad idiom/colloquial-expression/proverb convention; not a claim of strict chengyu status.
+7351,年年有余,may you have abundance every year,idiom,idiom,retain,Retained as an established fixed expression under the broad idiom/colloquial-expression/proverb convention; not a claim of strict chengyu status.
+7352,大吉大利,great luck and great profit,idiom,idiom,retain,Retained as an established fixed expression under the broad idiom/colloquial-expression/proverb convention; not a claim of strict chengyu status.
+7357,暴饮暴食,binge eat and drink,idiom,idiom,retain,Retained as an established fixed expression under the broad idiom/colloquial-expression/proverb convention; not a claim of strict chengyu status.
+7472,道听途说,rumor or hearsay,idiom,idiom,retain,Retained as an established fixed expression under the broad idiom/colloquial-expression/proverb convention; not a claim of strict chengyu status.
+7473,以讹传讹,spread misinformation,idiom,idiom,retain,Retained as an established fixed expression under the broad idiom/colloquial-expression/proverb convention; not a claim of strict chengyu status.
+7477,鸡蛋里头挑骨头,nitpick,idiom,idiom,retain,Retained as an established fixed expression under the broad idiom/colloquial-expression/proverb convention; not a claim of strict chengyu status.
+7487,祸从口出,loose talk causes trouble,idiom,idiom,retain,Retained as an established fixed expression under the broad idiom/colloquial-expression/proverb convention; not a claim of strict chengyu status.
+7488,以暴制暴,fight violence with violence,idiom,idiom,retain,Retained as an established fixed expression under the broad idiom/colloquial-expression/proverb convention; not a claim of strict chengyu status.
+7490,易如反掌,very easy,idiom,idiom,retain,Retained as an established fixed expression under the broad idiom/colloquial-expression/proverb convention; not a claim of strict chengyu status.
+7491,不由自主,involuntary,idiom,idiom,retain,Retained as an established fixed expression under the broad idiom/colloquial-expression/proverb convention; not a claim of strict chengyu status.
+7492,老生常谈,cliché,idiom,idiom,retain,Retained as an established fixed expression under the broad idiom/colloquial-expression/proverb convention; not a claim of strict chengyu status.
+7493,心灵鸡汤,overly sentimental advice,idiom,idiom,retain,Retained as an established fixed expression under the broad idiom/colloquial-expression/proverb convention; not a claim of strict chengyu status.
+7496,完美无缺,flawless,idiom,idiom,retain,Retained as an established fixed expression under the broad idiom/colloquial-expression/proverb convention; not a claim of strict chengyu status.
+7505,天下无敌,unbeatable,idiom,idiom,retain,Retained as an established fixed expression under the broad idiom/colloquial-expression/proverb convention; not a claim of strict chengyu status.
+7516,人生地不熟,stranger in a new place,idiom,idiom,retain,Retained as an established fixed expression under the broad idiom/colloquial-expression/proverb convention; not a claim of strict chengyu status.
+7517,落叶归根,return to one’s origins,idiom,idiom,retain,Retained as an established fixed expression under the broad idiom/colloquial-expression/proverb convention; not a claim of strict chengyu status.
+7521,鲤鱼跳龙门,achieve great success,idiom,idiom,retain,Retained as an established fixed expression under the broad idiom/colloquial-expression/proverb convention; not a claim of strict chengyu status.
+7533,荒无人烟,uninhabited,idiom,idiom,retain,Retained as an established fixed expression under the broad idiom/colloquial-expression/proverb convention; not a claim of strict chengyu status.
+7537,东张西望,to look around in all directions,idiom,idiom,retain,Retained as an established fixed expression under the broad idiom/colloquial-expression/proverb convention; not a claim of strict chengyu status.
+7538,因材施教,tailor teaching to student,idiom,idiom,retain,Retained as an established fixed expression under the broad idiom/colloquial-expression/proverb convention; not a claim of strict chengyu status.
+7539,恰如其分,appropriate,idiom,idiom,retain,Retained as an established fixed expression under the broad idiom/colloquial-expression/proverb convention; not a claim of strict chengyu status.
+7548,出淤泥而不染,remain pure in bad environment,idiom,idiom,retain,Retained as an established fixed expression under the broad idiom/colloquial-expression/proverb convention; not a claim of strict chengyu status.
+7549,意犹未尽,still wanting more,idiom,idiom,retain,Retained as an established fixed expression under the broad idiom/colloquial-expression/proverb convention; not a claim of strict chengyu status.
+7550,晴天霹雳,shocking news,idiom,idiom,retain,Retained as an established fixed expression under the broad idiom/colloquial-expression/proverb convention; not a claim of strict chengyu status.
+7551,背水一战,make a last stand,idiom,idiom,retain,Retained as an established fixed expression under the broad idiom/colloquial-expression/proverb convention; not a claim of strict chengyu status.
+7553,若无其事,act unconcerned,idiom,idiom,retain,Retained as an established fixed expression under the broad idiom/colloquial-expression/proverb convention; not a claim of strict chengyu status.
+7564,人情世故,social norms,idiom,idiom,retain,Retained as an established fixed expression under the broad idiom/colloquial-expression/proverb convention; not a claim of strict chengyu status.
+7568,无能为力,powerless,idiom,idiom,retain,Retained as an established fixed expression under the broad idiom/colloquial-expression/proverb convention; not a claim of strict chengyu status.
+7602,塞翁失马,blessing in disguise,idiom,idiom,retain,Retained as an established fixed expression under the broad idiom/colloquial-expression/proverb convention; not a claim of strict chengyu status.
+7605,销声匿迹,vanish,idiom,idiom,retain,Retained as an established fixed expression under the broad idiom/colloquial-expression/proverb convention; not a claim of strict chengyu status.
+7612,按兵不动,wait without acting,idiom,idiom,retain,Retained as an established fixed expression under the broad idiom/colloquial-expression/proverb convention; not a claim of strict chengyu status.
+7613,弄巧成拙,backfire,idiom,idiom,retain,Retained as an established fixed expression under the broad idiom/colloquial-expression/proverb convention; not a claim of strict chengyu status.
+7625,迫在眉睫,imminent,idiom,idiom,retain,Retained as an established fixed expression under the broad idiom/colloquial-expression/proverb convention; not a claim of strict chengyu status.
+7637,模棱两可,ambiguous,idiom,idiom,retain,Retained as an established fixed expression under the broad idiom/colloquial-expression/proverb convention; not a claim of strict chengyu status.
+7652,水土不服,not acclimated,idiom,idiom,retain,Retained as an established fixed expression under the broad idiom/colloquial-expression/proverb convention; not a claim of strict chengyu status.
+7657,大惊小怪,overreact,idiom,idiom,retain,Retained as an established fixed expression under the broad idiom/colloquial-expression/proverb convention; not a claim of strict chengyu status.
+7658,死缠烂打,harass persistently,idiom,idiom,retain,Retained as an established fixed expression under the broad idiom/colloquial-expression/proverb convention; not a claim of strict chengyu status.
+7662,半途而废,quit midway,idiom,idiom,retain,Retained as an established fixed expression under the broad idiom/colloquial-expression/proverb convention; not a claim of strict chengyu status.
+7671,屡见不鲜,common,idiom,idiom,retain,Retained as an established fixed expression under the broad idiom/colloquial-expression/proverb convention; not a claim of strict chengyu status.
+7674,此地无银三百两,hiding something obvious;a guilty denial,idiom,idiom,retain,Retained as an established fixed expression under the broad idiom/colloquial-expression/proverb convention; not a claim of strict chengyu status.
+7680,花里胡哨,gaudy,idiom,idiom,retain,Retained as an established fixed expression under the broad idiom/colloquial-expression/proverb convention; not a claim of strict chengyu status.
+7681,虚惊一场,needless fright,idiom,idiom,retain,Retained as an established fixed expression under the broad idiom/colloquial-expression/proverb convention; not a claim of strict chengyu status.
+7700,鹅毛大雪,heavy snowfall,idiom,idiom,retain,Retained as an established fixed expression under the broad idiom/colloquial-expression/proverb convention; not a claim of strict chengyu status.
+7704,丢了西瓜捡芝麻,miss the bigger gain,idiom,idiom,retain,Retained as an established fixed expression under the broad idiom/colloquial-expression/proverb convention; not a claim of strict chengyu status.
+7707,久而久之,eventually,idiom,idiom,retain,Retained as an established fixed expression under the broad idiom/colloquial-expression/proverb convention; not a claim of strict chengyu status.
+7714,志同道合,like-minded,idiom,idiom,retain,Retained as an established fixed expression under the broad idiom/colloquial-expression/proverb convention; not a claim of strict chengyu status.
+7724,牛鬼蛇神,evil or strange people,idiom,idiom,retain,Retained as an established fixed expression under the broad idiom/colloquial-expression/proverb convention; not a claim of strict chengyu status.
+7726,忽冷忽热,inconsistent,idiom,idiom,retain,Retained as an established fixed expression under the broad idiom/colloquial-expression/proverb convention; not a claim of strict chengyu status.
+7730,气度不凡,impressive demeanor,idiom,idiom,retain,Retained as an established fixed expression under the broad idiom/colloquial-expression/proverb convention; not a claim of strict chengyu status.
+7731,一表人才,handsome; distinguished-looking,idiom,idiom,retain,Retained as an established fixed expression under the broad idiom/colloquial-expression/proverb convention; not a claim of strict chengyu status.
+7745,祸不单行,troubles come together,idiom,idiom,retain,Retained as an established fixed expression under the broad idiom/colloquial-expression/proverb convention; not a claim of strict chengyu status.
+7747,一言难尽,complicated to explain,idiom,idiom,retain,Retained as an established fixed expression under the broad idiom/colloquial-expression/proverb convention; not a claim of strict chengyu status.
+7748,众说纷纭,many differing views,idiom,idiom,retain,Retained as an established fixed expression under the broad idiom/colloquial-expression/proverb convention; not a claim of strict chengyu status.
+7770,醉翁之意不在酒,hidden motive,idiom,idiom,retain,Retained as an established fixed expression under the broad idiom/colloquial-expression/proverb convention; not a claim of strict chengyu status.
+7774,众目睽睽,in full public view,idiom,idiom,retain,Retained as an established fixed expression under the broad idiom/colloquial-expression/proverb convention; not a claim of strict chengyu status.
+7780,千篇一律,monotonous,idiom,idiom,retain,Retained as an established fixed expression under the broad idiom/colloquial-expression/proverb convention; not a claim of strict chengyu status.
+7782,人满为患,overcrowded,idiom,idiom,retain,Retained as an established fixed expression under the broad idiom/colloquial-expression/proverb convention; not a claim of strict chengyu status.
+7783,鱼龙混杂,mixed quality,idiom,idiom,retain,Retained as an established fixed expression under the broad idiom/colloquial-expression/proverb convention; not a claim of strict chengyu status.
+7784,夜郎自大,overconfident in ignorance,idiom,idiom,retain,Retained as an established fixed expression under the broad idiom/colloquial-expression/proverb convention; not a claim of strict chengyu status.
+7785,与日俱增,growing steadily,idiom,idiom,retain,Retained as an established fixed expression under the broad idiom/colloquial-expression/proverb convention; not a claim of strict chengyu status.
+7786,记忆犹新,still vivid,idiom,idiom,retain,Retained as an established fixed expression under the broad idiom/colloquial-expression/proverb convention; not a claim of strict chengyu status.
+7797,脱裤子放屁,unnecessary action,idiom,idiom,retain,Retained as an established fixed expression under the broad idiom/colloquial-expression/proverb convention; not a claim of strict chengyu status.
+7798,画龙点睛,add the finishing touch,idiom,idiom,retain,Retained as an established fixed expression under the broad idiom/colloquial-expression/proverb convention; not a claim of strict chengyu status.
+7800,微不足道,trivial,idiom,idiom,retain,Retained as an established fixed expression under the broad idiom/colloquial-expression/proverb convention; not a claim of strict chengyu status.
+7801,杯水车薪,insufficient help,idiom,idiom,retain,Retained as an established fixed expression under the broad idiom/colloquial-expression/proverb convention; not a claim of strict chengyu status.
+7802,摸不着头脑,confused,idiom,idiom,retain,Retained as an established fixed expression under the broad idiom/colloquial-expression/proverb convention; not a claim of strict chengyu status.
+7803,不过如此,that's all;nothing special,idiom,idiom,retain,Retained as an established fixed expression under the broad idiom/colloquial-expression/proverb convention; not a claim of strict chengyu status.
+7806,反向旅游,travel to less popular destinations or against peak travel trends,idiom,noun,change,"Name of a tourism trend or travel style in the supplied sense, not an idiomatic expression."
+7826,耳熟能详,well-known,idiom,idiom,retain,Retained as an established fixed expression under the broad idiom/colloquial-expression/proverb convention; not a claim of strict chengyu status.
+7845,昏昏欲睡,sleepy,idiom,idiom,retain,Retained as an established fixed expression under the broad idiom/colloquial-expression/proverb convention; not a claim of strict chengyu status.
+7846,一如既往,unchanged,idiom,idiom,retain,Retained as an established fixed expression under the broad idiom/colloquial-expression/proverb convention; not a claim of strict chengyu status.
+7847,趁虚而入,take advantage of weakness,idiom,idiom,retain,Retained as an established fixed expression under the broad idiom/colloquial-expression/proverb convention; not a claim of strict chengyu status.
+7848,不显山不露水,keep a low profile,idiom,idiom,retain,Retained as an established fixed expression under the broad idiom/colloquial-expression/proverb convention; not a claim of strict chengyu status.
+7852,精打细算,be thrifty,idiom,idiom,retain,Retained as an established fixed expression under the broad idiom/colloquial-expression/proverb convention; not a claim of strict chengyu status.
+7854,防患于未然,take precautions,idiom,idiom,retain,Retained as an established fixed expression under the broad idiom/colloquial-expression/proverb convention; not a claim of strict chengyu status.
+7855,吃苦耐劳,hardworking,idiom,idiom,retain,Retained as an established fixed expression under the broad idiom/colloquial-expression/proverb convention; not a claim of strict chengyu status.
+7857,一穷二白,extremely poor,idiom,idiom,retain,Retained as an established fixed expression under the broad idiom/colloquial-expression/proverb convention; not a claim of strict chengyu status.
+7869,省吃俭用,live frugally,idiom,idiom,retain,Retained as an established fixed expression under the broad idiom/colloquial-expression/proverb convention; not a claim of strict chengyu status.
+7885,顺理成章,logical and natural,idiom,idiom,retain,Retained as an established fixed expression under the broad idiom/colloquial-expression/proverb convention; not a claim of strict chengyu status.
+7888,因祸得福,blessing in disguise,idiom,idiom,retain,Retained as an established fixed expression under the broad idiom/colloquial-expression/proverb convention; not a claim of strict chengyu status.
+7891,阴差阳错,accidental coincidence,idiom,idiom,retain,Retained as an established fixed expression under the broad idiom/colloquial-expression/proverb convention; not a claim of strict chengyu status.
+7919,纸醉金迷,decadent lifestyle,idiom,idiom,retain,Retained as an established fixed expression under the broad idiom/colloquial-expression/proverb convention; not a claim of strict chengyu status.
+7921,吃喝玩乐,eat drink and play,idiom,idiom,retain,Retained as an established fixed expression under the broad idiom/colloquial-expression/proverb convention; not a claim of strict chengyu status.
+7930,一模一样,exactly the same,idiom,idiom,retain,Retained as an established fixed expression under the broad idiom/colloquial-expression/proverb convention; not a claim of strict chengyu status.
+7936,脍炙人口,universally appreciated,idiom,idiom,retain,Retained as an established fixed expression under the broad idiom/colloquial-expression/proverb convention; not a claim of strict chengyu status.
+7938,过眼烟云,fleeting,idiom,idiom,retain,Retained as an established fixed expression under the broad idiom/colloquial-expression/proverb convention; not a claim of strict chengyu status.
+7939,望尘莫及,far behind;see only the other rider's dust,idiom,idiom,retain,Retained as an established fixed expression under the broad idiom/colloquial-expression/proverb convention; not a claim of strict chengyu status.
+7940,不约而同,coincidentally;agree by chance,idiom,idiom,retain,Retained as an established fixed expression under the broad idiom/colloquial-expression/proverb convention; not a claim of strict chengyu status.
+7941,持之以恒,to pursue unremittingly;perseverance,idiom,idiom,retain,Retained as an established fixed expression under the broad idiom/colloquial-expression/proverb convention; not a claim of strict chengyu status.
+7942,热泪盈眶,eyes filled with tears,idiom,idiom,retain,Retained as an established fixed expression under the broad idiom/colloquial-expression/proverb convention; not a claim of strict chengyu status.
+7943,宠辱不惊,remain calm;unperturbed by honor or disgrace,idiom,idiom,retain,Retained as an established fixed expression under the broad idiom/colloquial-expression/proverb convention; not a claim of strict chengyu status.
+7947,打退堂鼓,chicken out;back down;beat the return drum,idiom,idiom,retain,Retained as an established fixed expression under the broad idiom/colloquial-expression/proverb convention; not a claim of strict chengyu status.
+7952,坐以待毙,wait to die,idiom,idiom,retain,Retained as an established fixed expression under the broad idiom/colloquial-expression/proverb convention; not a claim of strict chengyu status.
+7959,一知半解,half-understood,idiom,idiom,retain,Retained as an established fixed expression under the broad idiom/colloquial-expression/proverb convention; not a claim of strict chengyu status.
+7960,只言片语,fragmentary words;a few isolated phrases,idiom,idiom,retain,Retained as an established fixed expression under the broad idiom/colloquial-expression/proverb convention; not a claim of strict chengyu status.
+7962,左右逢源,be successful in all directions,idiom,idiom,retain,Retained as an established fixed expression under the broad idiom/colloquial-expression/proverb convention; not a claim of strict chengyu status.
+7963,四处碰壁,bumping into walls everywhere;meet obstacles,idiom,idiom,retain,Retained as an established fixed expression under the broad idiom/colloquial-expression/proverb convention; not a claim of strict chengyu status.
+7964,中流砥柱,main pillar;mainstay,idiom,idiom,retain,Retained as an established fixed expression under the broad idiom/colloquial-expression/proverb convention; not a claim of strict chengyu status.
+7965,一动不动,don't move once;motionless,idiom,idiom,retain,Retained as an established fixed expression under the broad idiom/colloquial-expression/proverb convention; not a claim of strict chengyu status.
+7967,推三阻四,make all sorts of excuses;procrastination,idiom,idiom,retain,Retained as an established fixed expression under the broad idiom/colloquial-expression/proverb convention; not a claim of strict chengyu status.
+7989,寸步难行,hard to move,idiom,idiom,retain,Retained as an established fixed expression under the broad idiom/colloquial-expression/proverb convention; not a claim of strict chengyu status.
+7993,来之不易,hard-earned,idiom,idiom,retain,Retained as an established fixed expression under the broad idiom/colloquial-expression/proverb convention; not a claim of strict chengyu status.
+8046,五味杂陈,five flavors mixed;mixed feelings,idiom,idiom,retain,Retained as an established fixed expression under the broad idiom/colloquial-expression/proverb convention; not a claim of strict chengyu status.
+8060,提心吊胆,to be on tenterhooks; anxious; to have one's heart in one's mouth,idiom,idiom,retain,Retained as an established fixed expression under the broad idiom/colloquial-expression/proverb convention; not a claim of strict chengyu status.
+8068,不了了之,end up with nothing;fizzle out,idiom,idiom,retain,Retained as an established fixed expression under the broad idiom/colloquial-expression/proverb convention; not a claim of strict chengyu status.
+8072,头昏眼花,dizzy;blurry vision,idiom,idiom,retain,Retained as an established fixed expression under the broad idiom/colloquial-expression/proverb convention; not a claim of strict chengyu status.
+8076,炉火纯青,perfected,idiom,idiom,retain,Retained as an established fixed expression under the broad idiom/colloquial-expression/proverb convention; not a claim of strict chengyu status.
+8080,天翻地覆,earth-shattering,idiom,idiom,retain,Retained as an established fixed expression under the broad idiom/colloquial-expression/proverb convention; not a claim of strict chengyu status.
+8081,息息相关,closely related;intertwined,idiom,idiom,retain,Retained as an established fixed expression under the broad idiom/colloquial-expression/proverb convention; not a claim of strict chengyu status.
+8090,走关系,to use connections;pull strings,idiom,idiom,retain,Retained as an established fixed expression under the broad idiom/colloquial-expression/proverb convention; not a claim of strict chengyu status.
+8109,雪上加霜,to make matters worse,idiom,idiom,retain,Retained as an established fixed expression under the broad idiom/colloquial-expression/proverb convention; not a claim of strict chengyu status.
+8132,自力更生,self-reliance,idiom,idiom,retain,Retained as an established fixed expression under the broad idiom/colloquial-expression/proverb convention; not a claim of strict chengyu status.
+8174,功不可没,indispensable contribution,idiom,idiom,retain,Retained as an established fixed expression under the broad idiom/colloquial-expression/proverb convention; not a claim of strict chengyu status.
+8191,顾名思义,as the name suggests,idiom,idiom,retain,Retained as an established fixed expression under the broad idiom/colloquial-expression/proverb convention; not a claim of strict chengyu status.
+8201,趋之若鹜,to flock eagerly to something (often disapproving),idiom,idiom,retain,Retained as an established fixed expression under the broad idiom/colloquial-expression/proverb convention; not a claim of strict chengyu status.
+8215,崇洋媚外,worship foreign things,idiom,idiom,retain,Retained as an established fixed expression under the broad idiom/colloquial-expression/proverb convention; not a claim of strict chengyu status.
+8243,十全十美,perfect in every way,idiom,idiom,retain,Retained as an established fixed expression under the broad idiom/colloquial-expression/proverb convention; not a claim of strict chengyu status.
+8245,眼前一亮,pleasantly surprised;to brighten one's eyes,idiom,idiom,retain,Retained as an established fixed expression under the broad idiom/colloquial-expression/proverb convention; not a claim of strict chengyu status.
+8246,刮目相看,look at with new admiration,idiom,idiom,retain,Retained as an established fixed expression under the broad idiom/colloquial-expression/proverb convention; not a claim of strict chengyu status.
+8249,雪中送炭,help in time of need,idiom,idiom,retain,Retained as an established fixed expression under the broad idiom/colloquial-expression/proverb convention; not a claim of strict chengyu status.
+8256,首当其冲,bear the brunt,idiom,idiom,retain,Retained as an established fixed expression under the broad idiom/colloquial-expression/proverb convention; not a claim of strict chengyu status.
+8260,五湖四海,from all over the country,idiom,idiom,retain,Retained as an established fixed expression under the broad idiom/colloquial-expression/proverb convention; not a claim of strict chengyu status.
+8262,肆无忌惮,unscrupulous,idiom,idiom,retain,Retained as an established fixed expression under the broad idiom/colloquial-expression/proverb convention; not a claim of strict chengyu status.
+8267,感同身受,empathize deeply,idiom,idiom,retain,Retained as an established fixed expression under the broad idiom/colloquial-expression/proverb convention; not a claim of strict chengyu status.
+8271,孤陋寡闻,ignorant and inexperienced,idiom,idiom,retain,Retained as an established fixed expression under the broad idiom/colloquial-expression/proverb convention; not a claim of strict chengyu status.
+8272,四季如春,spring-like all year,idiom,idiom,retain,Retained as an established fixed expression under the broad idiom/colloquial-expression/proverb convention; not a claim of strict chengyu status.
+8274,突如其来,sudden;unexpected,idiom,idiom,retain,Retained as an established fixed expression under the broad idiom/colloquial-expression/proverb convention; not a claim of strict chengyu status.
+8278,无所不能,almighty,idiom,idiom,retain,Retained as an established fixed expression under the broad idiom/colloquial-expression/proverb convention; not a claim of strict chengyu status.
+8280,众口难调,it's hard to please everyone,idiom,idiom,retain,Retained as an established fixed expression under the broad idiom/colloquial-expression/proverb convention; not a claim of strict chengyu status.
+8294,自问自答,to ask and answer oneself,idiom,idiom,retain,Retained as an established fixed expression under the broad idiom/colloquial-expression/proverb convention; not a claim of strict chengyu status.
+8315,疏而不漏,nothing escapes justice,idiom,idiom,retain,Retained as an established fixed expression under the broad idiom/colloquial-expression/proverb convention; not a claim of strict chengyu status.
+8324,风吹日晒,exposed to sun and wind,idiom,idiom,retain,Retained as an established fixed expression under the broad idiom/colloquial-expression/proverb convention; not a claim of strict chengyu status.
+8331,嗤之以鼻,to sniff at;disdain,idiom,idiom,retain,Retained as an established fixed expression under the broad idiom/colloquial-expression/proverb convention; not a claim of strict chengyu status.
+8335,一成不变,unchanging,idiom,idiom,retain,Retained as an established fixed expression under the broad idiom/colloquial-expression/proverb convention; not a claim of strict chengyu status.
+8343,屈指可数,can be counted on one hand,idiom,idiom,retain,Retained as an established fixed expression under the broad idiom/colloquial-expression/proverb convention; not a claim of strict chengyu status.
+8345,热血沸腾,to be fired up,idiom,idiom,retain,Retained as an established fixed expression under the broad idiom/colloquial-expression/proverb convention; not a claim of strict chengyu status.
+8353,赞不绝口,endless praise,idiom,idiom,retain,Retained as an established fixed expression under the broad idiom/colloquial-expression/proverb convention; not a claim of strict chengyu status.
+8357,专心致志,with single-minded dedication,idiom,idiom,retain,Retained as an established fixed expression under the broad idiom/colloquial-expression/proverb convention; not a claim of strict chengyu status.
+8358,一心一意,wholeheartedly,idiom,idiom,retain,Retained as an established fixed expression under the broad idiom/colloquial-expression/proverb convention; not a claim of strict chengyu status.
+8359,名利双收,to gain both fame and wealth,idiom,idiom,retain,Retained as an established fixed expression under the broad idiom/colloquial-expression/proverb convention; not a claim of strict chengyu status.
+8364,顺风顺水,smooth sailing,idiom,idiom,retain,Retained as an established fixed expression under the broad idiom/colloquial-expression/proverb convention; not a claim of strict chengyu status.
+8368,阿谀奉承,to flatter and fawn,idiom,idiom,retain,Retained as an established fixed expression under the broad idiom/colloquial-expression/proverb convention; not a claim of strict chengyu status.
+8369,实事求是,to seek truth from facts,idiom,idiom,retain,Retained as an established fixed expression under the broad idiom/colloquial-expression/proverb convention; not a claim of strict chengyu status.
+8370,福如东海,happiness as vast as the East Sea (blessing),idiom,idiom,retain,Retained as an established fixed expression under the broad idiom/colloquial-expression/proverb convention; not a claim of strict chengyu status.
+8371,寿比南山,longevity;lasting as the Southern Mountain,idiom,idiom,retain,Retained as an established fixed expression under the broad idiom/colloquial-expression/proverb convention; not a claim of strict chengyu status.
+8383,陈词滥调,cliché,idiom,idiom,retain,Retained as an established fixed expression under the broad idiom/colloquial-expression/proverb convention; not a claim of strict chengyu status.
+8384,设身处地,to put oneself in someone's shoes,idiom,idiom,retain,Retained as an established fixed expression under the broad idiom/colloquial-expression/proverb convention; not a claim of strict chengyu status.
+8387,喧宾夺主,to overshadow the host,idiom,idiom,retain,Retained as an established fixed expression under the broad idiom/colloquial-expression/proverb convention; not a claim of strict chengyu status.
+8389,察言观色,to read people's expressions,idiom,idiom,retain,Retained as an established fixed expression under the broad idiom/colloquial-expression/proverb convention; not a claim of strict chengyu status.
+8390,来龙去脉,ins and outs;causes and effects;whole story,idiom,idiom,retain,Retained as an established fixed expression under the broad idiom/colloquial-expression/proverb convention; not a claim of strict chengyu status.
+8391,拭目以待,to wait and see,idiom,idiom,retain,Retained as an established fixed expression under the broad idiom/colloquial-expression/proverb convention; not a claim of strict chengyu status.
+8394,琳琅满目,a dazzling array of items,idiom,idiom,retain,Retained as an established fixed expression under the broad idiom/colloquial-expression/proverb convention; not a claim of strict chengyu status.
+8408,光天化日,in broad daylight,idiom,idiom,retain,Retained as an established fixed expression under the broad idiom/colloquial-expression/proverb convention; not a claim of strict chengyu status.
+8410,热火朝天,in full swing; bustling with enthusiasm,idiom,idiom,retain,Retained as an established fixed expression under the broad idiom/colloquial-expression/proverb convention; not a claim of strict chengyu status.
+8421,就事论事,to discuss matters on their merits,idiom,idiom,retain,Retained as an established fixed expression under the broad idiom/colloquial-expression/proverb convention; not a claim of strict chengyu status.
+8424,座无虚席,full house;no empty seats,idiom,idiom,retain,Retained as an established fixed expression under the broad idiom/colloquial-expression/proverb convention; not a claim of strict chengyu status.
+8435,突飞猛进,rapid progress,idiom,idiom,retain,Retained as an established fixed expression under the broad idiom/colloquial-expression/proverb convention; not a claim of strict chengyu status.
+8446,抑扬顿挫,rhythmic cadence;intonation,idiom,idiom,retain,Retained as an established fixed expression under the broad idiom/colloquial-expression/proverb convention; not a claim of strict chengyu status.
+8471,前仆后继,press forward one after another,idiom,idiom,retain,Retained as an established fixed expression under the broad idiom/colloquial-expression/proverb convention; not a claim of strict chengyu status.
+8479,情有可原,"understandable;excusable (interruption, misunderstanding)",idiom,idiom,retain,Retained as an established fixed expression under the broad idiom/colloquial-expression/proverb convention; not a claim of strict chengyu status.
+8485,恍然大悟,suddenly realize,idiom,idiom,retain,Retained as an established fixed expression under the broad idiom/colloquial-expression/proverb convention; not a claim of strict chengyu status.
+8496,见怪不怪,to be accustomed to;not surprised anymore,idiom,idiom,retain,Retained as an established fixed expression under the broad idiom/colloquial-expression/proverb convention; not a claim of strict chengyu status.
+8497,铺天盖地,flooding everywhere;overwhelming,idiom,idiom,retain,Retained as an established fixed expression under the broad idiom/colloquial-expression/proverb convention; not a claim of strict chengyu status.
+8504,安于现状,to take things as they are;happy with status quo,idiom,idiom,retain,Retained as an established fixed expression under the broad idiom/colloquial-expression/proverb convention; not a claim of strict chengyu status.
+8529,平平无奇,ordinary; unremarkable,idiom,idiom,retain,Retained as an established fixed expression under the broad idiom/colloquial-expression/proverb convention; not a claim of strict chengyu status.
+8537,熟能生巧,practice makes perfect,idiom,idiom,retain,Retained as an established fixed expression under the broad idiom/colloquial-expression/proverb convention; not a claim of strict chengyu status.
+8545,惊心动魄,heart-stopping;thrilling,idiom,idiom,retain,Retained as an established fixed expression under the broad idiom/colloquial-expression/proverb convention; not a claim of strict chengyu status.
+8546,胆战心惊,to be terrified,idiom,idiom,retain,Retained as an established fixed expression under the broad idiom/colloquial-expression/proverb convention; not a claim of strict chengyu status.
+8554,大跌眼镜,eye-opening;to be greatly surprised,idiom,idiom,retain,Retained as an established fixed expression under the broad idiom/colloquial-expression/proverb convention; not a claim of strict chengyu status.
+8562,心知肚明,know perfectly well,idiom,idiom,retain,Retained as an established fixed expression under the broad idiom/colloquial-expression/proverb convention; not a claim of strict chengyu status.
+8567,忍气吞声,suffer in silence;to swallow insults,idiom,idiom,retain,Retained as an established fixed expression under the broad idiom/colloquial-expression/proverb convention; not a claim of strict chengyu status.
+8573,百善孝为先,filial piety comes first,idiom,idiom,retain,Retained as an established fixed expression under the broad idiom/colloquial-expression/proverb convention; not a claim of strict chengyu status.
+8574,仁者爱人,the benevolent love others,idiom,idiom,retain,Retained as an established fixed expression under the broad idiom/colloquial-expression/proverb convention; not a claim of strict chengyu status.
+8575,枯燥无味,dull and boring,idiom,idiom,retain,Retained as an established fixed expression under the broad idiom/colloquial-expression/proverb convention; not a claim of strict chengyu status.
+8576,正襟危坐,sit formally and seriously,idiom,idiom,retain,Retained as an established fixed expression under the broad idiom/colloquial-expression/proverb convention; not a claim of strict chengyu status.
+8578,细水长流,thin streams flow forever;slow and steady,idiom,idiom,retain,Retained as an established fixed expression under the broad idiom/colloquial-expression/proverb convention; not a claim of strict chengyu status.
+8585,众所周知,as everyone knows,idiom,idiom,retain,Retained as an established fixed expression under the broad idiom/colloquial-expression/proverb convention; not a claim of strict chengyu status.
+8593,掉以轻心,let one's guard down;to treat something lightly,idiom,idiom,retain,Retained as an established fixed expression under the broad idiom/colloquial-expression/proverb convention; not a claim of strict chengyu status.
+8594,实话实说,tell the truth,idiom,idiom,retain,Retained as an established fixed expression under the broad idiom/colloquial-expression/proverb convention; not a claim of strict chengyu status.
+8595,俗语,folk saying;common saying,idiom,noun,change,Names a folk saying; the category name is not itself an idiom.
+8601,轻装上阵,to travel light,idiom,idiom,retain,Retained as an established fixed expression under the broad idiom/colloquial-expression/proverb convention; not a claim of strict chengyu status.
+8603,津津乐道,to take delight in talking about,idiom,idiom,retain,Retained as an established fixed expression under the broad idiom/colloquial-expression/proverb convention; not a claim of strict chengyu status.
+8634,朝夕相处,to be together day and night,idiom,idiom,retain,Retained as an established fixed expression under the broad idiom/colloquial-expression/proverb convention; not a claim of strict chengyu status.
+8652,聊胜于无,better than nothing,idiom,idiom,retain,Retained as an established fixed expression under the broad idiom/colloquial-expression/proverb convention; not a claim of strict chengyu status.
+8675,破口大骂,to curse furiously,idiom,idiom,retain,Retained as an established fixed expression under the broad idiom/colloquial-expression/proverb convention; not a claim of strict chengyu status.
+8679,灵丹妙药,panacea;miracle cure,idiom,idiom,retain,Retained as an established fixed expression under the broad idiom/colloquial-expression/proverb convention; not a claim of strict chengyu status.
+8695,颠沛流离,to wander in hardship,idiom,idiom,retain,Retained as an established fixed expression under the broad idiom/colloquial-expression/proverb convention; not a claim of strict chengyu status.
+8697,吹毛求疵,to nitpick,idiom,idiom,retain,Retained as an established fixed expression under the broad idiom/colloquial-expression/proverb convention; not a claim of strict chengyu status.
+8705,门外汉,layperson,idiom,idiom,retain,Retained as an established fixed expression under the broad idiom/colloquial-expression/proverb convention; not a claim of strict chengyu status.
+8727,天方夜谭,fantasy;absurd idea;The Arabian Nights,idiom,idiom,retain,Retained as an established fixed expression under the broad idiom/colloquial-expression/proverb convention; not a claim of strict chengyu status.
+8730,游山玩水,to travel for pleasure,idiom,idiom,retain,Retained as an established fixed expression under the broad idiom/colloquial-expression/proverb convention; not a claim of strict chengyu status.
+8733,勤俭持家,to run a household frugally,idiom,idiom,retain,Retained as an established fixed expression under the broad idiom/colloquial-expression/proverb convention; not a claim of strict chengyu status.
+8735,健步如飞,to walk briskly,idiom,idiom,retain,Retained as an established fixed expression under the broad idiom/colloquial-expression/proverb convention; not a claim of strict chengyu status.
+8737,一窍不通,to know nothing about;it's all Greek to me,idiom,idiom,retain,Retained as an established fixed expression under the broad idiom/colloquial-expression/proverb convention; not a claim of strict chengyu status.
+8755,高瞻远瞩,acute foresight; visionary,idiom,idiom,retain,Retained as an established fixed expression under the broad idiom/colloquial-expression/proverb convention; not a claim of strict chengyu status.
+8778,出口成章,to speak eloquently;words form a chapter,idiom,idiom,retain,Retained as an established fixed expression under the broad idiom/colloquial-expression/proverb convention; not a claim of strict chengyu status.
+8781,开门见山,to get straight to the point,idiom,idiom,retain,Retained as an established fixed expression under the broad idiom/colloquial-expression/proverb convention; not a claim of strict chengyu status.
+8814,诸如此类,and so on; such things like that,idiom,idiom,retain,Retained as an established fixed expression under the broad idiom/colloquial-expression/proverb convention; not a claim of strict chengyu status.
+8857,见义勇为,act bravely for a just cause,idiom,idiom,retain,Retained as an established fixed expression under the broad idiom/colloquial-expression/proverb convention; not a claim of strict chengyu status.
+8859,喜新厌旧,love the new and hate the old,idiom,idiom,retain,Retained as an established fixed expression under the broad idiom/colloquial-expression/proverb convention; not a claim of strict chengyu status.
+8875,狗改不了吃屎,"A leopard never changes its spots (literally, a dog can't stop eating shit; vulgar).",idiom,idiom,retain,Retained as an established fixed expression under the broad idiom/colloquial-expression/proverb convention; not a claim of strict chengyu status.
+8883,闲得蛋疼,bored out of one's mind; having nothing better to do (vulgar slang),idiom,idiom,retain,Retained as an established fixed expression under the broad idiom/colloquial-expression/proverb convention; not a claim of strict chengyu status.
+8907,不拘小节,not bother about trifles,idiom,idiom,retain,Retained as an established fixed expression under the broad idiom/colloquial-expression/proverb convention; not a claim of strict chengyu status.
+8908,深思熟虑,carefully considered,idiom,idiom,retain,Retained as an established fixed expression under the broad idiom/colloquial-expression/proverb convention; not a claim of strict chengyu status.
+8940,前所未有,unprecedented,idiom,idiom,retain,Retained as an established fixed expression under the broad idiom/colloquial-expression/proverb convention; not a claim of strict chengyu status.
+8941,无中生有,to fabricate out of nothing,idiom,idiom,retain,Retained as an established fixed expression under the broad idiom/colloquial-expression/proverb convention; not a claim of strict chengyu status.
+8947,积少成多,many little things add up,idiom,idiom,retain,Retained as an established fixed expression under the broad idiom/colloquial-expression/proverb convention; not a claim of strict chengyu status.
+8952,退而求其次,to settle for second best,idiom,idiom,retain,Retained as an established fixed expression under the broad idiom/colloquial-expression/proverb convention; not a claim of strict chengyu status.
+8956,趁热打铁,strike while the iron is hot,idiom,idiom,retain,Retained as an established fixed expression under the broad idiom/colloquial-expression/proverb convention; not a claim of strict chengyu status.
+8965,势不可挡,irresistible,idiom,idiom,retain,Retained as an established fixed expression under the broad idiom/colloquial-expression/proverb convention; not a claim of strict chengyu status.
+8972,无药可救,beyond saving,idiom,idiom,retain,Retained as an established fixed expression under the broad idiom/colloquial-expression/proverb convention; not a claim of strict chengyu status.
+8975,大器晚成,late bloomer,idiom,idiom,retain,Retained as an established fixed expression under the broad idiom/colloquial-expression/proverb convention; not a claim of strict chengyu status.
+8988,刻骨铭心,deeply unforgettable,idiom,idiom,retain,Retained as an established fixed expression under the broad idiom/colloquial-expression/proverb convention; not a claim of strict chengyu status.
+9043,如鱼得水,to be in one's element,idiom,idiom,retain,Retained as an established fixed expression under the broad idiom/colloquial-expression/proverb convention; not a claim of strict chengyu status.
+9073,绞尽脑汁,to rack one's brains,idiom,idiom,retain,Retained as an established fixed expression under the broad idiom/colloquial-expression/proverb convention; not a claim of strict chengyu status.
+9074,宁缺毋滥,better to go without than settle for less,idiom,idiom,retain,Retained as an established fixed expression under the broad idiom/colloquial-expression/proverb convention; not a claim of strict chengyu status.
+9077,举案齐眉,a married couple treating each other with deep respect;hold a tray level with eyebrows,idiom,idiom,retain,Retained as an established fixed expression under the broad idiom/colloquial-expression/proverb convention; not a claim of strict chengyu status.
+9078,相敬如宾,to treat each other with respect like honored guests,idiom,idiom,retain,Retained as an established fixed expression under the broad idiom/colloquial-expression/proverb convention; not a claim of strict chengyu status.
+9081,言外之意,implied meaning; what is left unsaid,idiom,idiom,retain,Retained as an established fixed expression under the broad idiom/colloquial-expression/proverb convention; not a claim of strict chengyu status.

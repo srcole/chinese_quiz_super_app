@@ -78,7 +78,7 @@ The bundled learning content is publicly downloadable. Answer histories are prot
 - Character review includes matches in either simplified or traditional spelling. Category choices combine with AND; multiple parts of speech combine with OR.
 - Priority review selects an exact priority level. Quiz filters use maximum priority.
 - Random sessions have no duplicate questions and cap at the eligible count (maximum 500 per session). Submitted answers save immediately. Leaving a session retains submitted history; unfinished questions are not recorded.
-- 27 idiom entries currently have no literal translation. Feedback marks this as missing rather than inventing one.
+- Idiom feedback displays `literal_translation_complete`. Signed-in sessions use Supabase content, so updating the CSV or redeploying alone does not refresh it. Run `npm run content:sync` to import the current collection, or run `supabase/migrations/20261105_idiom_literal_translations.sql` in the Supabase SQL Editor to fill only missing idiom translations. The targeted repair preserves existing nonblank translations, other content fields, and progress. Reload the app afterward. Truly missing translations are labeled as not provided.
 - Grammar data is an authored draft with structural validation, not an independently reviewed linguistic reference.
 
 ## Audio
