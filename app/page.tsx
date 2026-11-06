@@ -1154,6 +1154,16 @@ export default function Home() {
                         <label className="check-field">
                           <input
                             type="checkbox"
+                            checked={filters.excludeAdult !== false}
+                            onChange={(e) =>
+                              updateFilter("excludeAdult", e.target.checked)
+                            }
+                          />
+                          Exclude adult-themed words
+                        </label>
+                        <label className="check-field">
+                          <input
+                            type="checkbox"
                             checked={filters.unknown}
                             onChange={(e) =>
                               updateFilter("unknown", e.target.checked)
@@ -1191,7 +1201,7 @@ export default function Home() {
                         onClick={() => {
                           setMode(p.mode);
                           setDirection(p.direction);
-                          setFilters(p.filters);
+                          setFilters({ ...defaultFilters, ...p.filters });
                         }}
                       >
                         {p.name} ↗

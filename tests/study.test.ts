@@ -107,6 +107,18 @@ test("HSK uses lowest level and an advanced band", () => {
     true,
   );
 });
+test("adult words are excluded by default and can be included explicitly", () => {
+  const adult = { ...word, is_adult: "1" };
+  assert.equal(matches(adult, defaultFilters), false);
+  assert.equal(matches(adult, { ...defaultFilters, unknown: true }), false);
+  assert.equal(matches(adult, { ...defaultFilters, excludeAdult: false }), true);
+  assert.equal(matches({ ...word, is_adult: "0" }, defaultFilters), true);
+  assert.equal(matches(word, defaultFilters), true);
+  const { excludeAdult, ...legacyFilters } = defaultFilters;
+  assert.equal(excludeAdult, true);
+  assert.equal(matches(adult, legacyFilters as typeof defaultFilters), false);
+});
+
 test("missing values are included only when allowed for active filters", () => {
   assert.equal(matches(word, defaultFilters), true);
   assert.equal(

@@ -57,6 +57,7 @@ The bundled learning content is publicly downloadable. Answer histories are prot
 
 ## Study behavior
 
+- “Fine-tune your word selection” excludes adult-themed words by default. Uncheck “Exclude adult-themed words” to include them in vocabulary, idiom, sentence, and tone quizzes. Presets save this choice; older presets default to exclusion. The filter uses `is_adult=1`; unclassified content remains eligible. For existing Supabase content, run `supabase/migrations/20261106_adult_content_flags.sql` after importing the new words, or run a full content sync, then reload the app.
 - Vocabulary excludes idioms. Phrases and sentences are excluded by default; enable “Include phrases” / “Include sentences” or explicitly select the corresponding part of speech to include them. An optional Chinese-character limit narrows vocabulary questions.
 - Audio-only vocabulary switches to Chinese → English and hides the written prompt until feedback. It plays the prompt even if general automatic audio is off. Listening shares history with the Chinese → English vocabulary direction.
 - Traditional-character answers are correct when the expected simplified character appears anywhere in the response. Examples use larger Chinese text.

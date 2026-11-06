@@ -45,6 +45,7 @@ export type Filters = {
   dateMin: string;
   dateMax: string;
   unknown: boolean;
+  excludeAdult: boolean;
   slang: string;
   category_l1: string;
   category_l2: string;
@@ -61,6 +62,7 @@ export const defaultFilters: Filters = {
   dateMin: "",
   dateMax: "",
   unknown: false,
+  excludeAdult: true,
   slang: "",
   category_l1: "",
   category_l2: "",
@@ -94,6 +96,7 @@ export function hsk(value: string) {
   return levels.length ? Math.min(...levels) : null;
 }
 export function matches(w: Word, f: Filters) {
+  if (f.excludeAdult !== false && w.is_adult === "1") return false;
   for (const key of [
     "priority",
     "movie_words_rank",
