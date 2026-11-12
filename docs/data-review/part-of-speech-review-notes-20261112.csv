@@ -1,0 +1,8 @@
+id,chinese,current_label,note
+2609,神而,noun,神而 does not match the gloss god; likely malformed. Confirm the intended headword before relabeling.
+2741,推出登录,noun,推出登录 conflicts with the gloss Log out and its example. Likely intended 退出登录; left unchanged.
+2745,其本上,adverb,"其本上 likely intends 基本上; the adverb label fits the intended sense, so text is left unchanged."
+8774,遥可及,noun,遥可及 conflicts with out of reach and the 遥不可及 example; confirm the intended headword first.
+2725,须知,verb,须知 has both must-know verbal and notice/instructions nominal readings; retained verb because the supplied gloss is verbal.
+8110,其中,noun,其中 is a locative expression; retained noun under the repository’s broad location-noun convention.
+9146,顿顿,adverb,顿顿 functions distributively as every meal in the supplied entry; retained existing adverb study label.

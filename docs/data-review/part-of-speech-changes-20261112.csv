@@ -1,0 +1,178 @@
+id,chinese,english,previous_label,replacement_label,reason
+14,多少,how many; how much,numeral,pronoun,Interrogative pronoun asking how much/how many; not a number.
+327,闭关锁国,to close off the country;closed,verb,idiom,"Established fixed idiom; retain the app’s idiom study category rather than its adjectival, verbal, nominal, or adverbial function."
+351,差不多,almost;more or less,noun,adverb,"The supplied sense modifies a predicate, degree, time, or manner; the nominal label is unsupported."
+355,土生土长,born and raised;native;born and bred,adjective,idiom,"Established fixed idiom; retain the app’s idiom study category rather than its adjectival, verbal, nominal, or adverbial function."
+357,深入,thorough,noun,adjective,Describes a property or quality in the supplied sense; not a noun. Adverbial use of an adjective does not require an adverb label.
+361,临时,interim;ad hoc;temporary,noun,adjective,Describes a property or quality in the supplied sense; not a noun. Adverbial use of an adjective does not require an adverb label.
+475,炒鱿鱼,fire someone;get fired;to sack,verb,idiom,"Established figurative colloquial expression, consistent with the app’s broad idiom category (including 惯用语)."
+480,装蒜,play dumb,verb,idiom,"Established figurative colloquial expression, consistent with the app’s broad idiom category (including 惯用语)."
+488,好像,it seems,noun,adverb,"The supplied sense modifies a predicate, degree, time, or manner; the nominal label is unsupported."
+542,铁公鸡,miser; cheapskate,noun,idiom,"Established figurative colloquial expression, consistent with the app’s broad idiom category (including 惯用语)."
+595,好球,nice hit;good shot;well played,adjective,noun,Good shot/hit is a nominal expression in the supplied 一个好球 example; not an adjective.
+600,吃醋,feel jealous,verb,idiom,"Established figurative colloquial expression, consistent with the app’s broad idiom category (including 惯用语)."
+613,过度,excessive;overdo,noun,adjective,Describes a property or quality in the supplied sense; not a noun. Adverbial use of an adjective does not require an adverb label.
+713,讨价还价,to bargain;haggle,verb,idiom,"Established fixed idiom; retain the app’s idiom study category rather than its adjectival, verbal, nominal, or adverbial function."
+749,干脆,straightforward,noun,adjective,Describes a property or quality in the supplied sense; not a noun. Adverbial use of an adjective does not require an adverb label.
+765,初步,initial;preliminary,noun,adjective,Describes a property or quality in the supplied sense; not a noun. Adverbial use of an adjective does not require an adverb label.
+770,未婚,unmarried,noun,verb,"The entry expresses an action, relation, or state in the supplied sense; not a noun."
+793,无数,countless;innumerable,noun,adjective,Describes a property or quality in the supplied sense; not a noun. Adverbial use of an adjective does not require an adverb label.
+825,走一步看一步,take one step at a time,verb,idiom,"Established figurative colloquial expression, consistent with the app’s broad idiom category (including 惯用语)."
+840,匿名,anonymous,noun,adjective,Describes a property or quality in the supplied sense; not a noun. Adverbial use of an adjective does not require an adverb label.
+970,针对,aimed at;to target,noun,verb,"The entry expresses an action, relation, or state in the supplied sense; not a noun."
+985,至今,so far;until now;to date,noun,adverb,"The supplied sense modifies a predicate, degree, time, or manner; the nominal label is unsupported."
+1038,现场,on site;the spot (of an event),adverb,noun,Names a place or setting; occurrence in an adverbial position does not make the word an adverb.
+1140,最终,final,noun,adjective,Describes a property or quality in the supplied sense; not a noun. Adverbial use of an adjective does not require an adverb label.
+1155,双重,double,noun,adjective,Describes a property or quality in the supplied sense; not a noun. Adverbial use of an adjective does not require an adverb label.
+1162,机动,motorized,noun,adjective,Describes a property or quality in the supplied sense; not a noun. Adverbial use of an adjective does not require an adverb label.
+1313,普世,universal,noun,adjective,Describes a property or quality in the supplied sense; not a noun. Adverbial use of an adjective does not require an adverb label.
+1324,必然,inevitable,noun,adjective,Describes a property or quality in the supplied sense; not a noun. Adverbial use of an adjective does not require an adverb label.
+1340,据说,allegedly;it is said that,noun,adverb,"The supplied sense modifies a predicate, degree, time, or manner; the nominal label is unsupported."
+1373,不如,not as good as,adjective,verb,Relational/comparative predicate meaning be inferior to or be less than; not an adjective/adverb.
+1390,大声,loud,noun,adjective,Describes a property or quality in the supplied sense; not a noun. Adverbial use of an adjective does not require an adverb label.
+1397,默契,on the same wavelength;tacit agreement;,adverb,noun,The supplied tacit-agreement sense and 有默契 example are nominal; not an adverb.
+1444,歪瓜裂枣,ugly or unattractive people,noun,idiom,"Established fixed idiom; retain the app’s idiom study category rather than its adjectival, verbal, nominal, or adverbial function."
+1468,确定,confirm,noun,verb,"The entry expresses an action, relation, or state in the supplied sense; not a noun."
+1535,截图,screenshot,adjective,noun,The screenshot sense and 一张截图 example are nominal; not adjectival.
+1577,稀世,rare,noun,adjective,Describes a property or quality in the supplied sense; not a noun. Adverbial use of an adjective does not require an adverb label.
+1646,用心,diligently,noun,adjective,Describes a property or quality in the supplied sense; not a noun. Adverbial use of an adjective does not require an adverb label.
+1741,吃不到葡萄说葡萄酸,sour grapes,sentence,idiom,"Established proverb, quotation, blessing, or fixed saying; classify consistently with the existing broad idiom category instead of ordinary sentence practice."
+1744,三十六计 走为上计,"Of the thirty-six strategies, running away is the best",sentence,idiom,"Established proverb, quotation, blessing, or fixed saying; classify consistently with the existing broad idiom category instead of ordinary sentence practice."
+1745,三人行必有我师,"When I walk with two others, at least one can be my teacher.",sentence,idiom,"Established proverb, quotation, blessing, or fixed saying; classify consistently with the existing broad idiom category instead of ordinary sentence practice."
+1747,己所不欲勿施于人,Do not do to others what you do not want others to do to you,sentence,idiom,"Established proverb, quotation, blessing, or fixed saying; classify consistently with the existing broad idiom category instead of ordinary sentence practice."
+1754,君子报仇十年不晚,"For a gentleman seeking revenge, even ten years is not too late; revenge can wait.",sentence,idiom,"Established proverb, quotation, blessing, or fixed saying; classify consistently with the existing broad idiom category instead of ordinary sentence practice."
+1876,份,portion,noun,classifier,Measure word counting portions in the supplied sense and example.
+2021,一分钱一分货,You get what you pay for,sentence,idiom,"Established proverb, quotation, blessing, or fixed saying; classify consistently with the existing broad idiom category instead of ordinary sentence practice."
+2073,网上,On the internet,adverb,noun,Names a place or setting; occurrence in an adverbial position does not make the word an adverb.
+2074,等等,etc.,noun,particle,Enumeration particle meaning etcetera in the supplied sense; not a noun or the imperative wait.
+2176,看来,it seems,noun,adverb,"The supplied sense modifies a predicate, degree, time, or manner; the nominal label is unsupported."
+2448,三观正,to have sound values and a healthy outlook on life and the world,verb,phrase,"Subject-predicate expression 三观 + 正, rather than a lexical verb."
+2491,基本,basic,noun,adjective,Describes a property or quality in the supplied sense; not a noun. Adverbial use of an adjective does not require an adverb label.
+2508,在职,working;employed,noun,verb,"The entry expresses an action, relation, or state in the supplied sense; not a noun."
+2670,暂时,temporary;for the time being,noun,adverb,"The supplied sense modifies a predicate, degree, time, or manner; the nominal label is unsupported."
+2740,公开场合,in public;public occasions,adverb,noun,Names a place or setting; occurrence in an adverbial position does not make the word an adverb.
+2781,对了,By the way,noun,sentence,"Conventional complete conversational utterance in the supplied sense, not a noun."
+3441,少于,less than,adverb,verb,Relational/comparative predicate meaning be inferior to or be less than; not an adjective/adverb.
+3453,咕嘟咕嘟,Gurgle Gurgle,noun,onomatopoeia,Names or imitates a sound in the supplied sense; use the dedicated onomatopoeia category.
+3585,在我看来,In my opinion,adverb,phrase,Compositional prepositional or numeral-classifier phrase; not a single adverb or noun.
+3860,没有规矩不成方圆,"No rules, no order",sentence,idiom,"Established proverb, quotation, blessing, or fixed saying; classify consistently with the existing broad idiom category instead of ordinary sentence practice."
+3876,从小,since childhood,noun,phrase,Compositional prepositional or numeral-classifier phrase; not a single adverb or noun.
+3893,各种各样,all sorts;various,noun,adjective,Describes a property or quality in the supplied sense; not a noun. Adverbial use of an adjective does not require an adverb label.
+3992,小于,less than,adverb,verb,Relational/comparative predicate meaning be inferior to or be less than; not an adjective/adverb.
+3998,连续,continuous;in a row;successive,noun,adjective,Describes a property or quality in the supplied sense; not a noun. Adverbial use of an adjective does not require an adverb label.
+4016,五音不全,tone deaf,phrase,idiom,"Established fixed idiom; retain the app’s idiom study category rather than its adjectival, verbal, nominal, or adverbial function."
+4047,萝卜青菜各有所爱,people have different tastes,sentence,idiom,"Established proverb, quotation, blessing, or fixed saying; classify consistently with the existing broad idiom category instead of ordinary sentence practice."
+4096,邋里邋遢,sloppy;messy;untidy in appearance or habits,noun,adjective,Describes a property or quality in the supplied sense; not a noun. Adverbial use of an adjective does not require an adverb label.
+4107,皇帝不急太监急,"The emperor is not anxious, but the eunuchs are",sentence,idiom,"Established proverb, quotation, blessing, or fixed saying; classify consistently with the existing broad idiom category instead of ordinary sentence practice."
+4165,一路顺风,bon voyage;have a good trip,sentence,idiom,"Established proverb, quotation, blessing, or fixed saying; classify consistently with the existing broad idiom category instead of ordinary sentence practice."
+4166,虎背熊腰,"back like a tiger, waist like a bear;strong and broad",adjective,idiom,"Established fixed idiom; retain the app’s idiom study category rather than its adjectival, verbal, nominal, or adverbial function."
+4170,定期,periodically;at regular intervals,noun,adjective,Describes a property or quality in the supplied sense; not a noun. Adverbial use of an adjective does not require an adverb label.
+4186,没有规矩 不成方圆,"no rules, no order",sentence,idiom,"Established proverb, quotation, blessing, or fixed saying; classify consistently with the existing broad idiom category instead of ordinary sentence practice."
+4204,酒后吐真言,The truth comes out after drinking,sentence,idiom,"Established proverb, quotation, blessing, or fixed saying; classify consistently with the existing broad idiom category instead of ordinary sentence practice."
+4212,大同小异,more of the same,adjective,idiom,"Established fixed idiom; retain the app’s idiom study category rather than its adjectival, verbal, nominal, or adverbial function."
+4275,一柱擎天,a pillar supporting the sky; a sole mainstay; an erection (sexual slang),noun,idiom,"Established fixed idiom; retain the app’s idiom study category rather than its adjectival, verbal, nominal, or adverbial function."
+4335,汪汪,woof woof,noun,onomatopoeia,Names or imitates a sound in the supplied sense; use the dedicated onomatopoeia category.
+4337,旧的不去新的不来,the old must go before the new can come,sentence,idiom,"Established proverb, quotation, blessing, or fixed saying; classify consistently with the existing broad idiom category instead of ordinary sentence practice."
+4354,阿们,amen,noun,interjection,"The supplied sense is an independent exclamation (amen/cheers/damn), rather than a noun."
+4511,啪啪啪,bang,noun,verb,The example uses this euphemism for having sex as a predicate; the sound-like spelling does not make this sense a noun.
+4868,一颗老鼠屎坏了一锅汤,one bad apple spoils the bunch,sentence,idiom,"Established proverb, quotation, blessing, or fixed saying; classify consistently with the existing broad idiom category instead of ordinary sentence practice."
+4872,人高马大,large and strong,adjective,idiom,"Established fixed idiom; retain the app’s idiom study category rather than its adjectival, verbal, nominal, or adverbial function."
+5129,干杯,cheers,noun,interjection,"The supplied sense is an independent exclamation (amen/cheers/damn), rather than a noun."
+5158,啦,softens the sentence,interjection,particle,"The supplied sense is a sentence-final modal particle, not an independent exclamation."
+5168,嘛,obviousness or emphasizes tone,interjection,particle,"The supplied sense is a sentence-final modal particle, not an independent exclamation."
+5170,咯,finality or obviousness,interjection,particle,"The supplied sense is a sentence-final modal particle, not an independent exclamation."
+5175,哒哒哒,rat-a-tat; tap-tap-tap; clattering sound,noun,onomatopoeia,Names or imitates a sound in the supplied sense; use the dedicated onomatopoeia category.
+5179,呗,"indicate ""of course"" or resignation.",interjection,particle,"The supplied sense is a sentence-final modal particle, not an independent exclamation."
+5182,啰,Used to affirm something or indicate a change of situation.,interjection,particle,"The supplied sense is a sentence-final modal particle, not an independent exclamation."
+5183,啵,Softens tone; similar to 吧 but more casual and regional.,interjection,particle,"The supplied sense is a sentence-final modal particle, not an independent exclamation."
+5184,咻,swooshing sound; expresses surprise or speed.,interjection,onomatopoeia,Names or imitates a sound in the supplied sense; use the dedicated onomatopoeia category.
+5185,咕,coo; gurgle; rumble (onomatopoeia),interjection,onomatopoeia,Names or imitates a sound in the supplied sense; use the dedicated onomatopoeia category.
+5192,咔,click; crack; snap (onomatopoeia),interjection,onomatopoeia,Names or imitates a sound in the supplied sense; use the dedicated onomatopoeia category.
+5193,嘞,Indicates change of situation or completion in some dialects.,interjection,particle,"The supplied sense is a sentence-final modal particle, not an independent exclamation."
+5195,哩,Used in some southern dialects to express ongoing state or emphasis.,interjection,particle,"The supplied sense is a sentence-final modal particle, not an independent exclamation."
+5197,咩,Imitates a sheep’s bleat; also used playfully in Hong Kong/Mandarin slang.,interjection,onomatopoeia,Names or imitates a sound in the supplied sense; use the dedicated onomatopoeia category.
+5212,眉飞色舞,very excited,adverb,idiom,"Established fixed idiom; retain the app’s idiom study category rather than its adjectival, verbal, nominal, or adverbial function."
+5277,放鸽子,to stand somebody up,verb,idiom,"Established figurative colloquial expression, consistent with the app’s broad idiom category (including 惯用语)."
+5278,替罪羊,scapegoat,noun,idiom,"Established figurative colloquial expression, consistent with the app’s broad idiom category (including 惯用语)."
+5285,喝西北风,drink wind;have no money,verb,idiom,"Established figurative colloquial expression, consistent with the app’s broad idiom category (including 惯用语)."
+5310,兜圈子,beat around the bush,verb,idiom,"Established figurative colloquial expression, consistent with the app’s broad idiom category (including 惯用语)."
+5319,左耳进右耳出,In one ear and out the other,adverb,idiom,"Established figurative colloquial expression, consistent with the app’s broad idiom category (including 惯用语)."
+5321,干嘛,what are you doing?,noun,sentence,"Conventional complete conversational utterance in the supplied sense, not a noun."
+5332,喵喵,meow,noun,onomatopoeia,Names or imitates a sound in the supplied sense; use the dedicated onomatopoeia category.
+5535,综合,comprehensive,noun,adjective,Describes a property or quality in the supplied sense; not a noun. Adverbial use of an adjective does not require an adverb label.
+6052,天南地北,far apart,noun,idiom,"Established fixed idiom; retain the app’s idiom study category rather than its adjectival, verbal, nominal, or adverbial function."
+6214,为啥,why,noun,pronoun,"Interrogative expression meaning why, rather than a noun."
+6215,星星之火可以燎原,small beginnings grow big,sentence,idiom,"Established proverb, quotation, blessing, or fixed saying; classify consistently with the existing broad idiom category instead of ordinary sentence practice."
+6229,家家有本难念的经,Every family has its own problems.,sentence,idiom,"Established proverb, quotation, blessing, or fixed saying; classify consistently with the existing broad idiom category instead of ordinary sentence practice."
+6247,人怕出名猪怕壮,"People fear becoming famous, just as pigs fear growing fat.",sentence,idiom,"Established proverb, quotation, blessing, or fixed saying; classify consistently with the existing broad idiom category instead of ordinary sentence practice."
+6260,包治百病,claim to fix everything,noun,idiom,"Established fixed idiom; retain the app’s idiom study category rather than its adjectival, verbal, nominal, or adverbial function."
+6455,富不过三代,Wealth rarely lasts for more than three generations.,sentence,idiom,"Established proverb, quotation, blessing, or fixed saying; classify consistently with the existing broad idiom category instead of ordinary sentence practice."
+6463,反复,repeatedly,noun,adverb,"The supplied sense modifies a predicate, degree, time, or manner; the nominal label is unsupported."
+6477,擦肩而过,to brush past; to pass each other by; to narrowly miss an encounter,verb,idiom,"Established fixed idiom; retain the app’s idiom study category rather than its adjectival, verbal, nominal, or adverbial function."
+6512,大事化小，小事化无,reduce big issues and erase small ones,sentence,idiom,"Established proverb, quotation, blessing, or fixed saying; classify consistently with the existing broad idiom category instead of ordinary sentence practice."
+6685,跨国,transnational,noun,adjective,Describes a property or quality in the supplied sense; not a noun. Adverbial use of an adjective does not require an adverb label.
+6883,大鱼吃小鱼,big fish eat small fish,sentence,idiom,"Established proverb, quotation, blessing, or fixed saying; classify consistently with the existing broad idiom category instead of ordinary sentence practice."
+6906,红遍,became extremely popular,noun,verb,"The entry expresses an action, relation, or state in the supplied sense; not a noun."
+6925,当牛做马,work like a servant,phrase,idiom,"Established fixed idiom; retain the app’s idiom study category rather than its adjectival, verbal, nominal, or adverbial function."
+7114,一对,a couple,noun,phrase,Compositional prepositional or numeral-classifier phrase; not a single adverb or noun.
+7116,即兴,impromptu,noun,adjective,Describes a property or quality in the supplied sense; not a noun. Adverbial use of an adjective does not require an adverb label.
+7510,相对,relatively,noun,adverb,"The supplied sense modifies a predicate, degree, time, or manner; the nominal label is unsupported."
+7511,言传身教,to teach through both words and personal example,verb,idiom,"Established fixed idiom; retain the app’s idiom study category rather than its adjectival, verbal, nominal, or adverbial function."
+7531,年少无知,youthfully naive,adjective,idiom,"Established fixed idiom; retain the app’s idiom study category rather than its adjectival, verbal, nominal, or adverbial function."
+7567,好说歹说,try every way to persuade,verb,idiom,"Established fixed idiom; retain the app’s idiom study category rather than its adjectival, verbal, nominal, or adverbial function."
+7589,三位数,three digit number,numeral,noun,"Names a class of numbers (three-digit/two-digit number), rather than a numeral giving a value."
+7638,该死,damn,noun,interjection,"The supplied sense is an independent exclamation (amen/cheers/damn), rather than a noun."
+7639,两手空空,empty-handed,adjective,idiom,"Established fixed idiom; retain the app’s idiom study category rather than its adjectival, verbal, nominal, or adverbial function."
+7684,鱼与熊掌不可兼得,you can’t have it both ways,sentence,idiom,"Established proverb, quotation, blessing, or fixed saying; classify consistently with the existing broad idiom category instead of ordinary sentence practice."
+7719,一次性,one-time use;disposable,noun,adjective,Describes a property or quality in the supplied sense; not a noun. Adverbial use of an adjective does not require an adverb label.
+7737,勉强,barely;reluctantly,noun,adverb,"The supplied sense modifies a predicate, degree, time, or manner; the nominal label is unsupported."
+7744,萝卜白菜各有所爱,everyone has their own taste;different strokes for different folks,sentence,idiom,"Established proverb, quotation, blessing, or fixed saying; classify consistently with the existing broad idiom category instead of ordinary sentence practice."
+7771,不远万里,go great distance,verb,idiom,"Established fixed idiom; retain the app’s idiom study category rather than its adjectival, verbal, nominal, or adverbial function."
+7775,显而易见,obvious,adjective,idiom,"Established fixed idiom; retain the app’s idiom study category rather than its adjectival, verbal, nominal, or adverbial function."
+7824,来来回回,back and forth,noun,adverb,"The supplied sense modifies a predicate, degree, time, or manner; the nominal label is unsupported."
+7838,速冻,quick-frozen,noun,verb,"The entry expresses an action, relation, or state in the supplied sense; not a noun."
+7842,谢天谢地,thank goodness,adjective,idiom,"Established fixed idiom; retain the app’s idiom study category rather than its adjectival, verbal, nominal, or adverbial function."
+7937,子不教父之过,father’s fault if child not taught,sentence,idiom,"Established proverb, quotation, blessing, or fixed saying; classify consistently with the existing broad idiom category instead of ordinary sentence practice."
+7961,情人眼里出西施,beauty is in the eye of the beholder,sentence,idiom,"Established proverb, quotation, blessing, or fixed saying; classify consistently with the existing broad idiom category instead of ordinary sentence practice."
+7984,眼不见为净,"out of sight, out of mind",sentence,idiom,"Established proverb, quotation, blessing, or fixed saying; classify consistently with the existing broad idiom category instead of ordinary sentence practice."
+8003,碎片化,fragmented,noun,adjective,Describes a property or quality in the supplied sense; not a noun. Adverbial use of an adjective does not require an adverb label.
+8056,大张旗鼓,with great fanfare;in a big way,adjective,idiom,"Established fixed idiom; retain the app’s idiom study category rather than its adjectival, verbal, nominal, or adverbial function."
+8066,二话不说,without hesitation,adverb,idiom,"Established fixed idiom; retain the app’s idiom study category rather than its adjectival, verbal, nominal, or adverbial function."
+8075,手足无措,at a loss,adjective,idiom,"Established fixed idiom; retain the app’s idiom study category rather than its adjectival, verbal, nominal, or adverbial function."
+8113,娇生惯养,pampered and spoiled since childhood,adjective,idiom,"Established fixed idiom; retain the app’s idiom study category rather than its adjectival, verbal, nominal, or adverbial function."
+8136,慢慢悠悠,leisurely and unhurried,noun,adjective,Describes a property or quality in the supplied sense; not a noun. Adverbial use of an adjective does not require an adverb label.
+8138,"成也萧何, 败也萧何",success and failure come from same source,sentence,idiom,"Established proverb, quotation, blessing, or fixed saying; classify consistently with the existing broad idiom category instead of ordinary sentence practice."
+8155,人造,artificial,noun,adjective,Describes a property or quality in the supplied sense; not a noun. Adverbial use of an adjective does not require an adverb label.
+8188,无动于衷,indifferent,adjective,idiom,"Established fixed idiom; retain the app’s idiom study category rather than its adjectival, verbal, nominal, or adverbial function."
+8197,无线,wireless,noun,adjective,Describes a property or quality in the supplied sense; not a noun. Adverbial use of an adjective does not require an adverb label.
+8221,比比皆是,can be found everywhere,verb,idiom,"Established fixed idiom; retain the app’s idiom study category rather than its adjectival, verbal, nominal, or adverbial function."
+8224,事无巨细,to attend to every detail big or small,verb,idiom,"Established fixed idiom; retain the app’s idiom study category rather than its adjectival, verbal, nominal, or adverbial function."
+8263,口无遮拦,speak without restraint,verb,idiom,"Established fixed idiom; retain the app’s idiom study category rather than its adjectival, verbal, nominal, or adverbial function."
+8264,何不食肉糜,out of touch with common people;Why don't they eat meat porridge,sentence,idiom,"Established proverb, quotation, blessing, or fixed saying; classify consistently with the existing broad idiom category instead of ordinary sentence practice."
+8265,不切实际,impractical,phrase,idiom,"Established fixed idiom; retain the app’s idiom study category rather than its adjectival, verbal, nominal, or adverbial function."
+8273,长话短说,to make a long story short,verb,idiom,"Established fixed idiom; retain the app’s idiom study category rather than its adjectival, verbal, nominal, or adverbial function."
+8277,变化莫测,unpredictable,adjective,idiom,"Established fixed idiom; retain the app’s idiom study category rather than its adjectival, verbal, nominal, or adverbial function."
+8293,骨灰级,hardcore (enthusiast),noun,adjective,Describes a property or quality in the supplied sense; not a noun. Adverbial use of an adjective does not require an adverb label.
+8333,山穷水尽,at the end of one’s rope,adverb,idiom,"Established fixed idiom; retain the app’s idiom study category rather than its adjectival, verbal, nominal, or adverbial function."
+8367,繁文缛节,overcomplicated formalities;red tape,noun,idiom,"Established fixed idiom; retain the app’s idiom study category rather than its adjectival, verbal, nominal, or adverbial function."
+8382,微乎其微,very little;negligible,adjective,idiom,"Established fixed idiom; retain the app’s idiom study category rather than its adjectival, verbal, nominal, or adverbial function."
+8447,有意识地,consciously;intentionally,noun,adverb,"The supplied sense modifies a predicate, degree, time, or manner; the nominal label is unsupported."
+8451,泼冷水,to dampen enthusiasm;pour cold water on,verb,idiom,"Established figurative colloquial expression, consistent with the app’s broad idiom category (including 惯用语)."
+8506,一地鸡毛,a complete mess,noun,idiom,"Established figurative colloquial expression, consistent with the app’s broad idiom category (including 惯用语)."
+8543,身残志坚,disabled but strong-willed,adjective,idiom,"Established fixed idiom; retain the app’s idiom study category rather than its adjectival, verbal, nominal, or adverbial function."
+8590,活蹦乱跳,full of energy;lively and jumping,adjective,idiom,"Established fixed idiom; retain the app’s idiom study category rather than its adjectival, verbal, nominal, or adverbial function."
+8596,民以食为天,food is the first necessity of the people,sentence,idiom,"Established proverb, quotation, blessing, or fixed saying; classify consistently with the existing broad idiom category instead of ordinary sentence practice."
+8604,饱和,saturated,noun,adjective,Describes a property or quality in the supplied sense; not a noun. Adverbial use of an adjective does not require an adverb label.
+8612,何乐而不为,what can you have against it;why not do it (rhetorical),sentence,idiom,"Established proverb, quotation, blessing, or fixed saying; classify consistently with the existing broad idiom category instead of ordinary sentence practice."
+8615,原地踏步,standing still;to mark time (no progress),noun,idiom,"Established figurative colloquial expression, consistent with the app’s broad idiom category (including 惯用语)."
+8619,全方位,all around comprehensive,noun,adjective,Describes a property or quality in the supplied sense; not a noun. Adverbial use of an adjective does not require an adverb label.
+8632,旁观者清,the onlooker sees more clearly,adjective,idiom,"Established fixed idiom; retain the app’s idiom study category rather than its adjectival, verbal, nominal, or adverbial function."
+8706,正儿八经,serious; proper,adjective,idiom,"Established fixed idiom; retain the app’s idiom study category rather than its adjectival, verbal, nominal, or adverbial function."
+8771,稀里糊涂,confused; muddle-headed,adjective,idiom,"Established fixed idiom; retain the app’s idiom study category rather than its adjectival, verbal, nominal, or adverbial function."
+8784,久病床前无孝子,long illness tests filial piety,sentence,idiom,"Established proverb, quotation, blessing, or fixed saying; classify consistently with the existing broad idiom category instead of ordinary sentence practice."
+8791,朗朗上口,catchy and easy to recite,adjective,idiom,"Established fixed idiom; retain the app’s idiom study category rather than its adjectival, verbal, nominal, or adverbial function."
+8878,眼不见，心不烦,"Out of sight, out of mind.",sentence,idiom,"Established proverb, quotation, blessing, or fixed saying; classify consistently with the existing broad idiom category instead of ordinary sentence practice."
+8955,自负盈亏,to be responsible for one's own profits and losses,verb,idiom,"Established fixed idiom; retain the app’s idiom study category rather than its adjectival, verbal, nominal, or adverbial function."
+9001,两位数,two-digit number,numeral,noun,"Names a class of numbers (three-digit/two-digit number), rather than a numeral giving a value."
+9040,零元购,zero-cost shopping; looting; free promotion,adjective,noun,Names zero-cost shopping/looting or a promotion; not an adjective.
+9088,足不出户,without leaving home,adverb,idiom,"Established fixed idiom; retain the app’s idiom study category rather than its adjectival, verbal, nominal, or adverbial function."
