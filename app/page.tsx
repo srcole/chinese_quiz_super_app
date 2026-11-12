@@ -32,6 +32,10 @@ import ProgressPanel from "./progress-panel";
 import SentenceWriting from "./sentence-writing";
 import SentenceLibrary from "./sentence-library";
 import { useSentences } from "@/lib/use-sentences";
+import { usePriorities } from "@/lib/use-priorities";
+import { applyPriorities, latestPriorities } from "@/lib/priorities";
+import PriorityControls from "./priority-controls";
+import PriorityPanel from "./priority-panel";
 import { useProgress } from "@/lib/use-progress";
 import { supabase } from "@/lib/supabase";
 const descriptions: Record<Mode, string> = {
@@ -154,7 +158,7 @@ export default function Home() {
     [loadError, setLoadError] = useState(""),
     [contentNote, setContentNote] = useState("");
   const [tab, setTab] = useState<
-      "quiz" | "writing" | "review" | "progress" | "settings"
+      "quiz" | "writing" | "review" | "progress" | "priorities" | "settings"
     >("quiz"),
     [mode, setMode] = useState<Mode>("vocabulary"),
     [direction, setDirection] = useState<Direction>("en-zh"),
@@ -201,6 +205,15 @@ export default function Home() {
     input = useRef<HTMLInputElement>(null),
     activeRow = useRef<HTMLDivElement>(null);
   const written = useSentences(progress.user?.id);
+  const priorities = usePriorities(progress.user?.id);
+  const priorityChanges = useMemo(
+    () => latestPriorities(priorities.rows),
+    [priorities.rows],
+  );
+  const originalWords = useMemo(
+    () => new Map(content?.words.map((w) => [w.id, w]) || []),
+    [content],
+  );
   useEffect(() => {
     let alive = true;
     fetch("/content.json")
@@ -278,8 +291,11 @@ export default function Home() {
     () => streakMap(progress.attempts, false),
     [progress.attempts],
   );
-  const words = content?.words || [],
-    rules = content?.rules || [];
+  const words = useMemo(
+    () => applyPriorities(content?.words || [], priorities.rows),
+    [content, priorities.rows],
+  );
+  const rules = content?.rules || [];
   const pos = useMemo(
     () => [...new Set(words.map((w) => w.part_of_speech))].sort(),
     [words],
@@ -331,7 +347,7 @@ export default function Home() {
             exercise,
           })),
         );
-    return content.words
+    return words
       .filter(
         (w) =>
           matches(w, filters) &&
@@ -357,6 +373,7 @@ export default function Home() {
       .map((word) => ({ id: `word:${word.id}`, mode, word }));
   }, [
     content,
+    words,
     mode,
     direction,
     filters,
@@ -764,23 +781,32 @@ export default function Home() {
         </a>
         <div className="sidebar-label">YOUR PRACTICE</div>
         <nav>
-          {(["quiz", "writing", "review", "progress", "settings"] as const).map(
-            (t, i) => (
-              <button
-                className={tab === t ? "nav-item active" : "nav-item"}
-                key={t}
-                onClick={() => changeTab(t)}
-              >
-                <span>{["◈", "句", "▤", "◴", "⚙"][i]}</span>
-                {t === "quiz"
-                  ? "Practice"
-                  : t === "writing"
-                    ? "Write sentences"
+          {(
+            [
+              "quiz",
+              "writing",
+              "review",
+              "progress",
+              "priorities",
+              "settings",
+            ] as const
+          ).map((t, i) => (
+            <button
+              className={tab === t ? "nav-item active" : "nav-item"}
+              key={t}
+              onClick={() => changeTab(t)}
+            >
+              <span>{["◈", "句", "▤", "◴", "↕", "⚙"][i]}</span>
+              {t === "quiz"
+                ? "Practice"
+                : t === "writing"
+                  ? "Write sentences"
+                  : t === "priorities"
+                    ? "Priority changes"
                     : t.charAt(0).toUpperCase() + t.slice(1)}
-                {tab === t && <b>•</b>}
-              </button>
-            ),
-          )}
+              {tab === t && <b>•</b>}
+            </button>
+          ))}
         </nav>
         <div className="sidebar-bottom">
           <div className="daily-note">
@@ -1538,6 +1564,16 @@ export default function Home() {
                           feedback
                           idiom={q.mode === "idioms"}
                         />
+                        <PriorityControls
+                          key={`${progress.user?.id || "guest"}:${q.word.id}`}
+                          word={originalWords.get(q.word.id) || q.word}
+                          change={priorityChanges.get(q.word.id)}
+                          ready={priorities.ready}
+                          save={priorities.save}
+                        />
+                        <p role="status" className="helper">
+                          {priorities.status}
+                        </p>
                         {choices.length > 0 && (
                           <details key={q.id} className="choice-feedback">
                             <summary>Other multiple-choice options</summary>
@@ -2053,11 +2089,22 @@ export default function Home() {
           )}
           {tab === "progress" && (
             <ProgressPanel
-              content={content}
+              content={{ ...content, words }}
               attempts={progress.attempts}
               play={audio.play}
               stop={audio.stop}
               exportHistory={exportProgress}
+            />
+          )}
+          {tab === "priorities" && (
+            <PriorityPanel
+              key={progress.user?.id || "guest"}
+              words={content.words}
+              rows={priorities.rows}
+              ready={priorities.ready}
+              status={priorities.status}
+              save={priorities.save}
+              sync={priorities.sync}
             />
           )}
           {tab === "settings" && (

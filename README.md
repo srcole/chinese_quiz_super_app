@@ -94,6 +94,16 @@ Review playback reads every matching row, including rows initially hidden behind
 
 ## Progress backups
 
+### Personal word priorities
+
+Word quiz feedback includes **Increase importance** (lower the number) and **Decrease importance** (raise the number), with priorities from 1 through 10. **Undo** restores the previous override; **Reset to original** follows the current collection priority again. Changes affect future quiz selection, word review, sentence-writing selection, and priority-based progress views. Questions and multiple-choice options already selected for the current quiz remain unchanged.
+
+The **Priority changes** page shows active overrides and the full adjustment/reset history. Search and select changes to download CSV or SQL. The CSV contains `id`, `chinese`, `original_priority`, and `new_priority`. SQL only updates shared content when the ID, Chinese text, and original priority match, preserving independent edits. Downloading does not run SQL or remove personal overrides. Update the repository's main CSV too when promoting changes to the shared collection, then reset the promoted personal overrides if desired.
+
+Existing Supabase installations must run `supabase/migrations/20261112_priority_changes.sql` in the SQL Editor once. New installations get the table from `supabase/schema.sql`. This creates a private per-user, append-only history; it grants no permission to edit shared vocabulary. Vocabulary imports leave personal overrides intact. The latest event by timestamp (then event ID for ties) determines each word's priority; a reset event has a null priority.
+
+Adjustments save on this device immediately and sync when signed in, on focus/reconnection, and every 30 seconds. The Priority changes page also has **Sync now**. Sync failures leave locally saved changes intact and show an error. Guest and account histories are separate; guest adjustments are not automatically transferred when signing in. Priorities apply to vocabulary words, not the separate traditional-character or grammar records.
+
 Export all attempts as JSON from Progress or Settings. Supabase provides cross-device history; local-only history can be lost if browser storage is cleared. Keep exports if studying without sync.
 
 Existing Supabase installations: run `supabase/migrations/20261016_multiple_choice_attempts.sql` before using multiple-choice tracking. Statistics exclude marked multiple-choice attempts by default; enable “Include multiple-choice quizzes” to include them. Older attempts without this marker remain included because their answer format was not recorded.

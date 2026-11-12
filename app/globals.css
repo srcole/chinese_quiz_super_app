@@ -1388,3 +1388,8 @@ summary::marker {
     display: none;
   }
 }
+
+.priority-controls { margin: 1rem 0; display: grid; gap: .65rem; }
+.priority-controls > span, .priority-controls > small { color: var(--muted); }
+.priority-controls .button-row, .panel > .button-row { display: flex; flex-wrap: wrap; gap: .5rem; }
+.priority-entry { padding: 1rem 0; border-top: 1px solid #ddd; }

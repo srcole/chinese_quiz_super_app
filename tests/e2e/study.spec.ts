@@ -1154,3 +1154,54 @@ test("writing randomizes the first prompt and hides previously written words by 
   await hide.uncheck();
   await expect(prompt).toHaveText("学校");
 });
+
+test("personal priority changes persist, filter future quizzes, export, and reset", async ({
+  page,
+}) => {
+  const word = {
+    ...content.words[0],
+    id: "priority-test",
+    priority: "5",
+    part_of_speech: "noun",
+    is_adult: "0",
+  };
+  await page.route("**/content.json", (route) =>
+    route.fulfill({ json: { ...content, words: [word] } }),
+  );
+  await page.reload();
+  await page.getByLabel("Questions", { exact: true }).fill("1");
+  await page.getByRole("button", { name: "Start practicing" }).click();
+  await page.getByRole("button", { name: "Check answer" }).click();
+  await page
+    .getByRole("button", { name: "Decrease importance", exact: true })
+    .click();
+  await expect(page.getByText("Priority: 6", { exact: true })).toBeVisible();
+  await page.getByRole("button", { name: "Undo", exact: true }).click();
+  await expect(page.getByText("Priority: 5", { exact: true })).toBeVisible();
+  await page
+    .getByRole("button", { name: "Decrease importance", exact: true })
+    .click();
+  await page.reload();
+  await expect(
+    page.getByRole("button", { name: "Start practicing" }),
+  ).toBeDisabled();
+  await page.getByRole("button", { name: "Priority changes" }).click();
+  await expect(page.getByText("Priority: 6", { exact: true })).toBeVisible();
+  await page.getByRole("button", { name: "Select matching changes" }).click();
+  const download = page.waitForEvent("download");
+  await page.getByRole("button", { name: "Download CSV (1)" }).click();
+  const artifact = await download;
+  const path = await artifact.path();
+  expect(fs.readFileSync(path!, "utf8")).toContain('"priority-test"');
+  expect(fs.readFileSync(path!, "utf8")).toContain('"5","6"');
+  await page
+    .getByRole("button", { name: "Reset to original", exact: true })
+    .click();
+  await expect(
+    page.getByText("No priority overrides to show.", { exact: false }),
+  ).toBeVisible();
+  await page.reload();
+  await expect(
+    page.getByRole("button", { name: "Start practicing" }),
+  ).toBeEnabled();
+});
