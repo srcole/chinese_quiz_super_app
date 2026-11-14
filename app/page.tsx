@@ -7,6 +7,7 @@ import {
   gradeQuestion,
   questionChinese,
   questionEnglish,
+  questionPinyin,
   Attempt,
   characterExamples,
   Content,
@@ -163,7 +164,7 @@ export default function Home() {
     [mode, setMode] = useState<Mode>("vocabulary"),
     [direction, setDirection] = useState<Direction>("en-zh"),
     [filters, setFilters] = useState<Filters>(defaultFilters);
-  const [reviewMode, setReviewMode] = useState<ReviewMode>("category"),
+  const [reviewMode, setReviewMode] = useState<ReviewMode>("history"),
     [reviewQuiz, setReviewQuiz] = useState<Mode>("vocabulary"),
     [reviewPriority, setReviewPriority] = useState(""),
     [character, setCharacter] = useState(""),
@@ -193,8 +194,8 @@ export default function Home() {
     [vocabMax, setVocabMax] = useState(""),
     [audioOnly, setAudioOnly] = useState(false);
   const [reviewSentences, setReviewSentences] = useState(false);
-  const [reviewStreakType, setReviewStreakType] = useState("correct"),
-    [reviewIncorrectStreak, setReviewIncorrectStreak] = useState(1);
+  const [reviewStreakType, setReviewStreakType] = useState("incorrect"),
+    [reviewIncorrectStreak, setReviewIncorrectStreak] = useState(2);
   const [multipleChoice, setMultipleChoice] = useState(false);
   const [choiceCount, setChoiceCount] = useState(5);
   const [sessionChoices, setSessionChoices] = useState<Record<string, Word[]>>(
@@ -415,7 +416,7 @@ export default function Home() {
                     reviewQuiz,
                     quizDirection(reviewQuiz, direction),
                   ),
-                ) || 0) > reviewIncorrectStreak
+                ) || 0) >= reviewIncorrectStreak
               : (streaks.get(
                   historyKey(
                     `word:${w.id}`,
@@ -1316,6 +1317,9 @@ export default function Home() {
                         .map((q) => (
                           <div className="example" key={q.id}>
                             <p lang="zh">{questionChinese(q)}</p>
+                            {questionPinyin(q) && (
+                              <p className="pinyin">{questionPinyin(q)}</p>
+                            )}
                             <p>{questionEnglish(q)}</p>
                             <p className="helper">
                               Your answer:{" "}
@@ -1860,21 +1864,21 @@ export default function Home() {
                       >
                         <option value="correct">Correct streak below</option>
                         <option value="incorrect">
-                          Incorrect streak longer than
+                          Incorrect streak at least
                         </option>
                       </select>
                     </Field>
                     {reviewStreakType === "incorrect" ? (
-                      <Field label="Incorrect streak longer than">
+                      <Field label="Incorrect streak at least">
                         <input
                           type="number"
-                          min="0"
+                          min="1"
                           step="1"
                           value={reviewIncorrectStreak}
                           onChange={(e) => {
                             audio.stop();
                             setReviewIncorrectStreak(
-                              Math.max(0, Math.floor(Number(e.target.value))),
+                              Math.max(1, Math.floor(Number(e.target.value))),
                             );
                             setReviewStarted(false);
                             setReviewLimit(50);
@@ -2020,6 +2024,9 @@ export default function Home() {
                     </>
                   ) : (
                     <>
+                      <p role="status" className="helper">
+                        {priorities.status}
+                      </p>
                       {reviewWords
                         .slice(0, Math.max(reviewLimit, audio.row + 1))
                         .map((w, i) => (
@@ -2035,6 +2042,16 @@ export default function Home() {
                               <WordDetails
                                 w={w}
                                 compact={reviewMode === "character"}
+                              />
+                              <PriorityControls
+                                key={`${progress.user?.id || "guest"}:${w.id}`}
+                                word={originalWords.get(w.id) || w}
+                                change={priorityChanges.get(w.id)}
+                                ready={priorities.ready}
+                                save={(word, value) => {
+                                  audio.stop();
+                                  return priorities.save(word, value);
+                                }}
                               />
                             </div>
                             <button

@@ -150,6 +150,7 @@ test("review modes show appropriate content and mobile layout stays in viewport"
   await page
     .getByRole("button", { name: "Focus on tricky words", exact: true })
     .click();
+  await page.getByLabel("Streak filter").selectOption("correct");
   await page.getByRole("button", { name: "Open review" }).click();
   await expect(page.locator(".review-row").first()).toBeVisible();
   await page.getByRole("button", { name: "By category", exact: true }).click();
@@ -194,6 +195,7 @@ test("review audio reads word then sentence, advances, and cancels on navigation
 }) => {
   await page.getByRole("button", { name: /Review/ }).click();
   await page.getByLabel("Also read Chinese example sentences").check();
+  await page.getByRole("button", { name: "By category", exact: true }).click();
   await page.getByRole("button", { name: "Open review" }).click();
   await page.getByRole("button", { name: "Listen to all" }).click();
   expect(
@@ -403,6 +405,7 @@ test("review defaults to words only and speech defaults are faster without a pau
   await expect(
     page.getByLabel("Also read Chinese example sentences"),
   ).not.toBeChecked();
+  await page.getByRole("button", { name: "By category", exact: true }).click();
   await page.getByRole("button", { name: "Open review" }).click();
   await page.getByRole("button", { name: "Listen to all" }).click();
   await page.evaluate(() =>
@@ -611,25 +614,43 @@ test("tricky review filters consecutive misses by threshold and direction", asyn
   }, words);
   await page.reload();
   await page.getByRole("button", { name: /Review/ }).click();
-  await page.getByRole("button", { name: "Focus on tricky words" }).click();
-  await page
-    .getByRole("combobox", { name: "Streak filter", exact: true })
-    .selectOption("incorrect");
   await expect(
-    page.getByLabel("Incorrect streak longer than", { exact: true }),
-  ).toHaveValue("1");
+    page.getByRole("button", { name: "Focus on tricky words" }),
+  ).toHaveClass("selected");
+  await expect(page.getByLabel("Streak filter")).toHaveValue("incorrect");
+  await expect(
+    page.getByLabel("Incorrect streak at least", { exact: true }),
+  ).toHaveValue("2");
   await page.getByRole("button", { name: "Open review" }).click();
   await expect(page.locator(".review-row")).toHaveCount(1);
   await expect(page.locator(".review-row")).toContainText(words[0].chinese);
-  await page
-    .getByLabel("Incorrect streak longer than", { exact: true })
-    .fill("2");
+  const row = page.locator(".review-row");
+  const originalPriority = Number(words[0].priority);
+  await row.getByRole("button", { name: "Decrease importance" }).click();
+  await expect(row.locator(".priority-controls strong")).toHaveText(
+    `Priority: ${originalPriority + 1}`,
+  );
+  await row.getByRole("button", { name: "Undo", exact: true }).click();
+  await expect(row.locator(".priority-controls strong")).toHaveText(
+    `Priority: ${originalPriority}`,
+  );
+  await row.getByRole("button", { name: "Decrease importance" }).click();
+  await page.reload();
+  await page.getByRole("button", { name: /Review/ }).click();
+  await page.getByRole("button", { name: "Open review" }).click();
+  await expect(row.locator(".priority-controls strong")).toHaveText(
+    `Priority: ${originalPriority + 1}`,
+  );
+  await row.getByRole("button", { name: "Increase importance" }).click();
+  await expect(row.locator(".priority-controls strong")).toHaveText(
+    `Priority: ${originalPriority}`,
+  );
+  await row.getByRole("button", { name: "Reset to original" }).click();
+  await page.getByLabel("Incorrect streak at least", { exact: true }).fill("3");
   await expect(
     page.getByRole("button", { name: "Open review" }),
   ).toBeDisabled();
-  await page
-    .getByLabel("Incorrect streak longer than", { exact: true })
-    .fill("1");
+  await page.getByLabel("Incorrect streak at least", { exact: true }).fill("2");
   await page.getByLabel("Prompt direction").selectOption("zh-en");
   await page.getByRole("button", { name: "Open review" }).click();
   await expect(page.locator(".review-row")).toHaveCount(1);

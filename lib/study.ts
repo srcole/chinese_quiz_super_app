@@ -272,6 +272,14 @@ export function questionChinese(q: Question) {
     ""
   );
 }
+export function questionPinyin(q: Question) {
+  return (
+    q.exercise?.expected.pinyin ||
+    q.character?.pinyin ||
+    (q.mode === "sentences" ? q.word?.sentence_pinyin : q.word?.pinyin) ||
+    ""
+  );
+}
 export function questionEnglish(q: Question) {
   return (
     q.exercise?.expected.english ||
