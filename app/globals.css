@@ -1423,3 +1423,13 @@ summary::marker {
 .radical-examples .priority-controls {
   margin-top: 12px;
 }
+
+.radical-character summary .radical-listening-word {
+  display: grid;
+  gap: 4px;
+  margin: 12px 0 0;
+  font-weight: normal;
+}
+.radical-listening-word > [lang] {
+  font-size: 22px;
+}

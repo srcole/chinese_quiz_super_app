@@ -24,8 +24,9 @@ type Props = {
 function CharacterCard({
   character,
   words,
+  listeningWord,
   ...props
-}: Props & { character: string }) {
+}: Props & { character: string; listeningWord?: Word }) {
   const [open, setOpen] = useState(false);
   const [limit, setLimit] = useState(10);
   return (
@@ -40,6 +41,14 @@ function CharacterCard({
         <span>
           {words.length} vocabulary {words.length === 1 ? "entry" : "entries"}
         </span>
+        {listeningWord && (
+          <span className="radical-listening-word">
+            <span className="helper">Listening example</span>
+            <span lang="zh-Hans">{listeningWord.chinese}</span>
+            <span className="pinyin">{listeningWord.pinyin}</span>
+            <span>{listeningWord.english}</span>
+          </span>
+        )}
       </summary>
       {open && (
         <div className="radical-examples">
@@ -241,7 +250,8 @@ export default function RadicalReview(props: Props) {
               </details>
             )}
             <p className="helper">
-              Open a character to see words, their pronunciations and meanings.
+              Each card shows its listening example. Open a character to see
+              more vocabulary and priority controls.
             </p>
           </div>
           <p role="status" className="helper">
@@ -260,6 +270,10 @@ export default function RadicalReview(props: Props) {
                 {...props}
                 key={character}
                 character={character}
+                listeningWord={
+                  examples.find((example) => example.character === character)
+                    ?.word
+                }
                 words={groups.get(character)!}
               />
             ))}

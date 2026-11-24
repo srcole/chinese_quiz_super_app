@@ -1279,7 +1279,7 @@ test("radical review finds components, expands vocabulary and saves priorities",
   await expect(page.locator(".radical-character")).toHaveCount(1);
   const card = page.locator(".radical-character").first();
   await card.locator("summary").click();
-  await expect(card.locator(".pinyin")).toHaveText("hé shuǐ");
+  await expect(card.locator(".radical-examples .pinyin")).toHaveText("hé shuǐ");
   await expect(card).toContainText("river water");
   await card.getByRole("button", { name: "Listen to 河水" }).click();
   expect(
@@ -1366,6 +1366,8 @@ test("radical example audio queues word-and-character phrases and cancels on sel
     ...content.words[0],
     id: `audio-radical-${i}`,
     chinese,
+    pinyin: ["guǒ zhī", "huì lǜ", "hàn yǔ"][i],
+    english: ["fruit juice", "exchange rate", "Chinese language"][i],
     priority: "3",
     is_adult: "0",
   }));
@@ -1399,6 +1401,14 @@ test("radical example audio queues word-and-character phrases and cancels on sel
   await page.reload();
   await page.getByRole("button", { name: /Review/ }).click();
   await page.getByRole("button", { name: "By radical", exact: true }).click();
+  const listeningExamples = page.locator(".radical-listening-word");
+  await expect(listeningExamples).toHaveCount(3);
+  for (let i = 0; i < words.length; i++) {
+    await expect(listeningExamples.nth(i)).toBeVisible();
+    await expect(listeningExamples.nth(i)).toContainText(words[i].chinese);
+    await expect(listeningExamples.nth(i)).toContainText(words[i].pinyin);
+    await expect(listeningExamples.nth(i)).toContainText(words[i].english);
+  }
   await page.getByRole("button", { name: "Listen to examples (3)" }).click();
   await expect
     .poll(() =>
