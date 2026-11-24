@@ -1,0 +1,8 @@
+Character decompositions derived from Make Me a Hanzi dictionary.txt
+https://github.com/skishore/makemeahanzi
+Retrieved 2026-11-24 from https://raw.githubusercontent.com/skishore/makemeahanzi/master/dictionary.txt
+Source SHA-256: 744bb05d5b0742e9ee35c37791f94d56a173349b3367569e7ca11e510364d203
+
+Modifications: retained only character and decomposition fields; serialized as a JSON object. No stroke graphics or definitions are included.
+This derived data is licensed under LGPL-3.0-or-later. See COPYING.txt and LGPL.txt. Application code is separate.
+The editable derived source is decompositions.json. Matching logic is in lib/radicals.ts and the asset builder in scripts/radical-data.ts in the application repository.

@@ -1393,3 +1393,33 @@ summary::marker {
 .priority-controls > span, .priority-controls > small { color: var(--muted); }
 .priority-controls .button-row, .panel > .button-row { display: flex; flex-wrap: wrap; gap: .5rem; }
 .priority-entry { padding: 1rem 0; border-top: 1px solid #ddd; }
+
+
+.radical-heading {
+  margin: 24px 0;
+}
+.radical-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, 310px), 1fr));
+  gap: 12px;
+  align-items: start;
+  margin-bottom: 24px;
+}
+.radical-character {
+  min-width: 0;
+  margin: 0;
+  overflow-wrap: anywhere;
+}
+.radical-character summary {
+  cursor: pointer;
+}
+.radical-character summary span {
+  margin-right: 12px;
+}
+.radical-glyph {
+  font-family: "Noto Serif SC", serif;
+  font-size: 36px;
+}
+.radical-examples .priority-controls {
+  margin-top: 12px;
+}

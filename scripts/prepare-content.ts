@@ -2,6 +2,7 @@ import fs from "node:fs";
 import Papa from "papaparse";
 import { cleanWord } from "../lib/study";
 import type { Content, Rule, Word } from "../lib/study";
+import { loadRadicals } from "./radical-data";
 export function loadContent(): Content {
   function csv(path: string, id: string): Word[] {
     const parsed = Papa.parse<Word>(fs.readFileSync(path, "utf8"), {
@@ -49,6 +50,7 @@ export function loadContent(): Content {
 const content = loadContent();
 fs.mkdirSync("public", { recursive: true });
 fs.writeFileSync("public/content.json", JSON.stringify(content));
+fs.writeFileSync("public/radicals.json", JSON.stringify(loadRadicals()));
 console.log(
   `Prepared ${content.words.length} words, ${content.characters.length} characters, ${content.rules.length} rules.`,
 );

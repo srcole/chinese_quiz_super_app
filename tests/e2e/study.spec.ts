@@ -1226,3 +1226,135 @@ test("personal priority changes persist, filter future quizzes, export, and rese
     page.getByRole("button", { name: "Start practicing" }),
   ).toBeEnabled();
 });
+
+test("radical review finds components, expands vocabulary and saves priorities", async ({
+  page,
+}) => {
+  const words = [
+    {
+      ...content.words[0],
+      id: "radical-water",
+      chinese: "河水",
+      pinyin: "hé shuǐ",
+      english: "river water",
+      priority: "5",
+      is_adult: "0",
+    },
+    {
+      ...content.words[0],
+      id: "radical-adult",
+      chinese: "海",
+      pinyin: "hǎi",
+      english: "adult-filter fixture",
+      priority: "5",
+      is_adult: "1",
+    },
+    {
+      ...content.words[0],
+      id: "radical-left",
+      chinese: "阿",
+      priority: "5",
+      is_adult: "0",
+    },
+    {
+      ...content.words[0],
+      id: "radical-right",
+      chinese: "都",
+      priority: "5",
+      is_adult: "0",
+    },
+  ];
+  await page.route("**/content.json", (route) =>
+    route.fulfill({ json: { words, characters: [], rules: [] } }),
+  );
+  await page.reload();
+  await page.getByRole("button", { name: /Review/ }).click();
+  await expect(
+    page.getByRole("button", { name: "Focus on tricky words" }),
+  ).toHaveClass("selected");
+  await page.getByRole("button", { name: "By radical", exact: true }).click();
+  await expect(
+    page.getByRole("combobox", { name: "Radical name", exact: true }),
+  ).toHaveValue("三点水");
+  await expect(page.locator(".radical-character")).toHaveCount(1);
+  const card = page.locator(".radical-character").first();
+  await card.locator("summary").click();
+  await expect(card.locator(".pinyin")).toHaveText("hé shuǐ");
+  await expect(card).toContainText("river water");
+  await card.getByRole("button", { name: "Listen to 河水" }).click();
+  expect(
+    await page.evaluate(
+      () => (window as unknown as { spoken: string[] }).spoken,
+    ),
+  ).toEqual(["河水"]);
+  await card.getByRole("button", { name: "Decrease importance" }).click();
+  await expect(card.locator(".priority-controls strong")).toHaveText(
+    "Priority: 6",
+  );
+  await page.getByLabel("Exclude adult-themed vocabulary").uncheck();
+  await expect(page.locator(".radical-character")).toHaveCount(2);
+  await page.getByLabel("Find a radical").fill("zuo er pang");
+  await expect(page.locator(".radical-glyph")).toHaveText("阿");
+  await page.getByLabel("Find a radical").fill("you er pang");
+  await expect(page.locator(".radical-glyph")).toHaveText("都");
+  await page.getByLabel("Find a radical").fill("does not exist");
+  await expect(
+    page.getByText("No radical names match your search.", { exact: false }),
+  ).toBeVisible();
+  await expect(page.locator(".radical-character")).toHaveCount(0);
+  await page.getByLabel("Find a radical").fill("三点水");
+  await page
+    .locator(".radical-character")
+    .filter({ hasText: "河" })
+    .locator("summary")
+    .click();
+  expect(
+    await page.evaluate(
+      () => document.documentElement.scrollWidth <= window.innerWidth,
+    ),
+  ).toBe(true);
+  await page.screenshot({
+    path: `/tmp/radical-review-${test.info().project.name}.png`,
+    fullPage: true,
+  });
+  await page.reload();
+  await page.getByRole("button", { name: /Review/ }).click();
+  await page.getByRole("button", { name: "By radical", exact: true }).click();
+  await page.locator(".radical-character summary").click();
+  await expect(page.locator(".priority-controls strong")).toHaveText(
+    "Priority: 6",
+  );
+});
+
+test("radical review recovers from missing data and explains zero matches", async ({
+  page,
+}) => {
+  await page.route("**/radicals.json", (route) =>
+    route.fulfill({ status: 503, body: "unavailable" }),
+  );
+  await page.getByRole("button", { name: /Review/ }).click();
+  await page.getByRole("button", { name: "By radical", exact: true }).click();
+  await expect(page.locator("p[role=alert]")).toContainText(
+    "Could not load radical review",
+  );
+  await page.route("**/radicals.json", (route) =>
+    route.fulfill({
+      json: {
+        radicals: [
+          {
+            id: "三点水",
+            name: "三点水",
+            symbol: "氵",
+            pinyin: "sān diǎn shuǐ",
+            english: "water",
+            characters: [],
+          },
+        ],
+      },
+    }),
+  );
+  await page.getByRole("button", { name: "Retry radical review" }).click();
+  await expect(
+    page.getByText("No indexed characters for this radical", { exact: false }),
+  ).toBeVisible();
+});

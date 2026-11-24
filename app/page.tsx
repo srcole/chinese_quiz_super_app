@@ -36,6 +36,7 @@ import { useSentences } from "@/lib/use-sentences";
 import { usePriorities } from "@/lib/use-priorities";
 import { applyPriorities, latestPriorities } from "@/lib/priorities";
 import PriorityControls from "./priority-controls";
+import RadicalReview from "./radical-review";
 import PriorityPanel from "./priority-panel";
 import { useProgress } from "@/lib/use-progress";
 import { supabase } from "@/lib/supabase";
@@ -56,6 +57,7 @@ const icons: Record<Mode, string> = {
   grammar: "法",
 };
 const reviewNames = {
+  radical: "By radical",
   category: "By category",
   history: "Focus on tricky words",
   character: "By Chinese character",
@@ -1800,287 +1802,315 @@ export default function Home() {
                   </button>
                 ))}
               </div>
-              <section className="panel setup">
-                {reviewMode === "category" && categoryFields()}
-                {reviewMode === "character" && (
-                  <Field label="Chinese character">
-                    <input
-                      value={character}
-                      placeholder="e.g. 学 or 學"
-                      onChange={(e) => {
-                        audio.stop();
-                        setCharacter(e.target.value);
-                        setReviewStarted(false);
-                        setReviewLimit(50);
-                      }}
-                    />
-                  </Field>
-                )}
-                {reviewMode === "history" && (
-                  <div className="field-grid">
-                    <Field label="Priority level">
-                      <Select
-                        value={reviewPriority}
-                        onChange={(v) => {
-                          audio.stop();
-                          setReviewPriority(v);
-                          setReviewStarted(false);
-                        }}
-                        options={["1", "2", "3", "4", "5", "6", "7", "8"]}
-                      />
-                    </Field>
-                    <Field label="Quiz type">
-                      <select
-                        value={reviewQuiz}
-                        onChange={(e) => {
-                          audio.stop();
-                          setReviewQuiz(e.target.value as Mode);
-                          setReviewStarted(false);
-                        }}
-                      >
-                        {(
-                          [
-                            "vocabulary",
-                            "idioms",
-                            "tones",
-                            "sentences",
-                          ] as Mode[]
-                        ).map((m) => (
-                          <option value={m} key={m}>
-                            {modeNames[m]}
-                          </option>
-                        ))}
-                      </select>
-                    </Field>
-                    <Field label="Streak filter">
-                      <select
-                        value={reviewStreakType}
-                        onChange={(e) => {
-                          audio.stop();
-                          setReviewStreakType(e.target.value);
-                          setReviewStarted(false);
-                          setReviewLimit(50);
-                        }}
-                      >
-                        <option value="correct">Correct streak below</option>
-                        <option value="incorrect">
-                          Incorrect streak at least
-                        </option>
-                      </select>
-                    </Field>
-                    {reviewStreakType === "incorrect" ? (
-                      <Field label="Incorrect streak at least">
+              {reviewMode === "radical" ? (
+                <RadicalReview
+                  key={progress.user?.id || "guest"}
+                  words={words}
+                  originalWords={originalWords}
+                  changes={priorityChanges}
+                  ready={priorities.ready}
+                  status={priorities.status}
+                  save={priorities.save}
+                  play={(text) => audio.play([{ text, row: 0 }])}
+                  stop={audio.stop}
+                />
+              ) : (
+                <>
+                  <section className="panel setup">
+                    {reviewMode === "category" && categoryFields()}
+                    {reviewMode === "character" && (
+                      <Field label="Chinese character">
                         <input
-                          type="number"
-                          min="1"
-                          step="1"
-                          value={reviewIncorrectStreak}
+                          value={character}
+                          placeholder="e.g. 学 or 學"
                           onChange={(e) => {
                             audio.stop();
-                            setReviewIncorrectStreak(
-                              Math.max(1, Math.floor(Number(e.target.value))),
-                            );
+                            setCharacter(e.target.value);
                             setReviewStarted(false);
                             setReviewLimit(50);
                           }}
                         />
                       </Field>
-                    ) : (
-                      <Field label="Correct streak below">
-                        <input
-                          type="number"
-                          min="1"
-                          value={Math.max(1, filters.streak)}
-                          onChange={(e) =>
-                            updateFilter(
-                              "streak",
-                              Math.max(1, Math.floor(Number(e.target.value))),
+                    )}
+                    {reviewMode === "history" && (
+                      <div className="field-grid">
+                        <Field label="Priority level">
+                          <Select
+                            value={reviewPriority}
+                            onChange={(v) => {
+                              audio.stop();
+                              setReviewPriority(v);
+                              setReviewStarted(false);
+                            }}
+                            options={["1", "2", "3", "4", "5", "6", "7", "8"]}
+                          />
+                        </Field>
+                        <Field label="Quiz type">
+                          <select
+                            value={reviewQuiz}
+                            onChange={(e) => {
+                              audio.stop();
+                              setReviewQuiz(e.target.value as Mode);
+                              setReviewStarted(false);
+                            }}
+                          >
+                            {(
+                              [
+                                "vocabulary",
+                                "idioms",
+                                "tones",
+                                "sentences",
+                              ] as Mode[]
+                            ).map((m) => (
+                              <option value={m} key={m}>
+                                {modeNames[m]}
+                              </option>
+                            ))}
+                          </select>
+                        </Field>
+                        <Field label="Streak filter">
+                          <select
+                            value={reviewStreakType}
+                            onChange={(e) => {
+                              audio.stop();
+                              setReviewStreakType(e.target.value);
+                              setReviewStarted(false);
+                              setReviewLimit(50);
+                            }}
+                          >
+                            <option value="correct">
+                              Correct streak below
+                            </option>
+                            <option value="incorrect">
+                              Incorrect streak at least
+                            </option>
+                          </select>
+                        </Field>
+                        {reviewStreakType === "incorrect" ? (
+                          <Field label="Incorrect streak at least">
+                            <input
+                              type="number"
+                              min="1"
+                              step="1"
+                              value={reviewIncorrectStreak}
+                              onChange={(e) => {
+                                audio.stop();
+                                setReviewIncorrectStreak(
+                                  Math.max(
+                                    1,
+                                    Math.floor(Number(e.target.value)),
+                                  ),
+                                );
+                                setReviewStarted(false);
+                                setReviewLimit(50);
+                              }}
+                            />
+                          </Field>
+                        ) : (
+                          <Field label="Correct streak below">
+                            <input
+                              type="number"
+                              min="1"
+                              value={Math.max(1, filters.streak)}
+                              onChange={(e) =>
+                                updateFilter(
+                                  "streak",
+                                  Math.max(
+                                    1,
+                                    Math.floor(Number(e.target.value)),
+                                  ),
+                                )
+                              }
+                            />
+                          </Field>
+                        )}
+                        {reviewQuiz !== "tones" && (
+                          <Field label="Prompt direction">
+                            <select
+                              value={direction}
+                              onChange={(e) => {
+                                audio.stop();
+                                setDirection(e.target.value as Direction);
+                                setReviewStarted(false);
+                              }}
+                            >
+                              <option value="en-zh">English → Chinese</option>
+                              <option value="zh-en">Chinese → English</option>
+                            </select>
+                          </Field>
+                        )}
+                      </div>
+                    )}
+                    {reviewMode === "grammar"
+                      ? grammarFields(true)
+                      : posFields()}
+                    <div className="start-bar">
+                      <span>
+                        {reviewMode === "grammar"
+                          ? `${reviewRule?.exercises.length || 0} examples`
+                          : `${reviewWords.length.toLocaleString()} words`}
+                      </span>
+                      <button
+                        className="primary"
+                        disabled={
+                          reviewMode === "grammar"
+                            ? !reviewRule
+                            : !reviewWords.length
+                        }
+                        onClick={() => {
+                          audio.stop();
+                          setReviewStarted(true);
+                        }}
+                      >
+                        Open review →
+                      </button>
+                    </div>
+                  </section>
+                  {reviewMode !== "grammar" && (
+                    <label className="check-field">
+                      <input
+                        type="checkbox"
+                        checked={reviewSentences}
+                        onChange={(e) => {
+                          audio.stop();
+                          setReviewSentences(e.target.checked);
+                        }}
+                      />
+                      Also read Chinese example sentences
+                    </label>
+                  )}
+                  {reviewStarted && (
+                    <>
+                      <div className="review-toolbar">
+                        <span>
+                          {reviewMode === "grammar"
+                            ? reviewRule?.title
+                            : `${reviewWords.length.toLocaleString()} words in your review`}
+                        </span>
+                        <button
+                          className="primary"
+                          onClick={() =>
+                            audio.play(
+                              reviewMode === "grammar"
+                                ? reviewRule!.exercises.map((e, row) => ({
+                                    text: e.expected.chinese,
+                                    row,
+                                  }))
+                                : reviewWords.flatMap((w, row) => [
+                                    { text: w.chinese, row },
+                                    ...(reviewSentences && w.sentence
+                                      ? [{ text: w.sentence, row }]
+                                      : []),
+                                  ]),
                             )
                           }
-                        />
-                      </Field>
-                    )}
-                    {reviewQuiz !== "tones" && (
-                      <Field label="Prompt direction">
-                        <select
-                          value={direction}
-                          onChange={(e) => {
-                            audio.stop();
-                            setDirection(e.target.value as Direction);
-                            setReviewStarted(false);
-                          }}
                         >
-                          <option value="en-zh">English → Chinese</option>
-                          <option value="zh-en">Chinese → English</option>
-                        </select>
-                      </Field>
-                    )}
-                  </div>
-                )}
-                {reviewMode === "grammar" ? grammarFields(true) : posFields()}
-                <div className="start-bar">
-                  <span>
-                    {reviewMode === "grammar"
-                      ? `${reviewRule?.exercises.length || 0} examples`
-                      : `${reviewWords.length.toLocaleString()} words`}
-                  </span>
-                  <button
-                    className="primary"
-                    disabled={
-                      reviewMode === "grammar"
-                        ? !reviewRule
-                        : !reviewWords.length
-                    }
-                    onClick={() => {
-                      audio.stop();
-                      setReviewStarted(true);
-                    }}
-                  >
-                    Open review →
-                  </button>
-                </div>
-              </section>
-              {reviewMode !== "grammar" && (
-                <label className="check-field">
-                  <input
-                    type="checkbox"
-                    checked={reviewSentences}
-                    onChange={(e) => {
-                      audio.stop();
-                      setReviewSentences(e.target.checked);
-                    }}
-                  />
-                  Also read Chinese example sentences
-                </label>
-              )}
-              {reviewStarted && (
-                <>
-                  <div className="review-toolbar">
-                    <span>
-                      {reviewMode === "grammar"
-                        ? reviewRule?.title
-                        : `${reviewWords.length.toLocaleString()} words in your review`}
-                    </span>
-                    <button
-                      className="primary"
-                      onClick={() =>
-                        audio.play(
-                          reviewMode === "grammar"
-                            ? reviewRule!.exercises.map((e, row) => ({
-                                text: e.expected.chinese,
-                                row,
-                              }))
-                            : reviewWords.flatMap((w, row) => [
-                                { text: w.chinese, row },
-                                ...(reviewSentences && w.sentence
-                                  ? [{ text: w.sentence, row }]
-                                  : []),
-                              ]),
-                        )
-                      }
-                    >
-                      ◖)) Listen to all{" "}
-                      {reviewMode === "grammar"
-                        ? "examples"
-                        : reviewSentences
-                          ? "words + sentences"
-                          : "words"}
-                    </button>
-                  </div>
-                  {reviewMode === "grammar" && reviewRule ? (
-                    <>
-                      <div className="panel pattern">
-                        <h2>{reviewRule.title}</h2>
-                        <p>{reviewRule.pattern}</p>
-                        <p>{reviewRule.explanation}</p>
+                          ◖)) Listen to all{" "}
+                          {reviewMode === "grammar"
+                            ? "examples"
+                            : reviewSentences
+                              ? "words + sentences"
+                              : "words"}
+                        </button>
                       </div>
-                      {reviewRule.exercises.map((e, i) => (
-                        <div
-                          ref={audio.row === i ? activeRow : undefined}
-                          key={e.id}
-                          className={`panel review-row ${audio.row === i ? "reading" : ""}`}
-                        >
-                          <span className="row-number">
-                            {String(i + 1).padStart(2, "0")}
-                          </span>
-                          <div>
-                            <div className="word-title" lang="zh">
-                              {e.expected.chinese}
-                            </div>
-                            <p className="pinyin">{e.expected.pinyin}</p>
-                            <p>{e.expected.english}</p>
+                      {reviewMode === "grammar" && reviewRule ? (
+                        <>
+                          <div className="panel pattern">
+                            <h2>{reviewRule.title}</h2>
+                            <p>{reviewRule.pattern}</p>
+                            <p>{reviewRule.explanation}</p>
                           </div>
-                          <button
-                            className="quiet"
-                            aria-label={`Listen to example ${i + 1}`}
-                            onClick={() =>
-                              audio.play([{ text: e.expected.chinese, row: i }])
-                            }
-                          >
-                            ◖))
-                          </button>
-                        </div>
-                      ))}
-                    </>
-                  ) : (
-                    <>
-                      <p role="status" className="helper">
-                        {priorities.status}
-                      </p>
-                      {reviewWords
-                        .slice(0, Math.max(reviewLimit, audio.row + 1))
-                        .map((w, i) => (
-                          <div
-                            ref={audio.row === i ? activeRow : undefined}
-                            key={w.id}
-                            className={`panel review-row ${audio.row === i ? "reading" : ""}`}
-                          >
-                            <span className="row-number">
-                              {String(i + 1).padStart(2, "0")}
-                            </span>
-                            <div>
-                              <WordDetails
-                                w={w}
-                                compact={reviewMode === "character"}
-                              />
-                              <PriorityControls
-                                key={`${progress.user?.id || "guest"}:${w.id}`}
-                                word={originalWords.get(w.id) || w}
-                                change={priorityChanges.get(w.id)}
-                                ready={priorities.ready}
-                                save={(word, value) => {
-                                  audio.stop();
-                                  return priorities.save(word, value);
-                                }}
-                              />
+                          {reviewRule.exercises.map((e, i) => (
+                            <div
+                              ref={audio.row === i ? activeRow : undefined}
+                              key={e.id}
+                              className={`panel review-row ${audio.row === i ? "reading" : ""}`}
+                            >
+                              <span className="row-number">
+                                {String(i + 1).padStart(2, "0")}
+                              </span>
+                              <div>
+                                <div className="word-title" lang="zh">
+                                  {e.expected.chinese}
+                                </div>
+                                <p className="pinyin">{e.expected.pinyin}</p>
+                                <p>{e.expected.english}</p>
+                              </div>
+                              <button
+                                className="quiet"
+                                aria-label={`Listen to example ${i + 1}`}
+                                onClick={() =>
+                                  audio.play([
+                                    { text: e.expected.chinese, row: i },
+                                  ])
+                                }
+                              >
+                                ◖))
+                              </button>
                             </div>
+                          ))}
+                        </>
+                      ) : (
+                        <>
+                          <p role="status" className="helper">
+                            {priorities.status}
+                          </p>
+                          {reviewWords
+                            .slice(0, Math.max(reviewLimit, audio.row + 1))
+                            .map((w, i) => (
+                              <div
+                                ref={audio.row === i ? activeRow : undefined}
+                                key={w.id}
+                                className={`panel review-row ${audio.row === i ? "reading" : ""}`}
+                              >
+                                <span className="row-number">
+                                  {String(i + 1).padStart(2, "0")}
+                                </span>
+                                <div>
+                                  <WordDetails
+                                    w={w}
+                                    compact={reviewMode === "character"}
+                                  />
+                                  <PriorityControls
+                                    key={`${progress.user?.id || "guest"}:${w.id}`}
+                                    word={originalWords.get(w.id) || w}
+                                    change={priorityChanges.get(w.id)}
+                                    ready={priorities.ready}
+                                    save={(word, value) => {
+                                      audio.stop();
+                                      return priorities.save(word, value);
+                                    }}
+                                  />
+                                </div>
+                                <button
+                                  className="quiet"
+                                  aria-label={`Listen to ${w.chinese}`}
+                                  onClick={() =>
+                                    audio.play([
+                                      { text: w.chinese, row: i },
+                                      ...(reviewSentences && w.sentence
+                                        ? [{ text: w.sentence, row: i }]
+                                        : []),
+                                    ])
+                                  }
+                                >
+                                  ◖))
+                                </button>
+                              </div>
+                            ))}
+                          {Math.max(reviewLimit, audio.row + 1) <
+                            reviewWords.length && (
                             <button
-                              className="quiet"
-                              aria-label={`Listen to ${w.chinese}`}
                               onClick={() =>
-                                audio.play([
-                                  { text: w.chinese, row: i },
-                                  ...(reviewSentences && w.sentence
-                                    ? [{ text: w.sentence, row: i }]
-                                    : []),
-                                ])
+                                setReviewLimit(
+                                  (n) => Math.max(n, audio.row + 1) + 50,
+                                )
                               }
                             >
-                              ◖))
+                              Show next 50 words
                             </button>
-                          </div>
-                        ))}
-                      {Math.max(reviewLimit, audio.row + 1) <
-                        reviewWords.length && (
-                        <button
-                          onClick={() =>
-                            setReviewLimit(
-                              (n) => Math.max(n, audio.row + 1) + 50,
-                            )
-                          }
-                        >
-                          Show next 50 words
-                        </button>
+                          )}
+                        </>
                       )}
                     </>
                   )}
