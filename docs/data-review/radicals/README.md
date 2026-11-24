@@ -8,7 +8,7 @@ Open a character to see matching vocabulary, full-word pinyin and English, word 
 
 ## Listening examples
 
-After selecting a radical, **Listen to examples** queues one word-and-character phrase per eligible character, such as 果汁的汁、汇率的汇、汉语的汉. The preview shows the exact sequence. Selection prefers ordinary short words over proper names, then shorter words and lower priority numbers. Only two-to-four-character Chinese headwords are eligible; sentence entries and characters without a suitable word are skipped. Adult filtering applies before selection. Playback uses the existing voice, speed, gap, pause, and stop controls, and changing radicals or adult filtering cancels playback.
+After selecting a radical, **Listen to examples** queues one word-and-character phrase per eligible character, such as 果汁的汁、汇率的汇、汉语的汉. The preview shows the exact sequence. Character cards and audio both run in descending order of matching vocabulary-entry count, after adult filtering. Equal counts retain the catalog order. Selection prefers ordinary short words over proper names, then shorter words and lower priority numbers. Only two-to-four-character Chinese headwords are eligible; sentence entries and characters without a suitable word are skipped. Adult filtering applies before selection. Playback uses the existing voice, speed, gap, pause, and stop controls, and changing radicals or adult filtering cancels playback.
 
 ## Matching and coverage
 

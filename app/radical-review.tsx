@@ -126,7 +126,10 @@ export default function RadicalReview(props: Props) {
   );
   const radical = catalog?.radicals.find((r) => r.id === selected);
   const characters = useMemo(
-    () => radical?.characters.filter((c) => groups.has(c)) || [],
+    () =>
+      radical?.characters
+        .filter((c) => groups.has(c))
+        .sort((a, b) => groups.get(b)!.length - groups.get(a)!.length) || [],
     [radical, groups],
   );
   const examples = useMemo(
@@ -250,8 +253,9 @@ export default function RadicalReview(props: Props) {
               </details>
             )}
             <p className="helper">
-              Each card shows its listening example. Open a character to see
-              more vocabulary and priority controls.
+              Listed and spoken by vocabulary-entry count, most first. Each card
+              shows its listening example. Open a character to see more
+              vocabulary and priority controls.
             </p>
           </div>
           <p role="status" className="helper">

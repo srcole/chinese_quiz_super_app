@@ -1371,6 +1371,11 @@ test("radical example audio queues word-and-character phrases and cancels on sel
     priority: "3",
     is_adult: "0",
   }));
+  words.push(
+    { ...words[0], id: "juice-extra-1", chinese: "番茄汁" },
+    { ...words[0], id: "juice-extra-2", chinese: "橙汁", priority: "6" },
+    { ...words[1], id: "exchange-extra", chinese: "汇总", priority: "6" },
+  );
   await page.route("**/content.json", (route) =>
     route.fulfill({ json: { words, characters: [], rules: [] } }),
   );
@@ -1384,7 +1389,7 @@ test("radical example audio queues word-and-character phrases and cancels on sel
             symbol: "氵",
             pinyin: "sān diǎn shuǐ",
             english: "water",
-            characters: ["汁", "汇", "汉"],
+            characters: ["汉", "汇", "汁"],
           },
           {
             id: "木字旁",
@@ -1401,9 +1406,10 @@ test("radical example audio queues word-and-character phrases and cancels on sel
   await page.reload();
   await page.getByRole("button", { name: /Review/ }).click();
   await page.getByRole("button", { name: "By radical", exact: true }).click();
+  await expect(page.locator(".radical-glyph")).toHaveText(["汁", "汇", "汉"]);
   const listeningExamples = page.locator(".radical-listening-word");
   await expect(listeningExamples).toHaveCount(3);
-  for (let i = 0; i < words.length; i++) {
+  for (let i = 0; i < 3; i++) {
     await expect(listeningExamples.nth(i)).toBeVisible();
     await expect(listeningExamples.nth(i)).toContainText(words[i].chinese);
     await expect(listeningExamples.nth(i)).toContainText(words[i].pinyin);
