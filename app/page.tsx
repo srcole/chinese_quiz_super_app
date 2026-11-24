@@ -1812,6 +1812,9 @@ export default function Home() {
                   status={priorities.status}
                   save={priorities.save}
                   play={(text) => audio.play([{ text, row: 0 }])}
+                  playExamples={(texts) =>
+                    audio.play(texts.map((text, row) => ({ text, row })))
+                  }
                   stop={audio.stop}
                 />
               ) : (

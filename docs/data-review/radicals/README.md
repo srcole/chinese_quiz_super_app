@@ -6,6 +6,10 @@ Results are unique characters appearing in the current vocabulary's `chinese` he
 
 Open a character to see matching vocabulary, full-word pinyin and English, word audio, and the existing personal priority controls. This avoids guessing a single pronunciation for polyphonic characters. Examples are displayed ten at a time. Adult-themed vocabulary is excluded by default and can be included in this tab. Other quiz/review filters do not restrict radical review. The default review mode remains Focus on tricky words with an incorrect streak of at least two.
 
+## Listening examples
+
+After selecting a radical, **Listen to examples** queues one word-and-character phrase per eligible character, such as 果汁的汁、汇率的汇、汉语的汉. The preview shows the exact sequence. Selection prefers ordinary short words over proper names, then shorter words and lower priority numbers. Only two-to-four-character Chinese headwords are eligible; sentence entries and characters without a suitable word are skipped. Adult filtering applies before selection. Playback uses the existing voice, speed, gap, pause, and stop controls, and changing radicals or adult filtering cancels playback.
+
 ## Matching and coverage
 
 `public/radical-source/decompositions.json` is an editable, stripped character-to-IDS mapping derived from Make Me a Hanzi. Only character and decomposition fields were retained. No graphical stroke data, dictionary definitions or external-service calls are used. Attribution, original source hash, and applicable license texts are shipped alongside it and linked from the UI.

@@ -1358,3 +1358,85 @@ test("radical review recovers from missing data and explains zero matches", asyn
     page.getByText("No indexed characters for this radical", { exact: false }),
   ).toBeVisible();
 });
+
+test("radical example audio queues word-and-character phrases and cancels on selection", async ({
+  page,
+}) => {
+  const words = ["果汁", "汇率", "汉语"].map((chinese, i) => ({
+    ...content.words[0],
+    id: `audio-radical-${i}`,
+    chinese,
+    priority: "3",
+    is_adult: "0",
+  }));
+  await page.route("**/content.json", (route) =>
+    route.fulfill({ json: { words, characters: [], rules: [] } }),
+  );
+  await page.route("**/radicals.json", (route) =>
+    route.fulfill({
+      json: {
+        radicals: [
+          {
+            id: "三点水",
+            name: "三点水",
+            symbol: "氵",
+            pinyin: "sān diǎn shuǐ",
+            english: "water",
+            characters: ["汁", "汇", "汉"],
+          },
+          {
+            id: "木字旁",
+            name: "木字旁",
+            symbol: "木",
+            pinyin: "mù zì páng",
+            english: "wood",
+            characters: [],
+          },
+        ],
+      },
+    }),
+  );
+  await page.reload();
+  await page.getByRole("button", { name: /Review/ }).click();
+  await page.getByRole("button", { name: "By radical", exact: true }).click();
+  await page.getByRole("button", { name: "Listen to examples (3)" }).click();
+  await expect
+    .poll(() =>
+      page.evaluate(() => (window as unknown as { spoken: string[] }).spoken),
+    )
+    .toEqual(["果汁的汁"]);
+  await page.evaluate(() =>
+    (window as unknown as { finishSpeech: () => void }).finishSpeech(),
+  );
+  await expect
+    .poll(() =>
+      page.evaluate(() => (window as unknown as { spoken: string[] }).spoken),
+    )
+    .toEqual(["果汁的汁", "汇率的汇"]);
+  await page.evaluate(() =>
+    (window as unknown as { finishSpeech: () => void }).finishSpeech(),
+  );
+  await expect
+    .poll(() =>
+      page.evaluate(() => (window as unknown as { spoken: string[] }).spoken),
+    )
+    .toEqual(["果汁的汁", "汇率的汇", "汉语的汉"]);
+  await page.getByRole("button", { name: "Listen to examples (3)" }).click();
+  await page
+    .getByRole("combobox", { name: "Radical name", exact: true })
+    .selectOption("木字旁");
+  await expect(
+    page.getByRole("button", { name: "Listen to examples (0)" }),
+  ).toBeDisabled();
+  await page.evaluate(() =>
+    (window as unknown as { finishSpeech: () => void }).finishSpeech(),
+  );
+  await expect(
+    page.getByText("Listening in Mandarin", { exact: true }),
+  ).not.toBeVisible();
+  expect(
+    await page.evaluate(
+      () => (window as unknown as { spoken: string[] }).spoken,
+    ),
+  ).toEqual(["果汁的汁", "汇率的汇", "汉语的汉", "果汁的汁"]);
+});

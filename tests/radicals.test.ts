@@ -58,3 +58,27 @@ test("vocabulary grouping deduplicates characters and IDs and respects adult fil
   assert.equal(groups.has("a"), false);
   assert.equal(characterWords(words, false).get("海")?.length, 1);
 });
+
+test("listening chooses one short word per character and skips unsuitable examples", async () => {
+  const { radicalAudioExamples } = await import("../lib/radicals");
+  const words: Record<string, string>[] = [
+    { id: "single", chinese: "汁", priority: "1" },
+    {
+      id: "long",
+      chinese: "我很喜欢喝果汁",
+      part_of_speech: "sentence",
+      priority: "1",
+    },
+    { id: "juice", chinese: "果汁", priority: "2" },
+    { id: "tomato", chinese: "番茄汁", priority: "1" },
+    { id: "exchange", chinese: "汇率", priority: "3" },
+    { id: "filtered", chinese: "汁液", priority: "1", is_adult: "1" },
+    { id: "no-word", chinese: "汉", priority: "1" },
+  ];
+  const groups = characterWords(words, true);
+  assert.deepEqual(
+    radicalAudioExamples(["汁", "汇", "汁", "汉"], groups).map((e) => e.text),
+    ["果汁的汁", "汇率的汇"],
+  );
+  assert.equal(groups.get("汁")?.[0].id, "single");
+});

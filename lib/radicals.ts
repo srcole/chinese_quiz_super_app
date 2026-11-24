@@ -129,3 +129,32 @@ export function characterWords(
   }
   return result;
 }
+
+/** Choose one short vocabulary example per character, without reading sentences. */
+export function radicalAudioExamples(
+  characters: string[],
+  groups: Map<string, Word[]>,
+): { character: string; word: Word; text: string }[] {
+  const result: { character: string; word: Word; text: string }[] = [];
+  for (const character of new Set(characters)) {
+    const candidates = (groups.get(character) || []).filter(
+      (word) =>
+        word.part_of_speech !== "sentence" &&
+        /^\p{Script=Han}{2,4}$/u.test(word.chinese) &&
+        word.chinese.includes(character),
+    );
+    const priority = (word: Word) => Number(word.priority) || 99;
+    candidates.sort(
+      (a, b) =>
+        Number(a.part_of_speech === "proper_noun") -
+          Number(b.part_of_speech === "proper_noun") ||
+        Array.from(a.chinese).length - Array.from(b.chinese).length ||
+        priority(a) - priority(b) ||
+        a.id.localeCompare(b.id),
+    );
+    const word = candidates[0];
+    if (word)
+      result.push({ character, word, text: `${word.chinese}的${character}` });
+  }
+  return result;
+}

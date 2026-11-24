@@ -5,6 +5,7 @@ import type { PriorityChange } from "@/lib/priorities";
 import {
   characterWords,
   radicalMatchesSearch,
+  radicalAudioExamples,
   type RadicalCatalog,
 } from "@/lib/radicals";
 import PriorityControls from "./priority-controls";
@@ -17,6 +18,7 @@ type Props = {
   status: string;
   save: (word: Word, value: number | null) => boolean;
   play: (text: string) => void;
+  playExamples: (texts: string[]) => void;
   stop: () => void;
 };
 function CharacterCard({
@@ -118,6 +120,10 @@ export default function RadicalReview(props: Props) {
     () => radical?.characters.filter((c) => groups.has(c)) || [],
     [radical, groups],
   );
+  const examples = useMemo(
+    () => radicalAudioExamples(characters, groups),
+    [characters, groups],
+  );
   if (error)
     return (
       <section className="panel">
@@ -211,6 +217,29 @@ export default function RadicalReview(props: Props) {
             <p role="status">
               {characters.length} matching characters in your vocabulary
             </p>
+            <button
+              type="button"
+              className="primary"
+              disabled={!examples.length}
+              onClick={() =>
+                props.playExamples(examples.map((example) => example.text))
+              }
+            >
+              ◖)) Listen to examples ({examples.length})
+            </button>
+            <p className="helper">
+              One short word per character, read as “果汁的汁”. Characters
+              without a suitable word are skipped. Use the audio controls to
+              pause or stop.
+            </p>
+            {!!examples.length && (
+              <details>
+                <summary>Preview listening examples</summary>
+                <p lang="zh-Hans">
+                  {examples.map((example) => example.text).join("，")}。
+                </p>
+              </details>
+            )}
             <p className="helper">
               Open a character to see words, their pronunciations and meanings.
             </p>
