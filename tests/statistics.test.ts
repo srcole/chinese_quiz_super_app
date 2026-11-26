@@ -222,3 +222,40 @@ test("next-attempt accuracy handles no history, accepted corrections and isolate
     ],
   );
 });
+
+test("history series retain chronological qualifying attempts across bucket boundaries", () => {
+  const rows = [false, false, false, false, true, true, false, true].map(
+    (correct, i) => attempt(i + 1, "word:1", correct),
+  );
+  const stats = summarize(
+    itemsForMode(content, "vocabulary"),
+    rows.reverse(),
+    "vocabulary",
+    "en-zh",
+    2,
+  );
+  assert.deepEqual(
+    stats.afterHistory.map((b) => b.rows.map((a) => a.id)),
+    [
+      ["6", "7"],
+      ["2", "3", "4", "5", "8"],
+      ["3", "4", "5"],
+      ["4", "5"],
+    ],
+  );
+  for (const cohort of stats.afterHistory) {
+    assert.equal(cohort.rows.length, cohort.total);
+    assert.equal(cohort.rows.filter((a) => a.correct).length, cohort.correct);
+  }
+  assert.deepEqual(
+    accuracyBuckets(stats.afterHistory[1].rows, "attempts", 2).map((b) => [
+      b.count,
+      b.accuracy,
+    ]),
+    [
+      [2, 0],
+      [2, 50],
+      [1, 100],
+    ],
+  );
+});

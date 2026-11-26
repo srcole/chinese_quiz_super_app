@@ -1,8 +1,9 @@
 "use client";
 import { useMemo, useState } from "react";
 import { Attempt, Content, Mode, modeNames } from "@/lib/study";
-import { accuracyBuckets, itemsForMode, summarize } from "@/lib/statistics";
+import { itemsForMode, summarize } from "@/lib/statistics";
 import TraditionalText from "./traditional-text";
+import AccuracySeries from "./accuracy-series";
 import type { AudioItem } from "@/lib/use-audio";
 export default function ProgressPanel({
   content,
@@ -19,13 +20,10 @@ export default function ProgressPanel({
 }) {
   const [mode, setMode] = useState<Mode>("vocabulary"),
     [direction, setDirection] = useState("en-zh"),
-    [priority, setPriority] = useState("6"),
+    [priority, setPriority] = useState("5"),
     [x, setX] = useState(2),
     [incorrectX, setIncorrectX] = useState(1),
-    [bucketMode, setBucketMode] = useState<
-      "attempts" | "day" | "week" | "month"
-    >("attempts"),
-    [bucketSize, setBucketSize] = useState(50),
+    [view, setView] = useState<"summary" | "series">("summary"),
     [result, setResult] = useState("all"),
     [details, setDetails] = useState(false),
     [includeMultipleChoice, setIncludeMultipleChoice] = useState(false),
@@ -54,10 +52,6 @@ export default function ProgressPanel({
         includeMultipleChoice,
       ),
     [items, attempts, mode, dir, x, incorrectX, includeMultipleChoice],
-  );
-  const buckets = useMemo(
-    () => accuracyBuckets(stats.rows, bucketMode, bucketSize),
-    [stats.rows, bucketMode, bucketSize],
   );
   const lookup = new Map(items.map((i) => [i.id, i]));
   const rows = [...stats.rows]
@@ -123,10 +117,33 @@ export default function ProgressPanel({
           </p>
         </div>
       </div>
+      <div className="review-tabs" aria-label="Progress views">
+        {(["summary", "series"] as const).map((tab) => (
+          <button
+            key={tab}
+            aria-pressed={view === tab}
+            className={view === tab ? "selected" : ""}
+            onClick={() => {
+              stop();
+              setView(tab);
+              setDetails(false);
+            }}
+          >
+            {tab === "summary" ? "Overview" : "Time series"}
+          </button>
+        ))}
+      </div>
       <section className="panel">
         <div className="section-line">
-          <h2>{details ? "Detailed statistics" : "Your progress"}</h2>
+          <h2>
+            {details
+              ? "Detailed statistics"
+              : view === "series"
+                ? "Time series filters"
+                : "Your progress"}
+          </h2>
           <button
+            hidden={view === "series"}
             onClick={() => {
               stop();
               setDetails(!details);
@@ -234,7 +251,29 @@ export default function ProgressPanel({
           attempted. Tone totals include all valid word lengths.
         </p>
       </section>
-      {details ? (
+      {view === "series" ? (
+        <>
+          <p className="helper">
+            Each history series measures the next answer after the specified
+            prior history. First attempts are excluded; consecutive-miss groups
+            overlap. History is evaluated before bucketing and continues across
+            bucket boundaries.
+          </p>
+          <AccuracySeries
+            title="Accuracy over time"
+            rows={stats.rows}
+            defaultSize={500}
+          />
+          {stats.afterHistory.map((bucket, index) => (
+            <AccuracySeries
+              key={bucket.minimumMisses}
+              title={`Accuracy over time · ${bucket.label}`}
+              rows={bucket.rows}
+              defaultSize={[100, 50, 5, 5][index]}
+            />
+          ))}
+        </>
+      ) : details ? (
         <section className="panel">
           <p>
             Every quiz and direction, broken down by exact priority. “All”
@@ -356,127 +395,6 @@ export default function ProgressPanel({
                 </div>
               ))}
             </div>
-          </section>
-          <section className="panel">
-            <h2>Accuracy over time</h2>
-            <div className="field-grid">
-              <label className="field">
-                <span>Group accuracy by</span>
-                <select
-                  value={bucketMode}
-                  onChange={(e) =>
-                    setBucketMode(e.target.value as typeof bucketMode)
-                  }
-                >
-                  <option value="attempts">Chunks of attempts</option>
-                  <option value="day">Day</option>
-                  <option value="week">Week</option>
-                  <option value="month">Month</option>
-                </select>
-              </label>
-              {bucketMode === "attempts" && (
-                <label className="field">
-                  <span>Attempts per bucket</span>
-                  <input
-                    type="number"
-                    min="1"
-                    value={bucketSize}
-                    onChange={(e) =>
-                      setBucketSize(
-                        Math.max(1, Math.floor(Number(e.target.value)) || 1),
-                      )
-                    }
-                  />
-                </label>
-              )}
-            </div>
-            <p className="helper">
-              Uses the quiz, direction, and priority filters above. Chunks start
-              with your oldest matching attempt; the final chunk may be partial.
-              Dates use UTC; weeks start Monday. Empty periods are omitted.
-            </p>
-            {!buckets.length ? (
-              <p>No attempts yet.</p>
-            ) : (
-              <>
-                <div className="accuracy-chart">
-                  <svg
-                    viewBox={`0 0 ${Math.max(600, buckets.length * 28 + 60)} 230`}
-                    role="img"
-                    aria-label="Accuracy by bucket, from zero to one hundred percent"
-                    style={{
-                      minWidth: Math.max(600, buckets.length * 28 + 60),
-                    }}
-                  >
-                    {[0, 50, 100].map((n) => (
-                      <g key={n}>
-                        <text x="0" y={205 - n * 1.8}>
-                          {n}%
-                        </text>
-                        <line
-                          x1="40"
-                          x2={Math.max(600, buckets.length * 28 + 60)}
-                          y1={200 - n * 1.8}
-                          y2={200 - n * 1.8}
-                          stroke="currentColor"
-                          opacity="0.15"
-                        />
-                      </g>
-                    ))}
-                    {buckets.map((b, i) => (
-                      <rect
-                        key={b.label}
-                        x={
-                          45 +
-                          i *
-                            ((Math.max(600, buckets.length * 28 + 60) - 55) /
-                              buckets.length)
-                        }
-                        y={200 - b.accuracy * 1.8}
-                        width={Math.max(
-                          2,
-                          (Math.max(600, buckets.length * 28 + 60) - 55) /
-                            buckets.length -
-                            5,
-                        )}
-                        height={Math.max(1, b.accuracy * 1.8)}
-                        fill="var(--accent, #26765c)"
-                      >
-                        <title>
-                          {b.label}: {b.accuracy}% · {b.count} attempts
-                        </title>
-                      </rect>
-                    ))}
-                  </svg>
-                </div>
-                <p className="helper">
-                  {buckets[0].label} → {buckets.at(-1)!.label} · left to right
-                </p>
-                <details>
-                  <summary>View accuracy data</summary>
-                  <div className="stats-table">
-                    <table>
-                      <thead>
-                        <tr>
-                          <th>Bucket</th>
-                          <th>Attempts</th>
-                          <th>Accuracy</th>
-                        </tr>
-                      </thead>
-                      <tbody>
-                        {buckets.map((b) => (
-                          <tr key={b.label}>
-                            <td>{b.label}</td>
-                            <td>{b.count}</td>
-                            <td>{b.accuracy}%</td>
-                          </tr>
-                        ))}
-                      </tbody>
-                    </table>
-                  </div>
-                </details>
-              </>
-            )}
           </section>
           <section className="panel">
             <div className="section-line">

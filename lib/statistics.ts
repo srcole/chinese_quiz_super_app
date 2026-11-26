@@ -77,12 +77,19 @@ export function summarize(
     );
   const misses = new Map<string, number>();
   const afterHistory = [
-    { label: "Previously correct", minimumMisses: 0, correct: 0, total: 0 },
+    {
+      label: "Previously correct",
+      minimumMisses: 0,
+      correct: 0,
+      total: 0,
+      rows: [] as Attempt[],
+    },
     ...[1, 2, 3].map((n) => ({
       label: `Previous ${n} ${n === 1 ? "answer" : "answers"} incorrect`,
       minimumMisses: n,
       correct: 0,
       total: 0,
+      rows: [] as Attempt[],
     })),
   ];
   for (const a of rows) {
@@ -95,6 +102,7 @@ export function summarize(
             : previousMisses >= bucket.minimumMisses
         ) {
           bucket.total++;
+          bucket.rows.push(a);
           if (a.correct) bucket.correct++;
         }
       }

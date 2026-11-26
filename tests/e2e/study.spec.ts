@@ -351,10 +351,10 @@ test("progress defaults, denominators, incorrect audio and detailed statistics",
   await page.getByRole("button", { name: /Progress/ }).click();
   await expect(page.getByLabel("Progress quiz type")).toHaveValue("vocabulary");
   await expect(page.getByLabel("Progress direction")).toHaveValue("en-zh");
-  await expect(page.getByLabel("Progress maximum priority")).toHaveValue("6");
+  await expect(page.getByLabel("Progress maximum priority")).toHaveValue("5");
   const total = content.words.filter(
     (w: Record<string, string>) =>
-      Number(w.priority) <= 6 && w.part_of_speech !== "idiom",
+      Number(w.priority) <= 5 && w.part_of_speech !== "idiom",
   ).length;
   await expect(page.locator(".stat-grid strong").nth(2)).toHaveText(
     `0 / ${total}`,
@@ -544,13 +544,53 @@ test("progress exposes recent accuracy, missed streaks, and chart controls", asy
   await expect(
     page.getByLabel("Incorrect streak target", { exact: true }),
   ).toHaveValue("1");
-  await expect(page.getByLabel("Attempts per bucket")).toHaveValue("50");
   await expect(
-    page.getByRole("img", { name: /Accuracy by bucket/ }),
-  ).toBeVisible();
-  await page.getByLabel("Group accuracy by").selectOption("week");
+    page.getByRole("heading", { name: "Accuracy over time", exact: true }),
+  ).toHaveCount(0);
+  await page.getByRole("button", { name: "Time series", exact: true }).click();
+  const overall = page.getByRole("region", {
+    name: "Accuracy over time",
+    exact: true,
+  });
+  const titles = [
+    "Accuracy over time",
+    "Accuracy over time · Previously correct",
+    "Accuracy over time · Previous 1 answer incorrect",
+    "Accuracy over time · Previous 2 answers incorrect",
+    "Accuracy over time · Previous 3 answers incorrect",
+  ];
+  for (const [i, title] of titles.entries()) {
+    const chart = page.getByRole("region", { name: title, exact: true });
+    await expect(chart).toBeVisible();
+    await expect(chart.getByLabel("Attempts per bucket")).toHaveValue(
+      String([500, 100, 50, 5, 5][i]),
+    );
+  }
+  await expect(overall.getByRole("img")).toBeVisible();
+  await overall.getByLabel("Group accuracy by").selectOption("week");
+  await expect(overall.getByRole("img")).toBeVisible();
+  const previousCorrect = page.getByRole("region", {
+    name: titles[1],
+    exact: true,
+  });
+  await previousCorrect.getByLabel("Attempts per bucket").fill("20");
   await expect(
-    page.getByRole("img", { name: /Accuracy by bucket/ }),
+    page
+      .getByRole("region", { name: titles[2], exact: true })
+      .getByLabel("Attempts per bucket"),
+  ).toHaveValue("50");
+  await expect(previousCorrect).toContainText("No attempts yet.");
+  expect(
+    await page.evaluate(
+      () => document.documentElement.scrollWidth <= window.innerWidth,
+    ),
+  ).toBe(true);
+  await page.getByRole("button", { name: "Overview", exact: true }).click();
+  await expect(
+    page.getByRole("heading", { name: "Accuracy over time", exact: true }),
+  ).toHaveCount(0);
+  await expect(
+    page.getByRole("heading", { name: "Accuracy after previous answers" }),
   ).toBeVisible();
 });
 
