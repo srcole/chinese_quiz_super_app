@@ -527,7 +527,7 @@ export default function Home() {
     if (list[0]) promptSpeech(list[0]);
     setTimeout(() => input.current?.focus(), 50);
   }
-  function feedbackSpeech(question: Question) {
+  function feedbackSpeech(question: Question, correct: boolean) {
     if (question.character)
       return [
         question.character.simp,
@@ -542,7 +542,7 @@ export default function Home() {
               .chinese || "",
         ),
       ];
-    if (question.mode === "sentences")
+    if (question.mode === "sentences" || correct)
       return [question.word!.sentence].filter(Boolean);
     return [question.word!.chinese, question.word!.sentence].filter(Boolean);
   }
@@ -579,7 +579,7 @@ export default function Home() {
     setSessionIds((ids) => [...ids, a.id]);
     if (autoAudio)
       audio.play(
-        feedbackSpeech(q).map((text) => ({ text, row: 0 })),
+        feedbackSpeech(q, a.correct).map((text) => ({ text, row: 0 })),
         { gap: q.mode === "tones" || q.mode === "characters" ? 0 : audio.gap },
       );
   }
@@ -1541,9 +1541,12 @@ export default function Home() {
                       </h2>
                       <button
                         className="quiet"
+                        disabled={!feedbackSpeech(q, submitted.correct).length}
                         onClick={() =>
                           audio.play(
-                            feedbackSpeech(q).map((text) => ({ text, row: 0 })),
+                            feedbackSpeech(q, submitted.correct).map(
+                              (text) => ({ text, row: 0 }),
+                            ),
                             {
                               gap:
                                 q.mode === "tones" || q.mode === "characters"

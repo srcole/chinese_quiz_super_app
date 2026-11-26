@@ -76,14 +76,43 @@ export function summarize(
         a.id.localeCompare(b.id),
     );
   const misses = new Map<string, number>();
-  for (const a of rows)
+  const afterHistory = [
+    { label: "Previously correct", minimumMisses: 0, correct: 0, total: 0 },
+    ...[1, 2, 3].map((n) => ({
+      label: `Previous ${n} ${n === 1 ? "answer" : "answers"} incorrect`,
+      minimumMisses: n,
+      correct: 0,
+      total: 0,
+    })),
+  ];
+  for (const a of rows) {
+    const previousMisses = misses.get(a.item_id);
+    if (previousMisses !== undefined) {
+      for (const bucket of afterHistory) {
+        if (
+          bucket.minimumMisses === 0
+            ? previousMisses === 0
+            : previousMisses >= bucket.minimumMisses
+        ) {
+          bucket.total++;
+          if (a.correct) bucket.correct++;
+        }
+      }
+    }
     misses.set(a.item_id, a.correct ? 0 : (misses.get(a.item_id) || 0) + 1);
+  }
   const recent = rows.slice(-100);
   const streaks = streakMap(rows);
   const practiced = new Set(rows.map((a) => a.item_id)).size;
   const correct = rows.filter((a) => a.correct).length;
   return {
     rows,
+    afterHistory: afterHistory.map((bucket) => ({
+      ...bucket,
+      accuracy: bucket.total
+        ? Math.round((bucket.correct / bucket.total) * 100)
+        : null,
+    })),
     recentCount: recent.length,
     recentAccuracy: recent.length
       ? Math.round(

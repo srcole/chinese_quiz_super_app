@@ -334,6 +334,30 @@ export default function ProgressPanel({
             </div>
           </div>
           <section className="panel">
+            <h2>Accuracy after previous answers</h2>
+            <p className="helper">
+              Accuracy on the next attempt, based on this item's preceding
+              answers in the selected quiz and direction. First attempts are
+              excluded. Incorrect groups overlap: three consecutive misses also
+              qualify for the one- and two-miss groups. Uses the selected
+              priority and multiple-choice filters.
+            </p>
+            <div className="stat-grid history-accuracy">
+              {stats.afterHistory.map((bucket) => (
+                <div key={bucket.label}>
+                  <span>{bucket.label}</span>
+                  <strong>
+                    {bucket.accuracy === null ? "—" : `${bucket.accuracy}%`}
+                  </strong>
+                  <small>
+                    {bucket.correct} correct / {bucket.total} subsequent
+                    attempts
+                  </small>
+                </div>
+              ))}
+            </div>
+          </section>
+          <section className="panel">
             <h2>Accuracy over time</h2>
             <div className="field-grid">
               <label className="field">

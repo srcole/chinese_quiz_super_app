@@ -89,7 +89,7 @@ test("all six quiz modes submit, override, and preserve history", async ({
   await expect(page.locator(".stat-grid strong").first()).toHaveText("1");
   await expect(page.locator(".stat-grid strong").nth(1)).toHaveText("100%");
 });
-test("dictionary tones grade correctly and feedback audio starts with word", async ({
+test("dictionary tones grade correctly and correct feedback reads only the sentence", async ({
   page,
 }) => {
   await page
@@ -113,7 +113,10 @@ test("dictionary tones grade correctly and feedback audio starts with word", asy
     () => (window as unknown as { spoken: string[] }).spoken,
   );
   expect(spoken[0]).toBe(chinese);
-  expect(spoken[1]).toBe(chinese);
+  expect(spoken).toEqual([
+    chinese,
+    ...(word.sentence && word.sentence !== "-" ? [word.sentence] : []),
+  ]);
 });
 test("review modes show appropriate content and mobile layout stays in viewport", async ({
   page,
@@ -1455,4 +1458,47 @@ test("radical example audio queues word-and-character phrases and cancels on sel
       () => (window as unknown as { spoken: string[] }).spoken,
     ),
   ).toEqual(["果汁的汁", "汇率的汇", "汉语的汉", "果汁的汁"]);
+});
+
+test("quiz feedback reads only the sentence when correct and word then sentence when wrong", async ({
+  page,
+}) => {
+  const word = {
+    ...content.words[0],
+    chinese: "河水",
+    english: "river water",
+    sentence: "河水很清。",
+    part_of_speech: "noun",
+    priority: "1",
+    is_adult: "0",
+  };
+  await page.route("**/content.json", (route) =>
+    route.fulfill({ json: { words: [word], characters: [], rules: [] } }),
+  );
+  for (const correct of [true, false]) {
+    await page.reload();
+    await page.getByLabel("Questions", { exact: true }).fill("1");
+    await page.getByRole("button", { name: "Start practicing" }).click();
+    await page
+      .locator(".question input")
+      .fill(correct ? word.chinese : "wrong");
+    await page.getByRole("button", { name: "Check answer" }).click();
+    const read = () =>
+      page.evaluate(() => (window as unknown as { spoken: string[] }).spoken);
+    await expect.poll(read).toEqual([correct ? word.sentence : word.chinese]);
+    if (!correct) {
+      await page.evaluate(() =>
+        (window as unknown as { finishSpeech: () => void }).finishSpeech(),
+      );
+      await expect.poll(read).toEqual([word.chinese, word.sentence]);
+    }
+    await page.getByRole("button", { name: "Replay feedback" }).click();
+    await expect
+      .poll(read)
+      .toEqual(
+        correct
+          ? [word.sentence, word.sentence]
+          : [word.chinese, word.sentence, word.chinese],
+      );
+  }
 });

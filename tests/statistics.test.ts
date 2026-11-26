@@ -160,3 +160,65 @@ test("statistics exclude multiple choice by default and include it on request", 
   assert.equal(included.accuracy, 67);
   assert.equal(included.missedTarget, 1);
 });
+
+test("next-attempt accuracy uses prior outcomes, overlapping miss streaks and chronological order", () => {
+  const rows = [false, false, false, false, true, true, false, true].map(
+    (correct, i) => attempt(i + 1, "word:1", correct),
+  );
+  rows.push(attempt(9, "word:2", true)); // First attempt: no prior history.
+  rows.push(attempt(10, "word:1", false, "zh-en"));
+  rows.push({ ...attempt(11, "word:1", false), mode: "idioms" });
+  rows.push({ ...attempt(12, "word:1", false), multiple_choice: true });
+  rows.push(attempt(13, "removed", true));
+  const stats = summarize(
+    itemsForMode(content, "vocabulary"),
+    rows.reverse(),
+    "vocabulary",
+    "en-zh",
+    2,
+  );
+  assert.deepEqual(
+    stats.afterHistory.map((b) => [b.correct, b.total, b.accuracy]),
+    [
+      [1, 2, 50],
+      [2, 5, 40],
+      [1, 3, 33],
+      [1, 2, 50],
+    ],
+  );
+  const included = summarize(
+    itemsForMode(content, "vocabulary"),
+    rows,
+    "vocabulary",
+    "en-zh",
+    2,
+    1,
+    true,
+  );
+  assert.equal(included.afterHistory[0].total, 3);
+});
+
+test("next-attempt accuracy handles no history, accepted corrections and isolated items", () => {
+  const items = itemsForMode(content, "vocabulary");
+  assert.ok(
+    summarize(items, [], "vocabulary", "en-zh", 2).afterHistory.every(
+      (b) => b.accuracy === null && b.total === 0,
+    ),
+  );
+  const rows = [
+    attempt(1, "word:1", false),
+    { ...attempt(2, "word:1", true), overridden: true },
+    attempt(3, "word:2", false),
+    attempt(4, "word:1", true),
+  ];
+  const stats = summarize(items, rows, "vocabulary", "en-zh", 2);
+  assert.deepEqual(
+    stats.afterHistory.map((b) => [b.correct, b.total]),
+    [
+      [1, 1],
+      [1, 1],
+      [0, 0],
+      [0, 0],
+    ],
+  );
+});
