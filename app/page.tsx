@@ -30,6 +30,7 @@ import { usePreference } from "@/lib/use-preference";
 import { useAudio } from "@/lib/use-audio";
 import TraditionalText from "./traditional-text";
 import ProgressPanel from "./progress-panel";
+import AnswerHistory from "./answer-history";
 import SentenceWriting from "./sentence-writing";
 import SentenceLibrary from "./sentence-library";
 import { useSentences } from "@/lib/use-sentences";
@@ -1568,6 +1569,10 @@ export default function Home() {
                     )}
                     {q.word && (
                       <>
+                        <AnswerHistory
+                          attempts={progress.attempts}
+                          current={submitted}
+                        />
                         <WordDetails
                           w={q.word}
                           feedback

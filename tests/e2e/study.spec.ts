@@ -597,6 +597,47 @@ test("progress exposes recent accuracy, missed streaks, and chart controls", asy
   ).toBeVisible();
 });
 
+test("feedback shows previous word attempts newest first with empty slots", async ({
+  page,
+}) => {
+  const word = { ...content.words[0], part_of_speech: "noun" };
+  await page.route("**/content.json", (route) =>
+    route.fulfill({ json: { words: [word], characters: [], rules: [] } }),
+  );
+  await page.evaluate((word) => {
+    const attempts = [
+      { correct: false, direction: "en-zh" },
+      { correct: true, direction: "en-zh" },
+      { correct: false, direction: "zh-en" },
+    ].map((result, i) => ({
+      ...result,
+      id: `history-${i}`,
+      item_id: `word:${word.id}`,
+      mode: "vocabulary",
+      answer: "test",
+      overridden: false,
+      created_at: `2026-01-0${i + 1}T00:00:00.000Z`,
+      updated_at: `2026-01-0${i + 1}T00:00:00.000Z`,
+    }));
+    localStorage.setItem("zili-attempts-v1:guest", JSON.stringify(attempts));
+  }, word);
+  await page.reload();
+  await page.getByLabel("Questions", { exact: true }).fill("1");
+  await page.getByRole("button", { name: "Start practicing" }).click();
+  await page.getByRole("button", { name: "Check answer" }).click();
+  const history = page.getByRole("list", { name: "Previous five attempts" });
+  await expect(history.getByRole("listitem")).toHaveCount(5);
+  await expect(history.getByRole("listitem").nth(0)).toHaveAttribute(
+    "aria-label",
+    "1 attempt ago: correct",
+  );
+  await expect(history.getByRole("listitem").nth(1)).toHaveAttribute(
+    "aria-label",
+    "2 attempts ago: incorrect",
+  );
+  await expect(history.locator(".history-unseen")).toHaveCount(3);
+});
+
 test("feedback places a larger breakdown immediately after the meaning", async ({
   page,
 }) => {

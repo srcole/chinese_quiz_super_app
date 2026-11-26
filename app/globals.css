@@ -1433,3 +1433,33 @@ summary::marker {
 .radical-listening-word > [lang] {
   font-size: 22px;
 }
+
+.answer-history ol {
+  display: flex;
+  gap: 8px;
+  list-style: none;
+  padding: 0;
+  margin: 8px 0 18px;
+}
+.answer-history li {
+  display: grid;
+  place-items: center;
+  width: 34px;
+  height: 34px;
+  border: 1px solid currentColor;
+  border-radius: 50%;
+  font-size: 21px;
+  font-weight: 700;
+}
+.history-correct {
+  color: #166534;
+  background: #dcfce7;
+}
+.history-incorrect {
+  color: #991b1b;
+  background: #fee2e2;
+}
+.history-unseen {
+  color: #666;
+  background: #eee;
+}
