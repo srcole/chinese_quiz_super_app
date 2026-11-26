@@ -1257,7 +1257,7 @@ summary::marker {
 }
 .accuracy-chart svg {
   width: 100%;
-  height: 230px;
+  height: 260px;
 }
 .accuracy-chart text {
   font-size: 12px;

@@ -19,6 +19,15 @@ export default function AccuracySeries({
     () => accuracyBuckets(rows, bucketMode, bucketSize),
     [rows, bucketMode, bucketSize],
   );
+  const chartWidth = Math.max(600, (buckets.length - 1) * 60 + 100);
+  const points = buckets.map((bucket, index) => ({
+    ...bucket,
+    x:
+      buckets.length === 1
+        ? chartWidth / 2
+        : 65 + index * ((chartWidth - 100) / (buckets.length - 1)),
+    y: 220 - bucket.accuracy * 1.8,
+  }));
   return (
     <section className="panel" aria-label={title}>
       <h2>{title}</h2>
@@ -63,51 +72,60 @@ export default function AccuracySeries({
         <>
           <div className="accuracy-chart">
             <svg
-              viewBox={`0 0 ${Math.max(600, buckets.length * 28 + 60)} 230`}
+              viewBox={`0 0 ${chartWidth} 260`}
               role="img"
-              aria-label={`${title}: Accuracy by bucket, from zero to one hundred percent`}
+              aria-label={`${title}: Accuracy by bucket line plot, from zero to one hundred percent`}
               style={{
-                minWidth: Math.max(600, buckets.length * 28 + 60),
+                minWidth: chartWidth,
               }}
             >
               {[0, 50, 100].map((n) => (
                 <g key={n}>
-                  <text x="0" y={205 - n * 1.8}>
+                  <text x="0" y={225 - n * 1.8}>
                     {n}%
                   </text>
                   <line
                     x1="40"
-                    x2={Math.max(600, buckets.length * 28 + 60)}
-                    y1={200 - n * 1.8}
-                    y2={200 - n * 1.8}
+                    x2={chartWidth - 15}
+                    y1={220 - n * 1.8}
+                    y2={220 - n * 1.8}
                     stroke="currentColor"
                     opacity="0.15"
                   />
                 </g>
               ))}
-              {buckets.map((b, i) => (
-                <rect
-                  key={b.label}
-                  x={
-                    45 +
-                    i *
-                      ((Math.max(600, buckets.length * 28 + 60) - 55) /
-                        buckets.length)
-                  }
-                  y={200 - b.accuracy * 1.8}
-                  width={Math.max(
-                    2,
-                    (Math.max(600, buckets.length * 28 + 60) - 55) /
-                      buckets.length -
-                      5,
-                  )}
-                  height={Math.max(1, b.accuracy * 1.8)}
-                  fill="var(--accent, #26765c)"
-                >
-                  <title>
-                    {b.label}: {b.accuracy}% · {b.count} attempts
-                  </title>
-                </rect>
+              {points.length > 1 && (
+                <polyline
+                  points={points
+                    .map((point) => `${point.x},${point.y}`)
+                    .join(" ")}
+                  fill="none"
+                  stroke="var(--accent, #26765c)"
+                  strokeWidth="2"
+                  strokeLinejoin="round"
+                />
+              )}
+              {points.map((point) => (
+                <g key={point.label}>
+                  <circle
+                    cx={point.x}
+                    cy={point.y}
+                    r="4"
+                    fill="var(--accent, #26765c)"
+                  >
+                    <title>
+                      {point.label}: {point.accuracy}% · {point.count} attempts
+                    </title>
+                  </circle>
+                  <text
+                    className="accuracy-point-label"
+                    x={point.x}
+                    y={point.y - 12}
+                    textAnchor="middle"
+                  >
+                    {point.accuracy}%
+                  </text>
+                </g>
               ))}
             </svg>
           </div>

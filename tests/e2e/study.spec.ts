@@ -567,6 +567,9 @@ test("progress exposes recent accuracy, missed streaks, and chart controls", asy
     );
   }
   await expect(overall.getByRole("img")).toBeVisible();
+  await expect(overall.locator("svg circle")).toHaveCount(1);
+  await expect(overall.locator(".accuracy-point-label")).toHaveText("0%");
+  await expect(overall.locator("svg rect")).toHaveCount(0);
   await overall.getByLabel("Group accuracy by").selectOption("week");
   await expect(overall.getByRole("img")).toBeVisible();
   const previousCorrect = page.getByRole("region", {
