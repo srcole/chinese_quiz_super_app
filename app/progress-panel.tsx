@@ -4,6 +4,7 @@ import { Attempt, Content, Mode, modeNames } from "@/lib/study";
 import { itemsForMode, summarize } from "@/lib/statistics";
 import TraditionalText from "./traditional-text";
 import AccuracySeries from "./accuracy-series";
+import PracticeSeries from "./practice-series";
 import type { AudioItem } from "@/lib/use-audio";
 export default function ProgressPanel({
   content,
@@ -259,6 +260,10 @@ export default function ProgressPanel({
             overlap. History is evaluated before bucketing and continues across
             bucket boundaries.
           </p>
+          <PracticeSeries
+            rows={stats.rows}
+            wordMode={mode !== "grammar" && mode !== "characters"}
+          />
           <AccuracySeries
             title="Accuracy over time"
             rows={stats.rows}

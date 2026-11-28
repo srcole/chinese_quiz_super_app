@@ -1,0 +1,8216 @@
+Chinese grammar example sentences
+
+grammar-001: Present descriptions
+Pattern: Subject + 很 + adjective
+
+grammar-001-01
+今天天气很好。
+jīn tiān tiān qì hěn hǎo.
+The weather is nice today.
+
+grammar-001-02
+这家饭店很安静。
+zhè jiā fàn diàn hěn ān jìng.
+This restaurant is quiet.
+
+grammar-001-03
+你的房间很干净。
+nǐ de fáng jiān hěn gān jìng.
+Your room is clean.
+
+grammar-001-04
+这道题很简单。
+zhè dào tí hěn jiǎn dān.
+This question is easy.
+
+grammar-001-05
+那条路很宽。
+nà tiáo lù hěn kuān.
+That road is wide.
+
+grammar-001-06
+这件衬衫很舒服。
+zhè jiàn chèn shān hěn shū fú.
+This shirt is comfortable.
+
+grammar-001-07
+他的回答很清楚。
+tā de huí dá hěn qīng chǔ.
+His answer is clear.
+
+grammar-001-08
+这个城市很漂亮。
+zhè ge chéng shì hěn piào liàng.
+This city is beautiful.
+
+grammar-001-09
+我的邻居很友好。
+wǒ de lín jū hěn yǒu hǎo.
+My neighbor is friendly.
+
+grammar-001-10
+这份工作很重要。
+zhè fèn gōng zuò hěn zhòng yào.
+This job is important.
+
+grammar-002: Possession with 的
+Pattern: Possessor + 的 + noun
+
+grammar-002-01
+这是我的护照。
+zhè shì wǒ de hù zhào.
+This is my passport.
+
+grammar-002-02
+那是老师的电脑。
+nà shì lǎo shī de diàn nǎo.
+That is the teacher's computer.
+
+grammar-002-03
+你的手机在桌子上。
+nǐ de shǒu jī zài zhuō zi shàng.
+Your phone is on the table.
+
+grammar-002-04
+她的自行车很新。
+tā de zì xíng chē hěn xīn.
+Her bicycle is new.
+
+grammar-002-05
+我朋友的公司很大。
+wǒ péng yǒu de gōng sī hěn dà.
+My friend's company is large.
+
+grammar-002-06
+这是我们学校的地图。
+zhè shì wǒ men xué xiào de dì tú.
+This is a map of our school.
+
+grammar-002-07
+他的办公室在三楼。
+tā de bàn gōng shì zài sān lóu.
+His office is on the third floor.
+
+grammar-002-08
+姐姐的生日是明天。
+jiě jiě de shēng rì shì míng tiān.
+My older sister's birthday is tomorrow.
+
+grammar-002-09
+这不是我的行李。
+zhè bù shì wǒ de xíng lǐ.
+This is not my luggage.
+
+grammar-002-10
+他们的孩子在北京工作。
+tā men de hái zi zài běi jīng gōng zuò.
+Their child works in Beijing.
+
+grammar-003: Describing nouns with 的
+Pattern: Description + 的 + noun
+
+grammar-003-01
+我喜欢你买的那本书。
+wǒ xǐ huān nǐ mǎi de nà běn shū.
+I like the book that you bought.
+
+grammar-003-02
+穿红衣服的人是我姐姐。
+chuān hóng yī fú de rén shì wǒ jiě jiě.
+The person wearing red clothes is my older sister.
+
+grammar-003-03
+这是我昨天拍的照片。
+zhè shì wǒ zuó tiān pāi de zhào piān.
+This is the photo that I took yesterday.
+
+grammar-003-04
+他做的饭很好吃。
+tā zuò de fàn hěn hǎo chī.
+The food that he cooks is delicious.
+
+grammar-003-05
+我要一杯不加糖的咖啡。
+wǒ yào yī bēi bù jiā táng de kā fēi.
+I want a cup of coffee without sugar.
+
+grammar-003-06
+住在楼上的女孩是学生。
+zhù zài lóu shàng de nǚ hái shì xué shēng.
+The girl who lives upstairs is a student.
+
+grammar-003-07
+我们需要一个会说中文的导游。
+wǒ men xū yào yī gè huì shuō zhōng wén de dǎo yóu.
+We need a tour guide who can speak Chinese.
+
+grammar-003-08
+你推荐的电影很有意思。
+nǐ tuī jiàn de diàn yǐng hěn yǒu yì si.
+The movie that you recommended is interesting.
+
+grammar-003-09
+这是开往上海的火车。
+zhè shì kāi wǎng shàng hǎi de huǒ chē.
+This is the train bound for Shanghai.
+
+grammar-003-10
+我找不到昨天收到的那封信。
+wǒ zhǎo bù dào zuó tiān shōu dào de nà fēng xìn.
+I cannot find the letter that I received yesterday.
+
+grammar-004: Location with 在
+Pattern: Subject + 在 + location
+
+grammar-004-01
+我的钥匙在包里。
+wǒ de yào shi zài bāo lǐ.
+My keys are in the bag.
+
+grammar-004-02
+老师在办公室。
+lǎo shī zài bàn gōng shì.
+The teacher is in the office.
+
+grammar-004-03
+洗手间在二楼。
+xǐ shǒu jiān zài èr lóu.
+The restroom is on the second floor.
+
+grammar-004-04
+孩子们在公园里。
+hái zi men zài gōng yuán lǐ.
+The children are in the park.
+
+grammar-004-05
+你的眼镜在床上。
+nǐ de yǎn jìng zài chuáng shàng.
+Your glasses are on the bed.
+
+grammar-004-06
+银行在超市旁边。
+yín háng zài chāo shì páng biān.
+The bank is next to the supermarket.
+
+grammar-004-07
+我现在在地铁站。
+wǒ xiàn zài zài dì tiě zhàn.
+I am at the subway station now.
+
+grammar-004-08
+经理今天不在公司。
+jīng lǐ jīn tiān bù zài gōng sī.
+The manager is not at the company today.
+
+grammar-004-09
+那家书店在学校对面。
+nà jiā shū diàn zài xué xiào duì miàn.
+That bookstore is across from the school.
+
+grammar-004-10
+车站在医院后面。
+chē zhàn zài yī yuàn hòu miàn.
+The station is behind the hospital.
+
+grammar-005: Actions at a location
+Pattern: Subject + 在 + location + verb
+
+grammar-005-01
+我在图书馆看书。
+wǒ zài tú shū guǎn kàn shū.
+I read books at the library.
+
+grammar-005-02
+她在厨房做饭。
+tā zài chú fáng zuò fàn.
+She cooks in the kitchen.
+
+grammar-005-03
+他们在公园跑步。
+tā men zài gōng yuán pǎo bù.
+They run in the park.
+
+grammar-005-04
+我们在网上买票。
+wǒ men zài wǎng shàng mǎi piào.
+We buy tickets online.
+
+grammar-005-05
+他在北京学习中文。
+tā zài běi jīng xué xí zhōng wén.
+He studies Chinese in Beijing.
+
+grammar-005-06
+孩子们在院子里玩。
+hái zi men zài yuàn zi lǐ wán.
+The children play in the yard.
+
+grammar-005-07
+我在办公室吃午饭。
+wǒ zài bàn gōng shì chī wǔ fàn.
+I eat lunch in the office.
+
+grammar-005-08
+你可以在这里等我。
+nǐ kě yǐ zài zhè lǐ děng wǒ.
+You can wait for me here.
+
+grammar-005-09
+爸爸在阳台上喝茶。
+bà bà zài yáng tái shàng hē chá.
+Dad drinks tea on the balcony.
+
+grammar-005-10
+她在机场工作。
+tā zài jī chǎng gōng zuò.
+She works at the airport.
+
+grammar-006: Existence with 有
+Pattern: Location + 有 + noun
+
+grammar-006-01
+桌子上有一本书。
+zhuō zi shàng yǒu yī běn shū.
+There is a book on the table.
+
+grammar-006-02
+附近有一家药店。
+fù jìn yǒu yī jiā yào diàn.
+There is a pharmacy nearby.
+
+grammar-006-03
+冰箱里有三个鸡蛋。
+bīng xiāng lǐ yǒu sān gè jī dàn.
+There are three eggs in the fridge.
+
+grammar-006-04
+楼下有一家咖啡馆。
+lóu xià yǒu yī jiā kā fēi guǎn.
+There is a cafe downstairs.
+
+grammar-006-05
+教室里没有人。
+jiào shì lǐ méi yǒu rén.
+There is nobody in the classroom.
+
+grammar-006-06
+公园里有一个湖。
+gōng yuán lǐ yǒu yī gè hú.
+There is a lake in the park.
+
+grammar-006-07
+房间里有两张床。
+fáng jiān lǐ yǒu liǎng zhāng chuáng.
+There are two beds in the room.
+
+grammar-006-08
+门口有一只猫。
+mén kǒu yǒu yī zhī māo.
+There is a cat at the entrance.
+
+grammar-006-09
+这条街上没有银行。
+zhè tiáo jiē shàng méi yǒu yín háng.
+There is no bank on this street.
+
+grammar-006-10
+我的包里有一把伞。
+wǒ de bāo lǐ yǒu yī bǎ sǎn.
+There is an umbrella in my bag.
+
+grammar-007: Time before the verb
+Pattern: Subject + time + verb
+
+grammar-007-01
+我明天去上海。
+wǒ míng tiān qù shàng hǎi.
+I am going to Shanghai tomorrow.
+
+grammar-007-02
+她每天坐地铁上班。
+tā měi tiān zuò dì tiě shàng bān.
+She takes the subway to work every day.
+
+grammar-007-03
+我们下周搬家。
+wǒ men xià zhōu bān jiā.
+We are moving next week.
+
+grammar-007-04
+他晚上八点回家。
+tā wǎn shàng bā diǎn huí jiā.
+He comes home at eight in the evening.
+
+grammar-007-05
+我星期六有空。
+wǒ xīng qī liù yǒu kòng.
+I am free on Saturday.
+
+grammar-007-06
+会议下午两点开始。
+huì yì xià wǔ liǎng diǎn kāi shǐ.
+The meeting starts at two in the afternoon.
+
+grammar-007-07
+他们今年去中国旅行。
+tā men jīn nián qù zhōng guó lǚ xíng.
+They are traveling to China this year.
+
+grammar-007-08
+我早上七点起床。
+wǒ zǎo shàng qī diǎn qǐ chuáng.
+I get up at seven in the morning.
+
+grammar-007-09
+商店上午九点开门。
+shāng diàn shàng wǔ jiǔ diǎn kāi mén.
+The shop opens at nine in the morning.
+
+grammar-007-10
+我们周末一起做饭。
+wǒ men zhōu mò yī qǐ zuò fàn.
+We cook together on weekends.
+
+grammar-008: Negation with 不
+Pattern: Subject + 不 + verb/adjective
+
+grammar-008-01
+我不喝咖啡。
+wǒ bù hē kā fēi.
+I do not drink coffee.
+
+grammar-008-02
+他不喜欢下雨天。
+tā bù xǐ huān xià yǔ tiān.
+He does not like rainy days.
+
+grammar-008-03
+这件衣服不贵。
+zhè jiàn yī fú bù guì.
+This piece of clothing is not expensive.
+
+grammar-008-04
+她明天不来。
+tā míng tiān bù lái.
+She is not coming tomorrow.
+
+grammar-008-05
+我不认识那个人。
+wǒ bù rèn shí nà ge rén.
+I do not know that person.
+
+grammar-008-06
+这条路不安全。
+zhè tiáo lù bù ān quán.
+This road is not safe.
+
+grammar-008-07
+我们周末不上班。
+wǒ men zhōu mò bù shàng bān.
+We do not work on weekends.
+
+grammar-008-08
+弟弟不吃鱼。
+dì di bù chī yú.
+My younger brother does not eat fish.
+
+grammar-008-09
+我不同意你的看法。
+wǒ bù tóng yì nǐ de kàn fǎ.
+I do not agree with your view.
+
+grammar-008-10
+今天不冷。
+jīn tiān bù lěng.
+It is not cold today.
+
+grammar-009: Negation with 没
+Pattern: Subject + 没(有) + verb
+
+grammar-009-01
+我昨天没去公司。
+wǒ zuó tiān méi qù gōng sī.
+I did not go to the company yesterday.
+
+grammar-009-02
+她没吃早饭。
+tā méi chī zǎo fàn.
+She did not eat breakfast.
+
+grammar-009-03
+我们没买那辆车。
+wǒ men méi mǎi nà liàng chē.
+We did not buy that car.
+
+grammar-009-04
+他没告诉我地址。
+tā méi gào sù wǒ dì zhǐ.
+He did not tell me the address.
+
+grammar-009-05
+我没收到你的邮件。
+wǒ méi shōu dào nǐ de yóu jiàn.
+I did not receive your email.
+
+grammar-009-06
+昨天没下雨。
+zuó tiān méi xià yǔ.
+It did not rain yesterday.
+
+grammar-009-07
+他们没参加会议。
+tā men méi cān jiā huì yì.
+They did not attend the meeting.
+
+grammar-009-08
+我没带现金。
+wǒ méi dài xiàn jīn.
+I did not bring cash.
+
+grammar-009-09
+她没听见电话响。
+tā méi tīng jiàn diàn huà xiǎng.
+She did not hear the phone ring.
+
+grammar-009-10
+弟弟没做作业。
+dì di méi zuò zuò yè.
+My younger brother did not do his homework.
+
+grammar-010: Yes-no questions with 吗
+Pattern: Statement + 吗？
+
+grammar-010-01
+你喜欢这本书吗？
+nǐ xǐ huān zhè běn shū ma?
+Do you like this book?
+
+grammar-010-02
+他是你的同事吗？
+tā shì nǐ de tóng shì ma?
+Is he your colleague?
+
+grammar-010-03
+你明天有时间吗？
+nǐ míng tiān yǒu shí jiān ma?
+Do you have time tomorrow?
+
+grammar-010-04
+这儿可以停车吗？
+zhè er kě yǐ tíng chē ma?
+Can we park here?
+
+grammar-010-05
+你吃过北京烤鸭吗？
+nǐ chī guò běi jīng kǎo yā ma?
+Have you ever eaten Beijing roast duck?
+
+grammar-010-06
+她已经到家了吗？
+tā yǐ jīng dào jiā le ma?
+Has she arrived home already?
+
+grammar-010-07
+这个座位有人吗？
+zhè ge zuò wèi yǒu rén ma?
+Is this seat taken?
+
+grammar-010-08
+你需要帮助吗？
+nǐ xū yào bāng zhù ma?
+Do you need help?
+
+grammar-010-09
+外面还在下雨吗？
+wài miàn hái zài xià yǔ ma?
+Is it still raining outside?
+
+grammar-010-10
+你会用筷子吗？
+nǐ huì yòng kuài zi ma?
+Can you use chopsticks?
+
+grammar-011: A-not-A questions
+Pattern: Verb + 不/没 + verb
+
+grammar-011-01
+你去不去？
+nǐ qù bù qù?
+Are you going or not?
+
+grammar-011-02
+这件衣服贵不贵？
+zhè jiàn yī fú guì bù guì?
+Is this piece of clothing expensive or not?
+
+grammar-011-03
+你有没有护照？
+nǐ yǒu méi yǒu hù zhào?
+Do you have a passport or not?
+
+grammar-011-04
+他是不是医生？
+tā shì bù shì yī shēng?
+Is he a doctor or not?
+
+grammar-011-05
+你会不会游泳？
+nǐ huì bù huì yóu yǒng?
+Can you swim or not?
+
+grammar-011-06
+我们要不要打车？
+wǒ men yào bù yào dǎ chē?
+Should we take a taxi or not?
+
+grammar-011-07
+这个问题难不难？
+zhè ge wèn tí nán bù nán?
+Is this question difficult or not?
+
+grammar-011-08
+你喜不喜欢这里？
+nǐ xǐ bù xǐ huān zhè lǐ?
+Do you like it here or not?
+
+grammar-011-09
+她能不能参加？
+tā néng bù néng cān jiā?
+Can she attend or not?
+
+grammar-011-10
+你累不累？
+nǐ lèi bù lèi?
+Are you tired or not?
+
+grammar-012: Question words in place
+Pattern: Subject + verb + 什么/谁/哪里
+
+grammar-012-01
+你想吃什么？
+nǐ xiǎng chī shén me?
+What would you like to eat?
+
+grammar-012-02
+谁给你打的电话？
+shuí gěi nǐ dǎ dī diàn huà?
+Who called you?
+
+grammar-012-03
+你住在哪里？
+nǐ zhù zài nǎ lǐ?
+Where do you live?
+
+grammar-012-04
+会议什么时候开始？
+huì yì shén me shí hòu kāi shǐ?
+When does the meeting start?
+
+grammar-012-05
+你为什么学中文？
+nǐ wèi shén me xué zhōng wén?
+Why do you study Chinese?
+
+grammar-012-06
+这件衣服多少钱？
+zhè jiàn yī fú duō shǎo qián?
+How much does this piece of clothing cost?
+
+grammar-012-07
+你怎么去机场？
+nǐ zěn me qù jī chǎng?
+How are you getting to the airport?
+
+grammar-012-08
+哪本书是你的？
+nǎ běn shū shì nǐ de?
+Which book is yours?
+
+grammar-012-09
+你和谁一起去？
+nǐ hé shuí yī qǐ qù?
+Who are you going with?
+
+grammar-012-10
+你每天睡几个小时？
+nǐ měi tiān shuì jǐ gè xiǎo shí?
+How many hours do you sleep every day?
+
+grammar-013: Choice questions with 还是
+Pattern: Option A + 还是 + option B？
+
+grammar-013-01
+你喝茶还是喝咖啡？
+nǐ hē chá hái shì hē kā fēi?
+Would you like tea or coffee?
+
+grammar-013-02
+我们坐公交车还是坐地铁？
+wǒ men zuò gōng jiāo chē hái shì zuò dì tiě?
+Shall we take the bus or the subway?
+
+grammar-013-03
+你今天去还是明天去？
+nǐ jīn tiān qù hái shì míng tiān qù?
+Are you going today or tomorrow?
+
+grammar-013-04
+你喜欢红色还是蓝色？
+nǐ xǐ huān hóng sè hái shì lán sè?
+Do you prefer red or blue?
+
+grammar-013-05
+他是老师还是医生？
+tā shì lǎo shī hái shì yī shēng?
+Is he a teacher or a doctor?
+
+grammar-013-06
+你想在家吃还是出去吃？
+nǐ xiǎng zài jiā chī hái shì chū qù chī?
+Do you want to eat at home or go out to eat?
+
+grammar-013-07
+你要大的还是小的？
+nǐ yào dà de hái shì xiǎo de?
+Do you want the big one or the small one?
+
+grammar-013-08
+我们先吃饭还是先买票？
+wǒ men xiān chī fàn hái shì xiān mǎi piào?
+Shall we eat first or buy tickets first?
+
+grammar-013-09
+你用现金还是信用卡？
+nǐ yòng xiàn jīn hái shì xìn yòng kǎ?
+Are you using cash or a credit card?
+
+grammar-013-10
+她住在北京还是上海？
+tā zhù zài běi jīng hái shì shàng hǎi?
+Does she live in Beijing or Shanghai?
+
+grammar-014: Numbers and measure words
+Pattern: Number + measure word + noun
+
+grammar-014-01
+我买了三本书。
+wǒ mǎi le sān běn shū.
+I bought three books.
+
+grammar-014-02
+桌子上有两杯茶。
+zhuō zi shàng yǒu liǎng bēi chá.
+There are two cups of tea on the table.
+
+grammar-014-03
+她有一只猫。
+tā yǒu yī zhī māo.
+She has one cat.
+
+grammar-014-04
+我们需要四把椅子。
+wǒ men xū yào sì bǎ yǐ zi.
+We need four chairs.
+
+grammar-014-05
+他写了两封信。
+tā xiě le liǎng fēng xìn.
+He wrote two letters.
+
+grammar-014-06
+请给我一张纸。
+qǐng gěi wǒ yī zhāng zhǐ.
+Please give me a sheet of paper.
+
+grammar-014-07
+我带了两件外套。
+wǒ dài le liǎng jiàn wài tào.
+I brought two coats.
+
+grammar-014-08
+这里有五辆自行车。
+zhè lǐ yǒu wǔ liàng zì xíng chē.
+There are five bicycles here.
+
+grammar-014-09
+我想买一双鞋。
+wǒ xiǎng mǎi yī shuāng xié.
+I want to buy a pair of shoes.
+
+grammar-014-10
+她点了三碗面条。
+tā diǎn le sān wǎn miàn tiáo.
+She ordered three bowls of noodles.
+
+grammar-015: Approximate numbers
+Pattern: Adjacent numbers / number + 几 or 多 + measure word
+
+grammar-015-01
+我每天喝两三杯茶。
+wǒ měi tiān hē liǎng sān bēi chá.
+I drink two or three cups of tea every day.
+
+grammar-015-02
+我们需要三四把椅子。
+wǒ men xū yào sān sì bǎ yǐ zi.
+We need three or four chairs.
+
+grammar-015-03
+他在这里住了五六年。
+tā zài zhè lǐ zhù le wǔ liù nián.
+He lived here for five or six years.
+
+grammar-015-04
+请等两三分钟。
+qǐng děng liǎng sān fēn zhōng.
+Please wait two or three minutes.
+
+grammar-015-05
+房间里有七八个人。
+fáng jiān lǐ yǒu qī bā gè rén.
+There are seven or eight people in the room.
+
+grammar-015-06
+我想休息三四天。
+wǒ xiǎng xiū xī sān sì tiān.
+I want to rest for three or four days.
+
+grammar-015-07
+她买了四五本书。
+tā mǎi le sì wǔ běn shū.
+She bought four or five books.
+
+grammar-015-08
+走到车站要十几分钟。
+zǒu dào chē zhàn yào shí jǐ fēn zhōng.
+It takes ten-odd minutes to walk to the station.
+
+grammar-015-09
+他已经三十多岁了。
+tā yǐ jīng sān shí duō suì le.
+He is already in his thirties.
+
+grammar-015-10
+这里有二十多个学生。
+zhè lǐ yǒu èr shí duō gè xué shēng.
+There are more than twenty students here.
+
+grammar-016: Completed actions with 了
+Pattern: Verb + 了 + object
+
+grammar-016-01
+我昨天买了一台电脑。
+wǒ zuó tiān mǎi le yī tái diàn nǎo.
+I bought a computer yesterday.
+
+grammar-016-02
+她喝了一杯水。
+tā hē le yī bēi shuǐ.
+She drank a glass of water.
+
+grammar-016-03
+我们看了一场电影。
+wǒ men kàn le yī cháng diàn yǐng.
+We watched a movie.
+
+grammar-016-04
+他写了一封邮件。
+tā xiě le yī fēng yóu jiàn.
+He wrote an email.
+
+grammar-016-05
+我洗了三件衣服。
+wǒ xǐ le sān jiàn yī fú.
+I washed three pieces of clothing.
+
+grammar-016-06
+妈妈做了一碗面条。
+mā mā zuò le yī wǎn miàn tiáo.
+Mom made a bowl of noodles.
+
+grammar-016-07
+他们参观了那个博物馆。
+tā men cān guān le nà ge bó wù guǎn.
+They visited that museum.
+
+grammar-016-08
+我给老师打了一个电话。
+wǒ gěi lǎo shī dǎ le yī gè diàn huà.
+I made a phone call to the teacher.
+
+grammar-016-09
+她回答了两个问题。
+tā huí dá le liǎng gè wèn tí.
+She answered two questions.
+
+grammar-016-10
+我们订了一个房间。
+wǒ men dìng le yī gè fáng jiān.
+We booked a room.
+
+grammar-017: Changed situations with 了
+Pattern: New situation + 了
+
+grammar-017-01
+天气暖和了。
+tiān qì nuǎn huo le.
+The weather has become warm.
+
+grammar-017-02
+我不喝酒了。
+wǒ bù hē jiǔ le.
+I no longer drink alcohol.
+
+grammar-017-03
+他现在是经理了。
+tā xiàn zài shì jīng lǐ le.
+He is a manager now.
+
+grammar-017-04
+孩子会走路了。
+hái zi huì zǒu lù le.
+The child can walk now.
+
+grammar-017-05
+我们有自己的房子了。
+wǒ men yǒu zì jǐ de fáng zi le.
+We have our own home now.
+
+grammar-017-06
+商店关门了。
+shāng diàn guān mén le.
+The shop is now closed.
+
+grammar-017-07
+雨停了。
+yǔ tíng le.
+The rain has stopped.
+
+grammar-017-08
+我懂你的意思了。
+wǒ dǒng nǐ de yì si le.
+I understand what you mean now.
+
+grammar-017-09
+她不生气了。
+tā bù shēng qì le.
+She is no longer angry.
+
+grammar-017-10
+这条路比以前宽了。
+zhè tiáo lù bǐ yǐ qián kuān le.
+This road has become wider than before.
+
+grammar-018: Experience with 过
+Pattern: Verb + 过 + object
+
+grammar-018-01
+我去过杭州。
+wǒ qù guò háng zhōu.
+I have been to Hangzhou.
+
+grammar-018-02
+她吃过这种水果。
+tā chī guò zhè zhǒng shuǐ guǒ.
+She has eaten this kind of fruit.
+
+grammar-018-03
+我们看过这部电影。
+wǒ men kàn guò zhè bù diàn yǐng.
+We have seen this movie.
+
+grammar-018-04
+他坐过飞机。
+tā zuò guò fēi jī.
+He has traveled by plane.
+
+grammar-018-05
+我没骑过马。
+wǒ méi qí guò mǎ.
+I have never ridden a horse.
+
+grammar-018-06
+你见过我的哥哥吗？
+nǐ jiàn guò wǒ de gē ge ma?
+Have you met my older brother?
+
+grammar-018-07
+她在医院工作过。
+tā zài yī yuàn gōng zuò guò.
+She has worked in a hospital.
+
+grammar-018-08
+我用过这个软件。
+wǒ yòng guò zhè ge ruǎn jiàn.
+I have used this software.
+
+grammar-018-09
+他们参加过比赛。
+tā men cān jiā guò bǐ sài.
+They have taken part in a competition.
+
+grammar-018-10
+我没听过这个故事。
+wǒ méi tīng guò zhè ge gù shì.
+I have never heard this story.
+
+grammar-019: Actions in progress with 正在
+Pattern: Subject + 正在 + verb
+
+grammar-019-01
+我正在做作业。
+wǒ zhèng zài zuò zuò yè.
+I am doing my homework right now.
+
+grammar-019-02
+她正在开会。
+tā zhèng zài kāi huì.
+She is in a meeting right now.
+
+grammar-019-03
+他们正在修路。
+tā men zhèng zài xiū lù.
+They are repairing the road right now.
+
+grammar-019-04
+爸爸正在洗车。
+bà bà zhèng zài xǐ chē.
+Dad is washing the car right now.
+
+grammar-019-05
+我们正在讨论这个问题。
+wǒ men zhèng zài tǎo lùn zhè ge wèn tí.
+We are discussing this issue right now.
+
+grammar-019-06
+医生正在检查病人。
+yī shēng zhèng zài jiǎn chá bìng rén.
+The doctor is examining the patient right now.
+
+grammar-019-07
+孩子正在睡觉。
+hái zi zhèng zài shuì jiào.
+The child is sleeping right now.
+
+grammar-019-08
+我正在找钥匙。
+wǒ zhèng zài zhǎo yào shi.
+I am looking for my keys right now.
+
+grammar-019-09
+服务员正在收拾桌子。
+fú wù yuán zhèng zài shōu shí zhuō zi.
+The server is clearing the table right now.
+
+grammar-019-10
+她正在准备明天的考试。
+tā zhèng zài zhǔn bèi míng tiān de kǎo shì.
+She is preparing for tomorrow's exam right now.
+
+grammar-020: Continuing states with 着
+Pattern: Verb + 着
+
+grammar-020-01
+门开着。
+mén kāi zhe.
+The door is open.
+
+grammar-020-02
+窗户关着。
+chuāng hù guān zhe.
+The window is closed.
+
+grammar-020-03
+他穿着一件蓝衬衫。
+tā chuān zhe yī jiàn lán chèn shān.
+He is wearing a blue shirt.
+
+grammar-020-04
+墙上挂着一张地图。
+qiáng shàng guà zhe yī zhāng dì tú.
+A map is hanging on the wall.
+
+grammar-020-05
+桌子上放着一本杂志。
+zhuō zi shàng fàng zhe yī běn zá zhì.
+A magazine is lying on the table.
+
+grammar-020-06
+她戴着一副眼镜。
+tā dài zhe yī fù yǎn jìng.
+She is wearing a pair of glasses.
+
+grammar-020-07
+灯亮着。
+dēng liàng zhe.
+The light is on.
+
+grammar-020-08
+门口站着一个男人。
+mén kǒu zhàn zhe yī gè nán rén.
+A man is standing at the entrance.
+
+grammar-020-09
+孩子手里拿着一个苹果。
+hái zi shǒu lǐ ná zhe yī gè píng guǒ.
+The child is holding an apple in their hand.
+
+grammar-020-10
+沙发上坐着两位客人。
+shā fā shàng zuò zhe liǎng wèi kè rén.
+Two guests are sitting on the sofa.
+
+grammar-021: Already with 已经
+Pattern: 已经 + verb/state + 了
+
+grammar-021-01
+我已经吃过饭了。
+wǒ yǐ jīng chī guò fàn le.
+I have already eaten.
+
+grammar-021-02
+她已经到机场了。
+tā yǐ jīng dào jī chǎng le.
+She has already arrived at the airport.
+
+grammar-021-03
+我们已经买好票了。
+wǒ men yǐ jīng mǎi hǎo piào le.
+We have already bought the tickets.
+
+grammar-021-04
+他已经知道这件事了。
+tā yǐ jīng zhī dào zhè jiàn shì le.
+He already knows about this matter.
+
+grammar-021-05
+电影已经开始了。
+diàn yǐng yǐ jīng kāi shǐ le.
+The movie has already started.
+
+grammar-021-06
+我已经做完作业了。
+wǒ yǐ jīng zuò wán zuò yè le.
+I have already finished my homework.
+
+grammar-021-07
+商店已经关门了。
+shāng diàn yǐ jīng guān mén le.
+The shop has already closed.
+
+grammar-021-08
+她已经等了一个小时了。
+tā yǐ jīng děng le yī gè xiǎo shí le.
+She has already been waiting for an hour.
+
+grammar-021-09
+我们已经决定了。
+wǒ men yǐ jīng jué dìng le.
+We have already decided.
+
+grammar-021-10
+水已经凉了。
+shuǐ yǐ jīng liáng le.
+The water has already cooled down.
+
+grammar-022: Not yet with 还没
+Pattern: 还没(有) + verb
+
+grammar-022-01
+我还没吃午饭。
+wǒ hái méi chī wǔ fàn.
+I have not eaten lunch yet.
+
+grammar-022-02
+他还没回来。
+tā hái méi huí lái.
+He has not come back yet.
+
+grammar-022-03
+我们还没决定。
+wǒ men hái méi jué dìng.
+We have not decided yet.
+
+grammar-022-04
+她还没看那封邮件。
+tā hái méi kàn nà fēng yóu jiàn.
+She has not read that email yet.
+
+grammar-022-05
+火车还没到。
+huǒ chē hái méi dào.
+The train has not arrived yet.
+
+grammar-022-06
+我还没找到工作。
+wǒ hái méi zhǎo dào gōng zuò.
+I have not found a job yet.
+
+grammar-022-07
+孩子还没起床。
+hái zi hái méi qǐ chuáng.
+The child has not got up yet.
+
+grammar-022-08
+他们还没结婚。
+tā men hái méi jié hūn.
+They have not got married yet.
+
+grammar-022-09
+我还没想好。
+wǒ hái méi xiǎng hǎo.
+I have not made up my mind yet.
+
+grammar-022-10
+饭还没做好。
+fàn hái méi zuò hǎo.
+The meal is not ready yet.
+
+grammar-023: Imminent events with 快要…了
+Pattern: 快要 + verb + 了
+
+grammar-023-01
+快要下雨了。
+kuài yào xià yǔ le.
+It is about to rain.
+
+grammar-023-02
+电影快要开始了。
+diàn yǐng kuài yào kāi shǐ le.
+The movie is about to start.
+
+grammar-023-03
+我们快要放假了。
+wǒ men kuài yào fàng jià le.
+We are about to start our vacation.
+
+grammar-023-04
+火车快要进站了。
+huǒ chē kuài yào jìn zhàn le.
+The train is about to pull into the station.
+
+grammar-023-05
+商店快要关门了。
+shāng diàn kuài yào guān mén le.
+The shop is about to close.
+
+grammar-023-06
+我快要毕业了。
+wǒ kuài yào bì yè le.
+I am about to graduate.
+
+grammar-023-07
+她快要生孩子了。
+tā kuài yào shēng hái zi le.
+She is about to have a baby.
+
+grammar-023-08
+比赛快要结束了。
+bǐ sài kuài yào jié shù le.
+The competition is about to end.
+
+grammar-023-09
+天快要黑了。
+tiān kuài yào hēi le.
+It is about to get dark.
+
+grammar-023-10
+我们快要到家了。
+wǒ men kuài yào dào jiā le.
+We are about to get home.
+
+grammar-024: Duration after the verb
+Pattern: Verb + 了 + duration
+
+grammar-024-01
+我昨天睡了八个小时。
+wǒ zuó tiān shuì le bā gè xiǎo shí.
+I slept for eight hours yesterday.
+
+grammar-024-02
+她在北京住了三年。
+tā zài běi jīng zhù le sān nián.
+She lived in Beijing for three years.
+
+grammar-024-03
+我们等了二十分钟。
+wǒ men děng le èr shí fēn zhōng.
+We waited for twenty minutes.
+
+grammar-024-04
+他昨天工作了十个小时。
+tā zuó tiān gōng zuò le shí gè xiǎo shí.
+He worked for ten hours yesterday.
+
+grammar-024-05
+我学了两年中文。
+wǒ xué le liǎng nián zhōng wén.
+I studied Chinese for two years.
+
+grammar-024-06
+孩子们玩了一个下午。
+hái zi men wán le yī gè xià wǔ.
+The children played for an entire afternoon.
+
+grammar-024-07
+我们聊了半个小时。
+wǒ men liáo le bàn gè xiǎo shí.
+We chatted for half an hour.
+
+grammar-024-08
+她休息了两天。
+tā xiū xī le liǎng tiān.
+She rested for two days.
+
+grammar-024-09
+我跑了四十分钟。
+wǒ pǎo le sì shí fēn zhōng.
+I ran for forty minutes.
+
+grammar-024-10
+他们讨论了一个小时。
+tā men tǎo lùn le yī gè xiǎo shí.
+They discussed it for an hour.
+
+grammar-025: Counting occurrences with 次
+Pattern: Verb + number + 次
+
+grammar-025-01
+我去过上海三次。
+wǒ qù guò shàng hǎi sān cì.
+I have been to Shanghai three times.
+
+grammar-025-02
+请再说一次。
+qǐng zài shuō yī cì.
+Please say it one more time.
+
+grammar-025-03
+她每天吃三次药。
+tā měi tiān chī sān cì yào.
+She takes medicine three times a day.
+
+grammar-025-04
+我们每周开一次会。
+wǒ men měi zhōu kāi yī cì huì.
+We have a meeting once a week.
+
+grammar-025-05
+他给我打了两次电话。
+tā gěi wǒ dǎ le liǎng cì diàn huà.
+He called me twice.
+
+grammar-025-06
+我试了五次。
+wǒ shì le wǔ cì.
+I tried five times.
+
+grammar-025-07
+这台电脑今天死机了两次。
+zhè tái diàn nǎo jīn tiān sǐ jī le liǎng cì.
+This computer crashed twice today.
+
+grammar-025-08
+我每年体检一次。
+wǒ měi nián tǐ jiǎn yī cì.
+I have a medical checkup once a year.
+
+grammar-025-09
+她问了我三次。
+tā wèn le wǒ sān cì.
+She asked me three times.
+
+grammar-025-10
+我们见过几次面。
+wǒ men jiàn guò jǐ cì miàn.
+We have met a few times.
+
+grammar-026: Complete repetitions with 遍
+Pattern: Verb + number + 遍
+
+grammar-026-01
+请把课文读一遍。
+qǐng bǎ kè wén dú yī biàn.
+Please read the text all the way through once.
+
+grammar-026-02
+我看了两遍这部电影。
+wǒ kàn le liǎng biàn zhè bù diàn yǐng.
+I watched this movie all the way through twice.
+
+grammar-026-03
+她把地址写了三遍。
+tā bǎ dì zhǐ xiě le sān biàn.
+She wrote the address out three times.
+
+grammar-026-04
+请再检查一遍。
+qǐng zài jiǎn chá yī biàn.
+Please check everything through once more.
+
+grammar-026-05
+我听了五遍这段录音。
+wǒ tīng le wǔ biàn zhè duàn lù yīn.
+I listened to this recording all the way through five times.
+
+grammar-026-06
+老师把问题解释了一遍。
+lǎo shī bǎ wèn tí jiě shì le yī biàn.
+The teacher explained the whole question once.
+
+grammar-026-07
+他把名单看了一遍。
+tā bǎ míng dān kàn le yī biàn.
+He read through the list once.
+
+grammar-026-08
+我们把房间打扫了一遍。
+wǒ men bǎ fáng jiān dǎ sǎo le yī biàn.
+We cleaned the whole room once.
+
+grammar-026-09
+请把这个句子抄两遍。
+qǐng bǎ zhè ge jù zi chāo liǎng biàn.
+Please copy this sentence twice in full.
+
+grammar-026-10
+我把报告从头到尾读了三遍。
+wǒ bǎ bào gào cóng tóu dào wěi dú le sān biàn.
+I read the report from beginning to end three times.
+
+grammar-027: Again in the future with 再
+Pattern: 再 + verb
+
+grammar-027-01
+请再说一遍。
+qǐng zài shuō yī biàn.
+Please say it all the way through again.
+
+grammar-027-02
+我明天再来。
+wǒ míng tiān zài lái.
+I will come again tomorrow.
+
+grammar-027-03
+我们下次再讨论。
+wǒ men xià cì zài tǎo lùn.
+We will discuss it again next time.
+
+grammar-027-04
+请再给我一次机会。
+qǐng zài gěi wǒ yī cì jī huì.
+Please give me another chance.
+
+grammar-027-05
+这件事你再想想。
+zhè jiàn shì nǐ zài xiǎng xiǎng.
+Think about this matter some more.
+
+grammar-027-06
+我想再买一本书。
+wǒ xiǎng zài mǎi yī běn shū.
+I want to buy one more book.
+
+grammar-027-07
+休息一下再走吧。
+xiū xī yī xià zài zǒu ba.
+Rest a little, then leave.
+
+grammar-027-08
+请再等五分钟。
+qǐng zài děng wǔ fēn zhōng.
+Please wait another five minutes.
+
+grammar-027-09
+我们吃完饭再出发。
+wǒ men chī wán fàn zài chū fā.
+We will set off after we finish eating.
+
+grammar-027-10
+我不想再犯同样的错误。
+wǒ bù xiǎng zài fàn tóng yàng de cuò wù.
+I do not want to make the same mistake again.
+
+grammar-028: Recurrence with 又
+Pattern: 又 + verb/adjective
+
+grammar-028-01
+他又迟到了。
+tā yòu chí dào le.
+He is late again.
+
+grammar-028-02
+今天又下雨了。
+jīn tiān yòu xià yǔ le.
+It is raining again today.
+
+grammar-028-03
+我又忘了带钥匙。
+wǒ yòu wàng le dài yào shi.
+I forgot to bring my keys again.
+
+grammar-028-04
+她又换工作了。
+tā yòu huàn gōng zuò le.
+She has changed jobs again.
+
+grammar-028-05
+电脑又坏了。
+diàn nǎo yòu huài le.
+The computer has broken down again.
+
+grammar-028-06
+我们又见面了。
+wǒ men yòu jiàn miàn le.
+We have met again.
+
+grammar-028-07
+他又问了同一个问题。
+tā yòu wèn le tóng yī gè wèn tí.
+He asked the same question again.
+
+grammar-028-08
+这家店又涨价了。
+zhè jiā diàn yòu zhǎng jià le.
+This shop has raised its prices again.
+
+grammar-028-09
+弟弟又感冒了。
+dì di yòu gǎn mào le.
+My younger brother has caught a cold again.
+
+grammar-028-10
+我昨天又看了一遍那部电影。
+wǒ zuó tiān yòu kàn le yī biàn nà bù diàn yǐng.
+I watched that movie all the way through again yesterday.
+
+grammar-029: Earlier than expected with 就
+Pattern: Time/amount + 就 + verb
+
+grammar-029-01
+他早上六点就起床了。
+tā zǎo shàng liù diǎn jiù qǐ chuáng le.
+He got up as early as six in the morning.
+
+grammar-029-02
+我十分钟就做完了。
+wǒ shí fēn zhōng jiù zuò wán le.
+I finished it in just ten minutes.
+
+grammar-029-03
+她十八岁就开始工作了。
+tā shí bā suì jiù kāi shǐ gōng zuò le.
+She started working as early as eighteen.
+
+grammar-029-04
+我们走五分钟就到了。
+wǒ men zǒu wǔ fēn zhōng jiù dào le.
+We arrived after walking for just five minutes.
+
+grammar-029-05
+电影七点就开始了。
+diàn yǐng qī diǎn jiù kāi shǐ le.
+The movie started as early as seven.
+
+grammar-029-06
+他看一遍就懂了。
+tā kàn yī biàn jiù dǒng le.
+He understood after reading it just once.
+
+grammar-029-07
+我昨天就告诉你了。
+wǒ zuó tiān jiù gào sù nǐ le.
+I told you as early as yesterday.
+
+grammar-029-08
+她一岁就会走路了。
+tā yī suì jiù huì zǒu lù le.
+She could walk as early as one year old.
+
+grammar-029-09
+这家店下午五点就关门了。
+zhè jiā diàn xià wǔ wǔ diǎn jiù guān mén le.
+This shop closed as early as five in the afternoon.
+
+grammar-029-10
+我们花了二十块钱就吃饱了。
+wǒ men huā le èr shí kuài qián jiù chī bǎo le.
+We ate our fill for just twenty yuan.
+
+grammar-030: Later than expected with 才
+Pattern: Time/condition + 才 + verb
+
+grammar-030-01
+他晚上十一点才回家。
+tā wǎn shàng shí yī diǎn cái huí jiā.
+He did not get home until eleven at night.
+
+grammar-030-02
+我今天才知道这件事。
+wǒ jīn tiān cái zhī dào zhè jiàn shì.
+I only learned about this matter today.
+
+grammar-030-03
+她三十岁才开始学开车。
+tā sān shí suì cái kāi shǐ xué kāi chē.
+She did not start learning to drive until she was thirty.
+
+grammar-030-04
+我们等了一个小时，车才来。
+wǒ men děng le yī gè xiǎo shí, chē cái lái.
+We waited an hour before the bus finally came.
+
+grammar-030-05
+这家店十点才开门。
+zhè jiā diàn shí diǎn cái kāi mén.
+This shop does not open until ten.
+
+grammar-030-06
+我看了三遍才看懂。
+wǒ kàn le sān biàn cái kàn dǒng.
+I only understood it after reading it three times.
+
+grammar-030-07
+他下周才有空。
+tā xià zhōu cái yǒu kòng.
+He will not be free until next week.
+
+grammar-030-08
+她吃完药才感觉好一点。
+tā chī wán yào cái gǎn jué hǎo yī diǎn.
+She felt a little better only after taking the medicine.
+
+grammar-030-09
+我月底才能拿到工资。
+wǒ yuè dǐ cái néng ná dào gōng zī.
+I will not be able to get my pay until the end of the month.
+
+grammar-030-10
+我们走了两个小时才到山顶。
+wǒ men zǒu le liǎng gè xiǎo shí cái dào shān dǐng.
+We reached the mountaintop only after walking for two hours.
+
+grammar-031: Completion with 完
+Pattern: Verb + 完
+
+grammar-031-01
+我做完作业了。
+wǒ zuò wán zuò yè le.
+I have finished my homework.
+
+grammar-031-02
+她看完那本小说了。
+tā kàn wán nà běn xiǎo shuō le.
+She has finished reading that novel.
+
+grammar-031-03
+我们吃完午饭了。
+wǒ men chī wán wǔ fàn le.
+We have finished lunch.
+
+grammar-031-04
+你写完报告了吗？
+nǐ xiě wán bào gào le ma?
+Have you finished writing the report?
+
+grammar-031-05
+他还没洗完衣服。
+tā hái méi xǐ wán yī fú.
+He has not finished washing the clothes yet.
+
+grammar-031-06
+请听完再说。
+qǐng tīng wán zài shuō.
+Please finish listening before you speak.
+
+grammar-031-07
+我用完了所有的纸。
+wǒ yòng wán le suǒ yǒu de zhǐ.
+I used up all the paper.
+
+grammar-031-08
+他们已经搬完东西了。
+tā men yǐ jīng bān wán dōng xī le.
+They have already finished moving the things.
+
+grammar-031-09
+电影还没放完。
+diàn yǐng hái méi fàng wán.
+The movie has not finished playing yet.
+
+grammar-031-10
+我想先读完这一页。
+wǒ xiǎng xiān dú wán zhè yī yè.
+I want to finish reading this page first.
+
+grammar-032: Readiness with 好
+Pattern: Verb + 好
+
+grammar-032-01
+我准备好行李了。
+wǒ zhǔn bèi hǎo xíng lǐ le.
+I have got the luggage ready.
+
+grammar-032-02
+饭做好了。
+fàn zuò hǎo le.
+The meal is ready.
+
+grammar-032-03
+你想好了吗？
+nǐ xiǎng hǎo le ma?
+Have you made up your mind?
+
+grammar-032-04
+请坐好。
+qǐng zuò hǎo.
+Please sit properly.
+
+grammar-032-05
+我已经订好房间了。
+wǒ yǐ jīng dìng hǎo fáng jiān le.
+I have already booked the room.
+
+grammar-032-06
+她把名字写好了。
+tā bǎ míng zì xiě hǎo le.
+She has written the name down properly.
+
+grammar-032-07
+我们还没安排好时间。
+wǒ men hái méi ān pái hǎo shí jiān.
+We have not arranged the time yet.
+
+grammar-032-08
+车修好了。
+chē xiū hǎo le.
+The car has been repaired and is ready.
+
+grammar-032-09
+请把东西放好。
+qǐng bǎ dōng xī fàng hǎo.
+Please put the things in their proper places.
+
+grammar-032-10
+你收拾好了吗？
+nǐ shōu shí hǎo le ma?
+Have you finished getting everything packed up?
+
+grammar-033: Successful attainment with 到
+Pattern: Verb + 到
+
+grammar-033-01
+我找到钥匙了。
+wǒ zhǎo dào yào shi le.
+I found my keys.
+
+grammar-033-02
+她买到票了。
+tā mǎi dào piào le.
+She managed to buy a ticket.
+
+grammar-033-03
+你收到我的邮件了吗？
+nǐ shōu dào wǒ de yóu jiàn le ma?
+Did you receive my email?
+
+grammar-033-04
+我听到一个奇怪的声音。
+wǒ tīng dào yī gè qí guài de shēng yīn.
+I heard a strange sound.
+
+grammar-033-05
+他终于见到那位作家了。
+tā zhōng yú jiàn dào nà wèi zuò jiā le.
+He finally got to meet that writer.
+
+grammar-033-06
+我们没等到他。
+wǒ men méi děng dào tā.
+We waited but he did not turn up.
+
+grammar-033-07
+我没买到新鲜的鱼。
+wǒ méi mǎi dào xīn xiān de yú.
+I did not manage to buy fresh fish.
+
+grammar-033-08
+她借到了那本书。
+tā jiè dào le nà běn shū.
+She managed to borrow that book.
+
+grammar-033-09
+你猜到答案了吗？
+nǐ cāi dào dá àn le ma?
+Did you guess the answer?
+
+grammar-033-10
+我闻到了面包的香味。
+wǒ wén dào le miàn bāo de xiāng wèi.
+I caught the smell of bread.
+
+grammar-034: Understanding with 懂
+Pattern: Verb + 懂
+
+grammar-034-01
+我听懂你的意思了。
+wǒ tīng dǒng nǐ de yì si le.
+I understood what you meant when you spoke.
+
+grammar-034-02
+她看懂了这篇文章。
+tā kàn dǒng le zhè piān wén zhāng.
+She understood this article when she read it.
+
+grammar-034-03
+你听懂老师的话了吗？
+nǐ tīng dǒng lǎo shī de huà le ma?
+Did you understand what the teacher said?
+
+grammar-034-04
+我没看懂这张地图。
+wǒ méi kàn dǒng zhè zhāng dì tú.
+I did not understand this map.
+
+grammar-034-05
+他终于听懂了这个笑话。
+tā zhōng yú tīng dǒng le zhè ge xiào huà.
+He finally understood this joke when he heard it.
+
+grammar-034-06
+我们没听懂最后一句话。
+wǒ men méi tīng dǒng zuì hòu yī jù huà.
+We did not understand the last sentence we heard.
+
+grammar-034-07
+孩子看懂了游戏规则。
+hái zi kàn dǒng le yóu xì guī zé.
+The child understood the game rules after reading them.
+
+grammar-034-08
+我看了两遍才看懂。
+wǒ kàn le liǎng biàn cái kàn dǒng.
+I understood it only after reading it twice.
+
+grammar-034-09
+她没听懂我的问题。
+tā méi tīng dǒng wǒ de wèn tí.
+She did not understand my spoken question.
+
+grammar-034-10
+你看懂这份说明书了吗？
+nǐ kàn dǒng zhè fèn shuō míng shū le ma?
+Did you understand this instruction manual?
+
+grammar-035: Incorrect results with 错
+Pattern: Verb + 错
+
+grammar-035-01
+我写错了你的名字。
+wǒ xiě cuò le nǐ de míng zì.
+I wrote your name incorrectly.
+
+grammar-035-02
+她买错票了。
+tā mǎi cuò piào le.
+She bought the wrong ticket.
+
+grammar-035-03
+我们走错路了。
+wǒ men zǒu cuò lù le.
+We took the wrong road.
+
+grammar-035-04
+你打错电话了。
+nǐ dǎ cuò diàn huà le.
+You dialed the wrong number.
+
+grammar-035-05
+我听错了时间。
+wǒ tīng cuò le shí jiān.
+I misheard the time.
+
+grammar-035-06
+他记错地址了。
+tā jì cuò dì zhǐ le.
+He remembered the address incorrectly.
+
+grammar-035-07
+服务员找错钱了。
+fú wù yuán zhǎo cuò qián le.
+The server gave the wrong change.
+
+grammar-035-08
+我拿错包了。
+wǒ ná cuò bāo le.
+I took the wrong bag.
+
+grammar-035-09
+你算错了总价。
+nǐ suàn cuò le zǒng jià.
+You calculated the total price incorrectly.
+
+grammar-035-10
+她认错人了。
+tā rèn cuò rén le.
+She mistook someone for somebody else.
+
+grammar-036: Potential complements with 得/不
+Pattern: Verb + 得/不 + result
+
+grammar-036-01
+我听得懂这段录音。
+wǒ tīng de dǒng zhè duàn lù yīn.
+I can understand this recording.
+
+grammar-036-02
+我看不懂这份合同。
+wǒ kàn bù dǒng zhè fèn hé tóng.
+I cannot understand this contract.
+
+grammar-036-03
+今天做得完这些工作吗？
+jīn tiān zuò de wán zhè xiē gōng zuò ma?
+Can this work be finished today?
+
+grammar-036-04
+我一个人吃不完这么多菜。
+wǒ yī gè rén chī bù wán zhè me duō cài.
+I cannot finish this much food by myself.
+
+grammar-036-05
+你买得到这种茶吗？
+nǐ mǎi de dào zhè zhǒng chá ma?
+Can you manage to buy this kind of tea?
+
+grammar-036-06
+我找不到我的眼镜。
+wǒ zhǎo bù dào wǒ de yǎn jìng.
+I cannot find my glasses.
+
+grammar-036-07
+这里太吵，我听不清楚。
+zhè lǐ tài chǎo, wǒ tīng bù qīng chǔ.
+It is too noisy here; I cannot hear clearly.
+
+grammar-036-08
+这张照片看得清楚。
+zhè zhāng zhào piān kàn de qīng chǔ.
+This photo can be seen clearly.
+
+grammar-036-09
+箱子太重，我拿不动。
+xiāng zi tài zhòng, wǒ ná bù dòng.
+The suitcase is too heavy; I cannot lift it.
+
+grammar-036-10
+门太小，沙发搬不进去。
+mén tài xiǎo, shā fā bān bù jìn qù.
+The door is too small; the sofa cannot be moved inside.
+
+grammar-037: Degree and manner with 得
+Pattern: Verb + 得 + description
+
+grammar-037-01
+她说得很清楚。
+tā shuō de hěn qīng chǔ.
+She speaks very clearly.
+
+grammar-037-02
+他跑得很快。
+tā pǎo de hěn kuài.
+He runs very fast.
+
+grammar-037-03
+你唱得很好。
+nǐ chàng de hěn hǎo.
+You sing very well.
+
+grammar-037-04
+我昨晚睡得不好。
+wǒ zuó wǎn shuì de bù hǎo.
+I did not sleep well last night.
+
+grammar-037-05
+孩子们玩得很开心。
+hái zi men wán de hěn kāi xīn.
+The children had a lot of fun playing.
+
+grammar-037-06
+她中文说得很流利。
+tā zhōng wén shuō de hěn liú lì.
+She speaks Chinese fluently.
+
+grammar-037-07
+他字写得很漂亮。
+tā zì xiě de hěn piào liàng.
+He writes beautifully.
+
+grammar-037-08
+你来得太晚了。
+nǐ lái de tài wǎn le.
+You came too late.
+
+grammar-037-09
+我们聊得很愉快。
+wǒ men liáo de hěn yú kuài.
+We had a pleasant chat.
+
+grammar-037-10
+妈妈菜做得很好吃。
+mā mā cài zuò de hěn hǎo chī.
+Mom cooks delicious food.
+
+grammar-038: Adverbial manner with 地
+Pattern: Description + 地 + verb
+
+grammar-038-01
+她认真地检查了报告。
+tā rèn zhēn de jiǎn chá le bào gào.
+She carefully checked the report.
+
+grammar-038-02
+孩子高兴地笑了。
+hái zi gāo xìng de xiào le.
+The child laughed happily.
+
+grammar-038-03
+他慢慢地走进房间。
+tā màn màn de zǒu jìn fáng jiān.
+He slowly walked into the room.
+
+grammar-038-04
+请大声地读。
+qǐng dà shēng de dú.
+Please read aloud.
+
+grammar-038-05
+我们安静地等着。
+wǒ men ān jìng de děng zhe.
+We are waiting quietly.
+
+grammar-038-06
+她耐心地回答了我的问题。
+tā nài xīn de huí dá le wǒ de wèn tí.
+She patiently answered my question.
+
+grammar-038-07
+他生气地关上了门。
+tā shēng qì de guān shàng le mén.
+He angrily closed the door.
+
+grammar-038-08
+老师清楚地解释了原因。
+lǎo shī qīng chǔ de jiě shì le yuán yīn.
+The teacher clearly explained the reason.
+
+grammar-038-09
+他们努力地工作。
+tā men nǔ lì de gōng zuò.
+They work hard.
+
+grammar-038-10
+我仔细地看了说明书。
+wǒ zǐ xì de kàn le shuō míng shū.
+I carefully read the instruction manual.
+
+grammar-039: Simple direction with 来/去
+Pattern: Motion verb + 来/去
+
+grammar-039-01
+请进来。
+qǐng jìn lái.
+Please come in.
+
+grammar-039-02
+他出去了。
+tā chū qù le.
+He went out.
+
+grammar-039-03
+快回来！
+kuài huí lái!
+Come back quickly!
+
+grammar-039-04
+我们走过去吧。
+wǒ men zǒu guò qù ba.
+Let us walk over there.
+
+grammar-039-05
+她跑过来了。
+tā pǎo guò lái le.
+She ran over here.
+
+grammar-039-06
+请上来。
+qǐng shàng lái.
+Please come up.
+
+grammar-039-07
+你先下去。
+nǐ xiān xià qù.
+You go down first.
+
+grammar-039-08
+他回家去了。
+tā huí jiā qù le.
+He went back home.
+
+grammar-039-09
+孩子走进教室来了。
+hái zi zǒu jìn jiào shì lái le.
+The child walked into the classroom toward us.
+
+grammar-039-10
+老师走出去了。
+lǎo shī zǒu chū qù le.
+The teacher walked out away from us.
+
+grammar-040: Compound directional complements
+Pattern: Verb + direction + 来/去
+
+grammar-040-01
+请把椅子搬进来。
+qǐng bǎ yǐ zi bān jìn lái.
+Please move the chair in here.
+
+grammar-040-02
+他把垃圾拿出去了。
+tā bǎ lā jī ná chū qù le.
+He took the rubbish out of here.
+
+grammar-040-03
+把书送上来吧。
+bǎ shū sòng shàng lái ba.
+Please bring the books up here.
+
+grammar-040-04
+她把箱子搬下去了。
+tā bǎ xiāng zi bān xià qù le.
+She moved the suitcase down there.
+
+grammar-040-05
+请把伞带回来。
+qǐng bǎ sǎn dài huí lái.
+Please bring the umbrella back here.
+
+grammar-040-06
+我把文件送过去了。
+wǒ bǎ wén jiàn sòng guò qù le.
+I delivered the documents over there.
+
+grammar-040-07
+孩子从楼上跑下来了。
+hái zi cóng lóu shàng pǎo xià lái le.
+The child ran down here from upstairs.
+
+grammar-040-08
+小猫从窗户跳进来了。
+xiǎo māo cóng chuāng hù tiào jìn lái le.
+The kitten jumped in here through the window.
+
+grammar-040-09
+他从包里拿出一本书来。
+tā cóng bāo lǐ ná chū yī běn shū lái.
+He took a book out of his bag.
+
+grammar-040-10
+请把这些东西带回去。
+qǐng bǎ zhè xiē dōng xī dài huí qù.
+Please take these things back there.
+
+grammar-041: Starting an action with 起来
+Pattern: Verb + 起来
+
+grammar-041-01
+孩子突然哭起来了。
+hái zi tū rán kū qǐ lái le.
+The child suddenly started crying.
+
+grammar-041-02
+大家都笑起来了。
+dà jiā dōu xiào qǐ lái le.
+Everyone started laughing.
+
+grammar-041-03
+他们聊起来了。
+tā men liáo qǐ lái le.
+They started chatting.
+
+grammar-041-04
+外面下起雨来了。
+wài miàn xià qǐ yǔ lái le.
+It started raining outside.
+
+grammar-041-05
+音乐响起来了。
+yīn yuè xiǎng qǐ lái le.
+The music started playing.
+
+grammar-041-06
+她唱起歌来了。
+tā chàng qǐ gē lái le.
+She started singing.
+
+grammar-041-07
+他站起来了。
+tā zhàn qǐ lái le.
+He stood up.
+
+grammar-041-08
+风大起来了。
+fēng dà qǐ lái le.
+The wind started getting stronger.
+
+grammar-041-09
+天气热起来了。
+tiān qì rè qǐ lái le.
+The weather started getting hot.
+
+grammar-041-10
+学生们讨论起来了。
+xué shēng men tǎo lùn qǐ lái le.
+The students started discussing.
+
+grammar-042: Impressions with 起来
+Pattern: 看/听/吃/闻 + 起来 + adjective
+
+grammar-042-01
+你看起来很累。
+nǐ kàn qǐ lái hěn lèi.
+You look tired.
+
+grammar-042-02
+这个办法听起来不错。
+zhè ge bàn fǎ tīng qǐ lái bù cuò.
+This approach sounds good.
+
+grammar-042-03
+这道菜吃起来有点甜。
+zhè dào cài chī qǐ lái yǒu diǎn tián.
+This dish tastes a little sweet.
+
+grammar-042-04
+这朵花闻起来很香。
+zhè duǒ huā wén qǐ lái hěn xiāng.
+This flower smells fragrant.
+
+grammar-042-05
+这件事看起来很简单。
+zhè jiàn shì kàn qǐ lái hěn jiǎn dān.
+This matter seems simple.
+
+grammar-042-06
+他的解释听起来很奇怪。
+tā de jiě shì tīng qǐ lái hěn qí guài.
+His explanation sounds strange.
+
+grammar-042-07
+这种水果吃起来很酸。
+zhè zhǒng shuǐ guǒ chī qǐ lái hěn suān.
+This kind of fruit tastes sour.
+
+grammar-042-08
+这间房子看起来很舒服。
+zhè jiān fáng zi kàn qǐ lái hěn shū fú.
+This house looks comfortable.
+
+grammar-042-09
+你的计划听起来很有意思。
+nǐ de jì huà tīng qǐ lái hěn yǒu yì si.
+Your plan sounds interesting.
+
+grammar-042-10
+这块面包闻起来很新鲜。
+zhè kuài miàn bāo wén qǐ lái hěn xīn xiān.
+This piece of bread smells fresh.
+
+grammar-043: Continuing onward with 下去
+Pattern: Verb + 下去
+
+grammar-043-01
+请说下去。
+qǐng shuō xià qù.
+Please go on speaking.
+
+grammar-043-02
+我想继续学下去。
+wǒ xiǎng jì xù xué xià qù.
+I want to keep studying.
+
+grammar-043-03
+我们不能这样等下去。
+wǒ men bù néng zhè yàng děng xià qù.
+We cannot keep waiting like this.
+
+grammar-043-04
+这个故事很有意思，我想看下去。
+zhè ge gù shì hěn yǒu yì si, wǒ xiǎng kàn xià qù.
+This story is interesting; I want to keep reading.
+
+grammar-043-05
+只要有时间，我就会练下去。
+zhǐ yào yǒu shí jiān, wǒ jiù huì liàn xià qù.
+As long as I have time, I will keep practicing.
+
+grammar-043-06
+你打算一直住下去吗？
+nǐ dǎ suàn yī zhí zhù xià qù ma?
+Do you plan to keep living here indefinitely?
+
+grammar-043-07
+别吵了，让他讲下去。
+bié chǎo le, ràng tā jiǎng xià qù.
+Stop making noise and let him continue talking.
+
+grammar-043-08
+再走下去就到河边了。
+zài zǒu xià qù jiù dào hé biān le.
+If we keep walking, we will reach the riverbank.
+
+grammar-043-09
+钱不够了，这个项目做不下去了。
+qián bù gòu le, zhè ge xiàng mù zuò bù xià qù le.
+There is not enough money; this project cannot continue.
+
+grammar-043-10
+他决定坚持下去。
+tā jué dìng jiān chí xià qù.
+He decided to keep persevering.
+
+grammar-044: Keeping a result with 下来
+Pattern: Verb + 下来
+
+grammar-044-01
+请把地址写下来。
+qǐng bǎ dì zhǐ xiě xià lái.
+Please write down the address.
+
+grammar-044-02
+我把电话号码记下来了。
+wǒ bǎ diàn huà hào mǎ jì xià lái le.
+I noted down the phone number.
+
+grammar-044-03
+他停下来了。
+tā tíng xià lái le.
+He came to a stop.
+
+grammar-044-04
+大家都安静下来了。
+dà jiā dōu ān jìng xià lái le.
+Everyone quieted down.
+
+grammar-044-05
+请把这张照片留下来。
+qǐng bǎ zhè zhāng zhào piān liú xià lái.
+Please keep this photo.
+
+grammar-044-06
+她把老师的话录下来了。
+tā bǎ lǎo shī de huà lù xià lái le.
+She recorded what the teacher said.
+
+grammar-044-07
+我们终于坐下来休息了。
+wǒ men zhōng yú zuò xià lái xiū xī le.
+We finally sat down to rest.
+
+grammar-044-08
+你先冷静下来。
+nǐ xiān lěng jìng xià lái.
+Calm down first.
+
+grammar-044-09
+我想把这段话抄下来。
+wǒ xiǎng bǎ zhè duàn huà chāo xià lái.
+I want to copy down this passage.
+
+grammar-044-10
+雨慢慢小下来了。
+yǔ màn màn xiǎo xià lái le.
+The rain gradually eased off.
+
+grammar-045: Affordability with 得起/不起
+Pattern: Verb + 得起/不起
+
+grammar-045-01
+我买不起这辆车。
+wǒ mǎi bù qǐ zhè liàng chē.
+I cannot afford this car.
+
+grammar-045-02
+我们住得起这家酒店。
+wǒ men zhù de qǐ zhè jiā jiǔ diàn.
+We can afford to stay at this hotel.
+
+grammar-045-03
+他付不起房租。
+tā fù bù qǐ fáng zū.
+He cannot afford the rent.
+
+grammar-045-04
+你买得起这台电脑吗？
+nǐ mǎi de qǐ zhè tái diàn nǎo ma?
+Can you afford this computer?
+
+grammar-045-05
+我吃不起这么贵的饭。
+wǒ chī bù qǐ zhè me guì de fàn.
+I cannot afford such an expensive meal.
+
+grammar-045-06
+她现在买得起房子了。
+tā xiàn zài mǎi de qǐ fáng zi le.
+She can afford a home now.
+
+grammar-045-07
+我们住不起市中心的公寓。
+wǒ men zhù bù qǐ shì zhōng xīn de gōng yù.
+We cannot afford to live in an apartment in the city center.
+
+grammar-045-08
+这双鞋我买得起。
+zhè shuāng xié wǒ mǎi de qǐ.
+I can afford this pair of shoes.
+
+grammar-045-09
+他连公交车票都买不起。
+tā lián gōng jiāo chē piào dōu mǎi bù qǐ.
+He cannot even afford a bus ticket.
+
+grammar-045-10
+这家餐厅不贵，我们吃得起。
+zhè jiā cān tīng bù guì, wǒ men chī de qǐ.
+This restaurant is not expensive; we can afford to eat here.
+
+grammar-046: Comparing with 比
+Pattern: A + 比 + B + adjective
+
+grammar-046-01
+今天比昨天冷。
+jīn tiān bǐ zuó tiān lěng.
+Today is colder than yesterday.
+
+grammar-046-02
+我哥哥比我高。
+wǒ gē gē bǐ wǒ gāo.
+My older brother is taller than me.
+
+grammar-046-03
+坐地铁比开车快。
+zuò dì tiě bǐ kāi chē kuài.
+Taking the subway is faster than driving.
+
+grammar-046-04
+这本书比那本书有意思。
+zhè běn shū bǐ nà běn shū yǒu yì si.
+This book is more interesting than that one.
+
+grammar-046-05
+这家店比那家店便宜。
+zhè jiā diàn bǐ nà jiā diàn pián yi.
+This shop is cheaper than that one.
+
+grammar-046-06
+我的房间比你的房间大。
+wǒ de fáng jiān bǐ nǐ de fáng jiān dà.
+My room is bigger than your room.
+
+grammar-046-07
+早上的空气比晚上的空气好。
+zǎo shàng de kōng qì bǐ wǎn shàng de kōng qì hǎo.
+The air is better in the morning than in the evening.
+
+grammar-046-08
+这次考试比上次难。
+zhè cì kǎo shì bǐ shàng cì nán.
+This exam is harder than the last one.
+
+grammar-046-09
+她比我了解这个城市。
+tā bǐ wǒ liǎo jiě zhè ge chéng shì.
+She knows this city better than I do.
+
+grammar-046-10
+走这条路比走那条路方便。
+zǒu zhè tiáo lù bǐ zǒu nà tiáo lù fāng biàn.
+Taking this road is more convenient than taking that one.
+
+grammar-047: Specifying a difference
+Pattern: A + 比 + B + adjective + amount
+
+grammar-047-01
+他比我大三岁。
+tā bǐ wǒ dà sān suì.
+He is three years older than me.
+
+grammar-047-02
+这张桌子比那张长十厘米。
+zhè zhāng zhuō zi bǐ nà zhāng cháng shí lí mǐ.
+This table is ten centimeters longer than that one.
+
+grammar-047-03
+今天比昨天暖和一点儿。
+jīn tiān bǐ zuó tiān nuǎn huo yī diǎn er.
+Today is a little warmer than yesterday.
+
+grammar-047-04
+这本书比那本贵二十块钱。
+zhè běn shū bǐ nà běn guì èr shí kuài qián.
+This book costs twenty yuan more than that one.
+
+grammar-047-05
+我的行李比你的重两公斤。
+wǒ de xíng lǐ bǐ nǐ de zhòng liǎng gōng jīn.
+My luggage is two kilograms heavier than yours.
+
+grammar-047-06
+坐飞机比坐火车快得多。
+zuò fēi jī bǐ zuò huǒ chē kuài de duō.
+Flying is much faster than taking the train.
+
+grammar-047-07
+这里比我想的安静多了。
+zhè lǐ bǐ wǒ xiǎng de ān jìng duō le.
+It is much quieter here than I expected.
+
+grammar-047-08
+她比我早到五分钟。
+tā bǐ wǒ zǎo dào wǔ fēn zhōng.
+She arrived five minutes earlier than me.
+
+grammar-047-09
+这间房比那间大一点儿。
+zhè jiān fáng bǐ nà jiān dà yī diǎn er.
+This room is a little bigger than that one.
+
+grammar-047-10
+今年的雨水比去年多得多。
+jīn nián de yǔ shuǐ bǐ qù nián duō de duō.
+There is much more rain this year than last year.
+
+grammar-048: Not as…as with 没有
+Pattern: A + 没有 + B + adjective
+
+grammar-048-01
+我没有他高。
+wǒ méi yǒu tā gāo.
+I am not as tall as him.
+
+grammar-048-02
+今天没有昨天热。
+jīn tiān méi yǒu zuó tiān rè.
+Today is not as hot as yesterday.
+
+grammar-048-03
+这部电影没有那部好看。
+zhè bù diàn yǐng méi yǒu nà bù hǎo kàn.
+This movie is not as good as that one.
+
+grammar-048-04
+我家没有你家大。
+wǒ jiā méi yǒu nǐ jiā dà.
+My home is not as big as yours.
+
+grammar-048-05
+坐公交车没有坐地铁快。
+zuò gōng jiāo chē méi yǒu zuò dì tiě kuài.
+Taking the bus is not as fast as taking the subway.
+
+grammar-048-06
+这家饭店没有那家贵。
+zhè jiā fàn diàn méi yǒu nà jiā guì.
+This restaurant is not as expensive as that one.
+
+grammar-048-07
+我的中文没有她的流利。
+wǒ de zhōng wén méi yǒu tā de liú lì.
+My Chinese is not as fluent as hers.
+
+grammar-048-08
+这里没有市中心热闹。
+zhè lǐ méi yǒu shì zhōng xīn rè nào.
+It is not as lively here as in the city center.
+
+grammar-048-09
+这道题没有我想的难。
+zhè dào tí méi yǒu wǒ xiǎng de nán.
+This question is not as difficult as I thought.
+
+grammar-048-10
+今年没有去年忙。
+jīn nián méi yǒu qù nián máng.
+This year is not as busy as last year.
+
+grammar-049: Equal degree with 一样
+Pattern: A + 跟/和 + B + 一样 + adjective
+
+grammar-049-01
+我跟他一样高。
+wǒ gēn tā yī yàng gāo.
+I am as tall as him.
+
+grammar-049-02
+这两个房间一样大。
+zhè liǎng gè fáng jiān yī yàng dà.
+These two rooms are the same size.
+
+grammar-049-03
+今天跟昨天一样冷。
+jīn tiān gēn zuó tiān yī yàng lěng.
+Today is as cold as yesterday.
+
+grammar-049-04
+我的手机跟你的一样。
+wǒ de shǒu jī gēn nǐ de yī yàng.
+My phone is the same as yours.
+
+grammar-049-05
+她跟姐姐一样喜欢音乐。
+tā gēn jiě jiě yī yàng xǐ huān yīn yuè.
+She likes music as much as her older sister does.
+
+grammar-049-06
+这家店跟那家店一样便宜。
+zhè jiā diàn gēn nà jiā diàn yī yàng pián yi.
+This shop is as cheap as that one.
+
+grammar-049-07
+我们的想法不一样。
+wǒ men de xiǎng fǎ bù yī yàng.
+Our ideas are different.
+
+grammar-049-08
+这道菜跟妈妈做的一样好吃。
+zhè dào cài gēn mā mā zuò de yī yàng hǎo chī.
+This dish is as delicious as the one Mom makes.
+
+grammar-049-09
+他跑得跟我一样快。
+tā pǎo de gēn wǒ yī yàng kuài.
+He runs as fast as I do.
+
+grammar-049-10
+这里的生活跟以前一样方便。
+zhè lǐ de shēng huó gēn yǐ qián yī yàng fāng biàn.
+Life here is as convenient as before.
+
+grammar-050: Superlatives with 最
+Pattern: Scope + 最 + adjective
+
+grammar-050-01
+这是我最喜欢的电影。
+zhè shì wǒ zuì xǐ huān de diàn yǐng.
+This is my favorite movie.
+
+grammar-050-02
+他是我们班最高的学生。
+tā shì wǒ men bān zuì gāo de xué shēng.
+He is the tallest student in our class.
+
+grammar-050-03
+这家店的面条最好吃。
+zhè jiā diàn de miàn tiáo zuì hǎo chī.
+This shop has the tastiest noodles.
+
+grammar-050-04
+星期一是我最忙的一天。
+xīng qī yī shì wǒ zuì máng de yī tiān.
+Monday is my busiest day.
+
+grammar-050-05
+坐地铁最方便。
+zuò dì tiě zuì fāng biàn.
+Taking the subway is the most convenient option.
+
+grammar-050-06
+这道题最难。
+zhè dào tí zuì nán.
+This question is the hardest.
+
+grammar-050-07
+她是我最好的朋友。
+tā shì wǒ zuì hǎo de péng yǒu.
+She is my best friend.
+
+grammar-050-08
+这条路最近。
+zhè tiáo lù zuì jìn.
+This route is the shortest.
+
+grammar-050-09
+我最想去云南。
+wǒ zuì xiǎng qù yún nán.
+Yunnan is the place I most want to visit.
+
+grammar-050-10
+安全最重要。
+ān quán zuì zhòng yào.
+Safety is the most important thing.
+
+grammar-051: Increasing degree with 越来越
+Pattern: 越来越 + adjective/mental verb
+
+grammar-051-01
+天气越来越冷了。
+tiān qì yuè lái yuè lěng le.
+The weather is getting colder and colder.
+
+grammar-051-02
+我的中文越来越好了。
+wǒ de zhōng wén yuè lái yuè hǎo le.
+My Chinese is getting better and better.
+
+grammar-051-03
+这个城市越来越漂亮了。
+zhè ge chéng shì yuè lái yuè piào liàng le.
+This city is becoming more and more beautiful.
+
+grammar-051-04
+他越来越忙了。
+tā yuè lái yuè máng le.
+He is getting busier and busier.
+
+grammar-051-05
+我越来越喜欢这份工作了。
+wǒ yuè lái yuè xǐ huān zhè fèn gōng zuò le.
+I like this job more and more.
+
+grammar-051-06
+坐地铁的人越来越多了。
+zuò dì tiě de rén yuè lái yuè duō le.
+More and more people are taking the subway.
+
+grammar-051-07
+这个问题越来越严重了。
+zhè ge wèn tí yuè lái yuè yán zhòng le.
+This problem is becoming more and more serious.
+
+grammar-051-08
+她越来越有信心了。
+tā yuè lái yuè yǒu xìn xīn le.
+She is becoming more and more confident.
+
+grammar-051-09
+房租越来越贵了。
+fáng zū yuè lái yuè guì le.
+Rent is getting more and more expensive.
+
+grammar-051-10
+我们的关系越来越好了。
+wǒ men de guān xì yuè lái yuè hǎo le.
+Our relationship is getting better and better.
+
+grammar-052: Linked changes with 越…越…
+Pattern: 越 + condition/action，越 + result
+
+grammar-052-01
+你越练习，说得越流利。
+nǐ yuè liàn xí, shuō de yuè liú lì.
+The more you practice, the more fluently you speak.
+
+grammar-052-02
+这本书越看越有意思。
+zhè běn shū yuè kàn yuè yǒu yì si.
+The more I read this book, the more interesting it gets.
+
+grammar-052-03
+他越忙越开心。
+tā yuè máng yuè kāi xīn.
+The busier he is, the happier he is.
+
+grammar-052-04
+天气越冷，我越不想出门。
+tiān qì yuè lěng, wǒ yuè bù xiǎng chū mén.
+The colder the weather is, the less I want to go out.
+
+grammar-052-05
+你越着急，越容易出错。
+nǐ yuè zháo jí, yuè róng yì chū cuò.
+The more anxious you are, the more easily you make mistakes.
+
+grammar-052-06
+这件事越早解决越好。
+zhè jiàn shì yuè zǎo jiě jué yuè hǎo.
+The sooner this matter is resolved, the better.
+
+grammar-052-07
+我们越聊越觉得投机。
+wǒ men yuè liáo yuè jué de tóu jī.
+The more we chat, the more we feel we get along.
+
+grammar-052-08
+路越走越窄。
+lù yuè zǒu yuè zhǎi.
+The farther we walk, the narrower the road gets.
+
+grammar-052-09
+你了解得越多，就越有信心。
+nǐ liǎo jiě de yuè duō, jiù yuè yǒu xìn xīn.
+The more you know, the more confident you are.
+
+grammar-052-10
+这首歌越听越好听。
+zhè shǒu gē yuè tīng yuè hǎo tīng.
+The more I listen to this song, the better it sounds.
+
+grammar-053: Two qualities with 又…又…
+Pattern: 又 + quality/action + 又 + quality/action
+
+grammar-053-01
+这个苹果又大又甜。
+zhè ge píng guǒ yòu dà yòu tián.
+This apple is both big and sweet.
+
+grammar-053-02
+这家饭店又便宜又好吃。
+zhè jiā fàn diàn yòu pián yi yòu hǎo chī.
+This restaurant is both cheap and good.
+
+grammar-053-03
+他又聪明又努力。
+tā yòu cōng míng yòu nǔ lì.
+He is both smart and hardworking.
+
+grammar-053-04
+今天又冷又下雨。
+jīn tiān yòu lěng yòu xià yǔ.
+Today it is both cold and rainy.
+
+grammar-053-05
+这个房间又干净又安静。
+zhè ge fáng jiān yòu gān jìng yòu ān jìng.
+This room is both clean and quiet.
+
+grammar-053-06
+她又会唱歌又会跳舞。
+tā yòu huì chàng gē yòu huì tiào wǔ.
+She can both sing and dance.
+
+grammar-053-07
+孩子又哭又闹。
+hái zi yòu kū yòu nào.
+The child is crying and making a fuss.
+
+grammar-053-08
+这双鞋又轻又舒服。
+zhè shuāng xié yòu qīng yòu shū fú.
+These shoes are both light and comfortable.
+
+grammar-053-09
+这条路又窄又长。
+zhè tiáo lù yòu zhǎi yòu cháng.
+This road is both narrow and long.
+
+grammar-053-10
+我现在又饿又累。
+wǒ xiàn zài yòu è yòu lèi.
+I am both hungry and tired now.
+
+grammar-054: Somewhat negative degree with 有点儿
+Pattern: 有点儿 + adjective
+
+grammar-054-01
+我有点儿累。
+wǒ yǒu diǎn er lèi.
+I am a little tired.
+
+grammar-054-02
+这道菜有点儿咸。
+zhè dào cài yǒu diǎn er xián.
+This dish is a little salty.
+
+grammar-054-03
+今天有点儿冷。
+jīn tiān yǒu diǎn er lěng.
+It is a little cold today.
+
+grammar-054-04
+这件衣服有点儿贵。
+zhè jiàn yī fú yǒu diǎn er guì.
+This piece of clothing is a little expensive.
+
+grammar-054-05
+我有点儿担心。
+wǒ yǒu diǎn er dān xīn.
+I am a little worried.
+
+grammar-054-06
+这个房间有点儿小。
+zhè ge fáng jiān yǒu diǎn er xiǎo.
+This room is a little small.
+
+grammar-054-07
+他说得有点儿快。
+tā shuō de yǒu diǎn er kuài.
+He speaks a little fast.
+
+grammar-054-08
+这个问题有点儿复杂。
+zhè ge wèn tí yǒu diǎn er fù zá.
+This issue is a little complicated.
+
+grammar-054-09
+她今天有点儿不舒服。
+tā jīn tiān yǒu diǎn er bù shū fú.
+She is feeling a little unwell today.
+
+grammar-054-10
+这杯咖啡有点儿苦。
+zhè bēi kā fēi yǒu diǎn er kǔ.
+This cup of coffee is a little bitter.
+
+grammar-055: Adjusting degree with 一点儿
+Pattern: Adjective + 一点儿
+
+grammar-055-01
+请说慢一点儿。
+qǐng shuō màn yī diǎn er.
+Please speak a little more slowly.
+
+grammar-055-02
+能便宜一点儿吗？
+néng pián yi yī diǎn er ma?
+Could it be a little cheaper?
+
+grammar-055-03
+请写清楚一点儿。
+qǐng xiě qīng chǔ yī diǎn er.
+Please write a little more clearly.
+
+grammar-055-04
+我想住近一点儿。
+wǒ xiǎng zhù jìn yī diǎn er.
+I want to live a little closer.
+
+grammar-055-05
+请声音小一点儿。
+qǐng shēng yīn xiǎo yī diǎn er.
+Please keep your voice a little lower.
+
+grammar-055-06
+这次我们早一点儿出发吧。
+zhè cì wǒ men zǎo yī diǎn er chū fā ba.
+Let us set off a little earlier this time.
+
+grammar-055-07
+请坐远一点儿。
+qǐng zuò yuǎn yī diǎn er.
+Please sit a little farther away.
+
+grammar-055-08
+你应该认真一点儿。
+nǐ yīng gāi rèn zhēn yī diǎn er.
+You should be a little more careful.
+
+grammar-055-09
+我想买大一点儿的。
+wǒ xiǎng mǎi dà yī diǎn er de.
+I want to buy a slightly bigger one.
+
+grammar-055-10
+把房间收拾干净一点儿。
+bǎ fáng jiān shōu shí gān jìng yī diǎn er.
+Tidy the room up a little more thoroughly.
+
+grammar-056: Excessive or emphatic degree with 太…了
+Pattern: 太 + adjective + 了
+
+grammar-056-01
+这件衣服太贵了。
+zhè jiàn yī fú tài guì le.
+This piece of clothing is too expensive.
+
+grammar-056-02
+今天太热了。
+jīn tiān tài rè le.
+It is too hot today.
+
+grammar-056-03
+你太客气了。
+nǐ tài kè qì le.
+You are so kind.
+
+grammar-056-04
+这个消息太好了。
+zhè ge xiāo xī tài hǎo le.
+This news is wonderful.
+
+grammar-056-05
+这道题太难了。
+zhè dào tí tài nán le.
+This question is too difficult.
+
+grammar-056-06
+这里太吵了。
+zhè lǐ tài chǎo le.
+It is too noisy here.
+
+grammar-056-07
+这部电影太有意思了。
+zhè bù diàn yǐng tài yǒu yì si le.
+This movie is so interesting.
+
+grammar-056-08
+时间太短了。
+shí jiān tài duǎn le.
+There is too little time.
+
+grammar-056-09
+这个箱子太重了。
+zhè ge xiāng zi tài zhòng le.
+This suitcase is too heavy.
+
+grammar-056-10
+你回得太晚了。
+nǐ huí de tài wǎn le.
+You came back too late.
+
+grammar-057: Extreme degree with 极了
+Pattern: Adjective + 极了
+
+grammar-057-01
+我今天累极了。
+wǒ jīn tiān lèi jí le.
+I am extremely tired today.
+
+grammar-057-02
+这里的风景美极了。
+zhè lǐ de fēng jǐng měi jí le.
+The scenery here is extremely beautiful.
+
+grammar-057-03
+孩子们高兴极了。
+hái zi men gāo xìng jí le.
+The children are extremely happy.
+
+grammar-057-04
+这道菜好吃极了。
+zhè dào cài hǎo chī jí le.
+This dish is extremely delicious.
+
+grammar-057-05
+房间里安静极了。
+fáng jiān lǐ ān jìng jí le.
+It is extremely quiet in the room.
+
+grammar-057-06
+她听到消息后伤心极了。
+tā tīng dào xiāo xī hòu shāng xīn jí le.
+She was extremely sad after hearing the news.
+
+grammar-057-07
+山上的空气好极了。
+shān shàng de kōng qì hǎo jí le.
+The air on the mountain is excellent.
+
+grammar-057-08
+这双鞋舒服极了。
+zhè shuāng xié shū fú jí le.
+These shoes are extremely comfortable.
+
+grammar-057-09
+这个故事有趣极了。
+zhè ge gù shì yǒu qù jí le.
+This story is extremely interesting.
+
+grammar-057-10
+他着急极了。
+tā zháo jí jí le.
+He is extremely anxious.
+
+grammar-058: Further degree with 更
+Pattern: 更 + adjective
+
+grammar-058-01
+我想找一份更好的工作。
+wǒ xiǎng zhǎo yī fèn gèng hǎo de gōng zuò.
+I want to find a better job.
+
+grammar-058-02
+今天比昨天更冷。
+jīn tiān bǐ zuó tiān gèng lěng.
+Today is even colder than yesterday.
+
+grammar-058-03
+这个办法更简单。
+zhè ge bàn fǎ gèng jiǎn dān.
+This method is simpler.
+
+grammar-058-04
+坐地铁会更快。
+zuò dì tiě huì gèng kuài.
+Taking the subway would be faster.
+
+grammar-058-05
+我更喜欢蓝色的。
+wǒ gèng xǐ huān lán sè de.
+I prefer the blue one.
+
+grammar-058-06
+她希望有更多时间陪家人。
+tā xī wàng yǒu gèng duō shí jiān péi jiā rén.
+She hopes to have more time with her family.
+
+grammar-058-07
+换个房间会更安静。
+huàn gè fáng jiān huì gèng ān jìng.
+Changing rooms would be quieter.
+
+grammar-058-08
+练习以后，你会更有信心。
+liàn xí yǐ hòu, nǐ huì gèng yǒu xìn xīn.
+After practicing, you will be more confident.
+
+grammar-058-09
+我们需要更清楚的解释。
+wǒ men xū yào gèng qīng chǔ de jiě shì.
+We need a clearer explanation.
+
+grammar-058-10
+这条路虽然远一点，但是更安全。
+zhè tiáo lù suī rán yuǎn yī diǎn, dàn shì gèng ān quán.
+Although this route is a little longer, it is safer.
+
+grammar-059: Not at all with 一点儿也不
+Pattern: 一点儿 + 也/都 + 不/没 + predicate
+
+grammar-059-01
+我一点儿也不累。
+wǒ yī diǎn er yě bù lèi.
+I am not tired at all.
+
+grammar-059-02
+这道题一点儿也不难。
+zhè dào tí yī diǎn er yě bù nán.
+This question is not difficult at all.
+
+grammar-059-03
+她一点儿也不生气。
+tā yī diǎn er yě bù shēng qì.
+She is not angry at all.
+
+grammar-059-04
+这里一点儿也不冷。
+zhè lǐ yī diǎn er yě bù lěng.
+It is not cold here at all.
+
+grammar-059-05
+我一点儿也不喜欢这部电影。
+wǒ yī diǎn er yě bù xǐ huān zhè bù diàn yǐng.
+I do not like this movie at all.
+
+grammar-059-06
+他一点儿也不担心。
+tā yī diǎn er yě bù dān xīn.
+He is not worried at all.
+
+grammar-059-07
+这件事一点儿也不奇怪。
+zhè jiàn shì yī diǎn er yě bù qí guài.
+This matter is not strange at all.
+
+grammar-059-08
+我一点儿也没听懂。
+wǒ yī diǎn er yě méi tīng dǒng.
+I did not understand any of what I heard.
+
+grammar-059-09
+杯子里一点儿水也没有。
+bēi zi lǐ yī diǎn er shuǐ yě méi yǒu.
+There is not any water at all in the cup.
+
+grammar-059-10
+她一点儿也不想去。
+tā yī diǎn er yě bù xiǎng qù.
+She does not want to go at all.
+
+grammar-060: Both and all with 都
+Pattern: Plural subject + 都 + predicate
+
+grammar-060-01
+我们都喜欢中国菜。
+wǒ men dōu xǐ huān zhōng guó cài.
+We all like Chinese food.
+
+grammar-060-02
+这两本书我都看过。
+zhè liǎng běn shū wǒ dōu kàn guò.
+I have read both of these books.
+
+grammar-060-03
+学生们都到了。
+xué shēng men dōu dào le.
+All the students have arrived.
+
+grammar-060-04
+他们都不会开车。
+tā men dōu bù huì kāi chē.
+None of them can drive.
+
+grammar-060-05
+这些衣服都很贵。
+zhè xiē yī fú dōu hěn guì.
+All these clothes are expensive.
+
+grammar-060-06
+我爸爸妈妈都是老师。
+wǒ bà bà mā mā dōu shì lǎo shī.
+My mom and dad are both teachers.
+
+grammar-060-07
+这三个问题都很重要。
+zhè sān gè wèn tí dōu hěn zhòng yào.
+All three of these questions are important.
+
+grammar-060-08
+我们不都住在北京。
+wǒ men bù dōu zhù zài běi jīng.
+Not all of us live in Beijing.
+
+grammar-060-09
+大家都准备好了。
+dà jiā dōu zhǔn bèi hǎo le.
+Everyone is ready.
+
+grammar-060-10
+这两条路都可以走。
+zhè liǎng tiáo lù dōu kě yǐ zǒu.
+Both of these routes can be taken.
+
+grammar-061: Reasons with 因为…所以…
+Pattern: 因为 + cause，所以 + result
+
+grammar-061-01
+因为下雨，所以我们没去公园。
+yīn wèi xià yǔ, suǒ yǐ wǒ men méi qù gōng yuán.
+Because it was raining, we did not go to the park.
+
+grammar-061-02
+因为我生病了，所以今天请假。
+yīn wèi wǒ shēng bìng le, suǒ yǐ jīn tiān qǐng jià.
+Because I am sick, I am taking leave today.
+
+grammar-061-03
+因为路上堵车，所以他迟到了。
+yīn wèi lù shàng dǔ chē, suǒ yǐ tā chí dào le.
+Because there was a traffic jam, he was late.
+
+grammar-061-04
+因为这家店便宜，所以人很多。
+yīn wèi zhè jiā diàn pián yi, suǒ yǐ rén hěn duō.
+Because this shop is cheap, there are many people here.
+
+grammar-061-05
+因为明天考试，所以我要复习。
+yīn wèi míng tiān kǎo shì, suǒ yǐ wǒ yào fù xí.
+Because there is an exam tomorrow, I need to review.
+
+grammar-061-06
+因为她住得远，所以每天很早出门。
+yīn wèi tā zhù de yuǎn, suǒ yǐ měi tiān hěn zǎo chū mén.
+Because she lives far away, she leaves home early every day.
+
+grammar-061-07
+因为没带伞，所以我淋湿了。
+yīn wèi méi dài sǎn, suǒ yǐ wǒ lín shī le.
+Because I did not bring an umbrella, I got wet in the rain.
+
+grammar-061-08
+因为房间太小，所以我们想搬家。
+yīn wèi fáng jiān tài xiǎo, suǒ yǐ wǒ men xiǎng bān jiā.
+Because the room is too small, we want to move.
+
+grammar-061-09
+因为他不吃肉，所以我做了蔬菜。
+yīn wèi tā bù chī ròu, suǒ yǐ wǒ zuò le shū cài.
+Because he does not eat meat, I cooked vegetables.
+
+grammar-061-10
+因为时间不够，所以我们坐了出租车。
+yīn wèi shí jiān bù gòu, suǒ yǐ wǒ men zuò le chū zū chē.
+Because there was not enough time, we took a taxi.
+
+grammar-062: Concession with 虽然…但是…
+Pattern: 虽然 + fact，但是 + contrasting fact
+
+grammar-062-01
+虽然下雨，但是我们还是出门了。
+suī rán xià yǔ, dàn shì wǒ men hái shì chū mén le.
+Although it was raining, we still went out.
+
+grammar-062-02
+虽然这件衣服贵，但是质量很好。
+suī rán zhè jiàn yī fú guì, dàn shì zhì liàng hěn hǎo.
+Although this piece of clothing is expensive, its quality is very good.
+
+grammar-062-03
+虽然他很忙，但是每天都运动。
+suī rán tā hěn máng, dàn shì měi tiān dōu yùn dòng.
+Although he is busy, he exercises every day.
+
+grammar-062-04
+虽然我学过，但是已经忘了。
+suī rán wǒ xué guò, dàn shì yǐ jīng wàng le.
+Although I studied it before, I have already forgotten it.
+
+grammar-062-05
+虽然路很远，但是风景很美。
+suī rán lù hěn yuǎn, dàn shì fēng jǐng hěn měi.
+Although the journey is long, the scenery is beautiful.
+
+grammar-062-06
+虽然她年轻，但是经验很多。
+suī rán tā nián qīng, dàn shì jīng yàn hěn duō.
+Although she is young, she has a lot of experience.
+
+grammar-062-07
+虽然今天冷，但是没有风。
+suī rán jīn tiān lěng, dàn shì méi yǒu fēng.
+Although it is cold today, there is no wind.
+
+grammar-062-08
+虽然这道题难，但是我想试试。
+suī rán zhè dào tí nán, dàn shì wǒ xiǎng shì shì.
+Although this question is difficult, I want to try it.
+
+grammar-062-09
+虽然房间小，但是很舒服。
+suī rán fáng jiān xiǎo, dàn shì hěn shū fú.
+Although the room is small, it is comfortable.
+
+grammar-062-10
+虽然我不同意，但是我理解你的想法。
+suī rán wǒ bù tóng yì, dàn shì wǒ lǐ jiě nǐ de xiǎng fǎ.
+Although I disagree, I understand your thinking.
+
+grammar-063: Conditions with 如果…就…
+Pattern: 如果 + condition，就 + consequence
+
+grammar-063-01
+如果明天下雨，我们就不去了。
+rú guǒ míng tiān xià yǔ, wǒ men jiù bù qù le.
+If it rains tomorrow, we will not go.
+
+grammar-063-02
+如果你有时间，就给我打电话。
+rú guǒ nǐ yǒu shí jiān, jiù gěi wǒ dǎ diàn huà.
+If you have time, call me.
+
+grammar-063-03
+如果太贵，我就不买。
+rú guǒ tài guì, wǒ jiù bù mǎi.
+If it is too expensive, I will not buy it.
+
+grammar-063-04
+如果你不懂，就问老师。
+rú guǒ nǐ bù dǒng, jiù wèn lǎo shī.
+If you do not understand, ask the teacher.
+
+grammar-063-05
+如果今天做不完，我们就明天继续。
+rú guǒ jīn tiān zuò bù wán, wǒ men jiù míng tiān jì xù.
+If we cannot finish today, we will continue tomorrow.
+
+grammar-063-06
+如果坐地铁，就不会堵车。
+rú guǒ zuò dì tiě, jiù bù huì dǔ chē.
+If we take the subway, we will not get stuck in traffic.
+
+grammar-063-07
+如果你喜欢，就拿走吧。
+rú guǒ nǐ xǐ huān, jiù ná zǒu ba.
+If you like it, take it.
+
+grammar-063-08
+如果他来，我就告诉你。
+rú guǒ tā lái, wǒ jiù gào sù nǐ.
+If he comes, I will tell you.
+
+grammar-063-09
+如果身体不舒服，就休息一下。
+rú guǒ shēn tǐ bù shū fú, jiù xiū xī yī xià.
+If you feel unwell, rest for a little while.
+
+grammar-063-10
+如果找不到地址，就给前台打电话。
+rú guǒ zhǎo bù dào dì zhǐ, jiù gěi qián tái dǎ diàn huà.
+If you cannot find the address, call the front desk.
+
+grammar-064: Sufficient conditions with 只要…就…
+Pattern: 只要 + sufficient condition，就 + result
+
+grammar-064-01
+只要你努力，就会进步。
+zhǐ yào nǐ nǔ lì, jiù huì jìn bù.
+As long as you work hard, you will improve.
+
+grammar-064-02
+只要不下雨，我们就去爬山。
+zhǐ yào bù xià yǔ, wǒ men jiù qù pá shān.
+As long as it does not rain, we will go hiking.
+
+grammar-064-03
+只要有时间，我就会来看你。
+zhǐ yào yǒu shí jiān, wǒ jiù huì lái kàn nǐ.
+As long as I have time, I will come to see you.
+
+grammar-064-04
+只要带护照，就能办理入住。
+zhǐ yào dài hù zhào, jiù néng bàn lǐ rù zhù.
+As long as you bring your passport, you can check in.
+
+grammar-064-05
+只要你愿意，我们就一起学。
+zhǐ yào nǐ yuàn yì, wǒ men jiù yī qǐ xué.
+As long as you are willing, we will study together.
+
+grammar-064-06
+只要提前订票，就能买到座位。
+zhǐ yào tí qián dìng piào, jiù néng mǎi dào zuò wèi.
+As long as you book in advance, you can get a seat.
+
+grammar-064-07
+只要每天练习，就不会忘。
+zhǐ yào měi tiān liàn xí, jiù bù huì wàng.
+As long as you practice every day, you will not forget.
+
+grammar-064-08
+只要价格合适，我就买。
+zhǐ yào jià gé hé shì, wǒ jiù mǎi.
+As long as the price is right, I will buy it.
+
+grammar-064-09
+只要你告诉我地址，我就能找到。
+zhǐ yào nǐ gào sù wǒ dì zhǐ, wǒ jiù néng zhǎo dào.
+As long as you tell me the address, I can find it.
+
+grammar-064-10
+只要大家同意，我们就开始。
+zhǐ yào dà jiā tóng yì, wǒ men jiù kāi shǐ.
+As long as everyone agrees, we will start.
+
+grammar-065: Necessary conditions with 只有…才…
+Pattern: 只有 + necessary condition，才 + result
+
+grammar-065-01
+只有多练习，才能说得流利。
+zhǐ yǒu duō liàn xí, cái néng shuō de liú lì.
+Only by practicing more can you speak fluently.
+
+grammar-065-02
+只有买票，才能进去。
+zhǐ yǒu mǎi piào, cái néng jìn qù.
+You can enter only if you buy a ticket.
+
+grammar-065-03
+只有输入正确的密码，才能打开文件。
+zhǐ yǒu shū rù zhèng què de mì mǎ, cái néng dǎ kāi wén jiàn.
+Only by entering the correct password can you open the file.
+
+grammar-065-04
+只有周末，我才有时间做饭。
+zhǐ yǒu zhōu mò, wǒ cái yǒu shí jiān zuò fàn.
+Only on weekends do I have time to cook.
+
+grammar-065-05
+只有坐飞机，才能准时到。
+zhǐ yǒu zuò fēi jī, cái néng zhǔn shí dào.
+Only by flying can we arrive on time.
+
+grammar-065-06
+只有得到允许，才能拍照。
+zhǐ yǒu dé dào yǔn xǔ, cái néng pāi zhào.
+You can take photos only if you get permission.
+
+grammar-065-07
+只有亲自去看，才会明白。
+zhǐ yǒu qīn zì qù kàn, cái huì míng bái.
+Only by going to see it yourself will you understand.
+
+grammar-065-08
+只有把窗户关上，房间才会暖和。
+zhǐ yǒu bǎ chuāng hù guān shàng, fáng jiān cái huì nuǎn huo.
+Only if we close the window will the room get warm.
+
+grammar-065-09
+只有先完成作业，才能玩游戏。
+zhǐ yǒu xiān wán chéng zuò yè, cái néng wán yóu xì.
+You can play games only if you finish your homework first.
+
+grammar-065-10
+只有认真检查，才能发现这些错误。
+zhǐ yǒu rèn zhēn jiǎn chá, cái néng fā xiàn zhè xiē cuò wù.
+Only by checking carefully can you find these mistakes.
+
+grammar-066: Even if with 即使…也…
+Pattern: 即使 + hypothetical concession，也 + result
+
+grammar-066-01
+即使下雨，我也会去。
+jí shǐ xià yǔ, wǒ yě huì qù.
+Even if it rains, I will go.
+
+grammar-066-02
+即使很忙，他也会给家里打电话。
+jí shǐ hěn máng, tā yě huì gěi jiā lǐ dǎ diàn huà.
+Even if he is busy, he will call home.
+
+grammar-066-03
+即使失败了，我也不放弃。
+jí shǐ shī bài le, wǒ yě bù fàng qì.
+Even if I fail, I will not give up.
+
+grammar-066-04
+即使你不说，我也知道。
+jí shǐ nǐ bù shuō, wǒ yě zhī dào.
+Even if you do not say it, I know.
+
+grammar-066-05
+即使便宜，我也不想买。
+jí shǐ pián yi, wǒ yě bù xiǎng mǎi.
+Even if it is cheap, I do not want to buy it.
+
+grammar-066-06
+即使只有十分钟，也要练习。
+jí shǐ zhǐ yǒu shí fēn zhōng, yě yào liàn xí.
+Even if you have only ten minutes, you should practice.
+
+grammar-066-07
+即使没有人帮忙，她也能完成。
+jí shǐ méi yǒu rén bāng máng, tā yě néng wán chéng.
+Even if nobody helps, she can finish it.
+
+grammar-066-08
+即使坐出租车，也来不及了。
+jí shǐ zuò chū zū chē, yě lái bù jí le.
+Even if we take a taxi, we will not make it in time.
+
+grammar-066-09
+即使住得远，我们也能常见面。
+jí shǐ zhù de yuǎn, wǒ men yě néng cháng jiàn miàn.
+Even if we live far apart, we can meet often.
+
+grammar-066-10
+即使你不同意，也请听我说完。
+jí shǐ nǐ bù tóng yì, yě qǐng tīng wǒ shuō wán.
+Even if you disagree, please hear me out.
+
+grammar-067: Regardless with 不管…都…
+Pattern: 不管 + alternatives/question phrase，都 + result
+
+grammar-067-01
+不管多忙，我都每天看书。
+bù guǎn duō máng, wǒ dōu měi tiān kàn shū.
+No matter how busy I am, I read every day.
+
+grammar-067-02
+不管你去哪儿，我都支持你。
+bù guǎn nǐ qù nǎ er, wǒ dōu zhī chí nǐ.
+No matter where you go, I support you.
+
+grammar-067-03
+不管天气怎么样，我们都要出发。
+bù guǎn tiān qì zěn me yàng, wǒ men dōu yào chū fā.
+No matter what the weather is like, we must set off.
+
+grammar-067-04
+不管谁来，都要登记。
+bù guǎn shuí lái, dōu yào dēng jì.
+No matter who comes, they must register.
+
+grammar-067-05
+不管贵不贵，我都要买。
+bù guǎn guì bù guì, wǒ dōu yào mǎi.
+Whether it is expensive or not, I will buy it.
+
+grammar-067-06
+不管你选哪个，我都同意。
+bù guǎn nǐ xuǎn nǎ ge, wǒ dōu tóng yì.
+No matter which one you choose, I agree.
+
+grammar-067-07
+不管什么时候，你都可以联系我。
+bù guǎn shén me shí hòu, nǐ dōu kě yǐ lián xì wǒ.
+You can contact me at any time.
+
+grammar-067-08
+不管遇到什么问题，都别放弃。
+bù guǎn yù dào shén me wèn tí, dōu bié fàng qì.
+No matter what problems you encounter, do not give up.
+
+grammar-067-09
+不管下不下雨，他都去跑步。
+bù guǎn xià bù xià yǔ, tā dōu qù pǎo bù.
+Whether it rains or not, he goes running.
+
+grammar-067-10
+不管结果如何，我们都感谢你。
+bù guǎn jié guǒ rú hé, wǒ men dōu gǎn xiè nǐ.
+Regardless of the result, we thank you.
+
+grammar-068: Addition with 不但…而且…
+Pattern: 不但 + first point，而且 + additional point
+
+grammar-068-01
+她不但会说中文，而且会说日语。
+tā bù dàn huì shuō zhōng wén, ér qiě huì shuō rì yǔ.
+She can speak not only Chinese but also Japanese.
+
+grammar-068-02
+这家店不但便宜，而且服务很好。
+zhè jiā diàn bù dàn pián yi, ér qiě fú wù hěn hǎo.
+This shop is not only cheap but also has very good service.
+
+grammar-068-03
+他不但完成了工作，而且帮助了别人。
+tā bù dàn wán chéng le gōng zuò, ér qiě bāng zhù le bié rén.
+He not only finished his work but also helped others.
+
+grammar-068-04
+运动不但对身体好，而且能让人放松。
+yùn dòng bù dàn duì shēn tǐ hǎo, ér qiě néng ràng rén fàng sōng.
+Exercise is not only good for the body but also helps people relax.
+
+grammar-068-05
+这个房间不但大，而且很亮。
+zhè ge fáng jiān bù dàn dà, ér qiě hěn liàng.
+This room is not only big but also bright.
+
+grammar-068-06
+不但我喜欢这本书，而且我妹妹也喜欢。
+bù dàn wǒ xǐ huān zhè běn shū, ér qiě wǒ mèi mèi yě xǐ huān.
+Not only do I like this book, but my younger sister likes it too.
+
+grammar-068-07
+她不但聪明，而且很有耐心。
+tā bù dàn cōng míng, ér qiě hěn yǒu nài xīn.
+She is not only smart but also very patient.
+
+grammar-068-08
+这部电影不但有趣，而且让人思考。
+zhè bù diàn yǐng bù dàn yǒu qù, ér qiě ràng rén sī kǎo.
+This movie is not only interesting but also makes people think.
+
+grammar-068-09
+坐地铁不但快，而且方便。
+zuò dì tiě bù dàn kuài, ér qiě fāng biàn.
+Taking the subway is not only fast but also convenient.
+
+grammar-068-10
+他不但记住了名字，而且记住了地址。
+tā bù dàn jì zhù le míng zì, ér qiě jì zhù le dì zhǐ.
+He remembered not only the name but also the address.
+
+grammar-069: Besides with 除了…以外，还…
+Pattern: 除了 + included item + 以外，还/也 + addition
+
+grammar-069-01
+除了中文以外，她还会说法语。
+chú le zhōng wén yǐ wài, tā hái huì shuō fǎ yǔ.
+Besides Chinese, she can also speak French.
+
+grammar-069-02
+除了咖啡以外，我还买了茶。
+chú le kā fēi yǐ wài, wǒ hái mǎi le chá.
+Besides coffee, I also bought tea.
+
+grammar-069-03
+除了看书以外，他还喜欢游泳。
+chú le kàn shū yǐ wài, tā hái xǐ huān yóu yǒng.
+Besides reading, he also likes swimming.
+
+grammar-069-04
+除了北京以外，我们还去了西安。
+chú le běi jīng yǐ wài, wǒ men hái qù le xī ān.
+Besides Beijing, we also went to Xi'an.
+
+grammar-069-05
+除了星期一以外，星期三我也有空。
+chú le xīng qī yī yǐ wài, xīng qī sān wǒ yě yǒu kòng.
+Besides Monday, I am also free on Wednesday.
+
+grammar-069-06
+除了护照以外，你还要带照片。
+chú le hù zhào yǐ wài, nǐ hái yào dài zhào piān.
+Besides your passport, you also need to bring photos.
+
+grammar-069-07
+除了价格以外，我们还要考虑质量。
+chú le jià gé yǐ wài, wǒ men hái yào kǎo lǜ zhì liàng.
+Besides the price, we also need to consider the quality.
+
+grammar-069-08
+除了老师以外，学生也参加了活动。
+chú le lǎo shī yǐ wài, xué shēng yě cān jiā le huó dòng.
+Besides the teachers, the students also took part in the activity.
+
+grammar-069-09
+除了做饭以外，他还负责洗碗。
+chú le zuò fàn yǐ wài, tā hái fù zé xǐ wǎn.
+Besides cooking, he is also responsible for washing the dishes.
+
+grammar-069-10
+除了这本书以外，我还推荐那本。
+chú le zhè běn shū yǐ wài, wǒ hái tuī jiàn nà běn.
+Besides this book, I also recommend that one.
+
+grammar-070: Exceptions with 除了…以外，都…
+Pattern: 除了 + exception + 以外，group + 都 + predicate
+
+grammar-070-01
+除了他以外，大家都到了。
+chú le tā yǐ wài, dà jiā dōu dào le.
+Everyone has arrived except him.
+
+grammar-070-02
+除了星期天以外，我每天都上班。
+chú le xīng qī tiān yǐ wài, wǒ měi tiān dōu shàng bān.
+I work every day except Sunday.
+
+grammar-070-03
+除了这道题以外，其他题我都会做。
+chú le zhè dào tí yǐ wài, qí tā tí wǒ dōu huì zuò.
+I can do all the other questions except this one.
+
+grammar-070-04
+除了鱼以外，这些菜我都喜欢。
+chú le yú yǐ wài, zhè xiē cài wǒ dōu xǐ huān.
+I like all these dishes except the fish.
+
+grammar-070-05
+除了小王以外，我们都去过上海。
+chú le xiǎo wáng yǐ wài, wǒ men dōu qù guò shàng hǎi.
+All of us have been to Shanghai except Xiao Wang.
+
+grammar-070-06
+除了厨房以外，其他房间都打扫了。
+chú le chú fáng yǐ wài, qí tā fáng jiān dōu dǎ sǎo le.
+All the other rooms have been cleaned except the kitchen.
+
+grammar-070-07
+除了红色以外，其他颜色都有。
+chú le hóng sè yǐ wài, qí tā yán sè dōu yǒu.
+All the other colors are available except red.
+
+grammar-070-08
+除了最后一页以外，我都看完了。
+chú le zuì hòu yī yè yǐ wài, wǒ dōu kàn wán le.
+I have read everything except the last page.
+
+grammar-070-09
+除了这家店以外，附近的商店都关门了。
+chú le zhè jiā diàn yǐ wài, fù jìn de shāng diàn dōu guān mén le.
+All the nearby shops have closed except this one.
+
+grammar-070-10
+除了周末以外，他每天都六点起床。
+chú le zhōu mò yǐ wài, tā měi tiān dōu liù diǎn qǐ chuáng.
+He gets up at six every day except on weekends.
+
+grammar-071: Simultaneous actions with 一边…一边…
+Pattern: 一边 + action A，一边 + action B
+
+grammar-071-01
+我一边做饭，一边听音乐。
+wǒ yī biān zuò fàn, yī biān tīng yīn yuè.
+I listen to music while cooking.
+
+grammar-071-02
+她一边走路，一边打电话。
+tā yī biān zǒu lù, yī biān dǎ diàn huà.
+She talks on the phone while walking.
+
+grammar-071-03
+我们一边吃饭，一边聊天。
+wǒ men yī biān chī fàn, yī biān liáo tiān.
+We chat while eating.
+
+grammar-071-04
+他一边看电视，一边吃水果。
+tā yī biān kàn diàn shì, yī biān chī shuǐ guǒ.
+He eats fruit while watching television.
+
+grammar-071-05
+老师一边解释，一边画图。
+lǎo shī yī biān jiě shì, yī biān huà tú.
+The teacher draws diagrams while explaining.
+
+grammar-071-06
+孩子一边唱歌，一边跳舞。
+hái zi yī biān chàng gē, yī biān tiào wǔ.
+The child sings and dances at the same time.
+
+grammar-071-07
+我一边听课，一边记笔记。
+wǒ yī biān tīng kè, yī biān jì bǐ jì.
+I take notes while listening in class.
+
+grammar-071-08
+她一边收拾房间，一边跟我说话。
+tā yī biān shōu shí fáng jiān, yī biān gēn wǒ shuō huà.
+She talks to me while tidying the room.
+
+grammar-071-09
+他一边跑步，一边听新闻。
+tā yī biān pǎo bù, yī biān tīng xīn wén.
+He listens to the news while running.
+
+grammar-071-10
+我们一边喝茶，一边讨论计划。
+wǒ men yī biān hē chá, yī biān tǎo lùn jì huà.
+We discuss the plan while drinking tea.
+
+grammar-072: Immediate sequence with 一…就…
+Pattern: 一 + trigger，就 + consequence
+
+grammar-072-01
+我一到家就给你打电话。
+wǒ yī dào jiā jiù gěi nǐ dǎ diàn huà.
+I will call you as soon as I get home.
+
+grammar-072-02
+他一喝咖啡就睡不着。
+tā yī hē kā fēi jiù shuì bù zháo.
+As soon as he drinks coffee, he cannot get to sleep.
+
+grammar-072-03
+她一听到消息就哭了。
+tā yī tīng dào xiāo xī jiù kū le.
+She cried as soon as she heard the news.
+
+grammar-072-04
+我们一下课就去食堂。
+wǒ men yī xià kè jiù qù shí táng.
+We go to the cafeteria as soon as class ends.
+
+grammar-072-05
+门一开，孩子就跑进来了。
+mén yī kāi, hái zi jiù pǎo jìn lái le.
+As soon as the door opened, the child ran in.
+
+grammar-072-06
+我一看就明白了。
+wǒ yī kàn jiù míng bái le.
+I understood as soon as I looked at it.
+
+grammar-072-07
+他一有空就去游泳。
+tā yī yǒu kòng jiù qù yóu yǒng.
+He goes swimming as soon as he has free time.
+
+grammar-072-08
+雨一停，我们就出发。
+yǔ yī tíng, wǒ men jiù chū fā.
+We will set off as soon as the rain stops.
+
+grammar-072-09
+她一上车就睡着了。
+tā yī shàng chē jiù shuì zháo le.
+She fell asleep as soon as she got in the car.
+
+grammar-072-10
+你一收到邮件就告诉我。
+nǐ yī shōu dào yóu jiàn jiù gào sù wǒ.
+Tell me as soon as you receive the email.
+
+grammar-073: Ordered steps with 先…再…然后…
+Pattern: 先 + first action，再 + second，然后 + next
+
+grammar-073-01
+先洗手，再吃饭。
+xiān xǐ shǒu, zài chī fàn.
+Wash your hands first, then eat.
+
+grammar-073-02
+我们先买票，再进去。
+wǒ men xiān mǎi piào, zài jìn qù.
+We will buy tickets first, then go in.
+
+grammar-073-03
+你先休息一下，然后再工作。
+nǐ xiān xiū xī yī xià, rán hòu zài gōng zuò.
+Rest a little first, then get back to work.
+
+grammar-073-04
+我先查地图，再决定怎么走。
+wǒ xiān chá dì tú, zài jué dìng zěn me zǒu.
+I will check the map first, then decide which way to go.
+
+grammar-073-05
+先填表，然后交给前台。
+xiān tián biǎo, rán hòu jiāo gěi qián tái.
+Fill out the form first, then give it to the front desk.
+
+grammar-073-06
+她先做作业，再看电视。
+tā xiān zuò zuò yè, zài kàn diàn shì.
+She does her homework first, then watches television.
+
+grammar-073-07
+我们先吃饭，再去看电影。
+wǒ men xiān chī fàn, zài qù kàn diàn yǐng.
+We will eat first, then go to see a movie.
+
+grammar-073-08
+先把水烧开，然后放面条。
+xiān bǎ shuǐ shāo kāi, rán hòu fàng miàn tiáo.
+Boil the water first, then add the noodles.
+
+grammar-073-09
+你先听一遍，再跟着读。
+nǐ xiān tīng yī biàn, zài gēn zhe dú.
+Listen once first, then read along.
+
+grammar-073-10
+我先打电话预约，再去医院。
+wǒ xiān dǎ diàn huà yù yuē, zài qù yī yuàn.
+I will call to make an appointment first, then go to the hospital.
+
+grammar-074: Before with 以前
+Pattern: Event/time + 以前
+
+grammar-074-01
+睡觉以前，我会看一会儿书。
+shuì jiào yǐ qián, wǒ huì kàn yī huì er shū.
+Before going to sleep, I read for a little while.
+
+grammar-074-02
+出门以前，请关灯。
+chū mén yǐ qián, qǐng guān dēng.
+Please turn off the lights before going out.
+
+grammar-074-03
+吃饭以前要洗手。
+chī fàn yǐ qián yào xǐ shǒu.
+You should wash your hands before eating.
+
+grammar-074-04
+来中国以前，我不会用筷子。
+lái zhōng guó yǐ qián, wǒ bù huì yòng kuài zi.
+Before coming to China, I could not use chopsticks.
+
+grammar-074-05
+考试以前，她很紧张。
+kǎo shì yǐ qián, tā hěn jǐn zhāng.
+Before the exam, she was nervous.
+
+grammar-074-06
+签字以前，请仔细看合同。
+qiān zì yǐ qián, qǐng zǐ xì kàn hé tóng.
+Please read the contract carefully before signing.
+
+grammar-074-07
+九点以前，我一定到。
+jiǔ diǎn yǐ qián, wǒ yī dìng dào.
+I will definitely arrive before nine.
+
+grammar-074-08
+上大学以前，他住在家里。
+shàng dà xué yǐ qián, tā zhù zài jiā lǐ.
+Before starting university, he lived at home.
+
+grammar-074-09
+买票以前，先看看天气。
+mǎi piào yǐ qián, xiān kàn kàn tiān qì.
+Check the weather before buying tickets.
+
+grammar-074-10
+搬家以前，我们卖了旧家具。
+bān jiā yǐ qián, wǒ men mài le jiù jiā jù.
+Before moving, we sold the old furniture.
+
+grammar-075: After with 以后
+Pattern: Event/time + 以后
+
+grammar-075-01
+下班以后，我去超市。
+xià bān yǐ hòu, wǒ qù chāo shì.
+After work, I go to the supermarket.
+
+grammar-075-02
+吃完饭以后，我们散步吧。
+chī wán fàn yǐ hòu, wǒ men sàn bù ba.
+Let us take a walk after finishing the meal.
+
+grammar-075-03
+毕业以后，她想当老师。
+bì yè yǐ hòu, tā xiǎng dāng lǎo shī.
+After graduating, she wants to become a teacher.
+
+grammar-075-04
+到家以后，给我发个消息。
+dào jiā yǐ hòu, gěi wǒ fā gè xiāo xī.
+Send me a message after you get home.
+
+grammar-075-05
+看完电影以后，我们聊了很久。
+kàn wán diàn yǐng yǐ hòu, wǒ men liáo le hěn jiǔ.
+After watching the movie, we chatted for a long time.
+
+grammar-075-06
+十点以后，请保持安静。
+shí diǎn yǐ hòu, qǐng bǎo chí ān jìng.
+Please keep quiet after ten.
+
+grammar-075-07
+搬家以后，我离公司更近了。
+bān jiā yǐ hòu, wǒ lí gōng sī gèng jìn le.
+After moving, I live closer to the company.
+
+grammar-075-08
+学会开车以后，他很少坐公交车。
+xué huì kāi chē yǐ hòu, tā hěn shǎo zuò gōng jiāo chē.
+After learning to drive, he rarely takes the bus.
+
+grammar-075-09
+收到钱以后，我会寄出包裹。
+shōu dào qián yǐ hòu, wǒ huì jì chū bāo guǒ.
+After receiving the money, I will send the parcel.
+
+grammar-075-10
+洗完手以后，再来帮忙。
+xǐ wán shǒu yǐ hòu, zài lái bāng máng.
+Come and help after washing your hands.
+
+grammar-076: Disposal with 把
+Pattern: Subject + 把 + identifiable object + verb + result
+
+grammar-076-01
+请把门关上。
+qǐng bǎ mén guān shàng.
+Please close the door.
+
+grammar-076-02
+我把钥匙放在桌子上了。
+wǒ bǎ yào shi fàng zài zhuō zi shàng le.
+I put the keys on the table.
+
+grammar-076-03
+她把作业做完了。
+tā bǎ zuò yè zuò wán le.
+She finished the homework.
+
+grammar-076-04
+请把这句话翻译成中文。
+qǐng bǎ zhè jù huà fān yì chéng zhōng wén.
+Please translate this sentence into Chinese.
+
+grammar-076-05
+他把杯子打破了。
+tā bǎ bēi zi dǎ pò le.
+He broke the cup.
+
+grammar-076-06
+我们把会议改到星期五了。
+wǒ men bǎ huì yì gǎi dào xīng qī wǔ le.
+We moved the meeting to Friday.
+
+grammar-076-07
+请把手机关掉。
+qǐng bǎ shǒu jī guān diào.
+Please turn off your phone.
+
+grammar-076-08
+我把那本书还给老师了。
+wǒ bǎ nà běn shū huán gěi lǎo shī le.
+I returned that book to the teacher.
+
+grammar-076-09
+她把房间收拾干净了。
+tā bǎ fáng jiān shōu shí gān jìng le.
+She tidied the room until it was clean.
+
+grammar-076-10
+别把护照忘在家里。
+bié bǎ hù zhào wàng zài jiā lǐ.
+Do not leave your passport at home.
+
+grammar-077: Passive with 被
+Pattern: Affected subject + 被 + agent + verb + result
+
+grammar-077-01
+我的自行车被人偷了。
+wǒ de zì xíng chē bèi rén tōu le.
+My bicycle was stolen by someone.
+
+grammar-077-02
+窗户被风吹开了。
+chuāng hù bèi fēng chuī kāi le.
+The window was blown open by the wind.
+
+grammar-077-03
+蛋糕被孩子吃完了。
+dàn gāo bèi hái zi chī wán le.
+The cake was eaten up by the child.
+
+grammar-077-04
+我的杯子被他打破了。
+wǒ de bēi zi bèi tā dǎ pò le.
+My cup was broken by him.
+
+grammar-077-05
+她被老师表扬了。
+tā bèi lǎo shī biǎo yáng le.
+She was praised by the teacher.
+
+grammar-077-06
+我的名字被写错了。
+wǒ de míng zì bèi xiě cuò le.
+My name was written incorrectly.
+
+grammar-077-07
+门被人锁上了。
+mén bèi rén suǒ shàng le.
+The door was locked by someone.
+
+grammar-077-08
+这本书被翻译成了中文。
+zhè běn shū bèi fān yì chéng le zhōng wén.
+This book was translated into Chinese.
+
+grammar-077-09
+我的计划被经理拒绝了。
+wǒ de jì huà bèi jīng lǐ jù jué le.
+My plan was rejected by the manager.
+
+grammar-077-10
+他被选为班长了。
+tā bèi xuǎn wéi bān zhǎng le.
+He was chosen as class monitor.
+
+grammar-078: Highlighting past details with 是…的
+Pattern: Subject + 是 + highlighted detail + verb + 的
+
+grammar-078-01
+我是昨天到的。
+wǒ shì zuó tiān dào de.
+It was yesterday that I arrived.
+
+grammar-078-02
+她是坐地铁来的。
+tā shì zuò dì tiě lái de.
+It was by subway that she came.
+
+grammar-078-03
+我们是在北京认识的。
+wǒ men shì zài běi jīng rèn shí de.
+It was in Beijing that we met.
+
+grammar-078-04
+这张照片是我拍的。
+zhè zhāng zhào piān shì wǒ pāi de.
+It was me who took this photo.
+
+grammar-078-05
+他是跟朋友一起去的。
+tā shì gēn péng yǒu yī qǐ qù de.
+It was with friends that he went.
+
+grammar-078-06
+你是什么时候买的？
+nǐ shì shén me shí hòu mǎi de?
+When was it that you bought it?
+
+grammar-078-07
+我是在网上订的票。
+wǒ shì zài wǎng shàng dìng de piào.
+It was online that I booked the tickets.
+
+grammar-078-08
+我不是坐飞机来的。
+wǒ bù shì zuò fēi jī lái de.
+It was not by plane that I came.
+
+grammar-078-09
+我们是去年搬来的。
+wǒ men shì qù nián bān lái de.
+It was last year that we moved here.
+
+grammar-078-10
+这道菜是妈妈做的。
+zhè dào cài shì mā mā zuò de.
+It was Mom who made this dish.
+
+grammar-079: Requesting or inviting with 请
+Pattern: 请 + person + verb
+
+grammar-079-01
+请坐。
+qǐng zuò.
+Please sit down.
+
+grammar-079-02
+请稍等一下。
+qǐng shāo děng yī xià.
+Please wait a moment.
+
+grammar-079-03
+请你帮我开一下门。
+qǐng nǐ bāng wǒ kāi yī xià mén.
+Please help me open the door.
+
+grammar-079-04
+请大家保持安静。
+qǐng dà jiā bǎo chí ān jìng.
+Everyone, please keep quiet.
+
+grammar-079-05
+请把菜单给我。
+qǐng bǎ cài dān gěi wǒ.
+Please give me the menu.
+
+grammar-079-06
+请在这里签字。
+qǐng zài zhè lǐ qiān zì.
+Please sign here.
+
+grammar-079-07
+请告诉我你的名字。
+qǐng gào sù wǒ nǐ de míng zì.
+Please tell me your name.
+
+grammar-079-08
+请明天再来。
+qǐng míng tiān zài lái.
+Please come again tomorrow.
+
+grammar-079-09
+请不要在这里吸烟。
+qǐng bù yào zài zhè lǐ xī yān.
+Please do not smoke here.
+
+grammar-079-10
+请给我一杯温水。
+qǐng gěi wǒ yī bēi wēn shuǐ.
+Please give me a glass of warm water.
+
+grammar-080: Prohibitions with 别
+Pattern: 别 + verb
+
+grammar-080-01
+别担心。
+bié dān xīn.
+Do not worry.
+
+grammar-080-02
+别迟到。
+bié chí dào.
+Do not be late.
+
+grammar-080-03
+别忘了带护照。
+bié wàng le dài hù zhào.
+Do not forget to bring your passport.
+
+grammar-080-04
+别在这里停车。
+bié zài zhè lǐ tíng chē.
+Do not park here.
+
+grammar-080-05
+别说话了。
+bié shuō huà le.
+Stop talking.
+
+grammar-080-06
+别把门关上。
+bié bǎ mén guān shàng.
+Do not close the door.
+
+grammar-080-07
+别吃太多糖。
+bié chī tài duō táng.
+Do not eat too much sugar.
+
+grammar-080-08
+别告诉别人。
+bié gào sù bié rén.
+Do not tell other people.
+
+grammar-080-09
+别着急，慢慢来。
+bié zháo jí, màn màn lái.
+Do not rush; take your time.
+
+grammar-080-10
+别再打电话了。
+bié zài dǎ diàn huà le.
+Stop calling.
+
+grammar-081: Suggestions with 吧
+Pattern: Proposal + 吧
+
+grammar-081-01
+我们走吧。
+wǒ men zǒu ba.
+Let us go.
+
+grammar-081-02
+一起吃午饭吧。
+yī qǐ chī wǔ fàn ba.
+Let us have lunch together.
+
+grammar-081-03
+你先休息一下吧。
+nǐ xiān xiū xī yī xià ba.
+Why don't you rest a little first?
+
+grammar-081-04
+我们坐地铁吧。
+wǒ men zuò dì tiě ba.
+Let us take the subway.
+
+grammar-081-05
+明天再说吧。
+míng tiān zài shuō ba.
+Let us talk about it tomorrow.
+
+grammar-081-06
+请进来吧。
+qǐng jìn lái ba.
+Please come on in.
+
+grammar-081-07
+我们换个话题吧。
+wǒ men huàn gè huà tí ba.
+Let us change the subject.
+
+grammar-081-08
+你试试吧。
+nǐ shì shì ba.
+Why don't you give it a try?
+
+grammar-081-09
+我们在门口见吧。
+wǒ men zài mén kǒu jiàn ba.
+Let us meet at the entrance.
+
+grammar-081-10
+把窗户打开吧。
+bǎ chuāng hù dǎ kāi ba.
+Why don't you open the window?
+
+grammar-082: Brief actions with 一下
+Pattern: Verb + 一下
+
+grammar-082-01
+请等一下。
+qǐng děng yī xià.
+Please wait briefly.
+
+grammar-082-02
+我想看一下菜单。
+wǒ xiǎng kàn yī xià cài dān.
+I would like to take a quick look at the menu.
+
+grammar-082-03
+你能帮我检查一下吗？
+nǐ néng bāng wǒ jiǎn chá yī xià ma?
+Could you help me check it briefly?
+
+grammar-082-04
+让我想一下。
+ràng wǒ xiǎng yī xià.
+Let me think for a moment.
+
+grammar-082-05
+请介绍一下你自己。
+qǐng jiè shào yī xià nǐ zì jǐ.
+Please briefly introduce yourself.
+
+grammar-082-06
+我去问一下老师。
+wǒ qù wèn yī xià lǎo shī.
+I will go and ask the teacher quickly.
+
+grammar-082-07
+你先休息一下。
+nǐ xiān xiū xī yī xià.
+Rest a little first.
+
+grammar-082-08
+请试一下这双鞋。
+qǐng shì yī xià zhè shuāng xié.
+Please try on this pair of shoes.
+
+grammar-082-09
+我想了解一下情况。
+wǒ xiǎng liǎo jiě yī xià qíng kuàng.
+I would like to get a brief idea of the situation.
+
+grammar-082-10
+请记一下我的号码。
+qǐng jì yī xià wǒ de hào mǎ.
+Please take a moment to note my number.
+
+grammar-083: Tentative actions by reduplication
+Pattern: Verb-verb / verb-一-verb
+
+grammar-083-01
+你看看这张照片。
+nǐ kàn kàn zhè zhāng zhào piān.
+Take a look at this photo.
+
+grammar-083-02
+我想试试。
+wǒ xiǎng shì shì.
+I would like to give it a try.
+
+grammar-083-03
+我们聊聊吧。
+wǒ men liáo liáo ba.
+Let us have a little chat.
+
+grammar-083-04
+你再想想。
+nǐ zài xiǎng xiǎng.
+Think it over a bit more.
+
+grammar-083-05
+请尝尝这道菜。
+qǐng cháng cháng zhè dào cài.
+Please have a taste of this dish.
+
+grammar-083-06
+周末我们去公园走走。
+zhōu mò wǒ men qù gōng yuán zǒu zǒu.
+Let us go for a stroll in the park this weekend.
+
+grammar-083-07
+我想休息休息。
+wǒ xiǎng xiū xī xiū xī.
+I would like to rest a little.
+
+grammar-083-08
+我们需要讨论讨论。
+wǒ men xū yào tǎo lùn tǎo lùn.
+We need to discuss it a bit.
+
+grammar-083-09
+你问问他吧。
+nǐ wèn wèn tā ba.
+Why don't you ask him?
+
+grammar-083-10
+有空来我家坐坐。
+yǒu kòng lái wǒ jiā zuò zuò.
+Come spend a little time at my home when you are free.
+
+grammar-084: Causing or allowing with 让
+Pattern: Person + 让 + another person + verb
+
+grammar-084-01
+老师让我们明天交作业。
+lǎo shī ràng wǒ men míng tiān jiāo zuò yè.
+The teacher told us to hand in the homework tomorrow.
+
+grammar-084-02
+请让我想一想。
+qǐng ràng wǒ xiǎng yī xiǎng.
+Please let me think it over.
+
+grammar-084-03
+这个消息让我很高兴。
+zhè ge xiāo xī ràng wǒ hěn gāo xìng.
+This news makes me happy.
+
+grammar-084-04
+妈妈不让我晚上出去。
+mā mā bù ràng wǒ wǎn shàng chū qù.
+Mom does not let me go out at night.
+
+grammar-084-05
+他让我等了半个小时。
+tā ràng wǒ děng le bàn gè xiǎo shí.
+He made me wait for half an hour.
+
+grammar-084-06
+这首歌让我想起了家乡。
+zhè shǒu gē ràng wǒ xiǎng qǐ le jiā xiāng.
+This song reminds me of my hometown.
+
+grammar-084-07
+请让孩子自己试试。
+qǐng ràng hái zi zì jǐ shì shì.
+Please let the child try it independently.
+
+grammar-084-08
+经理让我负责这个项目。
+jīng lǐ ràng wǒ fù zé zhè ge xiàng mù.
+The manager put me in charge of this project.
+
+grammar-084-09
+别让客人等太久。
+bié ràng kè rén děng tài jiǔ.
+Do not keep the guests waiting too long.
+
+grammar-084-10
+这件事让我很失望。
+zhè jiàn shì ràng wǒ hěn shī wàng.
+This matter makes me disappointed.
+
+grammar-085: Helping with 帮
+Pattern: 帮 + person + verb
+
+grammar-085-01
+你能帮我搬一下箱子吗？
+nǐ néng bāng wǒ bān yī xià xiāng zi ma?
+Can you help me move the suitcase?
+
+grammar-085-02
+她帮妈妈洗碗。
+tā bāng mā mā xǐ wǎn.
+She helps Mom wash the dishes.
+
+grammar-085-03
+我帮你买票吧。
+wǒ bāng nǐ mǎi piào ba.
+Let me help you buy tickets.
+
+grammar-085-04
+请帮我看一下行李。
+qǐng bāng wǒ kàn yī xià xíng lǐ.
+Please watch my luggage for a moment.
+
+grammar-085-05
+他经常帮同学复习。
+tā jīng cháng bāng tóng xué fù xí.
+He often helps his classmates review.
+
+grammar-085-06
+我们帮邻居找到了狗。
+wǒ men bāng lín jū zhǎo dào le gǒu.
+We helped the neighbor find the dog.
+
+grammar-085-07
+你可以帮我翻译这句话吗？
+nǐ kě yǐ bāng wǒ fān yì zhè jù huà ma?
+Can you help me translate this sentence?
+
+grammar-085-08
+姐姐帮我选了一件外套。
+jiě jiě bāng wǒ xuǎn le yī jiàn wài tào.
+My older sister helped me choose a coat.
+
+grammar-085-09
+谢谢你帮我解决这个问题。
+xiè xiè nǐ bāng wǒ jiě jué zhè ge wèn tí.
+Thank you for helping me solve this problem.
+
+grammar-085-10
+我想帮你准备晚饭。
+wǒ xiǎng bāng nǐ zhǔn bèi wǎn fàn.
+I want to help you prepare dinner.
+
+grammar-086: Giving and recipients with 给
+Pattern: 给 + recipient + verb / verb + 给 + recipient
+
+grammar-086-01
+我给妈妈打了电话。
+wǒ gěi mā mā dǎ le diàn huà.
+I called Mom.
+
+grammar-086-02
+她给朋友写了一封信。
+tā gěi péng yǒu xiě le yī fēng xìn.
+She wrote a letter to a friend.
+
+grammar-086-03
+请给我倒一杯水。
+qǐng gěi wǒ dào yī bēi shuǐ.
+Please pour me a glass of water.
+
+grammar-086-04
+他送给我一本书。
+tā sòng gěi wǒ yī běn shū.
+He gave me a book as a gift.
+
+grammar-086-05
+我把钱还给他了。
+wǒ bǎ qián huán gěi tā le.
+I returned the money to him.
+
+grammar-086-06
+你能给我解释一下吗？
+nǐ néng gěi wǒ jiě shì yī xià ma?
+Can you explain it to me?
+
+grammar-086-07
+她给孩子买了一双鞋。
+tā gěi hái zi mǎi le yī shuāng xié.
+She bought a pair of shoes for the child.
+
+grammar-086-08
+请把照片发给我。
+qǐng bǎ zhào piān fā gěi wǒ.
+Please send the photo to me.
+
+grammar-086-09
+我想给你一个建议。
+wǒ xiǎng gěi nǐ yī gè jiàn yì.
+I would like to give you a suggestion.
+
+grammar-086-10
+老师给我们讲了一个故事。
+lǎo shī gěi wǒ men jiǎng le yī gè gù shì.
+The teacher told us a story.
+
+grammar-087: Toward and concerning with 对
+Pattern: 对 + person/thing + attitude/effect
+
+grammar-087-01
+我对中国历史感兴趣。
+wǒ duì zhōng guó lì shǐ gǎn xìng qù.
+I am interested in Chinese history.
+
+grammar-087-02
+运动对身体有好处。
+yùn dòng duì shēn tǐ yǒu hǎo chù.
+Exercise is good for the body.
+
+grammar-087-03
+他对孩子很有耐心。
+tā duì hái zi hěn yǒu nài xīn.
+He is very patient with children.
+
+grammar-087-04
+这个办法对我很有帮助。
+zhè ge bàn fǎ duì wǒ hěn yǒu bāng zhù.
+This method is very helpful to me.
+
+grammar-087-05
+她对结果很满意。
+tā duì jié guǒ hěn mǎn yì.
+She is satisfied with the result.
+
+grammar-087-06
+你对这个计划有什么看法？
+nǐ duì zhè ge jì huà yǒu shén me kàn fǎ?
+What is your view of this plan?
+
+grammar-087-07
+抽烟对健康不好。
+chōu yān duì jiàn kāng bù hǎo.
+Smoking is bad for health.
+
+grammar-087-08
+老师对我们很严格。
+lǎo shī duì wǒ men hěn yán gé.
+The teacher is strict with us.
+
+grammar-087-09
+我对这件事不太了解。
+wǒ duì zhè jiàn shì bù tài liǎo jiě.
+I do not know much about this matter.
+
+grammar-087-10
+他对自己的未来很有信心。
+tā duì zì jǐ de wèi lái hěn yǒu xìn xīn.
+He is confident about his future.
+
+grammar-088: Distance with 离
+Pattern: Place A + 离 + place B + distance
+
+grammar-088-01
+我家离学校很近。
+wǒ jiā lí xué xiào hěn jìn.
+My home is close to the school.
+
+grammar-088-02
+机场离市中心很远。
+jī chǎng lí shì zhōng xīn hěn yuǎn.
+The airport is far from the city center.
+
+grammar-088-03
+这里离车站有两公里。
+zhè lǐ lí chē zhàn yǒu liǎng gōng lǐ.
+It is two kilometers from here to the station.
+
+grammar-088-04
+你住的地方离公司远吗？
+nǐ zhù de dì fang lí gōng sī yuǎn ma?
+Is where you live far from the company?
+
+grammar-088-05
+超市离我们家只有五百米。
+chāo shì lí wǒ men jiā zhǐ yǒu wǔ bǎi mǐ.
+The supermarket is only five hundred meters from our home.
+
+grammar-088-06
+这家酒店离海边很近。
+zhè jiā jiǔ diàn lí hǎi biān hěn jìn.
+This hotel is close to the seaside.
+
+grammar-088-07
+银行离这里不远。
+yín háng lí zhè lǐ bù yuǎn.
+The bank is not far from here.
+
+grammar-088-08
+我坐得离门很近。
+wǒ zuò de lí mén hěn jìn.
+I am sitting close to the door.
+
+grammar-088-09
+新办公室离地铁站更近。
+xīn bàn gōng shì lí dì tiě zhàn gèng jìn.
+The new office is closer to the subway station.
+
+grammar-088-10
+学校离医院大约三公里。
+xué xiào lí yī yuàn dà yuē sān gōng lǐ.
+The school is about three kilometers from the hospital.
+
+grammar-089: Ranges with 从…到…
+Pattern: 从 + start + 到 + endpoint
+
+grammar-089-01
+从这里到机场要一个小时。
+cóng zhè lǐ dào jī chǎng yào yī gè xiǎo shí.
+It takes an hour to get from here to the airport.
+
+grammar-089-02
+我从星期一到星期五上班。
+wǒ cóng xīng qī yī dào xīng qī wǔ shàng bān.
+I work from Monday to Friday.
+
+grammar-089-03
+这家店从早上九点开到晚上十点。
+zhè jiā diàn cóng zǎo shàng jiǔ diǎn kāi dào wǎn shàng shí diǎn.
+This shop is open from nine in the morning until ten at night.
+
+grammar-089-04
+从北京到上海坐高铁很方便。
+cóng běi jīng dào shàng hǎi zuò gāo tiě hěn fāng biàn.
+Taking the high-speed train from Beijing to Shanghai is convenient.
+
+grammar-089-05
+我们从山脚走到了山顶。
+wǒ men cóng shān jiǎo zǒu dào le shān dǐng.
+We walked from the foot of the mountain to the top.
+
+grammar-089-06
+请从第一页读到第五页。
+qǐng cóng dì yī yè dú dào dì wǔ yè.
+Please read from page one through page five.
+
+grammar-089-07
+他从早到晚都很忙。
+tā cóng zǎo dào wǎn dōu hěn máng.
+He is busy from morning to night.
+
+grammar-089-08
+从我家到学校只有两站。
+cóng wǒ jiā dào xué xiào zhǐ yǒu liǎng zhàn.
+It is only two stops from my home to the school.
+
+grammar-089-09
+她从去年到现在一直在这里工作。
+tā cóng qù nián dào xiàn zài yī zhí zài zhè lǐ gōng zuò.
+She has been working here continuously from last year until now.
+
+grammar-089-10
+从六月到八月，这里很热。
+cóng liù yuè dào bā yuè, zhè lǐ hěn rè.
+It is hot here from June to August.
+
+grammar-090: Direction with 往
+Pattern: 往 + direction + motion verb
+
+grammar-090-01
+请往左走。
+qǐng wǎng zuǒ zǒu.
+Please go to the left.
+
+grammar-090-02
+一直往前走。
+yī zhí wǎng qián zǒu.
+Keep going straight ahead.
+
+grammar-090-03
+他往车站跑去。
+tā wǎng chē zhàn pǎo qù.
+He ran toward the station.
+
+grammar-090-04
+这辆公交车往北开。
+zhè liàng gōng jiāo chē wǎng běi kāi.
+This bus travels north.
+
+grammar-090-05
+请往里面坐一点儿。
+qǐng wǎng lǐ miàn zuò yī diǎn er.
+Please sit a little farther inside.
+
+grammar-090-06
+我们往山上走吧。
+wǒ men wǎng shān shàng zǒu ba.
+Let us walk up toward the mountain.
+
+grammar-090-07
+她往窗外看了一眼。
+tā wǎng chuāng wài kàn le yī yǎn.
+She glanced out of the window.
+
+grammar-090-08
+往右拐就是银行。
+wǎng yòu guǎi jiù shì yín háng.
+Turn right and you will be at the bank.
+
+grammar-090-09
+别往后退。
+bié wǎng hòu tuì.
+Do not step backward.
+
+grammar-090-10
+他把椅子往前搬了一点儿。
+tā bǎ yǐ zi wǎng qián bān le yī diǎn er.
+He moved the chair a little forward.
+
+grammar-091: Learned ability with 会
+Pattern: 会 + skill/action
+
+grammar-091-01
+我会游泳。
+wǒ huì yóu yǒng.
+I know how to swim.
+
+grammar-091-02
+她会开车。
+tā huì kāi chē.
+She knows how to drive.
+
+grammar-091-03
+你会做中国菜吗？
+nǐ huì zuò zhōng guó cài ma?
+Do you know how to cook Chinese food?
+
+grammar-091-04
+他不会骑自行车。
+tā bù huì qí zì xíng chē.
+He does not know how to ride a bicycle.
+
+grammar-091-05
+我妹妹会弹钢琴。
+wǒ mèi mèi huì tán gāng qín.
+My younger sister can play the piano.
+
+grammar-091-06
+我们都会用这个软件。
+wǒ men dū huì yòng zhè ge ruǎn jiàn.
+We all know how to use this software.
+
+grammar-091-07
+你会写这个字吗？
+nǐ huì xiě zhè ge zì ma?
+Do you know how to write this character?
+
+grammar-091-08
+她会说三种语言。
+tā huì shuō sān zhǒng yǔ yán.
+She can speak three languages.
+
+grammar-091-09
+我还不会包饺子。
+wǒ hái bù huì bāo jiǎo zi.
+I do not know how to make dumplings yet.
+
+grammar-091-10
+他五岁就会下象棋了。
+tā wǔ suì jiù huì xià xiàng qí le.
+He already knew how to play Chinese chess at five.
+
+grammar-092: Circumstantial ability with 能
+Pattern: 能 + verb
+
+grammar-092-01
+我今天不能参加会议。
+wǒ jīn tiān bù néng cān jiā huì yì.
+I cannot attend the meeting today.
+
+grammar-092-02
+这辆车能坐五个人。
+zhè liàng chē néng zuò wǔ gè rén.
+This car can seat five people.
+
+grammar-092-03
+你能在六点以前回来吗？
+nǐ néng zài liù diǎn yǐ qián huí lái ma?
+Can you return before six?
+
+grammar-092-04
+我现在能走路了。
+wǒ xiàn zài néng zǒu lù le.
+I can walk now.
+
+grammar-092-05
+他一天能读一百页。
+tā yī tiān néng dú yī bǎi yè.
+He can read one hundred pages in a day.
+
+grammar-092-06
+这里能看到大海。
+zhè lǐ néng kàn dào dà hǎi.
+You can see the sea from here.
+
+grammar-092-07
+我听不清，你能大声一点儿吗？
+wǒ tīng bù qīng, nǐ néng dà shēng yī diǎn er ma?
+I cannot hear clearly; can you speak a little louder?
+
+grammar-092-08
+没有地图，我们能找到吗？
+méi yǒu dì tú, wǒ men néng zhǎo dào ma?
+Can we find it without a map?
+
+grammar-092-09
+她明天能来帮忙。
+tā míng tiān néng lái bāng máng.
+She can come and help tomorrow.
+
+grammar-092-10
+这个包能装很多东西。
+zhè ge bāo néng zhuāng hěn duō dōng xī.
+This bag can hold many things.
+
+grammar-093: Permission with 可以
+Pattern: 可以 + verb
+
+grammar-093-01
+我可以坐这里吗？
+wǒ kě yǐ zuò zhè lǐ ma?
+May I sit here?
+
+grammar-093-02
+你可以用我的电脑。
+nǐ kě yǐ yòng wǒ de diàn nǎo.
+You may use my computer.
+
+grammar-093-03
+这里不可以拍照。
+zhè lǐ bù kě yǐ pāi zhào.
+Photography is not allowed here.
+
+grammar-093-04
+我们可以提前离开吗？
+wǒ men kě yǐ tí qián lí kāi ma?
+May we leave early?
+
+grammar-093-05
+你可以把书带回家。
+nǐ kě yǐ bǎ shū dài huí jiā.
+You may take the book home.
+
+grammar-093-06
+我可以问一个问题吗？
+wǒ kě yǐ wèn yī gè wèn tí ma?
+May I ask a question?
+
+grammar-093-07
+孩子不可以一个人进去。
+hái zi bù kě yǐ yī gè rén jìn qù.
+Children are not allowed to go in alone.
+
+grammar-093-08
+你可以在这里停车。
+nǐ kě yǐ zài zhè lǐ tíng chē.
+You may park here.
+
+grammar-093-09
+考试时不可以用手机。
+kǎo shì shí bù kě yǐ yòng shǒu jī.
+You are not allowed to use a phone during the exam.
+
+grammar-093-10
+我可以试穿一下吗？
+wǒ kě yǐ shì chuān yī xià ma?
+May I try it on?
+
+grammar-094: Advice with 应该
+Pattern: 应该 + verb
+
+grammar-094-01
+你应该早点睡觉。
+nǐ yīng gāi zǎo diǎn shuì jiào.
+You should go to bed earlier.
+
+grammar-094-02
+我们应该保护环境。
+wǒ men yīng gāi bǎo hù huán jìng.
+We should protect the environment.
+
+grammar-094-03
+他应该向你道歉。
+tā yīng gāi xiàng nǐ dào qiàn.
+He should apologize to you.
+
+grammar-094-04
+你不应该这样说。
+nǐ bù yīng gāi zhè yàng shuō.
+You should not say that.
+
+grammar-094-05
+我应该先给她打电话。
+wǒ yīng gāi xiān gěi tā dǎ diàn huà.
+I should call her first.
+
+grammar-094-06
+大家应该遵守规则。
+dà jiā yīng gāi zūn shǒu guī zé.
+Everyone should follow the rules.
+
+grammar-094-07
+你应该多喝水。
+nǐ yīng gāi duō hē shuǐ.
+You should drink more water.
+
+grammar-094-08
+我们不应该浪费时间。
+wǒ men bù yīng gāi làng fèi shí jiān.
+We should not waste time.
+
+grammar-094-09
+遇到问题应该及时沟通。
+yù dào wèn tí yīng gāi jí shí gōu tōng.
+When problems arise, you should communicate promptly.
+
+grammar-094-10
+买东西以前应该比较价格。
+mǎi dōng xī yǐ qián yīng gāi bǐ jiào jià gé.
+You should compare prices before buying things.
+
+grammar-095: Necessity with 必须
+Pattern: 必须 + verb
+
+grammar-095-01
+你必须带护照。
+nǐ bì xū dài hù zhào.
+You must bring your passport.
+
+grammar-095-02
+我们必须按时到。
+wǒ men bì xū àn shí dào.
+We must arrive on time.
+
+grammar-095-03
+这件事必须今天解决。
+zhè jiàn shì bì xū jīn tiān jiě jué.
+This matter must be resolved today.
+
+grammar-095-04
+学生必须参加考试。
+xué shēng bì xū cān jiā kǎo shì.
+Students must take the exam.
+
+grammar-095-05
+进入工厂必须戴安全帽。
+jìn rù gōng chǎng bì xū dài ān quán mào.
+You must wear a safety helmet to enter the factory.
+
+grammar-095-06
+我必须先完成工作。
+wǒ bì xū xiān wán chéng gōng zuò.
+I must finish the work first.
+
+grammar-095-07
+所有人都必须登记。
+suǒ yǒu rén dōu bì xū dēng jì.
+Everyone must register.
+
+grammar-095-08
+这份文件必须由经理签字。
+zhè fèn wén jiàn bì xū yóu jīng lǐ qiān zì.
+This document must be signed by the manager.
+
+grammar-095-09
+你必须认真考虑这个问题。
+nǐ bì xū rèn zhēn kǎo lǜ zhè ge wèn tí.
+You must think carefully about this issue.
+
+grammar-095-10
+我们必须在月底以前搬走。
+wǒ men bì xū zài yuè dǐ yǐ qián bān zǒu.
+We must move out before the end of the month.
+
+grammar-096: No need with 不用
+Pattern: 不用 + verb
+
+grammar-096-01
+你不用等我。
+nǐ bù yòng děng wǒ.
+You do not need to wait for me.
+
+grammar-096-02
+今天不用上班。
+jīn tiān bù yòng shàng bān.
+There is no need to go to work today.
+
+grammar-096-03
+你不用带礼物。
+nǐ bù yòng dài lǐ wù.
+You do not need to bring a gift.
+
+grammar-096-04
+我们不用提前买票。
+wǒ men bù yòng tí qián mǎi piào.
+We do not need to buy tickets in advance.
+
+grammar-096-05
+不用担心，我会处理。
+bù yòng dān xīn, wǒ huì chǔ lǐ.
+There is no need to worry; I will handle it.
+
+grammar-096-06
+你不用回答这个问题。
+nǐ bù yòng huí dá zhè ge wèn tí.
+You do not need to answer this question.
+
+grammar-096-07
+这里不用换鞋。
+zhè lǐ bù yòng huàn xié.
+There is no need to change shoes here.
+
+grammar-096-08
+我不用再解释了。
+wǒ bù yòng zài jiě shì le.
+I do not need to explain again.
+
+grammar-096-09
+孩子不用付钱。
+hái zi bù yòng fù qián.
+Children do not need to pay.
+
+grammar-096-10
+你不用这么客气。
+nǐ bù yòng zhè me kè qì.
+You do not need to be so formal.
+
+grammar-097: Wanting with 想
+Pattern: 想 + verb
+
+grammar-097-01
+我想学做中国菜。
+wǒ xiǎng xué zuò zhōng guó cài.
+I want to learn to cook Chinese food.
+
+grammar-097-02
+她想换一份工作。
+tā xiǎng huàn yī fèn gōng zuò.
+She wants to change jobs.
+
+grammar-097-03
+我们想去海边度假。
+wǒ men xiǎng qù hǎi biān dù jià.
+We want to vacation at the seaside.
+
+grammar-097-04
+你想喝点什么？
+nǐ xiǎng hē diǎn shén me?
+What would you like to drink?
+
+grammar-097-05
+我不想一个人去。
+wǒ bù xiǎng yī gè rén qù.
+I do not want to go alone.
+
+grammar-097-06
+他想买一辆自行车。
+tā xiǎng mǎi yī liàng zì xíng chē.
+He wants to buy a bicycle.
+
+grammar-097-07
+我想跟你谈谈。
+wǒ xiǎng gēn nǐ tán tán.
+I would like to talk with you.
+
+grammar-097-08
+孩子想再玩十分钟。
+hái zi xiǎng zài wán shí fēn zhōng.
+The child wants to play for another ten minutes.
+
+grammar-097-09
+我想了解中国文化。
+wǒ xiǎng liǎo jiě zhōng guó wén huà.
+I want to learn about Chinese culture.
+
+grammar-097-10
+她想在家休息一天。
+tā xiǎng zài jiā xiū xī yī tiān.
+She wants to rest at home for a day.
+
+grammar-098: Plans with 打算
+Pattern: 打算 + verb phrase
+
+grammar-098-01
+我打算明年去中国。
+wǒ dǎ suàn míng nián qù zhōng guó.
+I plan to go to China next year.
+
+grammar-098-02
+你周末打算做什么？
+nǐ zhōu mò dǎ suàn zuò shén me?
+What do you plan to do this weekend?
+
+grammar-098-03
+她打算毕业后找工作。
+tā dǎ suàn bì yè hòu zhǎo gōng zuò.
+She plans to look for a job after graduation.
+
+grammar-098-04
+我们打算坐火车去。
+wǒ men dǎ suàn zuò huǒ chē qù.
+We plan to go by train.
+
+grammar-098-05
+他不打算搬家。
+tā bù dǎ suàn bān jiā.
+He does not plan to move.
+
+grammar-098-06
+我打算每天练习半个小时。
+wǒ dǎ suàn měi tiān liàn xí bàn gè xiǎo shí.
+I plan to practice for half an hour every day.
+
+grammar-098-07
+你打算住多久？
+nǐ dǎ suàn zhù duō jiǔ?
+How long do you plan to stay?
+
+grammar-098-08
+他们打算开一家咖啡馆。
+tā men dǎ suàn kāi yī jiā kā fēi guǎn.
+They plan to open a cafe.
+
+grammar-098-09
+我打算先存钱，再买车。
+wǒ dǎ suàn xiān cún qián, zài mǎi chē.
+I plan to save money first, then buy a car.
+
+grammar-098-10
+我们打算邀请老师来参加。
+wǒ men dǎ suàn yāo qǐng lǎo shī lái cān jiā.
+We plan to invite the teacher to take part.
+
+grammar-099: Possibility with 可能
+Pattern: 可能 + predicate
+
+grammar-099-01
+明天可能会下雨。
+míng tiān kě néng huì xià yǔ.
+It may rain tomorrow.
+
+grammar-099-02
+他可能忘了时间。
+tā kě néng wàng le shí jiān.
+He may have forgotten the time.
+
+grammar-099-03
+她可能在开会。
+tā kě néng zài kāi huì.
+She may be in a meeting.
+
+grammar-099-04
+这家店可能已经关门了。
+zhè jiā diàn kě néng yǐ jīng guān mén le.
+This shop may already be closed.
+
+grammar-099-05
+我可能要晚一点儿到。
+wǒ kě néng yào wǎn yī diǎn er dào.
+I may arrive a little late.
+
+grammar-099-06
+他们可能不来了。
+tā men kě néng bù lái le.
+They may no longer be coming.
+
+grammar-099-07
+钥匙可能在车里。
+yào shi kě néng zài chē lǐ.
+The keys may be in the car.
+
+grammar-099-08
+这个办法可能有用。
+zhè ge bàn fǎ kě néng yǒu yòng.
+This approach may be useful.
+
+grammar-099-09
+你可能拿错包了。
+nǐ kě néng ná cuò bāo le.
+You may have taken the wrong bag.
+
+grammar-099-10
+周末我们可能去爬山。
+zhōu mò wǒ men kě néng qù pá shān.
+We may go hiking this weekend.
+
+grammar-100: Confident inference with 一定
+Pattern: 一定 + predicate
+
+grammar-100-01
+他一定知道答案。
+tā yī dìng zhī dào dá àn.
+He must know the answer.
+
+grammar-100-02
+你一定很累了。
+nǐ yī dìng hěn lèi le.
+You must be tired by now.
+
+grammar-100-03
+我明天一定来。
+wǒ míng tiān yī dìng lái.
+I will definitely come tomorrow.
+
+grammar-100-04
+这一定是你的包。
+zhè yī dìng shì nǐ de bāo.
+This must be your bag.
+
+grammar-100-05
+她一定会喜欢这个礼物。
+tā yī dìng huì xǐ huān zhè ge lǐ wù.
+She will definitely like this gift.
+
+grammar-100-06
+我们一定能找到办法。
+wǒ men yī dìng néng zhǎo dào bàn fǎ.
+We can definitely find a way.
+
+grammar-100-07
+贵的东西不一定好。
+guì de dōng xī bù yī dìng hǎo.
+Expensive things are not necessarily good.
+
+grammar-100-08
+他一定不会忘记。
+tā yī dìng bù huì wàng jì.
+He definitely will not forget.
+
+grammar-100-09
+你明天不一定有时间。
+nǐ míng tiān bù yī dìng yǒu shí jiān.
+You will not necessarily have time tomorrow.
+
+grammar-100-10
+我一定按时完成。
+wǒ yī dìng àn shí wán chéng.
+I will definitely finish on time.
+
+grammar-101: Continuity with 一直
+Pattern: 一直 + verb/state
+
+grammar-101-01
+我一直在等你。
+wǒ yī zhí zài děng nǐ.
+I have been waiting for you the whole time.
+
+grammar-101-02
+她一直住在北京。
+tā yī zhí zhù zài běi jīng.
+She has been living in Beijing all along.
+
+grammar-101-03
+今天一直在下雨。
+jīn tiān yī zhí zài xià yǔ.
+It has been raining all day today.
+
+grammar-101-04
+他一直没回我的消息。
+tā yī zhí méi huí wǒ de xiāo xī.
+He has not replied to my message all this time.
+
+grammar-101-05
+我们一直是好朋友。
+wǒ men yī zhí shì hǎo péng yǒu.
+We have always been good friends.
+
+grammar-101-06
+这个问题一直让我很担心。
+zhè ge wèn tí yī zhí ràng wǒ hěn dān xīn.
+This issue has been worrying me all along.
+
+grammar-101-07
+她一直工作到晚上十点。
+tā yī zhí gōng zuò dào wǎn shàng shí diǎn.
+She worked continuously until ten at night.
+
+grammar-101-08
+我一直想学画画。
+wǒ yī zhí xiǎng xué huà huà.
+I have always wanted to learn to draw.
+
+grammar-101-09
+门一直开着。
+mén yī zhí kāi zhe.
+The door has been open the whole time.
+
+grammar-101-10
+他们一直在讨论旅行计划。
+tā men yī zhí zài tǎo lùn lǚ xíng jì huà.
+They have been discussing their travel plans the whole time.
+
+grammar-102: Only with 只
+Pattern: 只 + verb/quantity phrase
+
+grammar-102-01
+我只喝茶。
+wǒ zhǐ hē chá.
+I only drink tea.
+
+grammar-102-02
+她只买了一本书。
+tā zhǐ mǎi le yī běn shū.
+She bought only one book.
+
+grammar-102-03
+我们只在周末见面。
+wǒ men zhǐ zài zhōu mò jiàn miàn.
+We meet only on weekends.
+
+grammar-102-04
+他只会说一点儿中文。
+tā zhǐ huì shuō yī diǎn er zhōng wén.
+He can speak only a little Chinese.
+
+grammar-102-05
+这张票只要二十块钱。
+zhè zhāng piào zhǐ yào èr shí kuài qián.
+This ticket costs only twenty yuan.
+
+grammar-102-06
+我只想休息一下。
+wǒ zhǐ xiǎng xiū xī yī xià.
+I only want to rest a little.
+
+grammar-102-07
+这里只有一个出口。
+zhè lǐ zhǐ yǒu yī gè chū kǒu.
+There is only one exit here.
+
+grammar-102-08
+她只告诉了我一个人。
+tā zhǐ gào sù le wǒ yī gè rén.
+She told only me.
+
+grammar-102-09
+我今天只睡了四个小时。
+wǒ jīn tiān zhǐ shuì le sì gè xiǎo shí.
+I slept for only four hours today.
+
+grammar-102-10
+这家店只卖水果。
+zhè jiā diàn zhǐ mài shuǐ guǒ.
+This shop only sells fruit.
+
+grammar-103: Even with 连…都/也…
+Pattern: 连 + surprising item + 都/也 + predicate
+
+grammar-103-01
+他连自己的生日都忘了。
+tā lián zì jǐ de shēng rì dōu wàng le.
+He even forgot his own birthday.
+
+grammar-103-02
+这道题连老师都不会做。
+zhè dào tí lián lǎo shī dōu bù huì zuò.
+Even the teacher cannot solve this question.
+
+grammar-103-03
+我忙得连午饭都没吃。
+wǒ máng de lián wǔ fàn dōu méi chī.
+I was so busy that I did not even eat lunch.
+
+grammar-103-04
+她连一句话都没说。
+tā lián yī jù huà dōu méi shuō.
+She did not say even a single sentence.
+
+grammar-103-05
+这个地方连地图上都找不到。
+zhè ge dì fang lián dì tú shàng dōu zhǎo bù dào.
+This place cannot even be found on a map.
+
+grammar-103-06
+孩子连鞋都没穿就跑出去了。
+hái zi lián xié dōu méi chuān jiù pǎo chū qù le.
+The child ran out without even putting on shoes.
+
+grammar-103-07
+他连水都不喝。
+tā lián shuǐ dōu bù hē.
+He will not even drink water.
+
+grammar-103-08
+我连他的名字都不知道。
+wǒ lián tā de míng zì dōu bù zhī dào.
+I do not even know his name.
+
+grammar-103-09
+这里连冬天都很暖和。
+zhè lǐ lián dōng tiān dōu hěn nuǎn huo.
+It is warm here even in winter.
+
+grammar-103-10
+她连周末都要上班。
+tā lián zhōu mò dōu yào shàng bān.
+She has to work even on weekends.
+
+grammar-104: Unexpected contrast with 却
+Pattern: Subject + 却 + contrasting predicate
+
+grammar-104-01
+他很累，却睡不着。
+tā hěn lèi, què shuì bù zháo.
+He is tired, yet he cannot get to sleep.
+
+grammar-104-02
+这家店很小，东西却很多。
+zhè jiā diàn hěn xiǎo, dōng xī què hěn duō.
+This shop is small, yet it has many things.
+
+grammar-104-03
+我给他打了电话，他却没接。
+wǒ gěi tā dǎ le diàn huà, tā què méi jiē.
+I called him, but he did not answer.
+
+grammar-104-04
+她年纪不大，经验却很丰富。
+tā nián jì bù dà, jīng yàn què hěn fēng fù.
+She is not very old, yet she has extensive experience.
+
+grammar-104-05
+大家都走了，他却留下了。
+dà jiā dōu zǒu le, tā què liú xià le.
+Everyone left, yet he stayed.
+
+grammar-104-06
+我想帮忙，却不知道该做什么。
+wǒ xiǎng bāng máng, què bù zhī dào gāi zuò shén me.
+I want to help, yet I do not know what to do.
+
+grammar-104-07
+虽然下雨，他却没带伞。
+suī rán xià yǔ, tā què méi dài sǎn.
+Although it was raining, he did not bring an umbrella.
+
+grammar-104-08
+这件衣服很贵，质量却不好。
+zhè jiàn yī fú hěn guì, zhì liàng què bù hǎo.
+This piece of clothing is expensive, yet its quality is poor.
+
+grammar-104-09
+他说不饿，却吃了两碗饭。
+tā shuō bù è, què chī le liǎng wǎn fàn.
+He said he was not hungry, yet he ate two bowls of rice.
+
+grammar-104-10
+我等了很久，车却一直没来。
+wǒ děng le hěn jiǔ, chē què yī zhí méi lái.
+I waited a long time, yet the bus never came.
+
+grammar-105: Mistaken assumptions with 以为
+Pattern: 以为 + assumed proposition
+
+grammar-105-01
+我以为今天是星期五。
+wǒ yǐ wéi jīn tiān shì xīng qī wǔ.
+I thought today was Friday, but I was mistaken.
+
+grammar-105-02
+她以为我已经走了。
+tā yǐ wéi wǒ yǐ jīng zǒu le.
+She mistakenly thought I had already left.
+
+grammar-105-03
+我以为这家店很贵，其实很便宜。
+wǒ yǐ wéi zhè jiā diàn hěn guì, qí shí hěn pián yi.
+I thought this shop was expensive, but it is actually cheap.
+
+grammar-105-04
+他以为考试取消了。
+tā yǐ wéi kǎo shì qǔ xiāo le.
+He mistakenly thought the exam had been canceled.
+
+grammar-105-05
+我以为你不会来。
+wǒ yǐ wéi nǐ bù huì lái.
+I had thought you would not come.
+
+grammar-105-06
+我们以为坐地铁更慢，没想到更快。
+wǒ men yǐ wéi zuò dì tiě gèng màn, méi xiǎng dào gèng kuài.
+We thought the subway would be slower, but unexpectedly it was faster.
+
+grammar-105-07
+她以为那是她的包。
+tā yǐ wéi nà shì tā de bāo.
+She mistakenly thought that was her bag.
+
+grammar-105-08
+我以为你认识他。
+wǒ yǐ wéi nǐ rèn shí tā.
+I had assumed you knew him.
+
+grammar-105-09
+他以为只要十分钟，结果花了一个小时。
+tā yǐ wéi zhǐ yào shí fēn zhōng, jié guǒ huā le yī gè xiǎo shí.
+He thought it would take only ten minutes, but it ended up taking an hour.
+
+grammar-105-10
+我以为关门了，没想到还开着。
+wǒ yǐ wéi guān mén le, méi xiǎng dào hái kāi zhe.
+I thought it was closed, but unexpectedly it was still open.
+
+grammar-106: Identity with 是
+Pattern: Subject + 是 + noun
+
+grammar-106-01
+我是学生。
+wǒ shì xué shēng.
+I am a student.
+
+grammar-106-02
+她是老师。
+tā shì lǎo shī.
+She is a teacher.
+
+grammar-106-03
+他是医生。
+tā shì yī shēng.
+He is a doctor.
+
+grammar-106-04
+这是我的书。
+zhè shì wǒ de shū.
+This is my book.
+
+grammar-106-05
+那是你的杯子。
+nà shì nǐ de bēi zi.
+That is your cup.
+
+grammar-106-06
+我是她的朋友。
+wǒ shì tā de péng yǒu.
+I am her friend.
+
+grammar-106-07
+他是我爸爸。
+tā shì wǒ bà bà.
+He is my dad.
+
+grammar-106-08
+她是我妈妈。
+tā shì wǒ mā mā.
+She is my mom.
+
+grammar-106-09
+今天是星期一。
+jīn tiān shì xīng qī yī.
+Today is Monday.
+
+grammar-106-10
+明天是我的生日。
+míng tiān shì wǒ de shēng rì.
+Tomorrow is my birthday.
+
+grammar-107: Denying identity with 不是
+Pattern: Subject + 不是 + noun
+
+grammar-107-01
+我不是老师。
+wǒ bù shì lǎo shī.
+I am not a teacher.
+
+grammar-107-02
+她不是医生。
+tā bù shì yī shēng.
+She is not a doctor.
+
+grammar-107-03
+他不是我的哥哥。
+tā bù shì wǒ de gē ge.
+He is not my older brother.
+
+grammar-107-04
+这不是我的手机。
+zhè bù shì wǒ de shǒu jī.
+This is not my phone.
+
+grammar-107-05
+那不是你的书。
+nà bù shì nǐ de shū.
+That is not your book.
+
+grammar-107-06
+今天不是星期天。
+jīn tiān bù shì xīng qī tiān.
+Today is not Sunday.
+
+grammar-107-07
+明天不是我的生日。
+míng tiān bù shì wǒ de shēng rì.
+Tomorrow is not my birthday.
+
+grammar-107-08
+这里不是学校。
+zhè lǐ bù shì xué xiào.
+This place is not a school.
+
+grammar-107-09
+这不是茶。
+zhè bù shì chá.
+This is not tea.
+
+grammar-107-10
+他们不是我的同学。
+tā men bù shì wǒ de tóng xué.
+They are not my classmates.
+
+grammar-108: Having things with 有
+Pattern: Person + 有 + noun
+
+grammar-108-01
+我有一本书。
+wǒ yǒu yī běn shū.
+I have a book.
+
+grammar-108-02
+她有一只小狗。
+tā yǒu yī zhī xiǎo gǒu.
+She has a puppy.
+
+grammar-108-03
+他有两个姐姐。
+tā yǒu liǎng gè jiě jiě.
+He has two older sisters.
+
+grammar-108-04
+我们有三张票。
+wǒ men yǒu sān zhāng piào.
+We have three tickets.
+
+grammar-108-05
+你有一个好朋友。
+nǐ yǒu yī gè hǎo péng yǒu.
+You have a good friend.
+
+grammar-108-06
+我有一辆自行车。
+wǒ yǒu yī liàng zì xíng chē.
+I have a bicycle.
+
+grammar-108-07
+弟弟有一个苹果。
+dì di yǒu yī gè píng guǒ.
+My younger brother has an apple.
+
+grammar-108-08
+老师有一支笔。
+lǎo shī yǒu yī zhī bǐ.
+The teacher has a pen.
+
+grammar-108-09
+我有时间。
+wǒ yǒu shí jiān.
+I have time.
+
+grammar-108-10
+我们有一个问题。
+wǒ men yǒu yī gè wèn tí.
+We have a question.
+
+grammar-109: Not having things with 没有
+Pattern: Person + 没有 + noun
+
+grammar-109-01
+我没有车。
+wǒ méi yǒu chē.
+I do not have a car.
+
+grammar-109-02
+她没有弟弟。
+tā méi yǒu dì di.
+She does not have a younger brother.
+
+grammar-109-03
+他没有手机。
+tā méi yǒu shǒu jī.
+He does not have a phone.
+
+grammar-109-04
+我们没有钱。
+wǒ men méi yǒu qián.
+We do not have money.
+
+grammar-109-05
+我没有哥哥。
+wǒ méi yǒu gē gē.
+I do not have an older brother.
+
+grammar-109-06
+妹妹没有电脑。
+mèi mèi méi yǒu diàn nǎo.
+My younger sister does not have a computer.
+
+grammar-109-07
+他们没有孩子。
+tā men méi yǒu hái zi.
+They do not have children.
+
+grammar-109-08
+我今天没有课。
+wǒ jīn tiān méi yǒu kè.
+I do not have classes today.
+
+grammar-109-09
+我们没有牛奶。
+wǒ men méi yǒu niú nǎi.
+We do not have milk.
+
+grammar-109-10
+她没有自行车。
+tā méi yǒu zì xíng chē.
+She does not have a bicycle.
+
+grammar-110: Adding a matching fact with 也
+Pattern: Subject + 也 + predicate
+
+grammar-110-01
+我也是学生。
+wǒ yě shì xué shēng.
+I am a student too.
+
+grammar-110-02
+她也喜欢猫。
+tā yě xǐ huān māo.
+She also likes cats.
+
+grammar-110-03
+他也喝茶。
+tā yě hē chá.
+He drinks tea too.
+
+grammar-110-04
+我也有妹妹。
+wǒ yě yǒu mèi mèi.
+I also have a younger sister.
+
+grammar-110-05
+妈妈也在家。
+mā mā yě zài jiā.
+Mom is at home too.
+
+grammar-110-06
+我们也去学校。
+wǒ men yě qù xué xiào.
+We are going to school too.
+
+grammar-110-07
+这本书也很好。
+zhè běn shū yě hěn hǎo.
+This book is good too.
+
+grammar-110-08
+弟弟也很高。
+dì di yě hěn gāo.
+My younger brother is tall too.
+
+grammar-110-09
+我也不吃肉。
+wǒ yě bù chī ròu.
+I do not eat meat either.
+
+grammar-110-10
+她也没有车。
+tā yě méi yǒu chē.
+She does not have a car either.
+
+grammar-111: Joining nouns with 和
+Pattern: Noun + 和 + noun
+
+grammar-111-01
+我喜欢苹果和香蕉。
+wǒ xǐ huān píng guǒ hé xiāng jiāo.
+I like apples and bananas.
+
+grammar-111-02
+爸爸和妈妈都在家。
+bà bà hé mā mā dōu zài jiā.
+Dad and Mom are both at home.
+
+grammar-111-03
+我有笔和纸。
+wǒ yǒu bǐ hé zhǐ.
+I have pens and paper.
+
+grammar-111-04
+哥哥和姐姐都是老师。
+gē gē hé jiě jiě dōu shì lǎo shī.
+My older brother and older sister are both teachers.
+
+grammar-111-05
+我买牛奶和面包。
+wǒ mǎi niú nǎi hé miàn bāo.
+I buy milk and bread.
+
+grammar-111-06
+猫和狗都很可爱。
+māo hé gǒu dōu hěn kě ài.
+Cats and dogs are both cute.
+
+grammar-111-07
+桌子上有书和报纸。
+zhuō zi shàng yǒu shū hé bào zhǐ.
+There are books and newspapers on the table.
+
+grammar-111-08
+我喝水和茶。
+wǒ hē shuǐ hé chá.
+I drink water and tea.
+
+grammar-111-09
+小王和小李都是学生。
+xiǎo wáng hé xiǎo lǐ dōu shì xué shēng.
+Xiao Wang and Xiao Li are both students.
+
+grammar-111-10
+我喜欢米饭和面条。
+wǒ xǐ huān mǐ fàn hé miàn tiáo.
+I like rice and noodles.
+
+grammar-112: Asking a matching question with 呢
+Pattern: Person/topic + 呢？
+
+grammar-112-01
+我很好，你呢？
+wǒ hěn hǎo, nǐ ne?
+I am fine. How about you?
+
+grammar-112-02
+我喜欢茶，你呢？
+wǒ xǐ huān chá, nǐ ne?
+I like tea. What about you?
+
+grammar-112-03
+我去学校，你呢？
+wǒ qù xué xiào, nǐ ne?
+I am going to school. What about you?
+
+grammar-112-04
+我有一只猫，你呢？
+wǒ yǒu yī zhī māo, nǐ ne?
+I have a cat. What about you?
+
+grammar-112-05
+我今天很忙，明天呢？
+wǒ jīn tiān hěn máng, míng tiān ne?
+I am busy today. What about tomorrow?
+
+grammar-112-06
+我爸爸是老师，你爸爸呢？
+wǒ bà bà shì lǎo shī, nǐ bà bà ne?
+My dad is a teacher. What about your dad?
+
+grammar-112-07
+我要水，你呢？
+wǒ yào shuǐ, nǐ ne?
+I want water. What about you?
+
+grammar-112-08
+我住北京，你呢？
+wǒ zhù běi jīng, nǐ ne?
+I live in Beijing. What about you?
+
+grammar-112-09
+我会游泳，你呢？
+wǒ huì yóu yǒng, nǐ ne?
+I can swim. What about you?
+
+grammar-112-10
+我姐姐在家，你姐姐呢？
+wǒ jiě jiě zài jiā, nǐ jiě jiě ne?
+My older sister is at home. What about your older sister?
+
+grammar-113: Asking about ownership with 谁的
+Pattern: 谁的 + noun / noun + 是谁的？
+
+grammar-113-01
+这是谁的书？
+zhè shì shéi de shū?
+Whose book is this?
+
+grammar-113-02
+那是谁的杯子？
+nà shì shéi de bēi zi?
+Whose cup is that?
+
+grammar-113-03
+这是谁的手机？
+zhè shì shéi de shǒu jī?
+Whose phone is this?
+
+grammar-113-04
+那是谁的自行车？
+nà shì shéi de zì xíng chē?
+Whose bicycle is that?
+
+grammar-113-05
+这支笔是谁的？
+zhè zhī bǐ shì shéi de?
+Whose is this pen?
+
+grammar-113-06
+这个苹果是谁的？
+zhè ge píng guǒ shì shéi de?
+Whose is this apple?
+
+grammar-113-07
+这是谁的书包？
+zhè shì shéi de shū bāo?
+Whose schoolbag is this?
+
+grammar-113-08
+那是谁的电脑？
+nà shì shéi de diàn nǎo?
+Whose computer is that?
+
+grammar-113-09
+这张票是谁的？
+zhè zhāng piào shì shéi de?
+Whose is this ticket?
+
+grammar-113-10
+这些衣服是谁的？
+zhè xiē yī fú shì shéi de?
+Whose are these clothes?
+
+grammar-114: Asking small quantities with 几
+Pattern: 几 + measure word + noun
+
+grammar-114-01
+你有几个孩子？
+nǐ yǒu jǐ gè hái zi?
+How many children do you have?
+
+grammar-114-02
+她有几只猫？
+tā yǒu jǐ zhī māo?
+How many cats does she have?
+
+grammar-114-03
+你要几个苹果？
+nǐ yào jǐ gè píng guǒ?
+How many apples do you want?
+
+grammar-114-04
+桌子上有几本书？
+zhuō zi shàng yǒu jǐ běn shū?
+How many books are on the table?
+
+grammar-114-05
+你买几张票？
+nǐ mǎi jǐ zhāng piào?
+How many tickets are you buying?
+
+grammar-114-06
+他有几个哥哥？
+tā yǒu jǐ gè gē gē?
+How many older brothers does he have?
+
+grammar-114-07
+你喝几杯水？
+nǐ hē jǐ bēi shuǐ?
+How many glasses of water do you drink?
+
+grammar-114-08
+这里有几个学生？
+zhè lǐ yǒu jǐ gè xué shēng?
+How many students are here?
+
+grammar-114-09
+你家有几口人？
+nǐ jiā yǒu jǐ kǒu rén?
+How many people are in your family?
+
+grammar-114-10
+你有几支笔？
+nǐ yǒu jǐ zhī bǐ?
+How many pens do you have?
+
+grammar-115: Asking prices with 多少钱
+Pattern: Item + 多少钱？
+
+grammar-115-01
+这本书多少钱？
+zhè běn shū duō shǎo qián?
+How much is this book?
+
+grammar-115-02
+这个杯子多少钱？
+zhè ge bēi zi duō shǎo qián?
+How much is this cup?
+
+grammar-115-03
+一杯茶多少钱？
+yī bēi chá duō shǎo qián?
+How much is a cup of tea?
+
+grammar-115-04
+那件衣服多少钱？
+nà jiàn yī fú duō shǎo qián?
+How much is that item of clothing?
+
+grammar-115-05
+一张票多少钱？
+yī zhāng piào duō shǎo qián?
+How much is one ticket?
+
+grammar-115-06
+这个书包多少钱？
+zhè ge shū bāo duō shǎo qián?
+How much is this schoolbag?
+
+grammar-115-07
+一杯咖啡多少钱？
+yī bēi kā fēi duō shǎo qián?
+How much is a cup of coffee?
+
+grammar-115-08
+这支笔多少钱？
+zhè zhī bǐ duō shǎo qián?
+How much is this pen?
+
+grammar-115-09
+一斤苹果多少钱？
+yī jīn píng guǒ duō shǎo qián?
+How much is one jin of apples?
+
+grammar-115-10
+这辆自行车多少钱？
+zhè liàng zì xíng chē duō shǎo qián?
+How much is this bicycle?
+
+grammar-116: Pointing out objects with 这 and 那
+Pattern: 这/那 + measure word + noun
+
+grammar-116-01
+这本书很小。
+zhè běn shū hěn xiǎo.
+This book is small.
+
+grammar-116-02
+那只猫很可爱。
+nà zhī māo hěn kě ài.
+That cat is cute.
+
+grammar-116-03
+这个苹果很大。
+zhè ge píng guǒ hěn dà.
+This apple is big.
+
+grammar-116-04
+那杯茶很热。
+nà bēi chá hěn rè.
+That cup of tea is hot.
+
+grammar-116-05
+这件衣服很漂亮。
+zhè jiàn yī fú hěn piào liàng.
+This item of clothing is pretty.
+
+grammar-116-06
+那个学生是我的朋友。
+nà ge xué shēng shì wǒ de péng yǒu.
+That student is my friend.
+
+grammar-116-07
+这张票是你的。
+zhè zhāng piào shì nǐ de.
+This ticket is yours.
+
+grammar-116-08
+那辆车很贵。
+nà liàng chē hěn guì.
+That car is expensive.
+
+grammar-116-09
+这支笔很好。
+zhè zhī bǐ hěn hǎo.
+This pen is good.
+
+grammar-116-10
+那个杯子很小。
+nà ge bēi zi hěn xiǎo.
+That cup is small.
+
+grammar-117: Pointing out groups with 这些 and 那些
+Pattern: 这些/那些 + noun
+
+grammar-117-01
+这些书是我的。
+zhè xiē shū shì wǒ de.
+These books are mine.
+
+grammar-117-02
+那些苹果很大。
+nà xiē píng guǒ hěn dà.
+Those apples are big.
+
+grammar-117-03
+这些学生都是我的朋友。
+zhè xiē xué shēng dōu shì wǒ de péng yǒu.
+These students are all my friends.
+
+grammar-117-04
+那些杯子很漂亮。
+nà xiē bēi zi hěn piào liàng.
+Those cups are pretty.
+
+grammar-117-05
+这些猫都很小。
+zhè xiē māo dōu hěn xiǎo.
+These cats are all small.
+
+grammar-117-06
+那些衣服很贵。
+nà xiē yī fú hěn guì.
+Those clothes are expensive.
+
+grammar-117-07
+这些票是你的。
+zhè xiē piào shì nǐ de.
+These tickets are yours.
+
+grammar-117-08
+那些老师都很好。
+nà xiē lǎo shī dōu hěn hǎo.
+Those teachers are all nice.
+
+grammar-117-09
+这些香蕉很好吃。
+zhè xiē xiāng jiāo hěn hǎo chī.
+These bananas are tasty.
+
+grammar-117-10
+那些椅子很旧。
+nà xiē yǐ zi hěn jiù.
+Those chairs are old.
+
+grammar-118: Liking things and activities with 喜欢
+Pattern: Subject + 喜欢 + noun/verb phrase
+
+grammar-118-01
+我喜欢狗。
+wǒ xǐ huān gǒu.
+I like dogs.
+
+grammar-118-02
+她喜欢喝牛奶。
+tā xǐ huān hē niú nǎi.
+She likes drinking milk.
+
+grammar-118-03
+他喜欢看书。
+tā xǐ huān kàn shū.
+He likes reading books.
+
+grammar-118-04
+我们喜欢这家饭店。
+wǒ men xǐ huān zhè jiā fàn diàn.
+We like this restaurant.
+
+grammar-118-05
+妹妹喜欢画画。
+mèi mèi xǐ huān huà huà.
+My younger sister likes drawing.
+
+grammar-118-06
+爸爸喜欢做饭。
+bà bà xǐ huān zuò fàn.
+Dad likes cooking.
+
+grammar-118-07
+我不喜欢咖啡。
+wǒ bù xǐ huān kā fēi.
+I do not like coffee.
+
+grammar-118-08
+弟弟不喜欢吃鱼。
+dì di bù xǐ huān chī yú.
+My younger brother does not like eating fish.
+
+grammar-118-09
+你喜欢听音乐吗？
+nǐ xǐ huān tīng yīn yuè ma?
+Do you like listening to music?
+
+grammar-118-10
+她喜欢学中文。
+tā xǐ huān xué zhōng wén.
+She likes learning Chinese.
+
+grammar-119: Asking for things with 要
+Pattern: Subject + 要 + noun
+
+grammar-119-01
+我要一杯水。
+wǒ yào yī bēi shuǐ.
+I would like a glass of water.
+
+grammar-119-02
+我要两张票。
+wǒ yào liǎng zhāng piào.
+I would like two tickets.
+
+grammar-119-03
+我们要三碗米饭。
+wǒ men yào sān wǎn mǐ fàn.
+We would like three bowls of rice.
+
+grammar-119-04
+她要一杯茶。
+tā yào yī bēi chá.
+She would like a cup of tea.
+
+grammar-119-05
+我要这个苹果。
+wǒ yào zhè ge píng guǒ.
+I would like this apple.
+
+grammar-119-06
+他要一碗面条。
+tā yào yī wǎn miàn tiáo.
+He would like a bowl of noodles.
+
+grammar-119-07
+我要一杯热牛奶。
+wǒ yào yī bēi rè niú nǎi.
+I would like a cup of hot milk.
+
+grammar-119-08
+我们要两个杯子。
+wǒ men yào liǎng gè bēi zi.
+We would like two cups.
+
+grammar-119-09
+你要什么？
+nǐ yào shén me?
+What would you like?
+
+grammar-119-10
+我要那本书。
+wǒ yào nà běn shū.
+I would like that book.
+
+grammar-120: Stating age with 岁
+Pattern: Person + number + 岁
+
+grammar-120-01
+我今年十八岁。
+wǒ jīn nián shí bā suì.
+I am eighteen years old this year.
+
+grammar-120-02
+弟弟五岁。
+dì di wǔ suì.
+My younger brother is five years old.
+
+grammar-120-03
+妹妹三岁。
+mèi mèi sān suì.
+My younger sister is three years old.
+
+grammar-120-04
+我爸爸四十岁。
+wǒ bà bà sì shí suì.
+My dad is forty years old.
+
+grammar-120-05
+我妈妈三十八岁。
+wǒ mā mā sān shí bā suì.
+My mom is thirty-eight years old.
+
+grammar-120-06
+姐姐二十岁。
+jiě jiě èr shí suì.
+My older sister is twenty years old.
+
+grammar-120-07
+哥哥二十二岁。
+gē gē èr shí èr suì.
+My older brother is twenty-two years old.
+
+grammar-120-08
+她的儿子六岁。
+tā de ér zi liù suì.
+Her son is six years old.
+
+grammar-120-09
+你女儿几岁？
+nǐ nǚ ér jǐ suì?
+How old is your daughter?
+
+grammar-120-10
+我爷爷七十岁。
+wǒ yé yé qī shí suì.
+My grandpa is seventy years old.
+
+grammar-121: Telling the clock time
+Pattern: 现在 + number + 点 (+ minutes)
+
+grammar-121-01
+现在八点。
+xiàn zài bā diǎn.
+It is eight o'clock now.
+
+grammar-121-02
+现在九点半。
+xiàn zài jiǔ diǎn bàn.
+It is half past nine now.
+
+grammar-121-03
+现在十点十分。
+xiàn zài shí diǎn shí fēn.
+It is ten ten now.
+
+grammar-121-04
+现在七点二十分。
+xiàn zài qī diǎn èr shí fēn.
+It is seven twenty now.
+
+grammar-121-05
+现在六点半。
+xiàn zài liù diǎn bàn.
+It is half past six now.
+
+grammar-121-06
+现在十二点。
+xiàn zài shí èr diǎn.
+It is twelve o'clock now.
+
+grammar-121-07
+现在下午三点。
+xiàn zài xià wǔ sān diǎn.
+It is three in the afternoon now.
+
+grammar-121-08
+现在上午十点。
+xiàn zài shàng wǔ shí diǎn.
+It is ten in the morning now.
+
+grammar-121-09
+现在四点五十分。
+xiàn zài sì diǎn wǔ shí fēn.
+It is four fifty now.
+
+grammar-121-10
+现在几点？
+xiàn zài jǐ diǎn?
+What time is it now?
+
+grammar-122: Asking when with 什么时候
+Pattern: Subject + 什么时候 + verb phrase？
+
+grammar-122-01
+你什么时候回家？
+nǐ shén me shí hòu huí jiā?
+When are you going home?
+
+grammar-122-02
+我们什么时候吃饭？
+wǒ men shén me shí hòu chī fàn?
+When are we eating?
+
+grammar-122-03
+她什么时候来？
+tā shén me shí hòu lái?
+When is she coming?
+
+grammar-122-04
+你什么时候上课？
+nǐ shén me shí hòu shàng kè?
+When do you have class?
+
+grammar-122-05
+爸爸什么时候去北京？
+bà bà shén me shí hòu qù běi jīng?
+When is Dad going to Beijing?
+
+grammar-122-06
+你什么时候睡觉？
+nǐ shén me shí hòu shuì jiào?
+When do you go to bed?
+
+grammar-122-07
+他什么时候起床？
+tā shén me shí hòu qǐ chuáng?
+When does he get up?
+
+grammar-122-08
+我们什么时候买票？
+wǒ men shén me shí hòu mǎi piào?
+When are we buying tickets?
+
+grammar-122-09
+你什么时候看书？
+nǐ shén me shí hòu kàn shū?
+When do you read books?
+
+grammar-122-10
+妈妈什么时候做饭？
+mā mā shén me shí hòu zuò fàn?
+When is Mom cooking?
+
+grammar-123: Going somewhere to do something
+Pattern: Subject + 去 + place + verb phrase
+
+grammar-123-01
+我去商店买水。
+wǒ qù shāng diàn mǎi shuǐ.
+I am going to the store to buy water.
+
+grammar-123-02
+她去学校学中文。
+tā qù xué xiào xué zhōng wén.
+She is going to school to study Chinese.
+
+grammar-123-03
+我们去饭店吃饭。
+wǒ men qù fàn diàn chī fàn.
+We are going to a restaurant to eat.
+
+grammar-123-04
+他去北京看朋友。
+tā qù běi jīng kàn péng yǒu.
+He is going to Beijing to see a friend.
+
+grammar-123-05
+我去医院看医生。
+wǒ qù yī yuàn kàn yī shēng.
+I am going to the hospital to see a doctor.
+
+grammar-123-06
+姐姐去商店买衣服。
+jiě jiě qù shāng diàn mǎi yī fú.
+My older sister is going to the store to buy clothes.
+
+grammar-123-07
+我们去公园跑步。
+wǒ men qù gōng yuán pǎo bù.
+We are going to the park to run.
+
+grammar-123-08
+爸爸去学校接我。
+bà bà qù xué xiào jiē wǒ.
+Dad is going to school to pick me up.
+
+grammar-123-09
+我去图书馆看书。
+wǒ qù tú shū guǎn kàn shū.
+I am going to the library to read.
+
+grammar-123-10
+他们去商店买水果。
+tā men qù shāng diàn mǎi shuǐ guǒ.
+They are going to the store to buy fruit.
+
+grammar-124: Doing things together with 一起
+Pattern: Subject + 一起 + verb phrase
+
+grammar-124-01
+我们一起吃早饭。
+wǒ men yī qǐ chī zǎo fàn.
+We eat breakfast together.
+
+grammar-124-02
+他们一起学中文。
+tā men yī qǐ xué zhōng wén.
+They study Chinese together.
+
+grammar-124-03
+我和妈妈一起做饭。
+wǒ hé mā mā yī qǐ zuò fàn.
+Mom and I cook together.
+
+grammar-124-04
+我们一起看电影。
+wǒ men yī qǐ kàn diàn yǐng.
+We watch a movie together.
+
+grammar-124-05
+她们一起去学校。
+tā men yī qǐ qù xué xiào.
+They go to school together.
+
+grammar-124-06
+我和弟弟一起玩。
+wǒ hé dì di yī qǐ wán.
+My younger brother and I play together.
+
+grammar-124-07
+我们一起喝茶。
+wǒ men yī qǐ hē chá.
+We drink tea together.
+
+grammar-124-08
+爸爸和妈妈一起买菜。
+bà bà hé mā mā yī qǐ mǎi cài.
+Dad and Mom buy groceries together.
+
+grammar-124-09
+他们一起回家。
+tā men yī qǐ huí jiā.
+They go home together.
+
+grammar-124-10
+我和姐姐一起听音乐。
+wǒ hé jiě jiě yī qǐ tīng yīn yuè.
+My older sister and I listen to music together.
+
+grammar-125: Everyday frequency with 每
+Pattern: 每 + time unit + 都 + verb phrase
+
+grammar-125-01
+我每天都喝牛奶。
+wǒ měi tiān dōu hē niú nǎi.
+I drink milk every day.
+
+grammar-125-02
+她每天都看书。
+tā měi tiān dōu kàn shū.
+She reads books every day.
+
+grammar-125-03
+爸爸每天都做饭。
+bà bà měi tiān dōu zuò fàn.
+Dad cooks every day.
+
+grammar-125-04
+我们每个星期都去公园。
+wǒ men měi gè xīng qī dōu qù gōng yuán.
+We go to the park every week.
+
+grammar-125-05
+他每个月都买书。
+tā měi gè yuè dōu mǎi shū.
+He buys books every month.
+
+grammar-125-06
+我每年都去北京。
+wǒ měi nián dōu qù běi jīng.
+I go to Beijing every year.
+
+grammar-125-07
+妹妹每天都画画。
+mèi mèi měi tiān dōu huà huà.
+My younger sister draws every day.
+
+grammar-125-08
+我们每天都学中文。
+wǒ men měi tiān dōu xué zhōng wén.
+We study Chinese every day.
+
+grammar-125-09
+妈妈每天都喝茶。
+mā mā měi tiān dōu hē chá.
+Mom drinks tea every day.
+
+grammar-125-10
+我每个星期都看电影。
+wǒ měi gè xīng qī dōu kàn diàn yǐng.
+I watch a movie every week.
+
+grammar-126: Choosing a better alternative with 与其…不如…
+Pattern: 与其 + option A，不如 + preferred option B
+
+grammar-126-01
+与其抱怨，不如想办法。
+yǔ qí bào yuàn, bù rú xiǎng bàn fǎ.
+Rather than complain, it is better to find a solution.
+
+grammar-126-02
+与其等他，不如先走。
+yǔ qí děng tā, bù rú xiān zǒu.
+Rather than wait for him, it is better to leave first.
+
+grammar-126-03
+与其买新的，不如修好旧的。
+yǔ qí mǎi xīn de, bù rú xiū hǎo jiù de.
+Rather than buy a new one, it is better to repair the old one.
+
+grammar-126-04
+与其猜测，不如直接问她。
+yǔ qí cāi cè, bù rú zhí jiē wèn tā.
+Rather than speculate, it is better to ask her directly.
+
+grammar-126-05
+与其熬夜工作，不如早点休息。
+yǔ qí áo yè gōng zuò, bù rú zǎo diǎn xiū xī.
+Rather than work late into the night, it is better to rest early.
+
+grammar-126-06
+与其追求数量，不如提高质量。
+yǔ qí zhuī qiú shù liàng, bù rú tí gāo zhì liàng.
+Rather than pursue quantity, it is better to improve quality.
+
+grammar-126-07
+与其争论谁对谁错，不如解决问题。
+yǔ qí zhēng lùn shuí duì shuí cuò, bù rú jiě jué wèn tí.
+Rather than argue about who is right, it is better to solve the problem.
+
+grammar-126-08
+与其把钱存起来，不如用来学习。
+yǔ qí bǎ qián cún qǐ lái, bù rú yòng lái xué xí.
+Rather than save the money, it is better to use it for learning.
+
+grammar-126-09
+与其临时改变计划，不如提前做好准备。
+yǔ qí lín shí gǎi biàn jì huà, bù rú tí qián zuò hǎo zhǔn bèi.
+Rather than change the plan at the last minute, it is better to prepare in advance.
+
+grammar-126-10
+与其依赖别人，不如学会自己处理。
+yǔ qí yī lài bié rén, bù rú xué huì zì jǐ chǔ lǐ.
+Rather than depend on others, it is better to learn to handle it yourself.
+
+grammar-127: Choosing a sacrifice with 宁可…也不…
+Pattern: 宁可 + acceptable sacrifice，也不 + rejected action
+
+grammar-127-01
+我宁可走路，也不坐他的车。
+wǒ nìng kě zǒu lù, yě bù zuò tā de chē.
+I would rather walk than ride in his car.
+
+grammar-127-02
+她宁可少挣钱，也不放弃自己的原则。
+tā nìng kě shǎo zhèng qián, yě bù fàng qì zì jǐ de yuán zé.
+She would rather earn less than give up her principles.
+
+grammar-127-03
+我宁可晚点到，也不开快车。
+wǒ nìng kě wǎn diǎn dào, yě bù kāi kuài chē.
+I would rather arrive late than drive fast.
+
+grammar-127-04
+他宁可自己吃亏，也不欺骗朋友。
+tā nìng kě zì jǐ chī kuī, yě bù qī piàn péng yǒu.
+He would rather suffer a loss himself than deceive a friend.
+
+grammar-127-05
+我们宁可重新开始，也不接受这样的条件。
+wǒ men nìng kě chóng xīn kāi shǐ, yě bù jiē shòu zhè yàng de tiáo jiàn.
+We would rather start over than accept such conditions.
+
+grammar-127-06
+她宁可一个人完成，也不交出不合格的作品。
+tā nìng kě yī gè rén wán chéng, yě bù jiāo chū bù hé gé de zuò pǐn.
+She would rather finish it alone than submit substandard work.
+
+grammar-127-07
+我宁可多花一点钱，也不买假货。
+wǒ nìng kě duō huā yī diǎn qián, yě bù mǎi jiǎ huò.
+I would rather spend a little more than buy counterfeit goods.
+
+grammar-127-08
+他宁可承认错误，也不找借口。
+tā nìng kě chéng rèn cuò wù, yě bù zhǎo jiè kǒu.
+He would rather admit his mistake than make excuses.
+
+grammar-127-09
+我宁可暂时失业，也不做违法的事。
+wǒ nìng kě zàn shí shī yè, yě bù zuò wéi fǎ de shì.
+I would rather be unemployed temporarily than do something illegal.
+
+grammar-127-10
+他们宁可推迟开业，也不降低安全标准。
+tā men nìng kě tuī chí kāi yè, yě bù jiàng dī ān quán biāo zhǔn.
+They would rather delay opening than lower safety standards.
+
+grammar-128: Reasoning from an accepted fact with 既然…就…
+Pattern: 既然 + accepted fact，就 + conclusion
+
+grammar-128-01
+既然你已经决定了，就不要犹豫。
+jì rán nǐ yǐ jīng jué dìng le, jiù bù yào yóu yù.
+Since you have already decided, do not hesitate.
+
+grammar-128-02
+既然大家都到了，就开始吧。
+jì rán dà jiā dōu dào le, jiù kāi shǐ ba.
+Since everyone is here, let us begin.
+
+grammar-128-03
+既然答应了，就要做到。
+jì rán dā yìng le, jiù yào zuò dào.
+Since you promised, you must follow through.
+
+grammar-128-04
+既然时间不够，就先讨论重点。
+jì rán shí jiān bù gòu, jiù xiān tǎo lùn zhòng diǎn.
+Since there is not enough time, let us discuss the main points first.
+
+grammar-128-05
+既然他不愿意，我们就别勉强他。
+jì rán tā bù yuàn yì, wǒ men jiù bié miǎn qiǎng tā.
+Since he is unwilling, let us not pressure him.
+
+grammar-128-06
+既然发现了问题，就应该及时处理。
+jì rán fā xiàn le wèn tí, jiù yīng gāi jí shí chǔ lǐ.
+Since the problem has been discovered, it should be dealt with promptly.
+
+grammar-128-07
+既然你了解情况，就请你解释一下。
+jì rán nǐ liǎo jiě qíng kuàng, jiù qǐng nǐ jiě shì yī xià.
+Since you know the situation, please explain it.
+
+grammar-128-08
+既然这条路不通，我们就换一条。
+jì rán zhè tiáo lù bù tōng, wǒ men jiù huàn yī tiáo.
+Since this road is blocked, let us take another one.
+
+grammar-128-09
+既然材料已经准备好了，就可以申请了。
+jì rán cái liào yǐ jīng zhǔn bèi hǎo le, jiù kě yǐ shēn qǐng le.
+Since the documents are ready, we can apply now.
+
+grammar-128-10
+既然选择了这份工作，就要承担相应的责任。
+jì rán xuǎn zé le zhè fèn gōng zuò, jiù yào chéng dān xiāng yìng de zé rèn.
+Since you chose this job, you must take on the corresponding responsibilities.
+
+grammar-129: Acknowledging a fact with 尽管…仍然…
+Pattern: 尽管 + fact，subject + 仍然 + contrasting result
+
+grammar-129-01
+尽管很累，她仍然坚持训练。
+jǐn guǎn hěn lèi, tā réng rán jiān chí xùn liàn.
+Although she is tired, she still keeps training.
+
+grammar-129-02
+尽管价格上涨，需求仍然很大。
+jǐn guǎn jià gé shàng zhǎng, xū qiú réng rán hěn dà.
+Although prices have risen, demand is still high.
+
+grammar-129-03
+尽管大家反对，他仍然没有改变主意。
+jǐn guǎn dà jiā fǎn duì, tā réng rán méi yǒu gǎi biàn zhǔ yì.
+Although everyone objected, he still did not change his mind.
+
+grammar-129-04
+尽管下着大雨，比赛仍然照常进行。
+jǐn guǎn xià zhe dà yǔ, bǐ sài réng rán zhào cháng jìn xíng.
+Although it is raining heavily, the competition is still proceeding as usual.
+
+grammar-129-05
+尽管已经道歉，他们仍然不肯原谅他。
+jǐn guǎn yǐ jīng dào qiàn, tā men réng rán bù kěn yuán liàng tā.
+Although he has apologized, they still refuse to forgive him.
+
+grammar-129-06
+尽管条件有限，我们仍然完成了任务。
+jǐn guǎn tiáo jiàn yǒu xiàn, wǒ men réng rán wán chéng le rèn wù.
+Although resources were limited, we still completed the task.
+
+grammar-129-07
+尽管离开多年，她仍然记得那条小路。
+jǐn guǎn lí kāi duō nián, tā réng rán jì de nà tiáo xiǎo lù.
+Although she has been away for years, she still remembers that little path.
+
+grammar-129-08
+尽管有了新证据，结论仍然没有改变。
+jǐn guǎn yǒu le xīn zhèng jù, jié lùn réng rán méi yǒu gǎi biàn.
+Although there is new evidence, the conclusion still has not changed.
+
+grammar-129-09
+尽管收入不高，他仍然每月捐款。
+jǐn guǎn shōu rù bù gāo, tā réng rán měi yuè juān kuǎn.
+Although his income is not high, he still donates every month.
+
+grammar-129-10
+尽管失败过几次，她仍然相信自己。
+jǐn guǎn shī bài guò jǐ cì, tā réng rán xiāng xìn zì jǐ.
+Although she has failed several times, she still believes in herself.
+
+grammar-130: Accepting an extreme possibility with 哪怕…也…
+Pattern: 哪怕 + extreme condition，也 + unchanged response
+
+grammar-130-01
+哪怕只有一个人支持，我也要试试。
+nǎ pà zhǐ yǒu yī gè rén zhī chí, wǒ yě yào shì shì.
+Even if only one person supports me, I will still try.
+
+grammar-130-02
+哪怕下雪，我们也按时出发。
+nǎ pà xià xuě, wǒ men yě àn shí chū fā.
+Even if it snows, we will still leave on time.
+
+grammar-130-03
+哪怕再忙，你也要吃饭。
+nǎ pà zài máng, nǐ yě yào chī fàn.
+Even if you are extremely busy, you still need to eat.
+
+grammar-130-04
+哪怕只能帮一点忙，我也愿意。
+nǎ pà zhǐ néng bāng yī diǎn máng, wǒ yě yuàn yì.
+Even if I can only help a little, I am willing.
+
+grammar-130-05
+哪怕失败，我也不会后悔。
+nǎ pà shī bài, wǒ yě bù huì hòu huǐ.
+Even if I fail, I will not regret it.
+
+grammar-130-06
+哪怕他亲自来，我也不会答应。
+nǎ pà tā qīn zì lái, wǒ yě bù huì dā yìng.
+Even if he comes in person, I will not agree.
+
+grammar-130-07
+哪怕只剩一天，我们也不能放弃。
+nǎ pà zhǐ shèng yī tiān, wǒ men yě bù néng fàng qì.
+Even if only one day remains, we must not give up.
+
+grammar-130-08
+哪怕贵一点，我也想买质量好的。
+nǎ pà guì yī diǎn, wǒ yě xiǎng mǎi zhì liàng hǎo de.
+Even if it costs a little more, I still want to buy something of good quality.
+
+grammar-130-09
+哪怕没有人发现，你也应该说实话。
+nǎ pà méi yǒu rén fā xiàn, nǐ yě yīng gāi shuō shí huà.
+Even if nobody finds out, you should still tell the truth.
+
+grammar-130-10
+哪怕每天只练十分钟，也会有进步。
+nǎ pà měi tiān zhǐ liàn shí fēn zhōng, yě huì yǒu jìn bù.
+Even practicing for just ten minutes a day will lead to progress.
+
+grammar-131: Stating an exception with 除非…否则…
+Pattern: 除非 + necessary exception，否则 + default outcome
+
+grammar-131-01
+除非下雨，否则我们明天出发。
+chú fēi xià yǔ, fǒu zé wǒ men míng tiān chū fā.
+Unless it rains, we will leave tomorrow.
+
+grammar-131-02
+除非你亲自解释，否则他不会相信。
+chú fēi nǐ qīn zì jiě shì, fǒu zé tā bù huì xiāng xìn.
+Unless you explain in person, he will not believe it.
+
+grammar-131-03
+除非价格降低，否则我不考虑购买。
+chú fēi jià gé jiàng dī, fǒu zé wǒ bù kǎo lǜ gòu mǎi.
+Unless the price drops, I will not consider buying it.
+
+grammar-131-04
+除非提前预约，否则不能参观。
+chú fēi tí qián yù yuē, fǒu zé bù néng cān guān.
+Unless you book in advance, you cannot visit.
+
+grammar-131-05
+除非有新的证据，否则不能改变结论。
+chú fēi yǒu xīn de zhèng jù, fǒu zé bù néng gǎi biàn jié lùn.
+Unless there is new evidence, the conclusion cannot be changed.
+
+grammar-131-06
+除非大家都同意，否则计划不变。
+chú fēi dà jiā dōu tóng yì, fǒu zé jì huà bù biàn.
+Unless everyone agrees, the plan will remain unchanged.
+
+grammar-131-07
+除非你愿意加班，否则今天做不完。
+chú fēi nǐ yuàn yì jiā bān, fǒu zé jīn tiān zuò bù wán.
+Unless you are willing to work overtime, it cannot be finished today.
+
+grammar-131-08
+除非情况紧急，否则不要打这个电话。
+chú fēi qíng kuàng jǐn jí, fǒu zé bù yào dǎ zhè ge diàn huà.
+Unless the situation is urgent, do not call this number.
+
+grammar-131-09
+除非得到允许，否则不能拍照。
+chú fēi dé dào yǔn xǔ, fǒu zé bù néng pāi zhào.
+Unless you obtain permission, you cannot take photos.
+
+grammar-131-10
+除非他道歉，否则我不会再见他。
+chú fēi tā dào qiàn, fǒu zé wǒ bù huì zài jiàn tā.
+Unless he apologizes, I will not see him again.
+
+grammar-132: Covering every alternative with 无论…都…
+Pattern: 无论 + question phrase/alternatives，都 + constant result
+
+grammar-132-01
+无论结果如何，我都接受。
+wú lùn jié guǒ rú hé, wǒ dōu jiē shòu.
+Whatever the result is, I will accept it.
+
+grammar-132-02
+无论谁来，都要登记。
+wú lùn shuí lái, dōu yào dēng jì.
+Whoever comes must register.
+
+grammar-132-03
+无论你在哪里，我都会支持你。
+wú lùn nǐ zài nǎ lǐ, wǒ dōu huì zhī chí nǐ.
+Wherever you are, I will support you.
+
+grammar-132-04
+无论天气多冷，他都坚持跑步。
+wú lùn tiān qì duō lěng, tā dōu jiān chí pǎo bù.
+No matter how cold it is, he keeps running.
+
+grammar-132-05
+无论成功还是失败，我们都能学到东西。
+wú lùn chéng gōng hái shì shī bài, wǒ men dōu néng xué dào dōng xī.
+Whether we succeed or fail, we can learn something.
+
+grammar-132-06
+无论发生什么，都不要惊慌。
+wú lùn fā shēng shén me, dōu bù yào jīng huāng.
+Whatever happens, do not panic.
+
+grammar-132-07
+无论用哪种方法，都要保证安全。
+wú lùn yòng nǎ zhǒng fāng fǎ, dōu yào bǎo zhèng ān quán.
+Whichever method you use, you must ensure safety.
+
+grammar-132-08
+无论收入多少，她都会存一部分。
+wú lùn shōu rù duō shǎo, tā dōu huì cún yī bù fèn.
+No matter how much she earns, she saves a portion.
+
+grammar-132-09
+无论是老师还是学生，都应该遵守规定。
+wú lùn shì lǎo shī hái shì xué shēng, dōu yīng gāi zūn shǒu guī dìng.
+Teachers and students alike should follow the rules.
+
+grammar-132-10
+无论你什么时候需要帮助，都可以联系我。
+wú lùn nǐ shén me shí hòu xū yào bāng zhù, dōu kě yǐ lián xì wǒ.
+Whenever you need help, you can contact me.
+
+grammar-133: Arguing from the stronger case with 尚且…更何况…
+Pattern: Stronger case + 尚且 + difficulty，更何况 + weaker case
+
+grammar-133-01
+专家尚且会犯错，更何况初学者。
+zhuān jiā shàng qiě huì fàn cuò, gèng hé kuàng chū xué zhě.
+Even experts make mistakes, let alone beginners.
+
+grammar-133-02
+大人尚且受不了，更何况孩子。
+dà rén shàng qiě shòu bù liǎo, gèng hé kuàng hái zi.
+Even adults cannot stand it, let alone children.
+
+grammar-133-03
+本地人尚且会迷路，更何况游客。
+běn dì rén shàng qiě huì mí lù, gèng hé kuàng yóu kè.
+Even locals can get lost, let alone tourists.
+
+grammar-133-04
+他尚且不敢去，更何况我。
+tā shàng qiě bù gǎn qù, gèng hé kuàng wǒ.
+Even he does not dare to go, let alone me.
+
+grammar-133-05
+这么简单的题他尚且不会，更何况难题。
+zhè me jiǎn dān de tí tā shàng qiě bù huì, gèng hé kuàng nán tí.
+He cannot even do such a simple question, let alone a difficult one.
+
+grammar-133-06
+走路尚且困难，更何况跑步。
+zǒu lù shàng qiě kùn nán, gèng hé kuàng pǎo bù.
+Even walking is difficult, let alone running.
+
+grammar-133-07
+母语者尚且需要查词典，更何况外国学生。
+mǔ yǔ zhě shàng qiě xū yào chá cí diǎn, gèng hé kuàng wài guó xué shēng.
+Even native speakers need to consult a dictionary, let alone foreign students.
+
+grammar-133-08
+一个人尚且忙不过来，更何况还要照顾孩子。
+yī gè rén shàng qiě máng bù guò lái, gèng hé kuàng hái yào zhào gù hái zi.
+Even managing alone is too much, let alone also having to care for children.
+
+grammar-133-09
+晴天尚且看不清，更何况雾天。
+qíng tiān shàng qiě kàn bù qīng, gèng hé kuàng wù tiān.
+Even on a clear day it is hard to see clearly, let alone on a foggy day.
+
+grammar-133-10
+维持现状尚且不容易，更何况扩大规模。
+wéi chí xiàn zhuàng shàng qiě bù róng yì, gèng hé kuàng kuò dà guī mó.
+Even maintaining the current situation is not easy, let alone expanding.
+
+grammar-134: Reversing an expected outcome with 不仅没有…反而…
+Pattern: 不仅没有 + expected event，反而 + opposite result
+
+grammar-134-01
+价格不仅没有下降，反而上涨了。
+jià gé bù jǐn méi yǒu xià jiàng, fǎn ér shàng zhǎng le.
+The price not only failed to fall; it rose instead.
+
+grammar-134-02
+他不仅没有生气，反而笑了。
+tā bù jǐn méi yǒu shēng qì, fǎn ér xiào le.
+He not only did not get angry; he laughed instead.
+
+grammar-134-03
+休息以后，我不仅没有精神，反而更困了。
+xiū xī yǐ hòu, wǒ bù jǐn méi yǒu jīng shén, fǎn ér gèng kùn le.
+After resting, I not only failed to feel refreshed; I felt sleepier instead.
+
+grammar-134-04
+这次解释不仅没有消除误会，反而引起了争论。
+zhè cì jiě shì bù jǐn méi yǒu xiāo chú wù huì, fǎn ér yǐn qǐ le zhēng lùn.
+This explanation not only failed to clear up the misunderstanding; it sparked an argument instead.
+
+grammar-134-05
+人数不仅没有减少，反而增加了。
+rén shù bù jǐn méi yǒu jiǎn shǎo, fǎn ér zēng jiā le.
+The number of people not only failed to decrease; it increased instead.
+
+grammar-134-06
+她不仅没有放弃，反而更加努力了。
+tā bù jǐn méi yǒu fàng qì, fǎn ér gèng jiā nǔ lì le.
+She not only did not give up; she worked even harder instead.
+
+grammar-134-07
+新规定不仅没有节省时间，反而增加了工作量。
+xīn guī dìng bù jǐn méi yǒu jié shěng shí jiān, fǎn ér zēng jiā le gōng zuò liàng.
+The new rule not only failed to save time; it increased the workload instead.
+
+grammar-134-08
+雨不仅没有停，反而越下越大。
+yǔ bù jǐn méi yǒu tíng, fǎn ér yuè xià yuè dà.
+The rain not only failed to stop; it grew heavier instead.
+
+grammar-134-09
+他不仅没有感谢我，反而责怪我。
+tā bù jǐn méi yǒu gǎn xiè wǒ, fǎn ér zé guài wǒ.
+He not only failed to thank me; he blamed me instead.
+
+grammar-134-10
+搬家后，路程不仅没有缩短，反而变长了。
+bān jiā hòu, lù chéng bù jǐn méi yǒu suō duǎn, fǎn ér biàn cháng le.
+After the move, the journey not only failed to get shorter; it became longer instead.
+
+grammar-135: Correcting a characterization with 不是…而是…
+Pattern: 不是 + rejected explanation，而是 + actual explanation
+
+grammar-135-01
+我不是不想去，而是没有时间。
+wǒ bù shì bù xiǎng qù, ér shì méi yǒu shí jiān.
+It is not that I do not want to go; I do not have time.
+
+grammar-135-02
+这不是结束，而是新的开始。
+zhè bù shì jié shù, ér shì xīn de kāi shǐ.
+This is not an ending, but a new beginning.
+
+grammar-135-03
+他不是老师，而是翻译。
+tā bù shì lǎo shī, ér shì fān yì.
+He is not a teacher, but a translator.
+
+grammar-135-04
+问题不是价格，而是质量。
+wèn tí bù shì jià gé, ér shì zhì liàng.
+The issue is not the price, but the quality.
+
+grammar-135-05
+她不是忘了，而是故意没说。
+tā bù shì wàng le, ér shì gù yì méi shuō.
+She did not forget; she deliberately said nothing.
+
+grammar-135-06
+我们需要的不是借口，而是行动。
+wǒ men xū yào de bù shì jiè kǒu, ér shì xíng dòng.
+What we need is not excuses, but action.
+
+grammar-135-07
+这不是运气，而是长期努力的结果。
+zhè bù shì yùn qì, ér shì cháng qī nǔ lì de jié guǒ.
+This is not luck, but the result of sustained effort.
+
+grammar-135-08
+我担心的不是失败，而是失去信任。
+wǒ dān xīn de bù shì shī bài, ér shì shī qù xìn rèn.
+What worries me is not failure, but losing trust.
+
+grammar-135-09
+他来这里不是为了旅游，而是为了工作。
+tā lái zhè lǐ bù shì wèi le lǚ yóu, ér shì wèi le gōng zuò.
+He came here not to travel, but to work.
+
+grammar-135-10
+决定成败的不是速度，而是方向。
+jué dìng chéng bài de bù shì sù dù, ér shì fāng xiàng.
+What determines success or failure is not speed, but direction.
+
+grammar-136: Offering mutually exclusive choices with 要么…要么…
+Pattern: 要么 + choice A，要么 + choice B
+
+grammar-136-01
+我们要么坐火车，要么坐飞机。
+wǒ men yào me zuò huǒ chē, yào me zuò fēi jī.
+We can either take a train or fly.
+
+grammar-136-02
+你要么现在决定，要么放弃这次机会。
+nǐ yào me xiàn zài jué dìng, yào me fàng qì zhè cì jī huì.
+Either decide now or give up this opportunity.
+
+grammar-136-03
+要么你来，要么我去。
+yào me nǐ lái, yào me wǒ qù.
+Either you come or I go.
+
+grammar-136-04
+周末我要么看书，要么出去散步。
+zhōu mò wǒ yào me kàn shū, yào me chū qù sàn bù.
+On weekends I either read or go out for a walk.
+
+grammar-136-05
+这个房间要么做书房，要么做客房。
+zhè ge fáng jiān yào me zuò shū fáng, yào me zuò kè fáng.
+This room can be either a study or a guest room.
+
+grammar-136-06
+我们要么减少开支，要么增加收入。
+wǒ men yào me jiǎn shǎo kāi zhī, yào me zēng jiā shōu rù.
+We must either reduce spending or increase income.
+
+grammar-136-07
+你要么接受条件，要么退出合作。
+nǐ yào me jiē shòu tiáo jiàn, yào me tuì chū hé zuò.
+Either accept the conditions or withdraw from the partnership.
+
+grammar-136-08
+他要么没听见，要么没听懂。
+tā yào me méi tīng jiàn, yào me méi tīng dǒng.
+Either he did not hear it or he did not understand it.
+
+grammar-136-09
+午饭要么在家吃，要么去附近的饭店吃。
+wǔ fàn yào me zài jiā chī, yào me qù fù jìn de fàn diàn chī.
+For lunch, we can either eat at home or at a nearby restaurant.
+
+grammar-136-10
+这些书要么捐出去，要么留下自己看。
+zhè xiē shū yào me juān chū qù, yào me liú xià zì jǐ kàn.
+These books can either be donated or kept for us to read.
+
+grammar-137: Describing recurring alternatives with 不是…就是…
+Pattern: 不是 + possibility A，就是 + possibility B
+
+grammar-137-01
+他周末不是加班，就是出差。
+tā zhōu mò bù shì jiā bān, jiù shì chū chāi.
+On weekends he is either working overtime or away on business.
+
+grammar-137-02
+她不是在图书馆，就是在实验室。
+tā bù shì zài tú shū guǎn, jiù shì zài shí yàn shì.
+She is either in the library or in the laboratory.
+
+grammar-137-03
+最近不是下雨，就是刮风。
+zuì jìn bù shì xià yǔ, jiù shì guā fēng.
+Recently it has been either raining or windy.
+
+grammar-137-04
+他一开口不是抱怨，就是批评。
+tā yī kāi kǒu bù shì bào yuàn, jiù shì pī píng.
+Whenever he speaks, he is either complaining or criticizing.
+
+grammar-137-05
+这把钥匙不是你的，就是他的。
+zhè bǎ yào shi bù shì nǐ de, jiù shì tā de.
+This key is either yours or his.
+
+grammar-137-06
+她每天不是开会，就是写报告。
+tā měi tiān bù shì kāi huì, jiù shì xiě bào gào.
+Every day she is either attending meetings or writing reports.
+
+grammar-137-07
+孩子放学后不是画画，就是搭积木。
+hái zi fàng xué hòu bù shì huà huà, jiù shì dā jī mù.
+After school the child is either drawing or building with blocks.
+
+grammar-137-08
+这个时间他不是在路上，就是已经到家了。
+zhè ge shí jiān tā bù shì zài lù shàng, jiù shì yǐ jīng dào jiā le.
+At this time he is either on his way or already home.
+
+grammar-137-09
+他买的衣服不是黑色的，就是灰色的。
+tā mǎi de yī fú bù shì hēi sè de, jiù shì huī sè de.
+The clothes he buys are either black or gray.
+
+grammar-137-10
+这几天来找我的人不是同事，就是邻居。
+zhè jǐ tiān lái zhǎo wǒ de rén bù shì tóng shì, jiù shì lín jū.
+The people who have come to see me these past few days have been either colleagues or neighbors.
+
+grammar-138: A consequential trigger with 一旦…就…
+Pattern: 一旦 + triggering event，就 + consequence
+
+grammar-138-01
+一旦签字，合同就生效。
+yī dàn qiān zì, hé tóng jiù shēng xiào.
+Once it is signed, the contract takes effect.
+
+grammar-138-02
+一旦失去信任，就很难恢复。
+yī dàn shī qù xìn rèn, jiù hěn nán huī fù.
+Once trust is lost, it is hard to restore.
+
+grammar-138-03
+一旦发现问题，就要立即报告。
+yī dàn fā xiàn wèn tí, jiù yào lì jí bào gào.
+Once a problem is discovered, it must be reported immediately.
+
+grammar-138-04
+一旦习惯了，就不觉得麻烦了。
+yī dàn xí guàn le, jiù bù jué de má fán le.
+Once you get used to it, it no longer feels troublesome.
+
+grammar-138-05
+一旦错过末班车，就只能打车了。
+yī dàn cuò guò mò bān chē, jiù zhǐ néng dǎ chē le.
+If you miss the last bus, you will have to take a taxi.
+
+grammar-138-06
+一旦开始，就不要轻易放弃。
+yī dàn kāi shǐ, jiù bù yào qīng yì fàng qì.
+Once you start, do not give up easily.
+
+grammar-138-07
+一旦水位超过这条线，就会发出警报。
+yī dàn shuǐ wèi chāo guò zhè tiáo xiàn, jiù huì fā chū jǐng bào.
+Once the water level exceeds this line, an alarm will sound.
+
+grammar-138-08
+一旦泄露密码，账户就可能被盗。
+yī dàn xiè lù mì mǎ, zhàng hù jiù kě néng bèi dào.
+Once the password is leaked, the account could be stolen.
+
+grammar-138-09
+一旦有消息，我就通知你。
+yī dàn yǒu xiāo xī, wǒ jiù tōng zhī nǐ.
+As soon as there is news, I will notify you.
+
+grammar-138-10
+一旦做出承诺，就应该遵守。
+yī dàn zuò chū chéng nuò, jiù yīng gāi zūn shǒu.
+Once you make a promise, you should keep it.
+
+grammar-139: Preparing for a contingency with 万一
+Pattern: 万一 + unlikely unwanted event，response / 怎么办？
+
+grammar-139-01
+万一下雨，我们就改在室内举行。
+wàn yī xià yǔ, wǒ men jiù gǎi zài shì nèi jǔ xíng.
+If it happens to rain, we will hold it indoors instead.
+
+grammar-139-02
+万一他不来，怎么办？
+wàn yī tā bù lái, zěn me bàn?
+What should we do if he does not come?
+
+grammar-139-03
+带上充电器，万一手机没电呢？
+dài shàng chōng diàn qì, wàn yī shǒu jī méi diàn ne?
+Bring the charger; what if your phone runs out of power?
+
+grammar-139-04
+万一迷路了，就给我打电话。
+wàn yī mí lù le, jiù gěi wǒ dǎ diàn huà.
+If you happen to get lost, call me.
+
+grammar-139-05
+万一航班取消，我们就坐火车。
+wàn yī háng bān qǔ xiāo, wǒ men jiù zuò huǒ chē.
+If the flight happens to be canceled, we will take a train.
+
+grammar-139-06
+多带一点现金，万一不能刷卡呢？
+duō dài yī diǎn xiàn jīn, wàn yī bù néng shuā kǎ ne?
+Bring some extra cash; what if cards are not accepted?
+
+grammar-139-07
+万一忘了密码，可以用邮箱找回。
+wàn yī wàng le mì mǎ, kě yǐ yòng yóu xiāng zhǎo huí.
+If you happen to forget the password, you can recover it by email.
+
+grammar-139-08
+万一出了问题，由谁负责？
+wàn yī chū le wèn tí, yóu shuí fù zé?
+Who will be responsible if something goes wrong?
+
+grammar-139-09
+万一时间不够，就先做最重要的部分。
+wàn yī shí jiān bù gòu, jiù xiān zuò zuì zhòng yào de bù fèn.
+If time runs short, do the most important part first.
+
+grammar-139-10
+万一你联系不上我，就找前台。
+wàn yī nǐ lián xì bù shàng wǒ, jiù zhǎo qián tái.
+If you happen to be unable to reach me, contact the front desk.
+
+grammar-140: Preventing an unwanted result with 以免
+Pattern: Precaution + 以免 + unwanted consequence
+
+grammar-140-01
+请提前出发，以免迟到。
+qǐng tí qián chū fā, yǐ miǎn chí dào.
+Please leave early to avoid being late.
+
+grammar-140-02
+把地址写下来，以免忘记。
+bǎ dì zhǐ xiě xià lái, yǐ miǎn wàng jì.
+Write down the address so that you do not forget it.
+
+grammar-140-03
+请轻声说话，以免打扰别人。
+qǐng qīng shēng shuō huà, yǐ miǎn dǎ rǎo bié rén.
+Please speak quietly to avoid disturbing others.
+
+grammar-140-04
+先备份文件，以免丢失重要资料。
+xiān bèi fèn wén jiàn, yǐ miǎn diū shī zhòng yào zī liào.
+Back up the files first to avoid losing important material.
+
+grammar-140-05
+请仔细核对，以免出现错误。
+qǐng zǐ xì hé duì, yǐ miǎn chū xiàn cuò wù.
+Please check carefully to avoid errors.
+
+grammar-140-06
+把杯子放远一点，以免孩子碰到。
+bǎ bēi zi fàng yuǎn yī diǎn, yǐ miǎn hái zi pèng dào.
+Put the cup farther away so the child does not knock into it.
+
+grammar-140-07
+出门前查一下路线，以免走错路。
+chū mén qián chá yī xià lù xiàn, yǐ miǎn zǒu cuò lù.
+Check the route before leaving to avoid taking the wrong road.
+
+grammar-140-08
+请保留收据，以免退货时遇到麻烦。
+qǐng bǎo liú shōu jù, yǐ miǎn tuì huò shí yù dào má fán.
+Please keep the receipt to avoid trouble when returning the item.
+
+grammar-140-09
+把窗户关上，以免雨水进来。
+bǎ chuāng hù guān shàng, yǐ miǎn yǔ shuǐ jìn lái.
+Close the window to keep rain from coming in.
+
+grammar-140-10
+我们最好提前沟通，以免产生误会。
+wǒ men zuì hǎo tí qián gōu tōng, yǐ miǎn chǎn shēng wù huì.
+We had better communicate in advance to avoid misunderstandings.
+
+grammar-141: Enabling a desired result with 以便
+Pattern: Preparatory action + 以便 + intended benefit
+
+grammar-141-01
+请留下电话，以便我们联系您。
+qǐng liú xià diàn huà, yǐ biàn wǒ men lián xì nín.
+Please leave your phone number so that we can contact you.
+
+grammar-141-02
+我把资料整理好了，以便大家查阅。
+wǒ bǎ zī liào zhěng lǐ hǎo le, yǐ biàn dà jiā chá yuè.
+I organized the materials so that everyone can consult them.
+
+grammar-141-03
+请提前报名，以便安排座位。
+qǐng tí qián bào míng, yǐ biàn ān pái zuò wèi.
+Please register in advance so that seats can be arranged.
+
+grammar-141-04
+我们需要确认人数，以便准备午餐。
+wǒ men xū yào què rèn rén shù, yǐ biàn zhǔn bèi wǔ cān.
+We need to confirm the number of people so that we can prepare lunch.
+
+grammar-141-05
+请写清楚地址，以便快递员找到您。
+qǐng xiě qīng chǔ dì zhǐ, yǐ biàn kuài dì yuán zhǎo dào nín.
+Please write the address clearly so that the courier can find you.
+
+grammar-141-06
+她录下了讲座，以便以后复习。
+tā lù xià le jiǎng zuò, yǐ biàn yǐ hòu fù xí.
+She recorded the lecture so that she could review it later.
+
+grammar-141-07
+请把问题发给我，以便我提前准备。
+qǐng bǎ wèn tí fā gěi wǒ, yǐ biàn wǒ tí qián zhǔn bèi.
+Please send me the questions so that I can prepare in advance.
+
+grammar-141-08
+我把椅子挪开了，以便轮椅通过。
+wǒ bǎ yǐ zi nuó kāi le, yǐ biàn lún yǐ tōng guò.
+I moved the chair aside so that a wheelchair could pass through.
+
+grammar-141-09
+请注明日期，以便我们核对。
+qǐng zhù míng rì qī, yǐ biàn wǒ men hé duì.
+Please indicate the date so that we can check it.
+
+grammar-141-10
+我们建了一个群，以便及时交流。
+wǒ men jiàn le yī gè qún, yǐ biàn jí shí jiāo liú.
+We created a group chat so that we could communicate promptly.
+
+grammar-142: Highlighting a cause with 之所以…是因为…
+Pattern: Subject + 之所以 + result，是因为 + cause
+
+grammar-142-01
+我之所以迟到，是因为路上堵车。
+wǒ zhī suǒ yǐ chí dào, shì yīn wèi lù shàng dǔ chē.
+The reason I was late is that traffic was heavy.
+
+grammar-142-02
+她之所以辞职，是因为想继续学习。
+tā zhī suǒ yǐ cí zhí, shì yīn wèi xiǎng jì xù xué xí.
+The reason she resigned is that she wanted to continue studying.
+
+grammar-142-03
+这家店之所以受欢迎，是因为服务很好。
+zhè jiā diàn zhī suǒ yǐ shòu huān yíng, shì yīn wèi fú wù hěn hǎo.
+The reason this shop is popular is that its service is good.
+
+grammar-142-04
+他之所以沉默，是因为不知道该说什么。
+tā zhī suǒ yǐ chén mò, shì yīn wèi bù zhī dào gāi shuō shén me.
+The reason he is silent is that he does not know what to say.
+
+grammar-142-05
+我们之所以改变计划，是因为天气不好。
+wǒ men zhī suǒ yǐ gǎi biàn jì huà, shì yīn wèi tiān qì bù hǎo.
+The reason we changed the plan is that the weather was bad.
+
+grammar-142-06
+我之所以反对，是因为风险太大。
+wǒ zhī suǒ yǐ fǎn duì, shì yīn wèi fēng xiǎn tài dà.
+The reason I object is that the risk is too great.
+
+grammar-142-07
+她之所以进步快，是因为每天练习。
+tā zhī suǒ yǐ jìn bù kuài, shì yīn wèi měi tiān liàn xí.
+The reason she improves quickly is that she practices every day.
+
+grammar-142-08
+这个问题之所以复杂，是因为涉及很多部门。
+zhè ge wèn tí zhī suǒ yǐ fù zá, shì yīn wèi shè jí hěn duō bù mén.
+The reason this issue is complicated is that it involves many departments.
+
+grammar-142-09
+他之所以回来，是因为放心不下家人。
+tā zhī suǒ yǐ huí lái, shì yīn wèi fàng xīn bù xià jiā rén.
+The reason he came back is that he could not stop worrying about his family.
+
+grammar-142-10
+我们之所以成功，是因为大家互相信任。
+wǒ men zhī suǒ yǐ chéng gōng, shì yīn wèi dà jiā hù xiāng xìn rèn.
+The reason we succeeded is that everyone trusted one another.
+
+grammar-143: Applying a rule universally with 凡是…都…
+Pattern: 凡是 + qualifying group，都 + shared rule
+
+grammar-143-01
+凡是参加活动的人，都要报名。
+fán shì cān jiā huó dòng de rén, dōu yào bào míng.
+Everyone taking part in the activity must register.
+
+grammar-143-02
+凡是过期的食品，都不能出售。
+fán shì guò qī de shí pǐn, dōu bù néng chū shòu.
+No expired food may be sold.
+
+grammar-143-03
+凡是他推荐的书，我都想看看。
+fán shì tā tuī jiàn de shū, wǒ dōu xiǎng kàn kàn.
+I want to read every book he recommends.
+
+grammar-143-04
+凡是进入实验室的人，都必须戴护目镜。
+fán shì jìn rù shí yàn shì de rén, dōu bì xū dài hù mù jìng.
+Everyone entering the laboratory must wear safety goggles.
+
+grammar-143-05
+凡是符合条件的申请者，都可以参加面试。
+fán shì fú hé tiáo jiàn de shēn qǐng zhě, dōu kě yǐ cān jiā miàn shì.
+Every applicant who meets the requirements can attend an interview.
+
+grammar-143-06
+凡是借走的书，都要按时归还。
+fán shì jiè zǒu de shū, dōu yào àn shí guī huán.
+Every borrowed book must be returned on time.
+
+grammar-143-07
+凡是涉及安全的问题，都应该认真处理。
+fán shì shè jí ān quán de wèn tí, dōu yīng gāi rèn zhēn chǔ lǐ.
+Every issue involving safety should be handled carefully.
+
+grammar-143-08
+凡是答应别人的事，都应该尽力做到。
+fán shì dā yìng bié rén de shì, dōu yīng gāi jìn lì zuò dào.
+You should do your best to fulfill every promise you make to others.
+
+grammar-143-09
+凡是需要签字的文件，都放在这里。
+fán shì xū yào qiān zì de wén jiàn, dōu fàng zài zhè lǐ.
+All documents requiring a signature are placed here.
+
+grammar-143-10
+凡是发现错误的人，都可以提出修改意见。
+fán shì fā xiàn cuò wù de rén, dōu kě yǐ tí chū xiū gǎi yì jiàn.
+Anyone who finds an error can suggest a correction.
+
+grammar-144: Remaining unmoved with 任凭…也…
+Pattern: 任凭 + action/condition，subject + 也 + unchanged response
+
+grammar-144-01
+任凭我怎么解释，他也不相信。
+rèn píng wǒ zěn me jiě shì, tā yě bù xiāng xìn.
+No matter how I explain it, he will not believe me.
+
+grammar-144-02
+任凭大家劝说，她也不肯改变主意。
+rèn píng dà jiā quàn shuō, tā yě bù kěn gǎi biàn zhǔ yì.
+No matter how much everyone tries to persuade her, she will not change her mind.
+
+grammar-144-03
+任凭风怎么吹，这棵树也没有倒。
+rèn píng fēng zěn me chuī, zhè kē shù yě méi yǒu dǎo.
+No matter how hard the wind blew, this tree did not fall.
+
+grammar-144-04
+任凭他怎么喊，也没有人回答。
+rèn píng tā zěn me hǎn, yě méi yǒu rén huí dá.
+No matter how much he shouted, nobody answered.
+
+grammar-144-05
+任凭条件多么艰苦，他们也没有放弃。
+rèn píng tiáo jiàn duō me jiān kǔ, tā men yě méi yǒu fàng qì.
+No matter how harsh the conditions were, they did not give up.
+
+grammar-144-06
+任凭别人怎么评价，她也坚持自己的选择。
+rèn píng bié rén zěn me píng jià, tā yě jiān chí zì jǐ de xuǎn zé.
+No matter how others judge her, she stands by her choice.
+
+grammar-144-07
+任凭我怎么找，也找不到那张照片。
+rèn píng wǒ zěn me zhǎo, yě zhǎo bù dào nà zhāng zhào piàn.
+No matter how much I search, I cannot find that photo.
+
+grammar-144-08
+任凭价格怎么变，他也不打算卖。
+rèn píng jià gé zěn me biàn, tā yě bù dǎ suàn mài.
+No matter how the price changes, he does not plan to sell.
+
+grammar-144-09
+任凭孩子怎么请求，妈妈也不答应。
+rèn píng hái zi zěn me qǐng qiú, mā mā yě bù dā yìng.
+No matter how much the child pleads, Mom will not agree.
+
+grammar-144-10
+任凭外面多么吵闹，他也能专心看书。
+rèn píng wài miàn duō me chǎo nào, tā yě néng zhuān xīn kàn shū.
+No matter how noisy it is outside, he can concentrate on reading.
+
+grammar-145: Taking advantage of a window with 趁
+Pattern: 趁 + favorable circumstance + action
+
+grammar-145-01
+趁天还没黑，我们赶快回去吧。
+chèn tiān hái méi hēi, wǒ men gǎn kuài huí qù ba.
+Let us hurry back while it is still light.
+
+grammar-145-02
+趁热吃吧。
+chèn rè chī ba.
+Eat it while it is hot.
+
+grammar-145-03
+趁大家都在，我说两句。
+chèn dà jiā dōu zài, wǒ shuō liǎng jù.
+While everyone is here, let me say a few words.
+
+grammar-145-04
+趁现在有空，把邮件回复了吧。
+chèn xiàn zài yǒu kòng, bǎ yóu jiàn huí fù le ba.
+Reply to the emails while you have time now.
+
+grammar-145-05
+趁商店还没关门，我们去买点东西。
+chèn shāng diàn hái méi guān mén, wǒ men qù mǎi diǎn dōng xī.
+Let us buy a few things before the shop closes.
+
+grammar-145-06
+趁年轻，多学点本事。
+chèn nián qīng, duō xué diǎn běn shì.
+Learn more skills while you are young.
+
+grammar-145-07
+趁这个机会，我想感谢大家。
+chèn zhè ge jī huì, wǒ xiǎng gǎn xiè dà jiā.
+I would like to take this opportunity to thank everyone.
+
+grammar-145-08
+趁孩子睡着了，她休息了一会儿。
+chèn hái zi shuì zháo le, tā xiū xī le yī huì er.
+She rested for a while when the child was asleep.
+
+grammar-145-09
+趁天气好，我们把被子晒一晒。
+chèn tiān qì hǎo, wǒ men bǎ bèi zi shài yī shài.
+Let us air the quilts in the sun while the weather is good.
+
+grammar-145-10
+趁还来得及，赶快修改。
+chèn hái lái de jí, gǎn kuài xiū gǎi.
+Revise it quickly while there is still time.
+
+grammar-146: Describing parallel development with 随着
+Pattern: 随着 + ongoing change，related development
+
+grammar-146-01
+随着气温下降，湖面开始结冰。
+suí zhe qì wēn xià jiàng, hú miàn kāi shǐ jié bīng.
+As the temperature falls, the lake begins to freeze.
+
+grammar-146-02
+随着年龄增长，他变得更有耐心。
+suí zhe nián líng zēng zhǎng, tā biàn de gèng yǒu nài xīn.
+As he gets older, he becomes more patient.
+
+grammar-146-03
+随着技术进步，成本逐渐降低。
+suí zhe jì shù jìn bù, chéng běn zhú jiàn jiàng dī.
+As technology advances, costs gradually decrease.
+
+grammar-146-04
+随着人口增加，住房需求不断上升。
+suí zhe rén kǒu zēng jiā, zhù fáng xū qiú bù duàn shàng shēng.
+As the population increases, demand for housing keeps rising.
+
+grammar-146-05
+随着经验积累，她越来越自信。
+suí zhe jīng yàn jī lěi, tā yuè lái yuè zì xìn.
+As she gains experience, she becomes increasingly confident.
+
+grammar-146-06
+随着夜色加深，街上的人越来越少。
+suí zhe yè sè jiā shēn, jiē shàng de rén yuè lái yuè shǎo.
+As night deepens, there are fewer and fewer people on the streets.
+
+grammar-146-07
+随着收入提高，他们开始考虑买房。
+suí zhe shōu rù tí gāo, tā men kāi shǐ kǎo lǜ mǎi fáng.
+As their income rises, they begin considering buying a home.
+
+grammar-146-08
+随着调查深入，更多细节被发现了。
+suí zhe diào chá shēn rù, gèng duō xì jié bèi fā xiàn le.
+As the investigation progressed, more details were discovered.
+
+grammar-146-09
+随着交通改善，来这里的游客越来越多。
+suí zhe jiāo tōng gǎi shàn, lái zhè lǐ de yóu kè yuè lái yuè duō.
+As transportation improves, more and more tourists come here.
+
+grammar-146-10
+随着讨论继续，大家的意见逐渐接近。
+suí zhe tǎo lùn jì xù, dà jiā de yì jiàn zhú jiàn jiē jìn.
+As the discussion continues, everyone's views gradually converge.
+
+grammar-147: Tracing a continuing situation with 自从…以来…
+Pattern: 自从 + starting event + 以来，continuing development
+
+grammar-147-01
+自从搬家以来，我一直坐地铁上班。
+zì cóng bān jiā yǐ lái, wǒ yī zhí zuò dì tiě shàng bān.
+Ever since moving, I have been taking the subway to work.
+
+grammar-147-02
+自从认识她以来，我学到了很多。
+zì cóng rèn shí tā yǐ lái, wǒ xué dào le hěn duō.
+Since meeting her, I have learned a lot.
+
+grammar-147-03
+自从毕业以来，我们只见过两次面。
+zì cóng bì yè yǐ lái, wǒ men zhǐ jiàn guò liǎng cì miàn.
+Since graduating, we have met only twice.
+
+grammar-147-04
+自从换了工作以来，他很少加班。
+zì cóng huàn le gōng zuò yǐ lái, tā hěn shǎo jiā bān.
+Since changing jobs, he has rarely worked overtime.
+
+grammar-147-05
+自从那次争论以来，他们再也没联系过。
+zì cóng nà cì zhēng lùn yǐ lái, tā men zài yě méi lián xì guò.
+Since that argument, they have never contacted each other again.
+
+grammar-147-06
+自从开始跑步以来，她的睡眠好多了。
+zì cóng kāi shǐ pǎo bù yǐ lái, tā de shuì mián hǎo duō le.
+Since she started running, her sleep has improved greatly.
+
+grammar-147-07
+自从这家店开业以来，生意一直很好。
+zì cóng zhè jiā diàn kāi yè yǐ lái, shēng yì yī zhí hěn hǎo.
+Ever since this shop opened, business has been good.
+
+grammar-147-08
+自从孩子出生以来，我们的生活变化很大。
+zì cóng hái zi chū shēng yǐ lái, wǒ men de shēng huó biàn huà hěn dà.
+Since the child was born, our lives have changed greatly.
+
+grammar-147-09
+自从实行新规定以来，事故减少了。
+zì cóng shí xíng xīn guī dìng yǐ lái, shì gù jiǎn shǎo le.
+Since the new rule was implemented, accidents have decreased.
+
+grammar-147-10
+自从来到这里以来，我每天都很忙。
+zì cóng lái dào zhè lǐ yǐ lái, wǒ měi tiān dōu hěn máng.
+Ever since coming here, I have been busy every day.
+
+grammar-148: Marking a delayed endpoint with 直到…才…
+Pattern: 直到 + time/event，subject + 才 + delayed action
+
+grammar-148-01
+直到半夜，他才回家。
+zhí dào bàn yè, tā cái huí jiā.
+He did not come home until midnight.
+
+grammar-148-02
+直到老师解释，我才明白。
+zhí dào lǎo shī jiě shì, wǒ cái míng bái.
+I did not understand until the teacher explained.
+
+grammar-148-03
+直到最后一天，她才提交申请。
+zhí dào zuì hòu yī tiān, tā cái tí jiāo shēn qǐng.
+She did not submit her application until the last day.
+
+grammar-148-04
+直到雨停了，我们才出发。
+zhí dào yǔ tíng le, wǒ men cái chū fā.
+We did not leave until the rain stopped.
+
+grammar-148-05
+直到见到实物，我才相信。
+zhí dào jiàn dào shí wù, wǒ cái xiāng xìn.
+I did not believe it until I saw the actual object.
+
+grammar-148-06
+直到孩子睡着，妈妈才开始工作。
+zhí dào hái zi shuì zháo, mā mā cái kāi shǐ gōng zuò.
+Mom did not start working until the child fell asleep.
+
+grammar-148-07
+直到收到通知，他才知道会议取消了。
+zhí dào shōu dào tōng zhī, tā cái zhī dào huì yì qǔ xiāo le.
+He did not learn the meeting was canceled until he received the notice.
+
+grammar-148-08
+直到离开家乡，我才体会到家的重要。
+zhí dào lí kāi jiā xiāng, wǒ cái tǐ huì dào jiā de zhòng yào.
+I did not appreciate the importance of home until I left my hometown.
+
+grammar-148-09
+直到检查了三遍，她才放心。
+zhí dào jiǎn chá le sān biàn, tā cái fàng xīn.
+She did not feel reassured until she had checked three times.
+
+grammar-148-10
+直到问题解决，大家才松了一口气。
+zhí dào wèn tí jiě jué, dà jiā cái sōng le yī kǒu qì.
+Nobody breathed a sigh of relief until the problem was solved.
+
+grammar-149: Denying an extreme outcome with 不至于
+Pattern: Situation + 不至于 + extreme result
+
+grammar-149-01
+只是晚了五分钟，不至于错过整场演出。
+zhǐ shì wǎn le wǔ fēn zhōng, bù zhì yú cuò guò zhěng chǎng yǎn chū.
+It is only a five-minute delay; we will not miss the entire performance.
+
+grammar-149-02
+他有点生气，但不至于辞职。
+tā yǒu diǎn shēng qì, dàn bù zhì yú cí zhí.
+He is a little angry, but not to the point of resigning.
+
+grammar-149-03
+多穿一件衣服，就不至于那么冷。
+duō chuān yī jiàn yī fú, jiù bù zhì yú nà me lěng.
+Wear an extra layer, and you will not be so cold.
+
+grammar-149-04
+提前做个计划，就不至于手忙脚乱。
+tí qián zuò gè jì huà, jiù bù zhì yú shǒu máng jiǎo luàn.
+Make a plan in advance, and you will not end up in a fluster.
+
+grammar-149-05
+这点困难不至于让我们放弃。
+zhè diǎn kùn nán bù zhì yú ràng wǒ men fàng qì.
+This small difficulty will not drive us to give up.
+
+grammar-149-06
+少赚一点钱，也不至于影响生活。
+shǎo zhuàn yī diǎn qián, yě bù zhì yú yǐng xiǎng shēng huó.
+Earning a little less will not go so far as to affect our daily lives.
+
+grammar-149-07
+带点吃的，路上就不至于饿肚子。
+dài diǎn chī de, lù shàng jiù bù zhì yú è dù zi.
+Bring some food, and you will not go hungry on the way.
+
+grammar-149-08
+他虽然健忘，但不至于忘记自己的生日。
+tā suī rán jiàn wàng, dàn bù zhì yú wàng jì zì jǐ de shēng rì.
+Although he is forgetful, he is not so forgetful as to forget his own birthday.
+
+grammar-149-09
+我们意见不同，但不至于为此吵架。
+wǒ men yì jiàn bù tóng, dàn bù zhì yú wèi cǐ chǎo jià.
+We disagree, but not enough to argue over it.
+
+grammar-149-10
+有这笔存款，我们暂时不至于陷入困境。
+yǒu zhè bǐ cún kuǎn, wǒ men zàn shí bù zhì yú xiàn rù kùn jìng.
+With these savings, we will not fall into hardship for the time being.
+
+grammar-150: Challenging certainty with 未必
+Pattern: Subject + 未必 + predicate
+
+grammar-150-01
+贵的东西未必好。
+guì de dōng xī wèi bì hǎo.
+Expensive things are not necessarily good.
+
+grammar-150-02
+他未必知道这件事。
+tā wèi bì zhī dào zhè jiàn shì.
+He does not necessarily know about this matter.
+
+grammar-150-03
+人多未必效率高。
+rén duō wèi bì xiào lǜ gāo.
+Having more people does not necessarily mean greater efficiency.
+
+grammar-150-04
+现在出发未必来得及。
+xiàn zài chū fā wèi bì lái de jí.
+Leaving now will not necessarily get us there in time.
+
+grammar-150-05
+她不说话，未必是不同意。
+tā bù shuō huà, wèi bì shì bù tóng yì.
+Her silence does not necessarily mean she disagrees.
+
+grammar-150-06
+有经验的人未必适合这个职位。
+yǒu jīng yàn de rén wèi bì shì hé zhè ge zhí wèi.
+An experienced person is not necessarily suited to this position.
+
+grammar-150-07
+看起来容易的事，做起来未必容易。
+kàn qǐ lái róng yì de shì, zuò qǐ lái wèi bì róng yì.
+Something that looks easy is not necessarily easy to do.
+
+grammar-150-08
+换个地方未必能解决问题。
+huàn gè dì fang wèi bì néng jiě jué wèn tí.
+Moving somewhere else will not necessarily solve the problem.
+
+grammar-150-09
+大家都喜欢的书，你未必喜欢。
+dà jiā dōu xǐ huān de shū, nǐ wèi bì xǐ huān.
+You will not necessarily like a book that everyone else likes.
+
+grammar-150-10
+这次失败未必是坏事。
+zhè cì shī bài wèi bì shì huài shì.
+This failure is not necessarily a bad thing.
+
+grammar-151: Acknowledging an unavoidable tendency with 难免
+Pattern: Subject/situation + 难免 + unwanted event
+
+grammar-151-01
+第一次上台，难免紧张。
+dì yī cì shàng tái, nán miǎn jǐn zhāng.
+It is hard not to feel nervous the first time you go on stage.
+
+grammar-151-02
+工作太忙，难免出错。
+gōng zuò tài máng, nán miǎn chū cuò.
+When work is too busy, mistakes are hard to avoid.
+
+grammar-151-03
+离开家久了，难免想家。
+lí kāi jiā jiǔ le, nán miǎn xiǎng jiā.
+After being away from home for a long time, homesickness is hard to avoid.
+
+grammar-151-04
+大家一起生活，难免有矛盾。
+dà jiā yī qǐ shēng huó, nán miǎn yǒu máo dùn.
+When people live together, conflicts are hard to avoid.
+
+grammar-151-05
+刚换工作，难免有些不适应。
+gāng huàn gōng zuò, nán miǎn yǒu xiē bù shì yìng.
+When you have just changed jobs, some difficulty adjusting is hard to avoid.
+
+grammar-151-06
+听到这样的消息，他难免失望。
+tīng dào zhè yàng de xiāo xī, tā nán miǎn shī wàng.
+Hearing such news, he can hardly avoid feeling disappointed.
+
+grammar-151-07
+准备得再充分，也难免遇到意外。
+zhǔn bèi de zài chōng fèn, yě nán miǎn yù dào yì wài.
+No matter how thoroughly you prepare, unexpected events are hard to avoid.
+
+grammar-151-08
+学一门新语言，难免说错话。
+xué yī mén xīn yǔ yán, nán miǎn shuō cuò huà.
+When learning a new language, saying things incorrectly is hard to avoid.
+
+grammar-151-09
+长时间开车，难免疲劳。
+cháng shí jiān kāi chē, nán miǎn pí láo.
+When driving for a long time, fatigue is hard to avoid.
+
+grammar-151-10
+对情况不了解，难免产生误会。
+duì qíng kuàng bù liǎo jiě, nán miǎn chǎn shēng wù huì.
+Without understanding the situation, misunderstandings are hard to avoid.
+
+grammar-152: Reducing an explanation with 无非
+Pattern: Subject + 无非 + 是/想/为了 + limited explanation
+
+grammar-152-01
+他无非是想得到认可。
+tā wú fēi shì xiǎng dé dào rèn kě.
+He simply wants recognition.
+
+grammar-152-02
+办法无非是这两种。
+bàn fǎ wú fēi shì zhè liǎng zhǒng.
+The options are nothing more than these two methods.
+
+grammar-152-03
+她这么做，无非是为了保护家人。
+tā zhè me zuò, wú fēi shì wèi le bǎo hù jiā rén.
+She is doing this simply to protect her family.
+
+grammar-152-04
+我无非是提个建议。
+wǒ wú fēi shì tí gè jiàn yì.
+I am merely making a suggestion.
+
+grammar-152-05
+他们争论的无非是钱的问题。
+tā men zhēng lùn de wú fēi shì qián de wèn tí.
+What they are arguing about is nothing more than money.
+
+grammar-152-06
+结果无非是成功或失败。
+jié guǒ wú fēi shì chéng gōng huò shī bài.
+The outcome is simply success or failure.
+
+grammar-152-07
+他反复解释，无非是怕你误会。
+tā fǎn fù jiě shì, wú fēi shì pà nǐ wù huì.
+He keeps explaining simply because he fears you will misunderstand.
+
+grammar-152-08
+这个工具无非是帮我们节省时间。
+zhè ge gōng jù wú fēi shì bāng wǒ men jié shěng shí jiān.
+This tool merely helps us save time.
+
+grammar-152-09
+她要的无非是一句道歉。
+tā yào de wú fēi shì yī jù dào qiàn.
+All she wants is an apology.
+
+grammar-152-10
+多练几次，无非是多花一点时间。
+duō liàn jǐ cì, wú fēi shì duō huā yī diǎn shí jiān.
+Practicing a few more times just means spending a little more time.
+
+grammar-153: Tentative surprised inference with 莫非
+Pattern: 莫非 + surprising possibility？
+
+grammar-153-01
+莫非你们早就认识？
+mò fēi nǐ men zǎo jiù rèn shí?
+Could it be that you two have known each other for a long time?
+
+grammar-153-02
+莫非他忘了今天的约会？
+mò fēi tā wàng le jīn tiān de yuē huì?
+Could it be that he forgot today's appointment?
+
+grammar-153-03
+莫非这就是你说的那家店？
+mò fēi zhè jiù shì nǐ shuō de nà jiā diàn?
+Could this be the shop you mentioned?
+
+grammar-153-04
+莫非她已经知道结果了？
+mò fēi tā yǐ jīng zhī dào jié guǒ le?
+Could it be that she already knows the result?
+
+grammar-153-05
+莫非我们走错路了？
+mò fēi wǒ men zǒu cuò lù le?
+Could it be that we took the wrong road?
+
+grammar-153-06
+莫非你不打算参加了？
+mò fēi nǐ bù dǎ suàn cān jiā le?
+Could it be that you no longer plan to participate?
+
+grammar-153-07
+莫非门票已经卖完了？
+mò fēi mén piào yǐ jīng mài wán le?
+Could it be that the tickets have already sold out?
+
+grammar-153-08
+莫非他是在开玩笑？
+mò fēi tā shì zài kāi wán xiào?
+Could it be that he is joking?
+
+grammar-153-09
+莫非这封信是你写的？
+mò fēi zhè fēng xìn shì nǐ xiě de?
+Could it be that you wrote this letter?
+
+grammar-153-10
+莫非他们提前出发了？
+mò fēi tā men tí qián chū fā le?
+Could it be that they left ahead of schedule?
+
+grammar-154: Challenging an assumption with 难道
+Pattern: 难道 + proposition + 吗？
+
+grammar-154-01
+难道你不记得我了吗？
+nán dào nǐ bù jì de wǒ le ma?
+Don't you remember me?
+
+grammar-154-02
+难道这还不够清楚吗？
+nán dào zhè hái bù gòu qīng chǔ ma?
+Isn't this clear enough already?
+
+grammar-154-03
+难道我们就这样放弃吗？
+nán dào wǒ men jiù zhè yàng fàng qì ma?
+Are we really going to give up just like this?
+
+grammar-154-04
+难道钱比健康更重要吗？
+nán dào qián bǐ jiàn kāng gèng zhòng yào ma?
+Is money really more important than health?
+
+grammar-154-05
+难道你从来没犯过错吗？
+nán dào nǐ cóng lái méi fàn guò cuò ma?
+Have you really never made a mistake?
+
+grammar-154-06
+难道这都是我的责任吗？
+nán dào zhè dōu shì wǒ de zé rèn ma?
+Is all of this really my responsibility?
+
+grammar-154-07
+难道你没收到通知吗？
+nán dào nǐ méi shōu dào tōng zhī ma?
+Didn't you receive the notice?
+
+grammar-154-08
+难道努力没有意义吗？
+nán dào nǔ lì méi yǒu yì yì ma?
+Does making an effort really have no meaning?
+
+grammar-154-09
+难道他说什么你都相信吗？
+nán dào tā shuō shén me nǐ dōu xiāng xìn ma?
+Do you really believe everything he says?
+
+grammar-154-10
+难道我们不应该先听听她的意见吗？
+nán dào wǒ men bù yīng gāi xiān tīng tīng tā de yì jiàn ma?
+Shouldn't we listen to her opinion first?
+
+grammar-155: Insisting on necessity with 非…不可
+Pattern: Subject + 非 + verb phrase + 不可
+
+grammar-155-01
+这件事我非弄清楚不可。
+zhè jiàn shì wǒ fēi nòng qīng chǔ bù kě.
+I absolutely must get to the bottom of this matter.
+
+grammar-155-02
+他非亲自去一趟不可。
+tā fēi qīn zì qù yī tàng bù kě.
+He insists on making the trip in person.
+
+grammar-155-03
+这个问题今天非解决不可。
+zhè ge wèn tí jīn tiān fēi jiě jué bù kě.
+This problem absolutely must be solved today.
+
+grammar-155-04
+她非见到负责人不可。
+tā fēi jiàn dào fù zé rén bù kě.
+She insists on seeing the person in charge.
+
+grammar-155-05
+我非把这本书看完不可。
+wǒ fēi bǎ zhè běn shū kàn wán bù kě.
+I am determined to finish this book.
+
+grammar-155-06
+这笔钱非还不可。
+zhè bǐ qián fēi huán bù kě.
+This money absolutely must be paid back.
+
+grammar-155-07
+你非现在走不可吗？
+nǐ fēi xiàn zài zǒu bù kě ma?
+Do you absolutely have to leave now?
+
+grammar-155-08
+这个错误非改不可。
+zhè ge cuò wù fēi gǎi bù kě.
+This mistake absolutely must be corrected.
+
+grammar-155-09
+他们非等到结果出来不可。
+tā men fēi děng dào jié guǒ chū lái bù kě.
+They insist on waiting until the result comes out.
+
+grammar-155-10
+我们非找到原因不可。
+wǒ men fēi zhǎo dào yuán yīn bù kě.
+We absolutely must find the cause.

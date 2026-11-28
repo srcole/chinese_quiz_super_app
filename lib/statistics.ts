@@ -171,3 +171,33 @@ export function accuracyBuckets(
     ),
   }));
 }
+
+export function practiceBuckets(
+  attempts: Attempt[],
+  mode: "day" | "week" | "month",
+) {
+  const groups = new Map<string, Set<string>>();
+  for (const attempt of attempts) {
+    const date = new Date(attempt.created_at);
+    if (!Number.isFinite(date.getTime())) continue;
+    if (mode === "week")
+      date.setUTCDate(date.getUTCDate() - ((date.getUTCDay() + 6) % 7));
+    const label = date.toISOString().slice(0, mode === "month" ? 7 : 10);
+    if (!groups.has(label)) groups.set(label, new Set());
+    groups.get(label)!.add(attempt.item_id);
+  }
+  const labels = [...groups.keys()].sort();
+  if (!labels.length) return [];
+  const date = new Date(
+    `${labels[0]}${mode === "month" ? "-01" : ""}T00:00:00Z`,
+  );
+  const buckets: { label: string; count: number }[] = [];
+  while (true) {
+    const label = date.toISOString().slice(0, mode === "month" ? 7 : 10);
+    if (label > labels.at(-1)!) break;
+    buckets.push({ label, count: groups.get(label)?.size ?? 0 });
+    if (mode === "month") date.setUTCMonth(date.getUTCMonth() + 1);
+    else date.setUTCDate(date.getUTCDate() + (mode === "week" ? 7 : 1));
+  }
+  return buckets;
+}

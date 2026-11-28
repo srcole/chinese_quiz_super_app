@@ -259,3 +259,30 @@ test("history series retain chronological qualifying attempts across bucket boun
     ],
   );
 });
+
+import { practiceBuckets } from "../lib/statistics";
+test("practice counts distinct words per calendar period and fills inactive periods", () => {
+  const rows = [
+    ["a", "2026-01-31"],
+    ["a", "2026-01-31"],
+    ["b", "2026-01-31"],
+    ["a", "2026-02-02"],
+  ].map(([id, date], i) => ({
+    ...attempt(i, id, true),
+    created_at: `${date}T12:00:00Z`,
+  }));
+  assert.deepEqual(practiceBuckets(rows, "day"), [
+    { label: "2026-01-31", count: 2 },
+    { label: "2026-02-01", count: 0 },
+    { label: "2026-02-02", count: 1 },
+  ]);
+  assert.deepEqual(practiceBuckets(rows, "week"), [
+    { label: "2026-01-26", count: 2 },
+    { label: "2026-02-02", count: 1 },
+  ]);
+  assert.deepEqual(practiceBuckets(rows, "month"), [
+    { label: "2026-01", count: 2 },
+    { label: "2026-02", count: 1 },
+  ]);
+  assert.deepEqual(practiceBuckets([], "day"), []);
+});
