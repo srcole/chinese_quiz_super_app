@@ -840,7 +840,7 @@ export default function Home() {
             {progress.user ? "Account & audio" : "Enable sync"} <span>↗</span>
           </button>
         </header>
-        <main>
+        <main className={tab === "quiz" ? "practice-page" : undefined}>
           {contentNote && <div className="notice">{contentNote}</div>}
           {notice && (
             <div className="notice" role="status">
@@ -1568,127 +1568,127 @@ export default function Home() {
                       </p>
                     )}
                     {q.word && (
-                      <>
-                        <AnswerHistory
-                          attempts={progress.attempts}
-                          current={submitted}
-                        />
-                        <WordDetails
-                          w={q.word}
-                          feedback
-                          idiom={q.mode === "idioms"}
-                        />
-                        <PriorityControls
-                          key={`${progress.user?.id || "guest"}:${q.word.id}`}
-                          word={originalWords.get(q.word.id) || q.word}
-                          change={priorityChanges.get(q.word.id)}
-                          ready={priorities.ready}
-                          save={priorities.save}
-                        />
-                        <p role="status" className="helper">
-                          {priorities.status}
-                        </p>
-                        {choices.length > 0 && (
-                          <details key={q.id} className="choice-feedback">
-                            <summary>Other multiple-choice options</summary>
-                            {choices
-                              .filter((word) => word.id !== q.word!.id)
-                              .map((word) => (
-                                <div key={word.id}>
-                                  <p lang="zh-Hans">{word.chinese}</p>
-                                  <p className="pinyin">{word.pinyin}</p>
-                                  <p>{word.english}</p>
-                                </div>
-                              ))}
-                          </details>
-                        )}
-                        {q.mode === "tones" && (
-                          <div className="pattern">
-                            Dictionary tones:{" "}
-                            <strong>{q.word.tone_pattern}</strong>
-                            {q.word.tone_change && <p>{q.word.tone_change}</p>}
-                          </div>
-                        )}
-                        <div className="extra-fields">
-                          {[
-                            ["Synonyms", q.word["synonym(s)"]],
-                            ["Common collocations", q.word.common_collocations],
-                            ["Measure word", q.word.measure_word],
-                          ]
-                            .filter(([, v]) => v)
-                            .map(([label, value]) => (
-                              <div key={label}>
-                                <span>{label}</span>
-                                <p>{value}</p>
-                              </div>
-                            ))}
+                      <div className="feedback-columns">
+                        <div className="feedback-main">
+                          <AnswerHistory
+                            attempts={progress.attempts}
+                            current={submitted}
+                          />
+                          <WordDetails
+                            w={q.word}
+                            feedback
+                            idiom={q.mode === "idioms"}
+                          />
                         </div>
-                        <div className="character-exploration">
-                          <h3>Explore the characters</h3>
-                          {[
-                            ...new Set(
-                              q.word.chinese.match(/\p{Script=Han}/gu) || [],
-                            ),
-                          ].map((c) => {
-                            const related = words.filter(
-                              (w) =>
-                                characterWordEligible(w) &&
-                                w.id !== q.word!.id &&
-                                w.chinese.includes(c),
-                            );
-                            return (
-                              <details key={c}>
-                                <summary>
-                                  <span lang="zh">{c}</span> Words containing
-                                  this character <small>{related.length}</small>
-                                </summary>
-                                <button
-                                  disabled={!related.length}
-                                  onClick={() =>
-                                    audio.play(
-                                      related.map((w, row) => ({
-                                        text: w.chinese,
-                                        row,
-                                      })),
-                                      { gap: 0 },
-                                    )
-                                  }
-                                >
-                                  ◖)) Listen to all words containing {c}
-                                </button>
-                                {related.slice(0, 30).map((w) => (
-                                  <div className="related-word" key={w.id}>
-                                    <span lang="zh">{w.chinese}</span>
-                                    <span>{w.pinyin}</span>
-                                    <span>{w.english}</span>
-                                    <button
-                                      className="quiet"
-                                      aria-label={`Listen to ${w.chinese}`}
-                                      onClick={() =>
-                                        audio.play([
-                                          { text: w.chinese, row: 0 },
-                                        ])
-                                      }
-                                    >
-                                      ◖))
-                                    </button>
+                        <div className="feedback-extras">
+                          {choices.length > 0 && (
+                            <details key={q.id} className="choice-feedback">
+                              <summary>Other multiple-choice options</summary>
+                              {choices
+                                .filter((word) => word.id !== q.word!.id)
+                                .map((word) => (
+                                  <div key={word.id}>
+                                    <p lang="zh-Hans">{word.chinese}</p>
+                                    <p className="pinyin">{word.pinyin}</p>
+                                    <p>{word.english}</p>
                                   </div>
                                 ))}
-                                {related.length > 30 && (
-                                  <p className="helper">
-                                    Showing 30 of {related.length}. Use
-                                    character review to explore the complete
-                                    list.
-                                  </p>
-                                )}
-                                {!related.length && (
-                                  <p>No other words in this collection.</p>
-                                )}
-                              </details>
-                            );
-                          })}
+                            </details>
+                          )}
+                          {q.mode === "tones" && (
+                            <div className="pattern">
+                              Dictionary tones:{" "}
+                              <strong>{q.word.tone_pattern}</strong>
+                              {q.word.tone_change && (
+                                <p>{q.word.tone_change}</p>
+                              )}
+                            </div>
+                          )}
+                          <div className="extra-fields">
+                            {[
+                              ["Synonyms", q.word["synonym(s)"]],
+                              [
+                                "Common collocations",
+                                q.word.common_collocations,
+                              ],
+                              ["Measure word", q.word.measure_word],
+                            ]
+                              .filter(([, v]) => v)
+                              .map(([label, value]) => (
+                                <div key={label}>
+                                  <span>{label}</span>
+                                  <p>{value}</p>
+                                </div>
+                              ))}
+                          </div>
+                          <div className="character-exploration">
+                            <h3>Explore the characters</h3>
+                            {[
+                              ...new Set(
+                                q.word.chinese.match(/\p{Script=Han}/gu) || [],
+                              ),
+                            ].map((c) => {
+                              const related = words.filter(
+                                (w) =>
+                                  characterWordEligible(w) &&
+                                  w.id !== q.word!.id &&
+                                  w.chinese.includes(c),
+                              );
+                              return (
+                                <details key={c}>
+                                  <summary>
+                                    <span lang="zh">{c}</span> Words containing
+                                    this character{" "}
+                                    <small>{related.length}</small>
+                                  </summary>
+                                  <button
+                                    disabled={!related.length}
+                                    onClick={() =>
+                                      audio.play(
+                                        related.map((w, row) => ({
+                                          text: w.chinese,
+                                          row,
+                                        })),
+                                        { gap: 0 },
+                                      )
+                                    }
+                                  >
+                                    ◖)) Listen to all words containing {c}
+                                  </button>
+                                  {related.slice(0, 30).map((w) => (
+                                    <div className="related-word" key={w.id}>
+                                      <span lang="zh">{w.chinese}</span>
+                                      <span>{w.pinyin}</span>
+                                      <span>{w.english}</span>
+                                      <button
+                                        className="quiet"
+                                        aria-label={`Listen to ${w.chinese}`}
+                                        onClick={() =>
+                                          audio.play([
+                                            { text: w.chinese, row: 0 },
+                                          ])
+                                        }
+                                      >
+                                        ◖))
+                                      </button>
+                                    </div>
+                                  ))}
+                                  {related.length > 30 && (
+                                    <p className="helper">
+                                      Showing 30 of {related.length}. Use
+                                      character review to explore the complete
+                                      list.
+                                    </p>
+                                  )}
+                                  {!related.length && (
+                                    <p>No other words in this collection.</p>
+                                  )}
+                                </details>
+                              );
+                            })}
+                          </div>
                         </div>
-                      </>
+                      </div>
                     )}
                     {q.character && (
                       <>
@@ -1755,29 +1755,45 @@ export default function Home() {
                           ))}
                       </>
                     )}
-                    <div className="start-bar">
-                      {!submitted.correct ? (
-                        <button
-                          onClick={() => {
-                            progress.override(submitted.id);
-                            setSubmitted({
-                              ...submitted,
-                              correct: true,
-                              overridden: true,
-                            });
-                          }}
-                        >
-                          Accept my answer
-                        </button>
-                      ) : (
-                        <span>Progress saved</span>
+                    <div className="feedback-footer">
+                      {q.word && (
+                        <div className="feedback-priority">
+                          <PriorityControls
+                            key={`${progress.user?.id || "guest"}:${q.word.id}`}
+                            word={originalWords.get(q.word.id) || q.word}
+                            change={priorityChanges.get(q.word.id)}
+                            ready={priorities.ready}
+                            save={priorities.save}
+                          />
+                          <p role="status" className="helper">
+                            {priorities.status}
+                          </p>
+                        </div>
                       )}
-                      <button className="primary" onClick={next}>
-                        {index + 1 === questions.length
-                          ? "Finish session"
-                          : "Next question"}{" "}
-                        →
-                      </button>
+                      <div className="start-bar">
+                        {!submitted.correct ? (
+                          <button
+                            onClick={() => {
+                              progress.override(submitted.id);
+                              setSubmitted({
+                                ...submitted,
+                                correct: true,
+                                overridden: true,
+                              });
+                            }}
+                          >
+                            Accept my answer
+                          </button>
+                        ) : (
+                          <span>Progress saved</span>
+                        )}
+                        <button className="primary" onClick={next}>
+                          {index + 1 === questions.length
+                            ? "Finish session"
+                            : "Next question"}{" "}
+                          →
+                        </button>
+                      </div>
                     </div>
                   </section>
                 )}

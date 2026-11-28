@@ -629,13 +629,31 @@ test("feedback shows previous word attempts newest first with empty slots", asyn
   await expect(history.getByRole("listitem")).toHaveCount(5);
   await expect(history.getByRole("listitem").nth(0)).toHaveAttribute(
     "aria-label",
-    "1 attempt ago: correct",
+    /^1 attempt ago: correct, /,
   );
   await expect(history.getByRole("listitem").nth(1)).toHaveAttribute(
     "aria-label",
-    "2 attempts ago: incorrect",
+    /^2 attempts ago: incorrect, /,
   );
   await expect(history.locator(".history-unseen")).toHaveCount(3);
+  const footer = page.locator(".feedback-footer");
+  await expect(
+    footer.getByRole("button", { name: "Decrease importance" }),
+  ).toBeVisible();
+  await expect(
+    footer.getByRole("button", { name: "Finish session" }),
+  ).toBeVisible();
+  if (page.viewportSize()!.width >= 1100) {
+    const main = await page.locator(".feedback-main").boundingBox();
+    const extras = await page.locator(".feedback-extras").boundingBox();
+    expect(extras!.x).toBeGreaterThan(main!.x + main!.width);
+    expect(extras!.y).toBe(main!.y);
+  }
+  expect(
+    await page.evaluate(
+      () => document.documentElement.scrollWidth <= window.innerWidth,
+    ),
+  ).toBe(true);
 });
 
 test("feedback places a larger breakdown immediately after the meaning", async ({

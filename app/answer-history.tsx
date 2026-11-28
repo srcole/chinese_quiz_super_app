@@ -35,7 +35,8 @@ export default function AnswerHistory({
               ? "correct"
               : "incorrect"
             : "unseen";
-          const label = `${index + 1} attempt${index === 0 ? "" : "s"} ago: ${attempt ? result : "no previous attempt"}`;
+          const date = attempt ? new Date(attempt.created_at) : null;
+          const label = `${index + 1} attempt${index === 0 ? "" : "s"} ago: ${attempt ? result : "no previous attempt"}${date ? `, ${date.toLocaleDateString()}` : ""}`;
           return (
             <li
               key={index}
@@ -43,9 +44,17 @@ export default function AnswerHistory({
               aria-label={label}
               title={label}
             >
-              <span aria-hidden="true">
-                {attempt ? (attempt.correct ? "✓" : "×") : "—"}
-              </span>
+              {date && attempt ? (
+                <time
+                  className="history-date"
+                  dateTime={attempt.created_at}
+                  aria-hidden="true"
+                >
+                  {date.getMonth() + 1}/{date.getDate()}
+                </time>
+              ) : (
+                <span aria-hidden="true">—</span>
+              )}
             </li>
           );
         })}
